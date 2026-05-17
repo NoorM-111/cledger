@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #1a202c;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --navy: #0f1f3d;
+  --navy-mid: #1a3160;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-pale: #fdf6e3;
+  --cream: #fafaf8;
+  --white: #ffffff;
+  --border: #e2e8f0;
+  --text: #4a5568;
+  --r: 6px;
+  --rl: 10px;
+}
+
+.wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Fade animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeUp 0.65s ease both;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 24px;
+  border-radius: var(--r);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn-navy {
+  background: var(--navy);
+  color: var(--white);
+}
+.btn-navy:hover {
+  background: var(--navy-mid);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(15,31,61,0.22);
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--navy);
+}
+.btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(201,168,76,0.4);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.4);
+}
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.75);
+}
+
+/* Section labels */
+.s-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.s-h {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.s-p {
+  font-size: 16px;
+  color: var(--text);
+  max-width: 580px;
+  line-height: 1.78;
+  margin-bottom: 56px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center .s-p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-cream { background: var(--cream); }
+.bg-navy  { background: var(--navy); }
+
+/* Service Cards */
+.sc {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--rl);
+  padding: 32px;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+.sc::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 0;
+  background: var(--gold);
+  transition: height 0.3s;
+}
+.sc:hover {
+  border-color: #cbd5e0;
+  box-shadow: 0 6px 28px rgba(15,31,61,0.09);
+  transform: translateY(-3px);
+}
+.sc:hover::before { height: 100%; }
+
+.sc-icon {
+  width: 48px; height: 48px;
+  background: var(--navy);
+  border-radius: var(--r);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+.sc-icon svg {
+  width: 24px; height: 24px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+}
+.sc h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.sc p { font-size: 14px; color: var(--text); line-height: 1.7; }
+
+/* Sector cards */
+.sec {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--rl);
+  padding: 28px 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+.sec:hover {
+  border-color: var(--gold);
+  box-shadow: 0 6px 28px rgba(15,31,61,0.09);
+  transform: translateY(-2px);
+}
+.sec-e  { font-size: 30px; margin-bottom: 12px; }
+.sec h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* Cred cards */
+.cc {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--rl);
+  padding: 24px;
+  transition: all 0.2s;
+}
+.cc:hover {
+  background: rgba(201,168,76,0.08);
+  border-color: rgba(201,168,76,0.25);
+}
+.cc-icon { font-size: 26px; margin-bottom: 12px; }
+.cc h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.cc p { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.55; }
+
+@media (max-width: 680px) {
+  .wrap { padding: 0 20px; }
+  .s-h  { font-size: 28px !important; }
+}

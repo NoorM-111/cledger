@@ -1,0 +1,107 @@
+.cta {
+  background: linear-gradient(160deg, #07101f 0%, var(--navy-mid) 60%, #07101f 100%);
+  padding: 104px 0;
+  position: relative;
+  overflow: hidden;
+}
+.cta::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px; height: 500px;
+  background: radial-gradient(ellipse, rgba(200,164,74,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta::after {
+  content: '';
+  position: absolute;
+  bottom: -200px; right: -200px;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,164,74,0.06);
+  pointer-events: none;
+}
+
+.inner {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.h2 {
+  font-size: 48px;
+  letter-spacing: -0.025em;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+.sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: rgba(255,255,255,0.58);
+  max-width: 500px;
+  margin: 0 auto 44px;
+  line-height: 1.82;
+}
+.btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--rl);
+  padding: 18px 24px;
+  transition: all 0.22s;
+  min-width: 210px;
+}
+.contact:hover {
+  background: rgba(200,164,74,0.07);
+  border-color: rgba(200,164,74,0.2);
+  transform: translateY(-2px);
+}
+.cIcon {
+  width: 42px; height: 42px;
+  background: rgba(200,164,74,0.12);
+  border: 1px solid rgba(200,164,74,0.22);
+  border-radius: var(--r);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.cLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: rgba(255,255,255,0.36);
+  margin-bottom: 3px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.cVal {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  .h2      { font-size: 32px !important; }
+  .btns    { flex-direction: column; align-items: center; }
+  .contacts{ flex-direction: column; align-items: stretch; max-width: 320px; margin: 0 auto; }
+}

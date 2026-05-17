@@ -1,0 +1,79 @@
+'use client'
+import styles from './Hero.module.css'
+
+function scrollTo(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+
+const stats = [
+  { n: '150+', label: 'UK Businesses' },
+  { n: '100%', label: 'HMRC Compliant' },
+  { n: '5★',   label: 'Client Rating'  },
+]
+
+const points = [
+  'A dedicated named contact who knows your business inside out and is always available when you need them.',
+  'Full-spectrum coverage — bookkeeping, tax compliance, planning and every obligation in between.',
+  'Every piece of work reviewed to the highest standard, submitted on time, without exception.',
+]
+
+export default function Hero() {
+  return (
+    <section className={styles.hero} id="hero">
+      <div className={styles.glow1} aria-hidden />
+      <div className={styles.glow2} aria-hidden />
+      <div className="wrap">
+        <div className={styles.grid}>
+          <div>
+            <div className={`${styles.badge} fade-in`} style={{ animationDelay: '0ms' }}>
+              <span className={styles.badgeDot} />
+              UK Financial Services Firm
+            </div>
+            <h1 className={`${styles.h1} fade-in`} style={{ animationDelay: '80ms' }}>
+              Clear Books.<br />Clear Numbers.<br /><em>Clear Future.</em>
+            </h1>
+            <p className={`${styles.sub} fade-in`} style={{ animationDelay: '160ms' }}>
+              Cledger is a UK financial services firm built on one principle — every business, regardless
+              of size, deserves expert financial care. We handle your numbers with precision so you can
+              focus entirely on what you do best.
+            </p>
+            <div className={`${styles.btns} fade-in`} style={{ animationDelay: '240ms' }}>
+              <button className="btn btn-gold" onClick={() => scrollTo('contact')}>Book a Free Consultation</button>
+              <button className="btn btn-ghost" onClick={() => scrollTo('services')}>Our Services</button>
+            </div>
+            <div className={`${styles.stats} fade-in`} style={{ animationDelay: '320ms' }}>
+              {stats.map((s, i) => (
+                <>
+                  {i > 0 && <div key={`div-${i}`} className={styles.statDiv} />}
+                  <div key={s.n} className={styles.stat}>
+                    <span className={styles.statN}>{s.n}</span>
+                    <span className={styles.statL}>{s.label}</span>
+                  </div>
+                </>
+              ))}
+            </div>
+          </div>
+
+          <div className={`${styles.card} fade-in`} style={{ animationDelay: '400ms' }}>
+            <div className={styles.cardHeader}>
+              <span className={styles.cardPill}>Our Commitment</span>
+            </div>
+            <div className={styles.pts}>
+              {points.map((p, i) => (
+                <div key={i} className={styles.pt}>
+                  <div className={styles.check}>✓</div>
+                  <span>{p}</span>
+                </div>
+              ))}
+            </div>
+            <div className={styles.divider} />
+            <p className={styles.commitText}>
+              We operate to the highest professional, technical and ethical standards — so you can trust
+              your financial affairs are always in the best possible hands.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
