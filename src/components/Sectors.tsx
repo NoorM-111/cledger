@@ -2,18 +2,18 @@ import styles from './Sectors.module.css'
 
 const sectors = [
   { e: '🏥', label: 'Healthcare Professionals' },
-  { e: '🦷', label: 'Dental Practices'        },
-  { e: '🏗️', label: 'Construction & Trades'   },
-  { e: '🏠', label: 'Property & Landlords'    },
-  { e: '🎨', label: 'Creative & Media'        },
-  { e: '⚖️', label: 'Legal Services'          },
-  { e: '🛒', label: 'Retail & eCommerce'      },
-  { e: '🚀', label: 'Startups & SMEs'         },
+  { e: '🦷', label: 'Dental Practices'         },
+  { e: '🏗️', label: 'Construction & Trades'    },
+  { e: '🏠', label: 'Property & Landlords'     },
+  { e: '🎨', label: 'Creative & Media'         },
+  { e: '⚖️', label: 'Legal Services'           },
+  { e: '🛒', label: 'Retail & eCommerce'       },
+  { e: '🚀', label: 'Startups & SMEs'          },
 ]
 
 export default function Sectors() {
   return (
-    <section id="sectors" className="bg-cream" style={{ padding: '96px 0' }}>
+    <section id="sectors" style={{ padding: '96px 0', background: '#fff' }}>
       <div className="wrap">
         <div className="center">
           <span className="s-label">Industries We Serve</span>

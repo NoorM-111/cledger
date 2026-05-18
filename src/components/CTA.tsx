@@ -1,4 +1,5 @@
 import styles from './CTA.module.css'
+import CalendlyButton from './CalendlyButton'
 
 export default function CTA() {
   return (
@@ -12,8 +13,8 @@ export default function CTA() {
             exactly how Cledger can bring clarity, confidence and real value to your finances.
           </p>
           <div className={styles.btns}>
-            <a href="mailto:info@cledger.co.uk" className="btn btn-gold">Book a Free Consultation</a>
-            <a href="tel:+923244000660" className="btn btn-ghost">Call Us Today</a>
+            <CalendlyButton className="btn btn-gold">Book a Free Consultation</CalendlyButton>
+            <a href="tel:+447774002712" className="btn btn-ghost">Call Us Today</a>
           </div>
           <div className={styles.contacts}>
             <div className={styles.contact}>
@@ -27,7 +28,7 @@ export default function CTA() {
               <div className={styles.cIcon}>📞</div>
               <div>
                 <div className={styles.cLabel}>Call us</div>
-                <div className={styles.cVal}>+92 324 4000660</div>
+                <div className={styles.cVal}>+44 7774 002712</div>
               </div>
             </div>
             <div className={styles.contact}>

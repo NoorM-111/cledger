@@ -17,13 +17,13 @@ const steps = [
 
 export default function WhyCledger() {
   return (
-    <section id="why" style={{ padding: '96px 0' }}>
+    <section id="why" style={{ padding: '96px 0', background: 'var(--surface)' }}>
       <div className="wrap">
         <div className={styles.twoCol}>
           <div>
             <span className="s-label">Why Cledger</span>
             <h2 className="s-h">A Financial Partner You Can Genuinely Rely On</h2>
-            <p style={{ fontSize: 15, color: 'var(--text)', lineHeight: 1.78, marginBottom: 8 }}>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 15, color: 'var(--text)', lineHeight: 1.82, marginBottom: 8 }}>
               We believe that great accounting goes far beyond compliance. It is about understanding your business,
               anticipating your needs and giving you the financial clarity to make better decisions — every single month.
             </p>

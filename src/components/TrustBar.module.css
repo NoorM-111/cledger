@@ -1,29 +1,50 @@
 .trust {
   background: #fff;
   border-bottom: 1px solid var(--border);
-  padding: 20px 0;
-  box-shadow: 0 1px 0 rgba(11,25,48,0.04);
+  padding: 18px 0;
 }
 .inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 .item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: 'Inter', sans-serif;
   font-size: 12.5px;
   font-weight: 600;
   color: var(--heading);
-  letter-spacing: 0.01em;
-  background: var(--cream);
+  background: var(--surface);
   border: 1px solid var(--border);
-  padding: 7px 16px;
+  padding: 8px 16px;
   border-radius: 100px;
   transition: all 0.2s;
+  letter-spacing: 0.01em;
 }
 .item:hover {
-  border-color: rgba(200,164,74,0.4);
+  border-color: rgba(200,151,60,0.4);
   background: var(--gold-pale);
+  color: var(--gold-dark);
 }
+.icon {
+  width: 15px; height: 15px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-dark);
+}
+.icon svg {
+  width: 14px; height: 14px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  display: block;
+}
+.item:hover .icon { color: var(--gold); }

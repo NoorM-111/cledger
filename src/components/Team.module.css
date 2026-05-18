@@ -1,135 +1,180 @@
-.twoCol {
+.grid {
   display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 80px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr; /* row 1 = card tops, row 2 = card bodies */
+  column-gap: 28px;
+  row-gap: 0;
 }
 
+/* Subgrid makes BOTH card tops the same height automatically */
 .card {
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
   border-radius: var(--rxl);
   overflow: hidden;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  position: sticky;
-  top: 96px;
+  background: #fff;
+  transition: all 0.3s cubic-bezier(0.22,1,0.36,1);
 }
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  border-color: rgba(200,151,60,0.3);
+}
+
+/* Card top */
 .cardTop {
   background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 100%);
-  padding: 48px 32px 40px;
+  padding: 40px 32px 28px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
-.cardTop::before {
-  content: '';
+.glow {
   position: absolute;
   top: -80px; right: -80px;
-  width: 220px; height: 220px;
+  width: 200px; height: 200px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(200,164,74,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(200,151,60,0.1) 0%, transparent 70%);
   pointer-events: none;
 }
+
 .avatar {
-  width: 100px; height: 100px;
+  width: 76px; height: 76px;
   background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 16px;
   font-family: 'Playfair Display', serif;
-  font-size: 34px;
+  font-size: 26px;
   font-weight: 700;
   color: var(--navy);
-  box-shadow: 0 8px 24px rgba(200,164,74,0.35);
+  box-shadow: 0 6px 20px rgba(200,151,60,0.38);
   position: relative;
+  z-index: 1;
 }
+
 .name {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: 21px;
   color: #fff;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   position: relative;
+  z-index: 1;
 }
 .role {
   font-family: 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 10.5px;
   color: var(--gold-light);
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 18px;
   position: relative;
+  z-index: 1;
 }
 
-.cardBody {
-  padding: 28px 32px;
-  background: #fff;
-}
-.qual {
+.tags {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--border);
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text);
-  transition: color 0.15s;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
-.qual:last-child { border-bottom: none; }
-.qual:hover { color: var(--navy); }
-.dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--gold);
-  flex-shrink: 0;
+.tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.65);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 4px 11px;
+  border-radius: 100px;
 }
 
-/* Bio side */
+/* Card body — flex grow to fill remaining height */
+.cardBody {
+  padding: 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .bio {
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 13.5px;
   color: var(--text);
   line-height: 1.82;
+  padding-bottom: 20px;
   margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  flex: 1;
 }
 
+/* Skill grid — sticks to bottom of card body */
 .skGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 32px;
+  gap: 9px;
 }
+
 .sk {
   display: flex;
-  gap: 14px;
+  gap: 10px;
   align-items: flex-start;
-  padding: 18px;
+  padding: 13px 14px;
   background: var(--cream);
   border: 1px solid var(--border);
   border-radius: var(--rl);
-  transition: all 0.22s;
+  transition: all 0.22s cubic-bezier(0.22,1,0.36,1);
 }
 .sk:hover {
-  border-color: rgba(200,164,74,0.35);
-  box-shadow: var(--shadow-sm);
-  transform: translateY(-2px);
+  border-color: rgba(200,151,60,0.35);
+  background: linear-gradient(135deg, #fff 0%, var(--gold-pale) 100%);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-xs);
 }
-.skIcon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+
+.skIcon {
+  width: 28px; height: 28px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-light);
+  margin-top: 1px;
+}
+.skIcon svg {
+  width: 14px; height: 14px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  display: block;
+}
+
 .sk h5 {
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--heading);
-  margin-bottom: 3px;
+  margin-bottom: 2px;
+  line-height: 1.3;
 }
-.sk p { font-size: 12px; color: var(--text); line-height: 1.52; }
+.sk p {
+  font-size: 11px;
+  color: var(--text);
+  line-height: 1.5;
+}
 
-@media (max-width: 1000px) {
-  .twoCol { grid-template-columns: 1fr !important; gap: 56px !important; }
-  .card   { position: static !important; }
-}
-@media (max-width: 680px) {
-  .skGrid { grid-template-columns: 1fr !important; }
-}
+@media (max-width: 920px)  { .grid   { grid-template-columns: 1fr !important; } }
+@media (max-width: 560px)  { .skGrid { grid-template-columns: 1fr !important; } }

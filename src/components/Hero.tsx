@@ -1,5 +1,6 @@
 'use client'
 import styles from './Hero.module.css'
+import CalendlyButton from './CalendlyButton'
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -38,18 +39,18 @@ export default function Hero() {
               focus entirely on what you do best.
             </p>
             <div className={`${styles.btns} fade-in`} style={{ animationDelay: '240ms' }}>
-              <button className="btn btn-gold" onClick={() => scrollTo('contact')}>Book a Free Consultation</button>
+              <CalendlyButton className="btn btn-gold">Book a Free Consultation</CalendlyButton>
               <button className="btn btn-ghost" onClick={() => scrollTo('services')}>Our Services</button>
             </div>
             <div className={`${styles.stats} fade-in`} style={{ animationDelay: '320ms' }}>
               {stats.map((s, i) => (
-                <>
-                  {i > 0 && <div key={`div-${i}`} className={styles.statDiv} />}
-                  <div key={s.n} className={styles.stat}>
+                <div key={s.n} className={styles.statItem}>
+                  {i > 0 && <div className={styles.statDiv} />}
+                  <div className={styles.stat}>
                     <span className={styles.statN}>{s.n}</span>
                     <span className={styles.statL}>{s.label}</span>
                   </div>
-                </>
+                </div>
               ))}
             </div>
           </div>

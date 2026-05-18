@@ -79,7 +79,7 @@
 .stats {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 0;
   padding-top: 32px;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
@@ -97,6 +97,11 @@
   color: rgba(255,255,255,0.4);
   font-weight: 500;
   letter-spacing: 0.03em;
+}
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 .statDiv {
   width: 1px; height: 36px;

@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
+import CalendlyButton from './CalendlyButton'
 
 const links = [
   { label: 'Services',    id: 'services' },
@@ -41,9 +42,9 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <button className="btn btn-navy" onClick={() => scrollTo('contact')} style={{ fontFamily: 'inherit' }}>
+          <CalendlyButton className="btn btn-navy" style={{ fontFamily: 'inherit' }}>
             Free Consultation
-          </button>
+          </CalendlyButton>
 
           <button
             className={styles.ham}
@@ -64,12 +65,9 @@ export default function Navbar() {
               {l.label}
             </button>
           ))}
-          <button
-            className={`${styles.mobCta} btn btn-gold`}
-            onClick={() => { scrollTo('contact'); setOpen(false) }}
-          >
+          <CalendlyButton className={`${styles.mobCta} btn btn-gold`}>
             Free Consultation
-          </button>
+          </CalendlyButton>
         </div>
       )}
     </nav>
