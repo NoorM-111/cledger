@@ -1,5 +1,13 @@
+import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
-import styles from './Team.module.css'
+import styles from './page.module.css'
+
+export const metadata: Metadata = {
+  title: 'Our Team | Cledger',
+  description:
+    'Meet the qualified finance professionals behind Cledger — delivering expert accounting, tax compliance and financial advisory for UK businesses.',
+}
 
 const Ico = ({ d, extra }: { d: string; extra?: string }) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
@@ -8,8 +16,9 @@ const Ico = ({ d, extra }: { d: string; extra?: string }) => (
   </svg>
 )
 
-const founders = [
+const members = [
   {
+    photo: null,
     initials: 'NM',
     name: 'Noor Muhammad',
     role: 'Founder & Principal',
@@ -49,6 +58,7 @@ const founders = [
     ],
   },
   {
+    photo: null,
     initials: 'AS',
     name: 'Ali Sajjad',
     role: 'Co-Founder',
@@ -87,62 +97,109 @@ const founders = [
       },
     ],
   },
+  {
+    photo: '/images/muhammad.jpg',
+    initials: 'M',
+    name: 'Muhammad',
+    role: 'Head of Financial Advisory & Analytics',
+    tags: ['Financial Advisory', 'Analytics', 'Automation', 'Governance'],
+    bio: 'Muhammad leads Cledger\'s financial advisory and analytics division, combining deep expertise in FP&A, business intelligence and AI-driven automation. With a strong foundation in governance, audit and executive reporting, he helps clients transform raw financial data into strategic insight — empowering leadership teams to make faster, more confident decisions.',
+    skills: [
+      {
+        icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>,
+        title: 'FP&A',
+        desc: 'Budgeting, forecasting and variance analysis for leadership teams',
+      },
+      {
+        icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>,
+        title: 'Business Analytics',
+        desc: 'KPI frameworks and data models for improved financial visibility',
+      },
+      {
+        icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>,
+        title: 'AI & Automation',
+        desc: 'Streamlining financial workflows using intelligent automation',
+      },
+      {
+        icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>,
+        title: 'Governance & Audit',
+        desc: 'Internal controls and audit-readiness for regulated environments',
+      },
+      {
+        icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>,
+        title: 'Financial Modelling',
+        desc: 'Dynamic models for scenario planning and investment decisions',
+      },
+      {
+        icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>,
+        title: 'Executive Reporting',
+        desc: 'Board-ready dashboards and management reports that drive decisions',
+      },
+    ],
+  },
 ]
 
-export default function Team() {
+export default function TeamPage() {
   return (
-    <section id="team" style={{ padding: '96px 0', background: 'var(--surface)' }}>
-      <div className="wrap">
-        <div className="center" style={{ marginBottom: '56px' }}>
-          <span className="s-label">Leadership</span>
-          <h2 className="s-h">The People Behind Cledger</h2>
-          <p className="s-p" style={{ marginBottom: 0 }}>
-            A team of qualified finance professionals committed to delivering the highest standards
-            of financial expertise, precision and strategic insight for every client.
-          </p>
-        </div>
-        <div className={styles.grid}>
-          {founders.map(f => (
-            <div key={f.name} className={styles.card}>
-              <div className={styles.cardTop}>
-                <div className={styles.glow} aria-hidden />
-                <div className={styles.avatar}>{f.initials}</div>
-                <div className={styles.name}>{f.name}</div>
-                <div className={styles.role}>{f.role}</div>
-                <div className={styles.tags}>
-                  {f.tags.map(t => (
-                    <span key={t} className={styles.tag}>{t}</span>
-                  ))}
-                </div>
-              </div>
-              <div className={styles.cardBody}>
-                <p className={styles.bio}>{f.bio}</p>
-                <div className={styles.skGrid}>
-                  {f.skills.map(s => (
-                    <div key={s.title} className={styles.sk}>
-                      <span className={styles.skIcon}>{s.icon}</span>
-                      <div>
-                        <h5>{s.title}</h5>
-                        <p>{s.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="center" style={{ marginTop: '48px' }}>
-          <Link
-            href="/team"
-            className="btn btn-navy"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', fontFamily: 'inherit' }}
-          >
-            View Full Team
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    <main className={styles.page}>
+      <div className={styles.heroBar}>
+        <div className="wrap">
+          <Link href="/" className={styles.back}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Back to Home
           </Link>
+          <div className={styles.heroContent}>
+            <span className="s-label">Leadership</span>
+            <h1 className={styles.h1}>The People Behind Cledger</h1>
+            <p className={styles.sub}>
+              A team of qualified finance professionals committed to delivering the highest standards
+              of financial expertise, precision and strategic insight for every client.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+
+      <div className={styles.body}>
+        <div className="wrap">
+          <div className={styles.grid}>
+            {members.map(m => (
+              <div key={m.name} className={styles.card}>
+                <div className={styles.cardTop}>
+                  <div className={styles.glow} aria-hidden />
+                  {m.photo ? (
+                    <div className={styles.avatarPhoto}>
+                      <Image src={m.photo} alt={m.name} fill sizes="76px" style={{ objectFit: 'cover' }} />
+                    </div>
+                  ) : (
+                    <div className={styles.avatar}>{m.initials}</div>
+                  )}
+                  <div className={styles.name}>{m.name}</div>
+                  <div className={styles.role}>{m.role}</div>
+                  <div className={styles.tags}>
+                    {m.tags.map(t => (
+                      <span key={t} className={styles.tag}>{t}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className={styles.cardBody}>
+                  <p className={styles.bio}>{m.bio}</p>
+                  <div className={styles.skGrid}>
+                    {m.skills.map(s => (
+                      <div key={s.title} className={styles.sk}>
+                        <span className={styles.skIcon}>{s.icon}</span>
+                        <div>
+                          <h5>{s.title}</h5>
+                          <p>{s.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </main>
   )
 }

@@ -12,6 +12,10 @@ const links = [
 ]
 
 function scrollTo(id: string) {
+  if (window.location.pathname !== '/') {
+    window.location.href = `/#${id}`
+    return
+  }
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
