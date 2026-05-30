@@ -1,11 +1,9 @@
 'use client'
 
 export default function WhatsAppButton() {
-  const url = 'https://wa.me/447774002712?text=Hi%20Cledger%2C%20I%20would%20like%20to%20find%20out%20more%20about%20your%20services.'
-
   return (
     
-      href={url}
+      href="https://wa.me/447774002712"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
