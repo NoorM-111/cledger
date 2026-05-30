@@ -7,7 +7,7 @@ function scrollTo(id: string) {
 }
 
 const stats = [
-  { n: '150+', label: 'UK Businesses' },
+  { n: '100+', label: 'Client Accounts' },
   { n: '100%', label: 'HMRC Compliant' },
   { n: '5★',   label: 'Client Rating'  },
 ]
@@ -34,9 +34,7 @@ export default function Hero() {
               Clear Books.<br />Clear Numbers.<br /><em>Clear Future.</em>
             </h1>
             <p className={`${styles.sub} fade-in`} style={{ animationDelay: '160ms' }}>
-              Cledger is a UK financial services firm built on one principle — every business, regardless
-              of size, deserves expert financial care. We handle your numbers with precision so you can
-              focus entirely on what you do best.
+              ACCA-trained UK accountants. Remote delivery from <strong>£175/month</strong> — bookkeeping, VAT, payroll and full finance outsourcing at 40% below traditional firm rates.
             </p>
             <div className={`${styles.btns} fade-in`} style={{ animationDelay: '240ms' }}>
               <CalendlyButton className="btn btn-gold">Book a Free Consultation</CalendlyButton>
@@ -54,7 +52,6 @@ export default function Hero() {
               ))}
             </div>
           </div>
-
           <div className={`${styles.card} fade-in`} style={{ animationDelay: '400ms' }}>
             <div className={styles.cardHeader}>
               <span className={styles.cardPill}>Our Commitment</span>
