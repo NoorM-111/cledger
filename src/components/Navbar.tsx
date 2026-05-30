@@ -1,16 +1,16 @@
 'use client'
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import styles from './Navbar.module.css'
 import CalendlyButton from './CalendlyButton'
 
 const links = [
-  { label: 'Services',    id: 'services',  href: null       },
-  { label: 'Why Cledger', id: 'why',       href: null       },
-  { label: 'Sectors',     id: 'sectors',   href: null       },
-  { label: 'Our Team',    id: 'team',      href: null       },
-  { label: 'Pricing',     id: 'pricing',   href: '/pricing' },
-  { label: 'Contact',     id: 'contact',   href: null       },
+  { label: 'Services',    id: 'services',  page: null       },
+  { label: 'Why Cledger', id: 'why',       page: null       },
+  { label: 'Sectors',     id: 'sectors',   page: null       },
+  { label: 'Our Team',    id: 'team',      page: null       },
+  { label: 'Pricing',     id: 'pricing',   page: '/pricing' },
+  { label: 'Contact',     id: 'contact',   page: null       },
 ]
 
 function scrollTo(id: string) {
@@ -24,12 +24,21 @@ function scrollTo(id: string) {
 export default function Navbar() {
   const [open, setOpen]         = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 24)
     window.addEventListener('scroll', fn, { passive: true })
     return () => window.removeEventListener('scroll', fn)
   }, [])
+
+  function handleClick(l: typeof links[0]) {
+    if (l.page) {
+      router.push(l.page)
+    } else {
+      scrollTo(l.id)
+    }
+  }
 
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
@@ -42,11 +51,7 @@ export default function Navbar() {
           <ul className={styles.menu}>
             {links.map(l => (
               <li key={l.id}>
-                {l.href ? (
-                  <Link href={l.href} className={styles.navLink}>{l.label}</Link>
-                ) : (
-                  <button onClick={() => scrollTo(l.id)}>{l.label}</button>
-                )}
+                <button onClick={() => handleClick(l)}>{l.label}</button>
               </li>
             ))}
           </ul>
@@ -67,9 +72,9 @@ export default function Navbar() {
       {open && (
         <div className={styles.mob}>
           {links.map(l => (
-            l.href
-              ? <Link key={l.id} href={l.href} className={styles.mobLink} onClick={() => setOpen(false)}>{l.label}</Link>
-              : <button key={l.id} onClick={() => { scrollTo(l.id); setOpen(false) }}>{l.label}</button>
+            <button key={l.id} onClick={() => { handleClick(l); setOpen(false) }}>
+              {l.label}
+            </button>
           ))}
           <CalendlyButton className={`${styles.mobCta} btn btn-gold`}>
             Free Consultation
