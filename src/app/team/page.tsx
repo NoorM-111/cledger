@@ -98,10 +98,10 @@ const members = [
     ],
   },
   {
-    photo: '/images/muhammad.jpg',
-    initials: 'M',
-    name: 'Muhammad',
-    role: 'Head of Financial Advisory & Analytics',
+    photo: '/images/muhammad_ammar.jpg',
+    initials: 'MA',
+    name: 'Muhammad Ammar',
+    role: 'Senior Advisor — Financial Strategy & Analytics',
     tags: ['Financial Advisory', 'Analytics', 'Automation', 'Governance'],
     bio: 'Muhammad leads Cledger\'s financial advisory and analytics division, combining deep expertise in FP&A, business intelligence and AI-driven automation. With a strong foundation in governance, audit and executive reporting, he helps clients transform raw financial data into strategic insight — empowering leadership teams to make faster, more confident decisions.',
     skills: [
