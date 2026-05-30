@@ -5,12 +5,12 @@ import styles from './Navbar.module.css'
 import CalendlyButton from './CalendlyButton'
 
 const links = [
-  { label: 'Services',    id: 'services',  href: null        },
-  { label: 'Why Cledger', id: 'why',       href: null        },
-  { label: 'Sectors',     id: 'sectors',   href: null        },
-  { label: 'Our Team',    id: 'team',      href: null        },
-  { label: 'Pricing',     id: 'pricing',   href: '/pricing'  },
-  { label: 'Contact',     id: 'contact',   href: null        },
+  { label: 'Services',    id: 'services',  href: null       },
+  { label: 'Why Cledger', id: 'why',       href: null       },
+  { label: 'Sectors',     id: 'sectors',   href: null       },
+  { label: 'Our Team',    id: 'team',      href: null       },
+  { label: 'Pricing',     id: 'pricing',   href: '/pricing' },
+  { label: 'Contact',     id: 'contact',   href: null       },
 ]
 
 function scrollTo(id: string) {
@@ -42,10 +42,11 @@ export default function Navbar() {
           <ul className={styles.menu}>
             {links.map(l => (
               <li key={l.id}>
-                {l.href
-                  ? <Link href={l.href}>{l.label}</Link>
-                  : <button onClick={() => scrollTo(l.id)}>{l.label}</button>
-                }
+                {l.href ? (
+                  <Link href={l.href} className={styles.navLink}>{l.label}</Link>
+                ) : (
+                  <button onClick={() => scrollTo(l.id)}>{l.label}</button>
+                )}
               </li>
             ))}
           </ul>
@@ -67,7 +68,7 @@ export default function Navbar() {
         <div className={styles.mob}>
           {links.map(l => (
             l.href
-              ? <Link key={l.id} href={l.href} onClick={() => setOpen(false)}>{l.label}</Link>
+              ? <Link key={l.id} href={l.href} className={styles.mobLink} onClick={() => setOpen(false)}>{l.label}</Link>
               : <button key={l.id} onClick={() => { scrollTo(l.id); setOpen(false) }}>{l.label}</button>
           ))}
           <CalendlyButton className={`${styles.mobCta} btn btn-gold`}>
