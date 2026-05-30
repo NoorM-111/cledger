@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
             <p className={styles.tag}>Clear books. Clear numbers. Clear future. Financial services built on expertise, integrity and genuine client partnership.</p>
             <div className={styles.soc}>
-              <a href="#" className={styles.s} aria-label="LinkedIn">in</a>
+              <a href="https://www.linkedin.com/company/cledger-uk" target="_blank" rel="noopener noreferrer" className={styles.s} aria-label="LinkedIn">in</a>
               <a href="mailto:info@cledger.co.uk" className={styles.s} aria-label="Email">✉</a>
             </div>
           </div>
