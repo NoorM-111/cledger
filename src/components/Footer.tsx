@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './Footer.module.css'
 
 const serviceLinks = ['Bookkeeping','VAT & Tax','Management Accounts','Annual Accounts','Personal Tax','Cashflow Planning']
@@ -52,8 +53,8 @@ export default function Footer() {
         <div className={styles.bot}>
           <span>© 2025 Cledger Ltd. All rights reserved. Registered in England &amp; Wales.</span>
           <div className={styles.botLinks}>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Service</Link>
           </div>
         </div>
       </div>
