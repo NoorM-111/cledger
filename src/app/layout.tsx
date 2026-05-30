@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
 import WhatsAppButton from '@/components/WhatsAppButton'
+import SchemaMarkup from '@/components/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Cledger | Online Bookkeeping & Accounting Services UK',
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <SchemaMarkup />
         <link
           href="https://assets.calendly.com/assets/external/widget.css"
           rel="stylesheet"
