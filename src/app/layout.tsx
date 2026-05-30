@@ -4,9 +4,41 @@ import './globals.css'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
 export const metadata: Metadata = {
-  title: 'Cledger | Financial Services for UK Businesses',
+  title: 'Cledger | Online Bookkeeping & Accounting Services UK',
   description:
-    'Cledger is a UK financial services firm delivering expert accounting, tax compliance and financial planning for businesses across all sectors.',
+    'ACCA-trained UK accountants from £175/month. Bookkeeping, VAT returns, payroll, management accounts & corporation tax. MTD compliant. Transparent pricing. Get an instant quote.',
+  keywords: [
+    'bookkeeping services UK',
+    'online bookkeeper UK',
+    'outsourced bookkeeping UK',
+    'VAT return service UK',
+    'management accounts UK',
+    'remote accountant UK',
+    'small business accountant UK',
+    'MTD compliant bookkeeping',
+  ],
+  openGraph: {
+    title: 'Cledger | Online Bookkeeping & Accounting Services UK',
+    description:
+      'ACCA-trained UK accountants from £175/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant. Transparent pricing.',
+    url: 'https://www.cledger.co.uk',
+    siteName: 'Cledger',
+    locale: 'en_GB',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cledger | Online Bookkeeping & Accounting Services UK',
+    description:
+      'ACCA-trained UK accountants from £175/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant.',
+  },
+  alternates: {
+    canonical: 'https://www.cledger.co.uk',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
