@@ -7,7 +7,6 @@ import WhyCledger  from '@/components/WhyCledger'
 import Credentials from '@/components/Credentials'
 import Sectors     from '@/components/Sectors'
 import Team        from '@/components/Team'
-import PricingSection from '@/components/PricingSection'
 import ContactSection from '@/components/ContactSection'
 import CTA         from '@/components/CTA'
 import Footer      from '@/components/Footer'
@@ -24,7 +23,6 @@ export default function Home() {
       <Credentials />
       <Sectors />
       <Team />
-      <PricingSection />
       <ContactSection />
       <CTA />
       <Footer />
