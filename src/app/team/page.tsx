@@ -143,7 +143,7 @@ const members = [
     name: 'Muhammad Dawood',
     role: 'UK Statutory Accounts & Corporation Tax Specialist',
     tags: ['Statutory Accounts', 'CT600 / Corp Tax', 'Companies House', 'Self Assessment', 'VAT Returns', 'CIS Compliance'],
-    bio: 'Muhammad brings 6+ years of UK public practice experience, specialising in statutory accounts under FRS 102 & FRS 105, Corporation Tax (CT600) filings to HMRC, and Companies House submissions. He handles year-end compliance for sole traders, partnerships and limited companies — ensuring every filing is accurate, on time and fully HMRC-compliant.',
+    bio: 'Muhammad specialises in statutory accounts under FRS 102 & FRS 105, Corporation Tax (CT600) filings to HMRC, and Companies House submissions. He handles year-end compliance for sole traders, partnerships and limited companies — ensuring every filing is accurate, on time and fully HMRC-compliant.',
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>,
