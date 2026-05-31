@@ -5,6 +5,7 @@ import TrustBar    from '@/components/TrustBar'
 import Services    from '@/components/Services'
 import WhyCledger  from '@/components/WhyCledger'
 import Credentials from '@/components/Credentials'
+import SlackAccess from '@/components/SlackAccess'
 import Sectors     from '@/components/Sectors'
 import Team        from '@/components/Team'
 import ContactSection from '@/components/ContactSection'
@@ -21,6 +22,7 @@ export default function Home() {
       <Services />
       <WhyCledger />
       <Credentials />
+      <SlackAccess />
       <Sectors />
       <Team />
       <ContactSection />
