@@ -25,7 +25,7 @@ export default function Home() {
       <Credentials />
       <SlackAccess />
       <div style={{ display: "flex", justifyContent: "center", padding: "80px 24px", background: "#0B1222" }}>
-        <CledgerStatus live={false} maxItems={5} />
+        <CledgerStatus live={true} maxItems={5} />
       </div>
       <Sectors />
       <Team />
