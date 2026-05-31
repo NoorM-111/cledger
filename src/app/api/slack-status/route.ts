@@ -27,6 +27,30 @@ function classifyUpdate(text: string): UpdateType {
   return "system";
 }
 
+function cleanMessage(text: string): string {
+  return text
+    .replace(/\*Sent using\*\s*Claude/gi, "")   // remove "Sent using Claude"
+    .replace(/:[a-z_]+:/g, (match) => {           // convert :emoji_code: to real emoji
+      const map: Record<string, string> = {
+        ":white_check_mark:": "✅",
+        ":handshake:": "🤝",
+        ":envelope_with_arrow:": "📩",
+        ":chart_with_upwards_trend:": "📈",
+        ":trophy:": "🏆",
+        ":rocket:": "🚀",
+        ":briefcase:": "💼",
+        ":memo:": "📝",
+        ":calendar:": "📅",
+        ":money_with_wings:": "💸",
+        ":bar_chart:": "📊",
+        ":checkered_flag:": "🏁",
+      };
+      return map[match] || "";
+    })
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function relativeTime(ts: number): string {
   const diff = Math.floor((Date.now() - ts) / 1000);
   if (diff < 60) return "Just now";
@@ -69,22 +93,23 @@ export async function POST(request: NextRequest) {
   }
 
   const event = parsed.event;
-
-  // ── Filter out everything except real human messages ──────────────────────
   if (!event) return NextResponse.json({ ok: true });
   if (event.type !== "message") return NextResponse.json({ ok: true });
-  if (event.bot_id) return NextResponse.json({ ok: true });        // ignore bots
-  if (event.subtype) return NextResponse.json({ ok: true });       // ignore join/leave/edit events
+  if (event.bot_id) return NextResponse.json({ ok: true });
+  if (event.subtype) return NextResponse.json({ ok: true });
 
-  const text: string = event.text || "";
-  if (!text.trim()) return NextResponse.json({ ok: true });
+  const rawText: string = event.text || "";
+  if (!rawText.trim()) return NextResponse.json({ ok: true });
+
+  const cleanedText = cleanMessage(rawText);
+  if (!cleanedText) return NextResponse.json({ ok: true });
 
   const update: StoredUpdate = {
     id: event.ts || Date.now().toString(),
-    message: text,
+    message: cleanedText,
     timestamp: relativeTime(parseFloat(event.ts) * 1000),
     rawTs: parseFloat(event.ts) * 1000,
-    type: classifyUpdate(text),
+    type: classifyUpdate(cleanedText),
   };
 
   updatesStore.unshift(update);
