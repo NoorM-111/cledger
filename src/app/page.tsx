@@ -6,6 +6,7 @@ import Services    from '@/components/Services'
 import WhyCledger  from '@/components/WhyCledger'
 import Credentials from '@/components/Credentials'
 import SlackAccess from '@/components/SlackAccess'
+import CledgerStatus from '@/components/CledgerStatus'
 import Sectors     from '@/components/Sectors'
 import Team        from '@/components/Team'
 import ContactSection from '@/components/ContactSection'
@@ -23,6 +24,9 @@ export default function Home() {
       <WhyCledger />
       <Credentials />
       <SlackAccess />
+      <div style={{ display: "flex", justifyContent: "center", padding: "80px 24px", background: "#0B1222" }}>
+        <CledgerStatus live={false} maxItems={5} />
+      </div>
       <Sectors />
       <Team />
       <ContactSection />
