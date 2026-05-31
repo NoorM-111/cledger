@@ -4,6 +4,93 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx9n5bunVAgPbXEByekPS0P-64woWxAglpbLIvDfSJbMkxVl4Q3cVBEv4ZqnQXFYd_k3w/exec";
 
+// ── Slack Notification ────────────────────────────────────────────────────────
+
+async function notifySlack(data: {
+  name: string;
+  email: string;
+  company: string;
+  bandLabel: string;
+  entities: number;
+  serviceNames: string;
+  monthly: number;
+  discounted: number;
+  date: string;
+  time: string;
+}) {
+  const webhookUrl = process.env.SLACK_WEBHOOK_URL;
+  if (!webhookUrl) return;
+
+  const entitiesLabel = data.entities === 4 ? "4+" : String(data.entities);
+
+  await fetch(webhookUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      blocks: [
+        {
+          type: "header",
+          text: {
+            type: "plain_text",
+            text: "🔥 New Quote Request — Cledger",
+            emoji: true,
+          },
+        },
+        {
+          type: "section",
+          fields: [
+            { type: "mrkdwn", text: `*Name:*\n${data.name}` },
+            { type: "mrkdwn", text: `*Email:*\n<mailto:${data.email}|${data.email}>` },
+            { type: "mrkdwn", text: `*Company:*\n${data.company || "Not provided"}` },
+            { type: "mrkdwn", text: `*Turnover Band:*\n${data.bandLabel}` },
+            { type: "mrkdwn", text: `*Entities:*\n${entitiesLabel}` },
+            { type: "mrkdwn", text: `*Services:*\n${data.serviceNames}` },
+          ],
+        },
+        {
+          type: "section",
+          fields: [
+            {
+              type: "mrkdwn",
+              text: `*Monthly Total:*\n*£${data.monthly.toLocaleString()}/month*`,
+            },
+            {
+              type: "mrkdwn",
+              text: `*With 15% Founding Discount:*\n*£${data.discounted.toLocaleString()}/month*`,
+            },
+          ],
+        },
+        { type: "divider" },
+        {
+          type: "section",
+          text: {
+            type: "mrkdwn",
+            text: `⏰ *Received:* ${data.date} at ${data.time}\n🎯 *Target response: within 1 hour*`,
+          },
+        },
+        {
+          type: "actions",
+          elements: [
+            {
+              type: "button",
+              style: "primary",
+              text: { type: "plain_text", text: "📧 Reply to Client", emoji: true },
+              url: `mailto:${data.email}?subject=Your%20Cledger%20Quote%20%E2%80%94%20%C2%A3${data.monthly.toLocaleString()}%2Fmonth&body=Hi%20${encodeURIComponent(data.name)}%2C%0A%0AThank%20you%20for%20your%20quote%20request...`,
+            },
+            {
+              type: "button",
+              text: { type: "plain_text", text: "📋 Outreach Tracker", emoji: true },
+              url: "https://cledgerworkspace.slack.com/archives/C0B6V8LU9L7",
+            },
+          ],
+        },
+      ],
+    }),
+  });
+}
+
+// ── Route Handler ─────────────────────────────────────────────────────────────
+
 export async function POST(req: Request) {
   try {
     const { name, email, company, bandLabel, entities, monthly, discounted, services } = await req.json();
@@ -24,7 +111,14 @@ export async function POST(req: Request) {
     const date = now.toLocaleDateString("en-GB");
     const time = now.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 
-    // ── 1. Log to Google Sheets via Apps Script ──────────────────────────────
+    // ── 1. Slack notification (new) ──────────────────────────────────────────
+    try {
+      await notifySlack({ name, email, company, bandLabel, entities, serviceNames, monthly, discounted, date, time });
+    } catch (slackError) {
+      console.error("Slack notification error:", slackError);
+    }
+
+    // ── 2. Log to Google Sheets via Apps Script ──────────────────────────────
     try {
       await fetch(SCRIPT_URL, {
         method: "POST",
@@ -44,7 +138,7 @@ export async function POST(req: Request) {
       console.error("Sheets logging error:", sheetError);
     }
 
-    // ── 2. Email to client ───────────────────────────────────────────────────
+    // ── 3. Email to client ───────────────────────────────────────────────────
     await resend.emails.send({
       from: "Cledger <info@cledger.co.uk>",
       to: email,
@@ -103,7 +197,7 @@ export async function POST(req: Request) {
       `,
     });
 
-    // ── 3. Notification to Cledger ───────────────────────────────────────────
+    // ── 4. Notification to Cledger ───────────────────────────────────────────
     await resend.emails.send({
       from: "Cledger Website <info@cledger.co.uk>",
       to: "info@cledger.co.uk",
