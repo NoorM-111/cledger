@@ -36,8 +36,8 @@ const SERVICES: Service[] = [
   { id: "ct", group: "tax", name: "Corporation Tax (CT600)", desc: "Annual CT600 preparation and HMRC submission, includes tax computation", base: 65 },
   { id: "ye", group: "tax", name: "Year-end accounts", desc: "Statutory accounts prepared and filed at Companies House", base: 65 },
   { id: "sa", group: "tax", name: "Self Assessment", desc: "Personal tax return for director or sole trader, all income streams covered", base: 65 },
-  { id: "pay_j", group: "payroll", name: "Payroll journals to Xero", desc: "Payroll data entry and journal posting into Xero. Does not include RTI or payslips.", base: 89, mutex: "pay_f" },
-  { id: "pay_f", group: "payroll", name: "Full payroll processing", desc: "Calculate pay, issue payslips, RTI to HMRC, P60s annually. Up to 10 employees.", base: 129, mutex: "pay_j" },
+  { id: "pay_j", group: "payroll", name: "Payroll journals to Xero", desc: "Payroll data entry and journal posting into Xero. Does not include RTI or payslips.", base: 69, mutex: "pay_f" },
+  { id: "pay_f", group: "payroll", name: "Full payroll processing", desc: "Calculate pay, issue payslips, RTI to HMRC, P60s annually. Up to 10 employees.", base: 99, mutex: "pay_j" },
 ];
 
 const CONSULTATIONS = [
@@ -225,7 +225,7 @@ export default function PricingSection() {
             {[1, 2, 3, 4].map(n => (
               <button key={n} onClick={() => setEnts(n)} style={{ ...s.entBtn, ...(ents === n ? s.entBtnOn : {}) }}>
                 <span style={s.entBig}>{n === 4 ? "4+" : n}</span>
-                {n === 1 ? "Single entity" : n === 4 ? "Four or more" : `${["", "Two", "Three"][n]} entities`}
+                {n === 1 ? "Single entity" : n === 2 ? "Two entities" : n === 3 ? "Three entities" : "Four or more"}
               </button>
             ))}
           </div>
