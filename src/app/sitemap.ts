@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
+    // Existing blog posts
     {
       url: 'https://www.cledger.co.uk/blog/how-much-does-a-bookkeeper-cost-uk',
       lastModified: new Date(),
@@ -40,6 +41,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.cledger.co.uk/blog/bookkeeping-for-dental-practices-uk',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    // New blog posts
+    {
+      url: 'https://www.cledger.co.uk/blog/vat-return-deadlines-uk',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.cledger.co.uk/blog/how-to-pay-yourself-ltd-director',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.cledger.co.uk/blog/mtd-for-income-tax-self-employed',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.cledger.co.uk/blog/what-are-management-accounts',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.cledger.co.uk/blog/corporation-tax-guide-small-business-uk',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.cledger.co.uk/blog/xero-vs-quickbooks-uk',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.cledger.co.uk/blog/self-assessment-tax-return-guide-uk',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
