@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Corporation Tax UK: Small Business Guide 2026 | Cledger',
-  description: 'UK Corporation Tax is 19%–25% depending on profits. Deadlines, reliefs, and how to reduce your bill legally — complete 2026 guide for Ltd companies.',
+  description: 'UK Corporation Tax is 19%–25% depending on profits. Deadlines, reliefs, and how to reduce your bill legally, complete 2026 guide for Ltd companies.',
   keywords: 'corporation tax UK small business, CT600 guide, corporation tax rate 2026, how to reduce corporation tax UK, CT600 deadline',
   robots: 'index, follow',
   alternates: {
@@ -52,7 +52,7 @@ export default function CorporationTaxGuideUK() {
         Corporation Tax (CT) is a tax on the taxable profits of UK limited companies and some other organisations. If you trade through a limited company, you are liable for Corporation Tax on: trading profits, investment income, and chargeable gains (profit from selling assets).
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Sole traders and partnerships do not pay Corporation Tax — they pay Income Tax and Class 4 National Insurance through Self Assessment instead. Only incorporated entities (limited companies) are subject to CT.
+        Sole traders and partnerships do not pay Corporation Tax, they pay Income Tax and Class 4 National Insurance through Self Assessment instead. Only incorporated entities (limited companies) are subject to CT.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Corporation Tax rates 2026/27</h2>
@@ -89,7 +89,7 @@ export default function CorporationTaxGuideUK() {
         <strong>Important:</strong> The £50,000 and £250,000 thresholds are divided by the number of associated companies you have. If you own two companies, each threshold is halved (£25,000 and £125,000). This catches many director-shareholders who set up multiple companies expecting each to benefit from the small profits rate independently.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Corporation Tax deadlines — when is CT due?</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Corporation Tax deadlines, when is CT due?</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
         There are two separate CT deadlines to track:
       </p>
@@ -105,41 +105,41 @@ export default function CorporationTaxGuideUK() {
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Penalties for late CT payment and filing</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Missing the CT payment deadline triggers HMRC interest charges from day one — currently at the Bank of England base rate plus 2.5%. There is no grace period.
+        Missing the CT payment deadline triggers HMRC interest charges from day one, currently at the Bank of England base rate plus 2.5%. There is no grace period.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
         Late CT600 filing penalties: <strong>£100</strong> immediately on the day after the deadline, a further <strong>£100</strong> after 3 months, and tax-based penalties (10% of unpaid CT) if the return is 6 or 12 months late. These accumulate quickly and HMRC does not waive them without a genuine reasonable excuse.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Allowable deductions — what reduces your CT bill?</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Allowable deductions, what reduces your CT bill?</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Corporation Tax is charged on profits — which means every legitimate business expense reduces your taxable profit and therefore your CT bill. Common allowable deductions include:
+        Corporation Tax is charged on profits, which means every legitimate business expense reduces your taxable profit and therefore your CT bill. Common allowable deductions include:
       </p>
       <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
-        <li><strong>Director salary and employee wages</strong> — fully deductible if commercially justified</li>
-        <li><strong>Employer pension contributions</strong> — one of the most tax-efficient ways to extract value from a company</li>
+        <li><strong>Director salary and employee wages</strong>, fully deductible if commercially justified</li>
+        <li><strong>Employer pension contributions</strong>, one of the most tax-efficient ways to extract value from a company</li>
         <li><strong>Office costs, equipment, subscriptions</strong></li>
         <li><strong>Accountancy and professional fees</strong></li>
         <li><strong>Business travel</strong> (not commuting)</li>
         <li><strong>Marketing and advertising</strong></li>
         <li><strong>Interest on business loans</strong></li>
-        <li><strong>Capital allowances</strong> — deductions for assets like computers, machinery, and vehicles</li>
+        <li><strong>Capital allowances</strong>, deductions for assets like computers, machinery, and vehicles</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Capital allowances — full expensing</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Capital allowances, full expensing</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Since April 2023, the UK has had <strong>full expensing</strong> for qualifying plant and machinery — meaning you can deduct 100% of the cost of most business assets in the year of purchase rather than spreading the deduction over several years. This is a significant relief for businesses investing in equipment.
+        Since April 2023, the UK has had <strong>full expensing</strong> for qualifying plant and machinery, meaning you can deduct 100% of the cost of most business assets in the year of purchase rather than spreading the deduction over several years. This is a significant relief for businesses investing in equipment.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
         The <strong>Annual Investment Allowance (AIA)</strong> of £1,000,000 per year covers most SME capital expenditure. Any qualifying asset purchase up to £1m can be fully deducted in year one.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">R&D tax credits — often missed</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">R&D tax credits, often missed</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        If your company is developing new products, processes, or software — even internally — you may qualify for R&D tax credits. For small companies, the SME R&D scheme allows you to deduct an additional percentage of qualifying R&D costs from your taxable profits, or claim a cash repayment from HMRC if the company is loss-making.
+        If your company is developing new products, processes, or software, even internally, you may qualify for R&D tax credits. For small companies, the SME R&D scheme allows you to deduct an additional percentage of qualifying R&D costs from your taxable profits, or claim a cash repayment from HMRC if the company is loss-making.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        R&D claims are complex and HMRC scrutiny has increased significantly since 2023. Claims should be prepared by an accountant with R&D experience — poorly prepared claims are a common trigger for CT enquiries.
+        R&D claims are complex and HMRC scrutiny has increased significantly since 2023. Claims should be prepared by an accountant with R&D experience, poorly prepared claims are a common trigger for CT enquiries.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">How to file your CT600</h2>
@@ -147,7 +147,7 @@ export default function CorporationTaxGuideUK() {
         The CT600 (Corporation Tax return) is filed online through HMRC&apos;s Corporation Tax service or through commercial accounting software such as IRIS or CCH. It must be accompanied by your statutory accounts (in iXBRL format) and a computation showing how you arrived at the taxable profit figure.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Most small business owners use an accountant to prepare and file their CT600 — the iXBRL tagging requirement alone makes DIY filing impractical for the majority of Ltd companies.
+        Most small business owners use an accountant to prepare and file their CT600, the iXBRL tagging requirement alone makes DIY filing impractical for the majority of Ltd companies.
       </p>
 
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-10">

@@ -15,7 +15,7 @@ export async function POST(req: Request) {
       from: "Cledger Website <noreply@cledger.co.uk>",
       to: "info@cledger.co.uk",
       replyTo: email,
-      subject: `New enquiry from ${name} — ${service}`,
+      subject: `New enquiry from ${name}, ${service}`,
       html: `
         <div style="font-family: 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0B1222; color: #F8F5EE; border-radius: 12px; overflow: hidden;">
 

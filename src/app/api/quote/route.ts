@@ -32,7 +32,7 @@ async function notifySlack(data: {
           type: "header",
           text: {
             type: "plain_text",
-            text: "🔥 New Quote Request — Cledger",
+            text: "🔥 New Quote Request, Cledger",
             emoji: true,
           },
         },
@@ -143,7 +143,7 @@ export async function POST(req: Request) {
       from: "Cledger <info@cledger.co.uk>",
       to: email,
       replyTo: "info@cledger.co.uk",
-      subject: `Your Cledger quote — £${monthly.toLocaleString()}/month`,
+      subject: `Your Cledger quote, £${monthly.toLocaleString()}/month`,
       html: `
         <div style="font-family:'Helvetica Neue',Arial,sans-serif;max-width:600px;margin:0 auto;background:#0B1222;color:#F8F5EE;border-radius:12px;overflow:hidden;">
           <div style="background:#111827;border-bottom:1px solid rgba(201,168,76,0.2);padding:28px 32px;">
@@ -179,7 +179,7 @@ export async function POST(req: Request) {
             </table>
             <div style="background:rgba(74,222,128,0.06);border:0.5px solid rgba(74,222,128,0.2);border-radius:10px;padding:14px 16px;margin-bottom:28px;">
               <div style="font-size:12px;color:#8a94a8;line-height:1.6;">
-                🏅 <strong style="color:#4ade80;">Founding client offer:</strong> Lock in 15% off for life when you sign up during our launch phase. First 3 clients only — strictly limited.
+                🏅 <strong style="color:#4ade80;">Founding client offer:</strong> Lock in 15% off for life when you sign up during our launch phase. First 3 clients only, strictly limited.
               </div>
             </div>
             <div style="margin-bottom:24px;">
@@ -202,7 +202,7 @@ export async function POST(req: Request) {
       from: "Cledger Website <info@cledger.co.uk>",
       to: "info@cledger.co.uk",
       replyTo: email,
-      subject: `New quote — ${name} · £${monthly.toLocaleString()}/mo · ${bandLabel}`,
+      subject: `New quote, ${name} · £${monthly.toLocaleString()}/mo · ${bandLabel}`,
       html: `
         <div style="font-family:'Helvetica Neue',Arial,sans-serif;max-width:600px;margin:0 auto;background:#0B1222;color:#F8F5EE;border-radius:12px;overflow:hidden;">
           <div style="background:#111827;border-bottom:1px solid rgba(201,168,76,0.2);padding:24px 28px;">
@@ -236,7 +236,7 @@ export async function POST(req: Request) {
                 </td>
               </tr>
             </table>
-            <a href="mailto:${email}?subject=Re: Your Cledger quote — £${monthly.toLocaleString()}/month" style="display:inline-block;background:#C9A84C;color:#0B1222;font-size:13px;font-weight:600;padding:12px 24px;border-radius:9px;text-decoration:none;">Reply to ${name} →</a>
+            <a href="mailto:${email}?subject=Re: Your Cledger quote, £${monthly.toLocaleString()}/month" style="display:inline-block;background:#C9A84C;color:#0B1222;font-size:13px;font-weight:600;padding:12px 24px;border-radius:9px;text-decoration:none;">Reply to ${name} →</a>
           </div>
         </div>
       `,

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Self Assessment Tax Return: Complete UK Guide 2026',
-    description: 'Who needs to file, what to include, key deadlines, and the most common mistakes — 2025/26 tax year.',
+    description: 'Who needs to file, what to include, key deadlines, and the most common mistakes, 2025/26 tax year.',
     url: 'https://www.cledger.co.uk/blog/self-assessment-tax-return-guide-uk',
     siteName: 'Cledger',
     locale: 'en_GB',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Self Assessment Tax Return: Complete UK Guide 2026 | Cledger',
-    description: 'Who needs to file, what to include, key deadlines, and the most common mistakes — 2025/26 tax year.',
+    description: 'Who needs to file, what to include, key deadlines, and the most common mistakes, 2025/26 tax year.',
   },
 }
 
@@ -44,7 +44,7 @@ export default function SelfAssessmentGuideUK() {
       </div>
 
       <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-        Over 12 million people in the UK file a Self Assessment tax return each year — and HMRC issues over £300 million in late filing penalties annually. This guide covers who needs to file, what to include, the 2026 deadlines, and the mistakes that cost people the most money.
+        Over 12 million people in the UK file a Self Assessment tax return each year, and HMRC issues over £300 million in late filing penalties annually. This guide covers who needs to file, what to include, the 2026 deadlines, and the mistakes that cost people the most money.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Who needs to file a Self Assessment?</h2>
@@ -104,7 +104,7 @@ export default function SelfAssessmentGuideUK() {
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Penalties for late filing and payment</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Missing the 31 January deadline triggers an <strong>automatic £100 penalty</strong> — even if you owe no tax. The penalties escalate:
+        Missing the 31 January deadline triggers an <strong>automatic £100 penalty</strong>, even if you owe no tax. The penalties escalate:
       </p>
       <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-1">
         <li>1 day late: £100 fixed penalty</li>
@@ -121,15 +121,15 @@ export default function SelfAssessmentGuideUK() {
         Gather the following before you start:
       </p>
       <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
-        <li><strong>UTR number</strong> — your Unique Taxpayer Reference (10 digits, on all HMRC correspondence)</li>
-        <li><strong>P60 or P45</strong> — if you were employed at any point during the tax year</li>
-        <li><strong>Self-employment income and expenses</strong> — total turnover and categorised expenses</li>
+        <li><strong>UTR number</strong>, your Unique Taxpayer Reference (10 digits, on all HMRC correspondence)</li>
+        <li><strong>P60 or P45</strong>, if you were employed at any point during the tax year</li>
+        <li><strong>Self-employment income and expenses</strong>, total turnover and categorised expenses</li>
         <li><strong>Bank interest statements</strong></li>
-        <li><strong>Dividend vouchers</strong> — if you received dividends from a Ltd company</li>
-        <li><strong>Rental income and expenses</strong> — if you have property</li>
-        <li><strong>Pension contribution receipts</strong> — for higher/additional rate relief claims</li>
+        <li><strong>Dividend vouchers</strong>, if you received dividends from a Ltd company</li>
+        <li><strong>Rental income and expenses</strong>, if you have property</li>
+        <li><strong>Pension contribution receipts</strong>, for higher/additional rate relief claims</li>
         <li><strong>Gift Aid donations</strong></li>
-        <li><strong>Capital gains details</strong> — if you sold shares, property, or other assets</li>
+        <li><strong>Capital gains details</strong>, if you sold shares, property, or other assets</li>
       </ul>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">What expenses can self-employed people claim?</h2>
@@ -138,37 +138,37 @@ export default function SelfAssessmentGuideUK() {
       </p>
       <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-1">
         <li>Office costs (stationery, software, equipment under £1,000)</li>
-        <li>Travel costs — fuel, public transport, parking for business journeys (not commuting)</li>
-        <li>Clothing — only uniforms or protective clothing, not regular clothing</li>
-        <li>Staff costs — wages, subcontractor payments, employer NIC</li>
-        <li>Professional fees — accountant, solicitor, bookkeeper</li>
-        <li>Marketing — website hosting, advertising, business cards</li>
-        <li>Business premises — rent, utilities (proportional if working from home)</li>
-        <li>Training — courses directly related to your current trade</li>
+        <li>Travel costs, fuel, public transport, parking for business journeys (not commuting)</li>
+        <li>Clothing, only uniforms or protective clothing, not regular clothing</li>
+        <li>Staff costs, wages, subcontractor payments, employer NIC</li>
+        <li>Professional fees, accountant, solicitor, bookkeeper</li>
+        <li>Marketing, website hosting, advertising, business cards</li>
+        <li>Business premises, rent, utilities (proportional if working from home)</li>
+        <li>Training, courses directly related to your current trade</li>
       </ul>
       <p className="text-gray-700 mb-4 leading-relaxed">
         You can use the <strong>simplified expenses</strong> method for vehicles (flat rate per mile) and working from home (flat rate per hour). These are easier to calculate but may give a lower deduction than actual costs for some businesses.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Payments on account — the biggest shock for new filers</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Payments on account, the biggest shock for new filers</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        If your Self Assessment tax bill exceeds £1,000 and less than 80% of your tax was collected at source (via PAYE), HMRC requires you to make <strong>payments on account</strong> — advance payments towards next year&apos;s tax bill.
+        If your Self Assessment tax bill exceeds £1,000 and less than 80% of your tax was collected at source (via PAYE), HMRC requires you to make <strong>payments on account</strong>, advance payments towards next year&apos;s tax bill.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Each payment on account is 50% of your previous year&apos;s tax bill, due on 31 January and 31 July. This means in your first year of self-employment, your January bill can be 150% of what you expected — your actual tax for the year plus the first payment on account for the following year.
+        Each payment on account is 50% of your previous year&apos;s tax bill, due on 31 January and 31 July. This means in your first year of self-employment, your January bill can be 150% of what you expected, your actual tax for the year plus the first payment on account for the following year.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        You can apply to reduce payments on account if you expect your income to be lower next year — but if you reduce them and your income turns out to be higher, HMRC will charge interest on the shortfall.
+        You can apply to reduce payments on account if you expect your income to be lower next year, but if you reduce them and your income turns out to be higher, HMRC will charge interest on the shortfall.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">The most common Self Assessment mistakes</h2>
       <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
-        <li><strong>Missing the registration deadline</strong> — you must register by 5 October in the year after the tax year ends, or face a late registration penalty</li>
-        <li><strong>Forgetting bank interest and dividends</strong> — HMRC cross-references with financial institutions and will issue a correction notice</li>
-        <li><strong>Claiming personal expenses as business expenses</strong> — the most common trigger for an HMRC compliance check</li>
-        <li><strong>Not keeping records</strong> — HMRC can request supporting evidence for any return up to 4 years after the filing deadline (7 years for serious errors)</li>
-        <li><strong>Missing the payments on account</strong> — many people pay the January bill and forget the July payment on account, then face a surprise penalty</li>
-        <li><strong>Using the wrong accounting basis</strong> — most sole traders should use <strong>cash basis</strong> (record income when received, expenses when paid) unless they have good reason to use accruals basis</li>
+        <li><strong>Missing the registration deadline</strong>, you must register by 5 October in the year after the tax year ends, or face a late registration penalty</li>
+        <li><strong>Forgetting bank interest and dividends</strong>, HMRC cross-references with financial institutions and will issue a correction notice</li>
+        <li><strong>Claiming personal expenses as business expenses</strong>, the most common trigger for an HMRC compliance check</li>
+        <li><strong>Not keeping records</strong>, HMRC can request supporting evidence for any return up to 4 years after the filing deadline (7 years for serious errors)</li>
+        <li><strong>Missing the payments on account</strong>, many people pay the January bill and forget the July payment on account, then face a surprise penalty</li>
+        <li><strong>Using the wrong accounting basis</strong>, most sole traders should use <strong>cash basis</strong> (record income when received, expenses when paid) unless they have good reason to use accruals basis</li>
       </ul>
 
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-10">

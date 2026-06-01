@@ -13,7 +13,7 @@ const creds = [
       <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
     ),
     title: 'Ethical Standards',
-    desc: "We operate with complete integrity and transparency — always acting in our clients' best interests and never cutting corners on quality.",
+    desc: "We operate with complete integrity and transparency, always acting in our clients' best interests and never cutting corners on quality.",
   },
   {
     icon: (
@@ -41,12 +41,12 @@ export default function Credentials() {
             <h2 className="s-h" style={{ color: '#fff' }}>Our Commitment to<br />Professional Excellence</h2>
             <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 16, color: 'rgba(255,255,255,0.58)', lineHeight: 1.82, marginBottom: 20 }}>
               We are proud to operate to the highest professional, technical and ethical standards in the UK financial
-              services industry. Our commitment to excellence is not a marketing statement — it is the foundation on
+              services industry. Our commitment to excellence is not a marketing statement, it is the foundation on
               which every client relationship is built.
             </p>
             <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 16, color: 'rgba(255,255,255,0.58)', lineHeight: 1.82 }}>
               We believe that a firm&apos;s credentials are best demonstrated not through certificates on a wall, but through
-              the quality of the work it delivers and the trust its clients place in it — year after year.
+              the quality of the work it delivers and the trust its clients place in it, year after year.
             </p>
           </div>
           <div className={styles.cards}>

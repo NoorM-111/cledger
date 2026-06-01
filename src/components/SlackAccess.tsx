@@ -2,7 +2,7 @@
 
 // src/components/SlackAccess.tsx
 // 
-// "Your accountant is one message away" — the Idea 1 marketing section.
+// "Your accountant is one message away", the Idea 1 marketing section.
 // Drop this into your homepage between WhyCledger and Credentials,
 // or add it to the Services section.
 //
@@ -85,7 +85,7 @@ export default function SlackAccess() {
             {
               emoji: "⚡",
               title: "Response within the hour",
-              desc: "Message us during UK business hours and get a real answer — not an automated reply — within 60 minutes.",
+              desc: "Message us during UK business hours and get a real answer, not an automated reply, within 60 minutes.",
             },
             {
               emoji: "🔒",
@@ -100,7 +100,7 @@ export default function SlackAccess() {
             {
               emoji: "📅",
               title: "Deadline reminders built in",
-              desc: "VAT deadlines, payroll dates, CT600 filings — we message you before anything is due. Never miss a deadline again.",
+              desc: "VAT deadlines, payroll dates, CT600 filings, we message you before anything is due. Never miss a deadline again.",
             },
             {
               emoji: "🇬🇧",
@@ -110,7 +110,7 @@ export default function SlackAccess() {
             {
               emoji: "🚫",
               title: "No other UK accountant does this",
-              desc: "Crunch, Gorilla, Mazuma — they all use ticket systems. At Cledger, you message your accountant directly.",
+              desc: "Crunch, Gorilla, Mazuma, they all use ticket systems. At Cledger, you message your accountant directly.",
             },
           ].map((feature) => (
             <div
@@ -206,7 +206,7 @@ export default function SlackAccess() {
                 fontWeight: 600,
               }}
             >
-              # client-your-business — Cledger Workspace
+              # client-your-business, Cledger Workspace
             </span>
           </div>
 
@@ -219,7 +219,7 @@ export default function SlackAccess() {
                 avatarBg: "#3b82f6",
                 time: "9:14 AM",
                 message:
-                  "Hi Noor — quick question. My supplier is asking if we need to charge them VAT on this invoice. We're VAT registered but they're not. Do I charge it?",
+                  "Hi Noor, quick question. My supplier is asking if we need to charge them VAT on this invoice. We're VAT registered but they're not. Do I charge it?",
               },
               {
                 sender: "Noor · Cledger",
@@ -227,7 +227,7 @@ export default function SlackAccess() {
                 avatarBg: "#C9A84C",
                 time: "9:31 AM",
                 message:
-                  "Yes — you charge VAT regardless of whether your customer is VAT registered. Your obligation is based on your registration, not theirs. So add 20% and issue a VAT invoice with your VAT number on it. I'll make sure it's coded correctly in Xero when I see it. 👍",
+                  "Yes, you charge VAT regardless of whether your customer is VAT registered. Your obligation is based on your registration, not theirs. So add 20% and issue a VAT invoice with your VAT number on it. I'll make sure it's coded correctly in Xero when I see it. 👍",
               },
               {
                 sender: "You",

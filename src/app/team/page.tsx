@@ -6,7 +6,7 @@ import styles from './page.module.css'
 export const metadata: Metadata = {
   title: 'Our Team | Cledger',
   description:
-    'Meet the qualified finance professionals behind Cledger — delivering expert accounting, tax compliance and financial advisory for UK businesses.',
+    'Meet the qualified finance professionals behind Cledger, delivering expert accounting, tax compliance and financial advisory for UK businesses.',
 }
 
 const Ico = ({ d, extra }: { d: string; extra?: string }) => (
@@ -23,7 +23,7 @@ const members = [
     name: 'Noor Muhammad',
     role: 'Founder & Principal',
     tags: ['Financial Reporting', 'Tax Planning', 'Management Accounting', 'HMRC Affairs'],
-    bio: 'Noor leads client delivery across the full range of Cledger\'s financial services. He specialises in multi-client portfolio management, tax compliance and forward-looking financial planning — bringing a rigorous, hands-on approach to every engagement and translating complex financial data into clear, actionable insight.',
+    bio: 'Noor leads client delivery across the full range of Cledger\'s financial services. He specialises in multi-client portfolio management, tax compliance and forward-looking financial planning, bringing a rigorous, hands-on approach to every engagement and translating complex financial data into clear, actionable insight.',
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>,
@@ -101,9 +101,9 @@ const members = [
     photo: '/images/muhammad_ammar.jpg',
     initials: 'MA',
     name: 'Muhammad Ammar',
-    role: 'Senior Advisor — Financial Strategy & Analytics',
+    role: 'Senior Advisor, Financial Strategy & Analytics',
     tags: ['Financial Advisory', 'Analytics', 'Automation', 'Governance'],
-    bio: 'Muhammad leads Cledger\'s financial advisory and analytics division, combining deep expertise in FP&A, business intelligence and AI-driven automation. With a strong foundation in governance, audit and executive reporting, he helps clients transform raw financial data into strategic insight — empowering leadership teams to make faster, more confident decisions.',
+    bio: 'Muhammad leads Cledger\'s financial advisory and analytics division, combining deep expertise in FP&A, business intelligence and AI-driven automation. With a strong foundation in governance, audit and executive reporting, he helps clients transform raw financial data into strategic insight, empowering leadership teams to make faster, more confident decisions.',
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>,
@@ -143,7 +143,7 @@ const members = [
     name: 'Muhammad Dawood',
     role: 'UK Statutory Accounts & Corporation Tax Specialist',
     tags: ['Statutory Accounts', 'CT600 / Corp Tax', 'Companies House', 'Self Assessment', 'VAT Returns', 'CIS Compliance'],
-    bio: 'Muhammad specialises in statutory accounts under FRS 102 & FRS 105, Corporation Tax (CT600) filings to HMRC, and Companies House submissions. He handles year-end compliance for sole traders, partnerships and limited companies — ensuring every filing is accurate, on time and fully HMRC-compliant.',
+    bio: 'Muhammad specialises in statutory accounts under FRS 102 & FRS 105, Corporation Tax (CT600) filings to HMRC, and Companies House submissions. He handles year-end compliance for sole traders, partnerships and limited companies, ensuring every filing is accurate, on time and fully HMRC-compliant.',
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>,
@@ -181,9 +181,9 @@ const members = [
     photo: '/images/ameer.png',
     initials: 'AH',
     name: 'Ameer Hamza',
-    role: 'Senior Financial Consultant — Audit & Compliance',
+    role: 'Senior Financial Consultant, Audit & Compliance',
     tags: ['CA Finalist (ICAP)', 'ADPA', 'M.Com', 'Audit & Compliance'],
-    bio: 'Ameer leads Cledger\'s audit, compliance and financial reporting practice. He brings over seven years of hands-on experience across external audit, accounts management and financial advisory — working across property, manufacturing and trading sectors in both Pakistan and the UAE. He specialises in statutory accounts preparation, audit engagements, financial statement review and IFRS compliance, and has delivered MIS and management reporting directly to CFO and director level.',
+    bio: 'Ameer leads Cledger\'s audit, compliance and financial reporting practice. He brings over a decade of hands-on experience across external audit, accounts management and financial advisory, working across property, manufacturing and trading sectors in both Pakistan and the UAE. He specialises in statutory accounts preparation, audit engagements, financial statement review and IFRS compliance, and has delivered MIS and management reporting directly to CFO and director level.',
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>,

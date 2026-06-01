@@ -19,7 +19,7 @@ export default function Sectors() {
           <span className="s-label">Industries We Serve</span>
           <h2 className="s-h">Sector Knowledge That<br />Makes a Real Difference</h2>
           <p className="s-p">
-            We bring deep, practical experience across a wide range of UK industries — understanding the unique
+            We bring deep, practical experience across a wide range of UK industries, understanding the unique
             compliance requirements and financial pressures each sector faces.
           </p>
         </div>

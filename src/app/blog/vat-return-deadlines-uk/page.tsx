@@ -44,7 +44,7 @@ export default function VatReturnDeadlinesUK() {
       </div>
 
       <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-        Miss a VAT deadline and HMRC will issue a <strong>£200 surcharge on the first default alone</strong> — rising with each subsequent late filing. This guide covers every VAT return deadline you need to know in 2026, how the penalty system works, and what to do if you have already missed one.
+        Miss a VAT deadline and HMRC will issue a <strong>£200 surcharge on the first default alone</strong>, rising with each subsequent late filing. This guide covers every VAT return deadline you need to know in 2026, how the penalty system works, and what to do if you have already missed one.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">When is my VAT return due?</h2>
@@ -52,7 +52,7 @@ export default function VatReturnDeadlinesUK() {
         Your VAT return deadline depends on which VAT period HMRC has assigned you. Most businesses are on <strong>quarterly returns</strong>, meaning you file four times a year. The deadline is always <strong>one calendar month and seven days</strong> after the end of your VAT period.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        So if your quarter ends 31 March, your VAT return and payment are both due by <strong>7 May</strong>. If your quarter ends 30 June, the deadline is <strong>7 August</strong>. This applies to both the online return submission and the VAT payment itself — HMRC treats them as a single combined deadline.
+        So if your quarter ends 31 March, your VAT return and payment are both due by <strong>7 May</strong>. If your quarter ends 30 June, the deadline is <strong>7 August</strong>. This applies to both the online return submission and the VAT payment itself, HMRC treats them as a single combined deadline.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">The three VAT stagger groups</h2>
@@ -95,10 +95,10 @@ export default function VatReturnDeadlinesUK() {
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">What is Making Tax Digital for VAT?</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Since April 2022, <strong>all VAT-registered businesses</strong> — regardless of turnover — must file VAT returns through MTD-compatible software. You cannot file manually through your HMRC online account any more.
+        Since April 2022, <strong>all VAT-registered businesses</strong>, regardless of turnover, must file VAT returns through MTD-compatible software. You cannot file manually through your HMRC online account any more.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        MTD-compatible software includes Xero, QuickBooks, Sage, and FreeAgent. If you are still filing VAT returns manually or through a spreadsheet without bridging software, you are non-compliant and at risk of penalties — even if you file on time.
+        MTD-compatible software includes Xero, QuickBooks, Sage, and FreeAgent. If you are still filing VAT returns manually or through a spreadsheet without bridging software, you are non-compliant and at risk of penalties, even if you file on time.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">The new VAT penalty system (from January 2023)</h2>
@@ -115,7 +115,7 @@ export default function VatReturnDeadlinesUK() {
         <strong>Interest:</strong> HMRC also charges late payment interest at the Bank of England base rate plus 2.5% on any unpaid VAT from the first day it is overdue.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Annual Accounting Scheme — different deadlines</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Annual Accounting Scheme, different deadlines</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
         If you are on the Annual Accounting Scheme, you file just <strong>one VAT return per year</strong> rather than four. Your return is due <strong>two months after your annual accounting period ends</strong>. During the year, you make nine interim payments (monthly) or three interim payments (quarterly) based on an estimated annual VAT liability.
       </p>
@@ -125,15 +125,15 @@ export default function VatReturnDeadlinesUK() {
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">What to do if you have missed a VAT deadline</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Do not ignore it. File the return as soon as possible — every day of additional delay adds to your exposure under the late payment interest rules.
+        Do not ignore it. File the return as soon as possible, every day of additional delay adds to your exposure under the late payment interest rules.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        If you have a reasonable excuse (serious illness, death in immediate family, HMRC system failure), you can appeal a penalty. HMRC accepts reasonable excuse appeals online through your Business Tax Account. Financial difficulty alone is not considered a reasonable excuse — but if you cannot pay, contacting HMRC to agree a <strong>Time to Pay arrangement</strong> before the deadline will stop further late payment penalties accruing.
+        If you have a reasonable excuse (serious illness, death in immediate family, HMRC system failure), you can appeal a penalty. HMRC accepts reasonable excuse appeals online through your Business Tax Account. Financial difficulty alone is not considered a reasonable excuse, but if you cannot pay, contacting HMRC to agree a <strong>Time to Pay arrangement</strong> before the deadline will stop further late payment penalties accruing.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">How to never miss a VAT deadline</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        The simplest system: use MTD-compatible software (Xero or QuickBooks) with bank feeds connected. Your transactions post in real time, your VAT return populates automatically, and you simply review and submit. Set a calendar reminder for the 1st of the deadline month — that gives you seven days to review, approve, and pay before the 7th.
+        The simplest system: use MTD-compatible software (Xero or QuickBooks) with bank feeds connected. Your transactions post in real time, your VAT return populates automatically, and you simply review and submit. Set a calendar reminder for the 1st of the deadline month, that gives you seven days to review, approve, and pay before the 7th.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
         If you outsource your bookkeeping, your bookkeeper should be flagging the upcoming VAT deadline at least two weeks in advance and presenting the return for your approval before filing.
@@ -142,7 +142,7 @@ export default function VatReturnDeadlinesUK() {
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-10">
         <p className="text-gray-800 font-medium mb-2">Rather hand VAT over entirely?</p>
         <p className="text-gray-700 mb-4">
-          Cledger handles VAT returns for UK businesses from £99/month — MTD-compliant, filed on time, every quarter. ACCA-trained accountants, transparent pricing, no surprises.
+          Cledger handles VAT returns for UK businesses from £99/month, MTD-compliant, filed on time, every quarter. ACCA-trained accountants, transparent pricing, no surprises.
         </p>
         <Link
           href="/pricing"

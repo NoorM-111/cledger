@@ -55,7 +55,7 @@ export default function ContactSection() {
           </h2>
           <p style={styles.subtitle}>
             Not sure which service fits your business? Send us a message and we&rsquo;ll
-            recommend the right solution — no commitment needed.
+            recommend the right solution, no commitment needed.
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default function ContactSection() {
                 </div>
                 <h3 style={styles.successTitle}>Enquiry sent</h3>
                 <p style={styles.successText}>
-                  Thank you — we&rsquo;ll review your message and respond within 24 hours
+                  Thank you, we&rsquo;ll review your message and respond within 24 hours
                   on UK business days.
                 </p>
               </div>
@@ -203,7 +203,7 @@ export default function ContactSection() {
                     <option>Personal Tax Return</option>
                     <option>Cashflow & Financial Planning</option>
                     <option>Full Finance Outsourcing</option>
-                    <option>Not sure — need a recommendation</option>
+                    <option>Not sure, need a recommendation</option>
                   </select>
                 </FormField>
 

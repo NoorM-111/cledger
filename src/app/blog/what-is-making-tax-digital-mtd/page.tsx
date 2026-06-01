@@ -7,7 +7,7 @@ export const metadata = {
   description: 'MTD is mandatory for all VAT-registered UK businesses. Learn what Making Tax Digital means, the deadlines, compatible software, and how to stay compliant.',
   openGraph: {
     title: 'What is Making Tax Digital (MTD)? Complete Guide for UK Businesses',
-    description: 'MTD is mandatory for VAT-registered UK businesses. Deadlines, software requirements and how to stay compliant — explained clearly.',
+    description: 'MTD is mandatory for VAT-registered UK businesses. Deadlines, software requirements and how to stay compliant, explained clearly.',
     url: 'https://www.cledger.co.uk/blog/what-is-making-tax-digital-mtd',
     type: 'article',
   },
@@ -57,9 +57,9 @@ export default function Article2() {
 
           <h2 style={s.h2}>What is Making Tax Digital?</h2>
           <p style={s.p}>Making Tax Digital (MTD) is an HMRC initiative that requires businesses and landlords to keep digital records and submit tax returns using compatible software. The goal is to reduce errors, make the tax system more efficient, and give businesses a clearer real-time picture of their tax position.</p>
-          <p style={s.p}>Under MTD, you can no longer submit VAT returns manually through HMRC's online portal or on paper. Every submission must come directly from MTD-compatible software — which means your bookkeeping and accounting records must be kept digitally in an approved system.</p>
+          <p style={s.p}>Under MTD, you can no longer submit VAT returns manually through HMRC's online portal or on paper. Every submission must come directly from MTD-compatible software, which means your bookkeeping and accounting records must be kept digitally in an approved system.</p>
 
-          <h2 style={s.h2}>MTD deadlines — what applies to you</h2>
+          <h2 style={s.h2}>MTD deadlines, what applies to you</h2>
           <table style={s.table}>
             <thead>
               <tr>
@@ -93,7 +93,7 @@ export default function Article2() {
           </div>
 
           <h2 style={s.h2}>What does MTD compliance actually mean in practice?</h2>
-          <p style={s.p}>MTD compliance means three things. First, you must keep your financial records digitally — not in spreadsheets alone, but in MTD-compatible software. Second, there must be a digital link between your records and your VAT return — meaning you cannot retype figures from one system to another. Third, your VAT return must be submitted directly from MTD-compatible software to HMRC.</p>
+          <p style={s.p}>MTD compliance means three things. First, you must keep your financial records digitally, not in spreadsheets alone, but in MTD-compatible software. Second, there must be a digital link between your records and your VAT return, meaning you cannot retype figures from one system to another. Third, your VAT return must be submitted directly from MTD-compatible software to HMRC.</p>
           <p style={s.p}>The most practical way to comply is to use cloud accounting software like Xero or QuickBooks, which are both fully MTD-compatible and submit directly to HMRC at the click of a button.</p>
 
           <h2 style={s.h2}>MTD-compatible software</h2>
@@ -127,13 +127,13 @@ export default function Article2() {
 
           <h2 style={s.h2}>What are the penalties for not complying with MTD?</h2>
           <p style={s.p}>HMRC operates a points-based penalty system for MTD non-compliance. Every late or non-compliant submission earns a penalty point. Once you accumulate enough points, you receive a £200 fine. Further failures result in additional £200 penalties each time. For businesses with quarterly obligations (most VAT-registered businesses), the threshold is 4 penalty points before the first £200 fine applies.</p>
-          <p style={s.p}>Beyond the financial penalties, HMRC can also charge interest on any VAT paid late — currently 8.5% above the Bank of England base rate.</p>
+          <p style={s.p}>Beyond the financial penalties, HMRC can also charge interest on any VAT paid late, currently 8.5% above the Bank of England base rate.</p>
 
           <h2 style={s.h2}>How Cledger handles MTD compliance for you</h2>
-          <p style={s.p}>Every Cledger client on a package that includes VAT is fully MTD-compliant by default. We manage your records in Xero or QuickBooks, maintain the digital links required by HMRC, and submit your VAT returns directly through MTD-approved software before every deadline. You never need to think about it — we handle everything.</p>
+          <p style={s.p}>Every Cledger client on a package that includes VAT is fully MTD-compliant by default. We manage your records in Xero or QuickBooks, maintain the digital links required by HMRC, and submit your VAT returns directly through MTD-approved software before every deadline. You never need to think about it, we handle everything.</p>
 
           <div style={s.callout}>
-            <p style={{...s.p,marginBottom:0,color:C.white}}><strong>✓ Already on Xero or QuickBooks?</strong> Great — the software side is sorted. What you need is someone to manage it correctly, reconcile your accounts, and submit on time every quarter. That is exactly what Cledger does — from £175/month.</p>
+            <p style={{...s.p,marginBottom:0,color:C.white}}><strong>✓ Already on Xero or QuickBooks?</strong> Great, the software side is sorted. What you need is someone to manage it correctly, reconcile your accounts, and submit on time every quarter. That is exactly what Cledger does, from £175/month.</p>
           </div>
 
           <Link href="/pricing" style={s.cta}>Get MTD-compliant bookkeeping from £175/month →</Link>

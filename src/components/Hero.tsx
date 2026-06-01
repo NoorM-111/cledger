@@ -14,7 +14,7 @@ const stats = [
 
 const points = [
   'A dedicated named contact who knows your business inside out and is always available when you need them.',
-  'Full-spectrum coverage — bookkeeping, tax compliance, planning and every obligation in between.',
+  'Full-spectrum coverage, bookkeeping, tax compliance, planning and every obligation in between.',
   'Every piece of work reviewed to the highest standard, submitted on time, without exception.',
 ]
 
@@ -34,7 +34,7 @@ export default function Hero() {
               Clear Books.<br />Clear Numbers.<br /><em>Clear Future.</em>
             </h1>
             <p className={`${styles.sub} fade-in`} style={{ animationDelay: '160ms' }}>
-              ACCA-trained UK accountants. Remote delivery from <strong>£175/month</strong> — bookkeeping, VAT, payroll and full finance outsourcing at 40% below traditional firm rates.
+              ACCA-trained UK accountants. Remote delivery from <strong>£175/month</strong>, bookkeeping, VAT, payroll and full finance outsourcing at 40% below traditional firm rates.
             </p>
             <div className={`${styles.btns} fade-in`} style={{ animationDelay: '240ms' }}>
               <CalendlyButton className="btn btn-gold">Book a Free Consultation</CalendlyButton>
@@ -66,7 +66,7 @@ export default function Hero() {
             </div>
             <div className={styles.divider} />
             <p className={styles.commitText}>
-              We operate to the highest professional, technical and ethical standards — so you can trust
+              We operate to the highest professional, technical and ethical standards, so you can trust
               your financial affairs are always in the best possible hands.
             </p>
           </div>

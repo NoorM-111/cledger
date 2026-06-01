@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'Terms of Service | Cledger',
-  description: 'Terms of Service for Cledger Ltd — the terms governing use of our website and services.',
+  description: 'Terms of Service for Cledger Ltd, the terms governing use of our website and services.',
 }
 
 export default function TermsPage() {
@@ -21,7 +21,7 @@ export default function TermsPage() {
             { title: '2. Our services', body: 'Cledger provides bookkeeping, VAT compliance, payroll, management accounts, corporation tax, self assessment and related financial services to UK businesses. All services are subject to a separate engagement letter agreed between Cledger and the client.' },
             { title: '3. Website use', body: 'You may use our website for lawful purposes only. You must not misuse our website by introducing viruses or other malicious content, or attempt to gain unauthorised access to our systems.' },
             { title: '4. Accuracy of information', body: 'The information on this website is provided for general guidance only and does not constitute professional financial or tax advice. Always obtain specific professional advice before taking any action based on information from this website.' },
-            { title: '5. Intellectual property', body: 'All content on this website — including text, graphics, logos and design — is the property of Cledger Ltd and is protected by UK copyright law. You may not reproduce any content without our written permission.' },
+            { title: '5. Intellectual property', body: 'All content on this website, including text, graphics, logos and design, is the property of Cledger Ltd and is protected by UK copyright law. You may not reproduce any content without our written permission.' },
             { title: '6. Limitation of liability', body: 'To the fullest extent permitted by law, Cledger Ltd shall not be liable for any indirect, incidental or consequential losses arising from your use of this website or our services, except where such liability cannot be excluded under UK law.' },
             { title: '7. Governing law', body: 'These Terms are governed by the laws of England and Wales. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales.' },
             { title: '8. Changes to these terms', body: 'We may update these Terms from time to time. The most current version will always be available on this page. Continued use of our website after changes constitutes acceptance of the updated terms.' },

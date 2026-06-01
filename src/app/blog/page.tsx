@@ -4,14 +4,14 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'Accounting & Bookkeeping Guides | Cledger Blog',
-  description: 'Expert guides on bookkeeping, VAT, payroll, management accounts and UK tax compliance — written by ACCA-trained accountants at Cledger.',
+  description: 'Expert guides on bookkeeping, VAT, payroll, management accounts and UK tax compliance, written by ACCA-trained accountants at Cledger.',
 }
 
 const posts = [
   {
     slug: 'how-much-does-a-bookkeeper-cost-uk',
     title: 'How much does a bookkeeper cost in the UK? (2026 guide)',
-    description: 'A complete breakdown of UK bookkeeping costs — hourly rates, monthly packages, and how to get the best value for your business.',
+    description: 'A complete breakdown of UK bookkeeping costs, hourly rates, monthly packages, and how to get the best value for your business.',
     date: 'June 1, 2026',
     readTime: '5 min read',
     category: 'Pricing',
@@ -19,15 +19,15 @@ const posts = [
   {
     slug: 'what-is-making-tax-digital-mtd',
     title: 'What is Making Tax Digital (MTD)? Complete guide for UK businesses',
-    description: 'MTD is now mandatory for VAT-registered businesses. Here is everything you need to know — deadlines, software, and how to stay compliant.',
+    description: 'MTD is now mandatory for VAT-registered businesses. Here is everything you need to know, deadlines, software, and how to stay compliant.',
     date: 'June 8, 2026',
     readTime: '6 min read',
     category: 'Tax',
   },
   {
     slug: 'bookkeeping-for-dental-practices-uk',
-    title: 'Bookkeeping for dental practices UK — what you need to know',
-    description: 'Dental practices have unique accounting needs. From mixed NHS/private income to associate payments — here is how to get your books right.',
+    title: 'Bookkeeping for dental practices UK, what you need to know',
+    description: 'Dental practices have unique accounting needs. From mixed NHS/private income to associate payments, here is how to get your books right.',
     date: 'June 15, 2026',
     readTime: '7 min read',
     category: 'Dental',
@@ -50,7 +50,7 @@ export default function BlogIndex() {
             Accounting guides & insights
           </h1>
           <p style={{ fontSize: 15, color: C.muted, marginBottom: '3rem', lineHeight: 1.7, maxWidth: 520 }}>
-            Practical guides on bookkeeping, VAT, tax and financial management — written by our ACCA-trained team for UK business owners.
+            Practical guides on bookkeeping, VAT, tax and financial management, written by our ACCA-trained team for UK business owners.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {posts.map(post => (

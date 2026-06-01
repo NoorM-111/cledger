@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Xero vs QuickBooks UK: Which Is Better for Small Businesses in 2026? | Cledger',
-  description: 'Xero vs QuickBooks for UK small businesses — pricing, MTD compliance, features and which to choose. Honest comparison from accountants who use both daily.',
+  description: 'Xero vs QuickBooks for UK small businesses, pricing, MTD compliance, features and which to choose. Honest comparison from accountants who use both daily.',
   keywords: 'Xero vs QuickBooks UK, Xero or QuickBooks small business UK, best accounting software UK 2026, Xero QuickBooks comparison',
   robots: 'index, follow',
   alternates: {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Xero vs QuickBooks UK: Which Is Better for Small Businesses in 2026?',
-    description: 'Honest comparison from accountants who use both daily — pricing, MTD compliance, and which to choose.',
+    description: 'Honest comparison from accountants who use both daily, pricing, MTD compliance, and which to choose.',
     url: 'https://www.cledger.co.uk/blog/xero-vs-quickbooks-uk',
     siteName: 'Cledger',
     locale: 'en_GB',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Xero vs QuickBooks UK: Which Is Better for Small Businesses in 2026? | Cledger',
-    description: 'Honest comparison from accountants who use both daily — pricing, MTD compliance, and which to choose.',
+    description: 'Honest comparison from accountants who use both daily, pricing, MTD compliance, and which to choose.',
   },
 }
 
@@ -44,7 +44,7 @@ export default function XeroVsQuickbooksUK() {
       </div>
 
       <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-        Xero and QuickBooks are the two dominant cloud accounting platforms for UK small businesses. At Cledger, our accountants use both every day across a portfolio of UK clients. This is an honest comparison — not a paid promotion — covering pricing, features, MTD compliance, and which one actually suits different types of business.
+        Xero and QuickBooks are the two dominant cloud accounting platforms for UK small businesses. At Cledger, our accountants use both every day across a portfolio of UK clients. This is an honest comparison, not a paid promotion, covering pricing, features, MTD compliance, and which one actually suits different types of business.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Pricing comparison (2026)</h2>
@@ -61,30 +61,30 @@ export default function XeroVsQuickbooksUK() {
           <tbody>
             <tr>
               <td className="border border-gray-200 px-4 py-3">Entry</td>
-              <td className="border border-gray-200 px-4 py-3">Starter — £15/mo</td>
-              <td className="border border-gray-200 px-4 py-3">Simple Start — £12/mo</td>
+              <td className="border border-gray-200 px-4 py-3">Starter, £15/mo</td>
+              <td className="border border-gray-200 px-4 py-3">Simple Start, £12/mo</td>
             </tr>
             <tr className="bg-gray-50">
               <td className="border border-gray-200 px-4 py-3">Mid</td>
-              <td className="border border-gray-200 px-4 py-3">Standard — £30/mo</td>
-              <td className="border border-gray-200 px-4 py-3">Essentials — £22/mo</td>
+              <td className="border border-gray-200 px-4 py-3">Standard, £30/mo</td>
+              <td className="border border-gray-200 px-4 py-3">Essentials, £22/mo</td>
             </tr>
             <tr>
               <td className="border border-gray-200 px-4 py-3">Full features</td>
-              <td className="border border-gray-200 px-4 py-3">Premium — £42/mo</td>
-              <td className="border border-gray-200 px-4 py-3">Plus — £32/mo</td>
+              <td className="border border-gray-200 px-4 py-3">Premium, £42/mo</td>
+              <td className="border border-gray-200 px-4 py-3">Plus, £32/mo</td>
             </tr>
             <tr className="bg-gray-50">
               <td className="border border-gray-200 px-4 py-3">Advanced</td>
-              <td className="border border-gray-200 px-4 py-3">Ultimate — £55/mo</td>
-              <td className="border border-gray-200 px-4 py-3">Advanced — £90/mo</td>
+              <td className="border border-gray-200 px-4 py-3">Ultimate, £55/mo</td>
+              <td className="border border-gray-200 px-4 py-3">Advanced, £90/mo</td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Both platforms frequently run promotions offering 50–90% off for the first 3–6 months for new subscribers. Check current prices directly — the figures above are approximate list prices and change regularly. QuickBooks is slightly cheaper at most tiers.
+        Both platforms frequently run promotions offering 50–90% off for the first 3–6 months for new subscribers. Check current prices directly, the figures above are approximate list prices and change regularly. QuickBooks is slightly cheaper at most tiers.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">MTD for VAT and MTD for ITSA compliance</h2>
@@ -97,7 +97,7 @@ export default function XeroVsQuickbooksUK() {
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Bank feeds and reconciliation</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        Bank feeds — the automatic importing of your bank transactions — are essential for efficient bookkeeping. Both platforms support bank feeds for all major UK banks (Barclays, HSBC, Lloyds, NatWest, Starling, Monzo, Revolut, etc.).
+        Bank feeds, the automatic importing of your bank transactions, are essential for efficient bookkeeping. Both platforms support bank feeds for all major UK banks (Barclays, HSBC, Lloyds, NatWest, Starling, Monzo, Revolut, etc.).
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
         <strong>Xero</strong> has long been regarded as having a cleaner, more intuitive bank reconciliation interface. Transactions are presented one by one with suggested matches, and the workflow is fast once you have set up rules.
@@ -119,7 +119,7 @@ export default function XeroVsQuickbooksUK() {
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Payroll</h2>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        <strong>Xero Payroll</strong> is available on Standard and Premium plans and handles PAYE, RTI submissions, auto-enrolment, and payslips. It is functional but basic — not well-suited for complex payroll with multiple employee types, overtime, or variable hours.
+        <strong>Xero Payroll</strong> is available on Standard and Premium plans and handles PAYE, RTI submissions, auto-enrolment, and payslips. It is functional but basic, not well-suited for complex payroll with multiple employee types, overtime, or variable hours.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
         <strong>QuickBooks Payroll</strong> is more feature-rich and is available as a standalone add-on. For businesses with more than 5–10 employees, QuickBooks Payroll generally handles complexity better.
@@ -141,7 +141,7 @@ export default function XeroVsQuickbooksUK() {
         Among UK accountancy firms, <strong>Xero has historically been the dominant platform</strong>, particularly in public practice. Most cloud-first UK accountants trained on Xero first. This means if you want your accountant to log into your software directly, they are more likely to already be familiar with Xero.
       </p>
       <p className="text-gray-700 mb-4 leading-relaxed">
-        QuickBooks has significant market share among US-origin businesses operating in the UK, and among businesses that switched from desktop QuickBooks. It is fully capable — it is simply less embedded in UK practice culture.
+        QuickBooks has significant market share among US-origin businesses operating in the UK, and among businesses that switched from desktop QuickBooks. It is fully capable, it is simply less embedded in UK practice culture.
       </p>
 
       <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Which should you choose?</h2>

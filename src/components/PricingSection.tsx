@@ -29,21 +29,21 @@ interface Service {
 
 const SERVICES: Service[] = [
   { id: "bk", group: "core", name: "Bookkeeping", tag: "Includes P&L + Balance Sheet free", desc: "Bank reconciliation, categorisation, monthly P&L and balance sheet delivered by the 10th", base: 175 },
-  { id: "mi_q", group: "reporting", name: "MI Pack — quarterly", desc: "Management information pack with KPIs and commentary every quarter", base: 149, mutex: "mi_m" },
-  { id: "mi_m", group: "reporting", name: "MI Pack — monthly", desc: "Full monthly management accounts with variance analysis and executive commentary", base: 249, mutex: "mi_q" },
+  { id: "mi_q", group: "reporting", name: "MI Pack, quarterly", desc: "Management information pack with KPIs and commentary every quarter", base: 149, mutex: "mi_m" },
+  { id: "mi_m", group: "reporting", name: "MI Pack, monthly", desc: "Full monthly management accounts with variance analysis and executive commentary", base: 249, mutex: "mi_q" },
   { id: "cf", group: "reporting", name: "Cash flow forecast", desc: "13-week rolling cash flow model maintained and delivered monthly", base: 129 },
   { id: "vat", group: "tax", name: "VAT returns", desc: "MTD-compliant quarterly VAT return prepared, reviewed and submitted to HMRC", base: 99 },
-  { id: "ct", group: "tax", name: "Corporation Tax (CT600)", desc: "Annual CT600 preparation and HMRC submission — includes tax computation", base: 65 },
+  { id: "ct", group: "tax", name: "Corporation Tax (CT600)", desc: "Annual CT600 preparation and HMRC submission, includes tax computation", base: 65 },
   { id: "ye", group: "tax", name: "Year-end accounts", desc: "Statutory accounts prepared and filed at Companies House", base: 65 },
-  { id: "sa", group: "tax", name: "Self Assessment", desc: "Personal tax return for director or sole trader — all income streams covered", base: 65 },
+  { id: "sa", group: "tax", name: "Self Assessment", desc: "Personal tax return for director or sole trader, all income streams covered", base: 65 },
   { id: "pay_j", group: "payroll", name: "Payroll journals to Xero", desc: "Payroll data entry and journal posting into Xero. Does not include RTI or payslips.", base: 89, mutex: "pay_f" },
   { id: "pay_f", group: "payroll", name: "Full payroll processing", desc: "Calculate pay, issue payslips, RTI to HMRC, P60s annually. Up to 10 employees.", base: 129, mutex: "pay_j" },
 ];
 
 const CONSULTATIONS = [
-  { name: "Clarity call", desc: "One focused topic — tax question, HMRC query, quick compliance decision.", price: 95, unit: "30 min", featured: false },
+  { name: "Clarity call", desc: "One focused topic, tax question, HMRC query, quick compliance decision.", price: 95, unit: "30 min", featured: false },
   { name: "Strategy session", desc: "Business structure, VAT planning, forecasting or director tax optimisation.", price: 175, unit: "1 hour", featured: true },
-  { name: "Financial review", desc: "Full health check — P&L, cash flow, tax position + written recommendations.", price: 325, unit: "2 hours", featured: false },
+  { name: "Financial review", desc: "Full health check, P&L, cash flow, tax position + written recommendations.", price: 325, unit: "2 hours", featured: false },
   { name: "CFO advisory", desc: "Multi-entity, complex structure, investor prep or board-level financial support.", price: 595, unit: "half day", featured: false },
 ];
 
@@ -201,7 +201,7 @@ export default function PricingSection() {
           <div style={s.header}>
             <span style={s.eyebrow}>Build your package</span>
             <h2 style={s.title}>Pay only for what <em style={s.titleEm}>your business actually needs</em></h2>
-            <p style={s.subtitle}>Select your turnover, number of entities, and the services you need. Your monthly fee is calculated instantly — transparent, no surprises, no lock-in.</p>
+            <p style={s.subtitle}>Select your turnover, number of entities, and the services you need. Your monthly fee is calculated instantly, transparent, no surprises, no lock-in.</p>
             <div style={s.trustRow}>
               {["Qualified accountants", "MTD compliant", "No lock-in contracts", "No hidden add-ons"].map(b => (
                 <span key={b} style={s.trustBadge}>{b}</span>
@@ -288,7 +288,7 @@ export default function PricingSection() {
             {monthly > 0 && (
               <div style={s.discBanner}>
                 <div style={s.discDot} />
-                <div style={s.discText}>First 3 founding clients get <strong style={{ color: C.green }}>15% off for life</strong> — same qualified accountants, locked in permanently.</div>
+                <div style={s.discText}>First 3 founding clients get <strong style={{ color: C.green }}>15% off for life</strong>, same qualified accountants, locked in permanently.</div>
               </div>
             )}
           </div>
@@ -307,7 +307,7 @@ export default function PricingSection() {
           <div style={s.divider} />
           <div style={s.consHeader}>
             <h3 style={s.consTitle}>Consultation rates</h3>
-            <p style={s.consSub}>For directors, investors and business owners who need expert advice — not ongoing bookkeeping.</p>
+            <p style={s.consSub}>For directors, investors and business owners who need expert advice, not ongoing bookkeeping.</p>
           </div>
           <div style={s.consGrid}>
             {CONSULTATIONS.map(c => (
@@ -323,8 +323,8 @@ export default function PricingSection() {
           <div style={s.founding}>
             <div style={s.foundingIcon}>🏅</div>
             <div>
-              <div style={s.foundingTitle}>Founding client offer — first 3 clients only</div>
-              <div style={s.foundingText}>Lock in <strong style={{ color: C.white }}>15% off your monthly fee for life</strong> during our launch phase. Same qualified accountants, same deliverables — this rate never increases. Strictly limited.</div>
+              <div style={s.foundingTitle}>Founding client offer, first 3 clients only</div>
+              <div style={s.foundingText}>Lock in <strong style={{ color: C.white }}>15% off your monthly fee for life</strong> during our launch phase. Same qualified accountants, same deliverables, this rate never increases. Strictly limited.</div>
             </div>
           </div>
         </div>

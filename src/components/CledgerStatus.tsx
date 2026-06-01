@@ -1,7 +1,7 @@
 "use client";
 
 // src/components/CledgerStatus.tsx
-// Live status feed — shows real-time Cledger activity on your website.
+// Live status feed, shows real-time Cledger activity on your website.
 // 
 // HOW IT WORKS:
 // 1. You post updates to #cledger-updates Slack channel manually or via automation
@@ -29,7 +29,7 @@ const TYPE_CONFIG = {
   milestone: { emoji: "🏆", label: "Milestone", color: "#C9A84C" },
 };
 
-// Hardcoded demo updates — replace with real data once webhook is live
+// Hardcoded demo updates, replace with real data once webhook is live
 const DEMO_UPDATES: StatusUpdate[] = [
   {
     id: "1",
@@ -51,7 +51,7 @@ const DEMO_UPDATES: StatusUpdate[] = [
   },
   {
     id: "4",
-    message: "New client onboarded — bookkeeping + VAT",
+    message: "New client onboarded, bookkeeping + VAT",
     timestamp: "3 days ago",
     type: "client",
   },

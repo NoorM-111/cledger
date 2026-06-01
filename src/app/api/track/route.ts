@@ -37,5 +37,5 @@ async function notifyGoogleSheets(leadId: string, emailType: string, token: stri
   await fetch(url, {
     method: 'GET',
     signal: AbortSignal.timeout(5000),
-  }).catch(() => {}); // silent — never break the pixel response
+  }).catch(() => {}); // silent, never break the pixel response
 }
