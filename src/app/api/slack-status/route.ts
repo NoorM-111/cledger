@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
+import { Redis } from "@upstash/redis";
 
-const updatesStore: StoredUpdate[] = [];
+const redis = Redis.fromEnv();
+const REDIS_KEY = "cledger:live-feed";
 const MAX_STORED = 20;
 
 interface StoredUpdate {
@@ -29,8 +31,8 @@ function classifyUpdate(text: string): UpdateType {
 
 function cleanMessage(text: string): string {
   return text
-    .replace(/\*Sent using\*\s*Claude/gi, "")   // remove "Sent using Claude"
-    .replace(/:[a-z_]+:/g, (match) => {           // convert :emoji_code: to real emoji
+    .replace(/\*Sent using\*\s*Claude/gi, "")
+    .replace(/:[a-z_]+:/g, (match) => {
       const map: Record<string, string> = {
         ":white_check_mark:": "✅",
         ":handshake:": "🤝",
@@ -41,9 +43,7 @@ function cleanMessage(text: string): string {
         ":briefcase:": "💼",
         ":memo:": "📝",
         ":calendar:": "📅",
-        ":money_with_wings:": "💸",
         ":bar_chart:": "📊",
-        ":checkered_flag:": "🏁",
       };
       return map[match] || "";
     })
@@ -112,14 +112,18 @@ export async function POST(request: NextRequest) {
     type: classifyUpdate(cleanedText),
   };
 
-  updatesStore.unshift(update);
-  if (updatesStore.length > MAX_STORED) updatesStore.pop();
+  // Fetch existing, prepend new, trim to max, save back to Redis
+  const existing = await redis.get<StoredUpdate[]>(REDIS_KEY) || [];
+  const updated = [update, ...existing].slice(0, MAX_STORED);
+  await redis.set(REDIS_KEY, updated);
 
   return NextResponse.json({ ok: true });
 }
 
 export async function GET() {
-  const updates = updatesStore.map((u) => ({
+  const stored = await redis.get<StoredUpdate[]>(REDIS_KEY) || [];
+
+  const updates = stored.map((u) => ({
     ...u,
     timestamp: relativeTime(u.rawTs),
   }));
