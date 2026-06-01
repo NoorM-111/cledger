@@ -74,7 +74,7 @@ export default function CledgerStatus({
   live = false,
   maxItems = 5,
 }: CledgerStatusProps) {
-  const [updates, setUpdates] = useState<StatusUpdate[]>(DEMO_UPDATES.slice(0, maxItems));
+  const [updates, setUpdates] = useState<StatusUpdate[]>([]);
   const [isLive, setIsLive] = useState(false);
   const [lastRefresh, setLastRefresh] = useState<Date>(new Date());
 
