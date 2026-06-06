@@ -3,6 +3,7 @@ import { useState } from 'react'
 import SalaryCalculator from '@/components/calculators/SalaryCalculator'
 import CorporationTaxCalculator from '@/components/calculators/CorporationTaxCalculator'
 import VatCalculator from '@/components/calculators/VatCalculator'
+import SoftwareStrip from '@/components/SoftwareStrip'
 
 const tabs = [
   { id: 'salary', label: 'Salary & PAYE' },
@@ -53,6 +54,12 @@ export default function CalculatorsClient() {
         {active === 'corporation-tax' && <CorporationTaxCalculator />}
         {active === 'vat' && <VatCalculator />}
       </div>
+      <div style={{ textAlign: 'center', paddingTop: '3rem' }}>
+        <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '0.875rem', color: '#8a94a8', margin: 0 }}>
+          All Cledger clients are set up on MTD-compliant software from day one.
+        </p>
+      </div>
+      <SoftwareStrip />
     </section>
   )
 }

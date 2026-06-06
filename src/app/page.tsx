@@ -2,6 +2,7 @@ import Topbar      from '@/components/Topbar'
 import Navbar      from '@/components/Navbar'
 import Hero        from '@/components/Hero'
 import TrustBar    from '@/components/TrustBar'
+import SoftwareStrip from '@/components/SoftwareStrip'
 import Services    from '@/components/Services'
 import WhyCledger  from '@/components/WhyCledger'
 import Credentials from '@/components/Credentials'
@@ -20,6 +21,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <TrustBar />
+      <SoftwareStrip />
       <Services />
       <WhyCledger />
       <Credentials />
