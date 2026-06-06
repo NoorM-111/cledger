@@ -40,8 +40,7 @@ export default function Credentials() {
             <span className="s-label s-label-light">Our Credentials</span>
             <h2 className="s-h" style={{ color: '#fff' }}>Our Commitment to<br />Professional Excellence</h2>
             <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 16, color: 'rgba(255,255,255,0.58)', lineHeight: 1.82, marginBottom: 20 }}>
-              We are proud to operate to the highest professional, technical and ethical standards in the UK financial
-              services industry. Our commitment to excellence is not a marketing statement, it is the foundation on
+              We are proud to operate to the highest professional, technical and ethical standards in the UK accounting industry. Our commitment to excellence is not a marketing statement, it is the foundation on
               which every client relationship is built.
             </p>
             <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 16, color: 'rgba(255,255,255,0.58)', lineHeight: 1.82 }}>

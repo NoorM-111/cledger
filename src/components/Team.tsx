@@ -97,7 +97,7 @@ export default function Team() {
           <span className="s-label">Leadership</span>
           <h2 className="s-h">The People Behind Cledger</h2>
           <p className="s-p" style={{ marginBottom: 0 }}>
-            A team of qualified finance professionals committed to delivering the highest standards
+            A team of qualified accountants committed to delivering the highest standards
             of financial expertise, precision and strategic insight for every client.
           </p>
         </div>

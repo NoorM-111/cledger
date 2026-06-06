@@ -21,7 +21,7 @@ export default function Footer() {
               <div className={styles.logoMark}><span>C</span></div>
               <span className={styles.logoText}>Cledger<em>.</em></span>
             </div>
-            <p className={styles.tag}>Clear books. Clear numbers. Clear future. Financial services built on expertise, integrity and genuine client partnership.</p>
+            <p className={styles.tag}>Clear books. Clear numbers. Clear future. Accounting built on expertise, integrity and genuine client partnership.</p>
             <div className={styles.soc}>
               <a href="https://www.linkedin.com/company/cledger-uk" target="_blank" rel="noopener noreferrer" className={styles.s} aria-label="LinkedIn">in</a>
               <a href="mailto:info@cledger.co.uk" className={styles.s} aria-label="Email">✉</a>
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bot}>
-          <span>© 2025 Cledger Ltd. All rights reserved. Registered in England &amp; Wales.</span>
+          <span>© 2026 Cledger Ltd. All rights reserved. Registered in England &amp; Wales.</span>
           <div className={styles.botLinks}>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>

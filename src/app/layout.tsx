@@ -7,7 +7,7 @@ import SchemaMarkup from '@/components/SchemaMarkup'
 export const metadata: Metadata = {
   title: 'Cledger | Online Bookkeeping & Accounting Services UK',
   description:
-    'ACCA-trained UK accountants from £175/month. Bookkeeping, VAT returns, payroll, management accounts & corporation tax. MTD compliant. Transparent pricing. Get an instant quote.',
+    'Qualified UK accountants from £175/month. Bookkeeping, VAT returns, payroll, management accounts & corporation tax. MTD compliant. Transparent pricing. Get an instant quote.',
   keywords: [
     'bookkeeping services UK',
     'online bookkeeper UK',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cledger | Online Bookkeeping & Accounting Services UK',
     description:
-      'ACCA-trained UK accountants from £175/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant. Transparent pricing.',
+      'Qualified UK accountants from £175/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant. Transparent pricing.',
     url: 'https://www.cledger.co.uk',
     siteName: 'Cledger',
     locale: 'en_GB',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Cledger | Online Bookkeeping & Accounting Services UK',
     description:
-      'ACCA-trained UK accountants from £175/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant.',
+      'Qualified UK accountants from £175/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant.',
   },
   alternates: {
     canonical: 'https://www.cledger.co.uk',

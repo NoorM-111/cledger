@@ -68,7 +68,7 @@ export default function SlackAccess() {
             lineHeight: "1.6",
           }}
         >
-          Every Cledger client gets a private Slack channel shared directly with Noor.
+          Every Cledger client gets a private Slack channel shared directly with your dedicated Cledger accountant.
           No tickets. No waiting 3 days for an email reply. Just instant access to your accountant.
         </p>
 
