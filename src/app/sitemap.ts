@@ -90,6 +90,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Sector landing pages
     {
+      url: 'https://www.cledger.co.uk/accountant-for-dental-practices-uk',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.cledger.co.uk/online-accountant-london',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.cledger.co.uk/bookkeeping-prices-uk',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://www.cledger.co.uk/accountant-for-freelancers-uk',
       lastModified: new Date(),
       changeFrequency: 'monthly',
