@@ -69,7 +69,14 @@ type Logo = { name: string; svgKey: string }
 
 function LogoItem({ logo }: { logo: Logo }) {
   return (
-    <div className="flex flex-col items-center gap-2 px-6">
+    <div style={{
+      display: 'inline-flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: '8px',
+      padding: '0 24px',
+      flexShrink: 0,
+    }}>
       <div
         style={{ width: '36px', height: '36px' }}
         dangerouslySetInnerHTML={{ __html: svgLogos[logo.svgKey] }}
@@ -109,12 +116,19 @@ export default function SoftwareStrip() {
       </p>
       <div style={{
         overflow: 'hidden',
+        width: '100%',
         maskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
         WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
       }}>
         <div
-          className="flex items-center"
-          style={{ animation: 'marquee 40s linear infinite', width: 'max-content' }}
+          style={{
+            animation: 'marquee 40s linear infinite',
+            width: 'max-content',
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            flexWrap: 'nowrap',
+          }}
           onMouseEnter={e => (e.currentTarget.style.animationPlayState = 'paused')}
           onMouseLeave={e => (e.currentTarget.style.animationPlayState = 'running')}
         >
