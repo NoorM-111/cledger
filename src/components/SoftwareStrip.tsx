@@ -1,19 +1,17 @@
-import Image from 'next/image'
-
 type Logo =
   | { name: string; src: string; text?: never }
   | { name: string; text: true; src?: never }
 
 const LOGOS: Logo[] = [
-  { name: 'Xero',            src: '/logos/xero.svg' },
-  { name: 'QuickBooks',      src: '/logos/quickbooks.svg' },
-  { name: 'Sage',            src: '/logos/sage.svg' },
-  { name: 'FreeAgent',       src: '/logos/freeagent.svg' },
-  { name: 'FreshBooks',      src: '/logos/freshbooks.svg' },
-  { name: 'Slack',           src: '/logos/slack.svg' },
-  { name: 'Stripe',          src: '/logos/stripe.svg' },
-  { name: 'Microsoft Excel', src: '/logos/excel.svg' },
-  { name: 'Google Sheets',   src: '/logos/googlesheets.svg' },
+  { name: 'Xero',            src: 'https://cdn.simpleicons.org/xero' },
+  { name: 'QuickBooks',      src: 'https://cdn.simpleicons.org/quickbooks' },
+  { name: 'Sage',            src: 'https://cdn.simpleicons.org/sage' },
+  { name: 'FreeAgent',       src: 'https://cdn.simpleicons.org/freeagent' },
+  { name: 'FreshBooks',      src: 'https://cdn.simpleicons.org/freshbooks' },
+  { name: 'Slack',           src: 'https://cdn.simpleicons.org/slack' },
+  { name: 'Stripe',          src: 'https://cdn.simpleicons.org/stripe' },
+  { name: 'Microsoft Excel', src: 'https://cdn.simpleicons.org/microsoftexcel' },
+  { name: 'Google Sheets',   src: 'https://cdn.simpleicons.org/googlesheets' },
   { name: 'IRIS',            text: true },
   { name: 'CCH',             text: true },
   { name: 'Dext',            text: true },
@@ -37,13 +35,8 @@ function LogoItem({ logo }: { logo: Logo }) {
   }
   return (
     <div className="sw-item sw-item--img">
-      <Image
-        src={logo.src}
-        alt={logo.name}
-        width={28}
-        height={28}
-        unoptimized
-      />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={logo.src} alt={logo.name} style={{ height: '32px', width: 'auto', objectFit: 'contain' }} />
       <span>{logo.name}</span>
     </div>
   )
@@ -87,15 +80,6 @@ export function SoftwareStrip() {
         }
 
         /* ── Image items ── */
-        .sw-item--img img {
-          display: block;
-          object-fit: contain;
-          filter: grayscale(100%) brightness(160%) opacity(70%);
-          transition: filter 0.25s ease;
-        }
-        .sw-item--img:hover img {
-          filter: grayscale(0%) brightness(100%) opacity(100%);
-        }
         .sw-item--img span {
           font-family: Sora, sans-serif;
           font-size: 0.75rem;
@@ -103,10 +87,6 @@ export function SoftwareStrip() {
           color: #8a94a8;
           white-space: nowrap;
           line-height: 1;
-          transition: color 0.25s ease;
-        }
-        .sw-item--img:hover span {
-          color: #F8F5EE;
         }
 
         /* ── Text badge items ── */
