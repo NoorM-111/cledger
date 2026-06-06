@@ -1,8 +1,4 @@
 import styles from './Services.module.css'
-import InvoiceAnimation from '@/components/animations/InvoiceAnimation'
-import VatReturnAnimation from '@/components/animations/VatReturnAnimation'
-import BarChartAnimation from '@/components/animations/BarChartAnimation'
-import CashFlowAnimation from '@/components/animations/CashFlowAnimation'
 
 const services = [
   {
@@ -70,10 +66,6 @@ export default function Services() {
               <div className="sc-icon">{s.icon}</div>
               <h3>{s.title}</h3>
               <p>{s.desc}</p>
-              {s.title === 'Bookkeeping' && <InvoiceAnimation />}
-              {s.title === 'VAT & Tax Compliance' && <VatReturnAnimation />}
-              {s.title === 'Management Accounts' && <BarChartAnimation />}
-              {s.title === 'Cashflow & Financial Planning' && <CashFlowAnimation />}
             </div>
           ))}
         </div>

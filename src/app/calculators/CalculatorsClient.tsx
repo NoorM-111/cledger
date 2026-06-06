@@ -4,7 +4,6 @@ import SalaryCalculator from '@/components/calculators/SalaryCalculator'
 import CorporationTaxCalculator from '@/components/calculators/CorporationTaxCalculator'
 import VatCalculator from '@/components/calculators/VatCalculator'
 import SoftwareStrip from '@/components/SoftwareStrip'
-import CalculatorAnimation from '@/components/animations/CalculatorAnimation'
 
 const tabs = [
   { id: 'salary', label: 'Salary & PAYE' },
@@ -20,9 +19,6 @@ export default function CalculatorsClient() {
   return (
     <section style={{ background: '#0B1222', paddingBottom: '5rem' }}>
       <div className="wrap">
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
-          <CalculatorAnimation />
-        </div>
         {/* Tab bar */}
         <div style={{
           display: 'flex',
