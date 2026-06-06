@@ -3,12 +3,12 @@
 import Image from 'next/image'
 
 const logos = [
-  { name: 'Xero', src: '/logos/xero.svg', height: 36 },
-  { name: 'QuickBooks', src: '/logos/quickbooks.svg', height: 36 },
-  { name: 'Sage', src: '/logos/sage.svg', height: 32 },
-  { name: 'FreeAgent', src: '/logos/freeagent.svg', height: 32 },
-  { name: 'Dext', src: '/logos/dext.svg', height: 36 },
-  { name: 'HMRC MTD', src: '/logos/hmrc-mtd.svg', height: 36 },
+  { name: 'Xero', src: '/logos/xero.svg' },
+  { name: 'QuickBooks', src: '/logos/quickbooks.svg' },
+  { name: 'Sage', src: '/logos/sage.svg' },
+  { name: 'FreeAgent', src: '/logos/freeagent.svg' },
+  { name: 'Dext', src: '/logos/dext.svg' },
+  { name: 'HMRC MTD', src: '/logos/hmrc-mtd.svg' },
 ]
 
 export default function SoftwareStrip() {
@@ -67,17 +67,18 @@ export default function SoftwareStrip() {
               <Image
                 src={logo.src}
                 alt={logo.name}
-                width={120}
-                height={logo.height}
+                width={140}
+                height={50}
                 style={{
-                  height: `${logo.height}px`,
-                  width: 'auto',
+                  width: '140px',
+                  height: '50px',
                   objectFit: 'contain',
                 }}
               />
               <span style={{
-                fontSize: '11px',
+                fontSize: '12px',
                 color: '#F8F5EE',
+                fontWeight: '500',
                 whiteSpace: 'nowrap',
                 fontFamily: 'Sora, sans-serif',
               }}>
