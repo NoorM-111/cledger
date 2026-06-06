@@ -1,6 +1,7 @@
 'use client'
 import styles from './Hero.module.css'
 import CalendlyButton from './CalendlyButton'
+import LedgerAnimation from '@/components/animations/LedgerAnimation'
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -12,11 +13,6 @@ const stats = [
   { n: '5★',   label: 'Client Rating'  },
 ]
 
-const points = [
-  'A dedicated named contact who knows your business inside out and is always available when you need them.',
-  'Full-spectrum coverage, bookkeeping, tax compliance, planning and every obligation in between.',
-  'Every piece of work reviewed to the highest standard, submitted on time, without exception.',
-]
 
 export default function Hero() {
   return (
@@ -52,23 +48,8 @@ export default function Hero() {
               ))}
             </div>
           </div>
-          <div className={`${styles.card} fade-in`} style={{ animationDelay: '400ms' }}>
-            <div className={styles.cardHeader}>
-              <span className={styles.cardPill}>Our Commitment</span>
-            </div>
-            <div className={styles.pts}>
-              {points.map((p, i) => (
-                <div key={i} className={styles.pt}>
-                  <div className={styles.check}>✓</div>
-                  <span>{p}</span>
-                </div>
-              ))}
-            </div>
-            <div className={styles.divider} />
-            <p className={styles.commitText}>
-              We operate to the highest professional, technical and ethical standards, so you can trust
-              your financial affairs are always in the best possible hands.
-            </p>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <LedgerAnimation />
           </div>
         </div>
       </div>
