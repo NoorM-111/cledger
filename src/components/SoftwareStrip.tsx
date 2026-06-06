@@ -1,42 +1,49 @@
+import Image from 'next/image'
+
 type Logo =
-  | { name: string; img: string; text?: never }
-  | { name: string; text: true; img?: never }
+  | { name: string; src: string; text?: never }
+  | { name: string; text: true; src?: never }
 
 const LOGOS: Logo[] = [
-  { name: 'Xero',             img: 'https://cdn.simpleicons.org/xero/8a94a8' },
-  { name: 'QuickBooks',       img: 'https://cdn.simpleicons.org/quickbooks/8a94a8' },
-  { name: 'Sage',             img: 'https://cdn.simpleicons.org/sage/8a94a8' },
-  { name: 'FreeAgent',        img: 'https://cdn.simpleicons.org/freeagent/8a94a8' },
-  { name: 'FreshBooks',       img: 'https://cdn.simpleicons.org/freshbooks/8a94a8' },
-  { name: 'Slack',            img: 'https://cdn.simpleicons.org/slack/8a94a8' },
-  { name: 'Stripe',           img: 'https://cdn.simpleicons.org/stripe/8a94a8' },
-  { name: 'Microsoft Excel',  img: 'https://cdn.simpleicons.org/microsoftexcel/8a94a8' },
-  { name: 'Google Sheets',    img: 'https://cdn.simpleicons.org/googlesheets/8a94a8' },
-  { name: 'IRIS',             text: true },
-  { name: 'CCH',              text: true },
-  { name: 'Dext',             text: true },
-  { name: 'AutoEntry',        text: true },
-  { name: 'Hubdoc',           text: true },
-  { name: 'Apron',            text: true },
-  { name: 'DataMolino',       text: true },
-  { name: 'Capium',           text: true },
-  { name: 'A2X',              text: true },
-  { name: 'Companies House',  text: true },
-  { name: 'HMRC MTD',         text: true },
+  { name: 'Xero',            src: '/logos/xero.svg' },
+  { name: 'QuickBooks',      src: '/logos/quickbooks.svg' },
+  { name: 'Sage',            src: '/logos/sage.svg' },
+  { name: 'FreeAgent',       src: '/logos/freeagent.svg' },
+  { name: 'FreshBooks',      src: '/logos/freshbooks.svg' },
+  { name: 'Slack',           src: '/logos/slack.svg' },
+  { name: 'Stripe',          src: '/logos/stripe.svg' },
+  { name: 'Microsoft Excel', src: '/logos/excel.svg' },
+  { name: 'Google Sheets',   src: '/logos/googlesheets.svg' },
+  { name: 'IRIS',            text: true },
+  { name: 'CCH',             text: true },
+  { name: 'Dext',            text: true },
+  { name: 'AutoEntry',       text: true },
+  { name: 'Hubdoc',          text: true },
+  { name: 'Apron',           text: true },
+  { name: 'DataMolino',      text: true },
+  { name: 'Capium',          text: true },
+  { name: 'A2X',             text: true },
+  { name: 'Companies House', text: true },
+  { name: 'HMRC MTD',        text: true },
 ]
 
-function LogoItem({ logo, prefix }: { logo: Logo; prefix: string }) {
+function LogoItem({ logo }: { logo: Logo }) {
   if (logo.text) {
     return (
-      <div key={`${prefix}-${logo.name}`} className="sw-item sw-item--text">
+      <div className="sw-item sw-item--text">
         <span className="sw-badge">{logo.name}</span>
       </div>
     )
   }
   return (
-    <div key={`${prefix}-${logo.name}`} className="sw-item sw-item--img">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={logo.img} alt={logo.name} />
+    <div className="sw-item sw-item--img">
+      <Image
+        src={logo.src}
+        alt={logo.name}
+        width={28}
+        height={28}
+        unoptimized
+      />
       <span>{logo.name}</span>
     </div>
   )
@@ -81,42 +88,43 @@ export function SoftwareStrip() {
 
         /* ── Image items ── */
         .sw-item--img img {
-          height: 1.5rem;
-          width: auto;
-          object-fit: contain;
           display: block;
-          filter: brightness(200%) opacity(50%);
-          transition: all 0.25s ease;
+          object-fit: contain;
+          filter: grayscale(100%) brightness(160%) opacity(70%);
+          transition: filter 0.25s ease;
         }
         .sw-item--img:hover img {
-          filter: brightness(200%) opacity(90%);
+          filter: grayscale(0%) brightness(100%) opacity(100%);
         }
         .sw-item--img span {
           font-family: Sora, sans-serif;
           font-size: 0.75rem;
+          font-weight: 500;
           color: #8a94a8;
           white-space: nowrap;
-          transition: color 0.25s ease;
           line-height: 1;
+          transition: color 0.25s ease;
         }
         .sw-item--img:hover span {
           color: #F8F5EE;
         }
 
         /* ── Text badge items ── */
+        .sw-item--text {
+          flex-direction: row;
+        }
         .sw-badge {
           font-family: Sora, sans-serif;
           font-size: 0.75rem;
           font-weight: 500;
           color: #8a94a8;
           white-space: nowrap;
-          background: rgba(201, 168, 76, 0.08);
+          background: rgba(201, 168, 76, 0.05);
           border: 1px solid rgba(201, 168, 76, 0.2);
           border-radius: 6px;
-          padding: 0.25rem 0.75rem;
-          transition: all 0.25s ease;
-          line-height: 1.4;
+          padding: 0.375rem 0.75rem;
           display: inline-block;
+          transition: all 0.25s ease;
         }
         .sw-item--text:hover .sw-badge {
           border-color: rgba(201, 168, 76, 0.5);
@@ -138,8 +146,8 @@ export function SoftwareStrip() {
 
       <div className="sw-wrapper">
         <div className="sw-track">
-          {LOGOS.map((logo) => <LogoItem key={`a-${logo.name}`} logo={logo} prefix="a" />)}
-          {LOGOS.map((logo) => <LogoItem key={`b-${logo.name}`} logo={logo} prefix="b" />)}
+          {LOGOS.map((logo) => <LogoItem key={`a-${logo.name}`} logo={logo} />)}
+          {LOGOS.map((logo) => <LogoItem key={`b-${logo.name}`} logo={logo} />)}
         </div>
       </div>
     </div>
