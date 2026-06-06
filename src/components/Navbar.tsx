@@ -5,12 +5,13 @@ import styles from './Navbar.module.css'
 import CalendlyButton from './CalendlyButton'
 
 const links = [
-  { label: 'Services',    id: 'services',  page: null       },
-  { label: 'Why Cledger', id: 'why',       page: null       },
-  { label: 'Sectors',     id: 'sectors',   page: null       },
-  { label: 'Our Team',    id: 'team',      page: null       },
-  { label: 'Pricing',     id: 'pricing',   page: '/pricing' },
-  { label: 'Contact',     id: 'contact',   page: null       },
+  { label: 'Services',     id: 'services',     page: null            },
+  { label: 'Why Cledger',  id: 'why',          page: null            },
+  { label: 'Sectors',      id: 'sectors',      page: null            },
+  { label: 'Our Team',     id: 'team',         page: null            },
+  { label: 'Pricing',      id: 'pricing',      page: '/pricing'      },
+  { label: 'Calculators',  id: 'calculators',  page: '/calculators'  },
+  { label: 'Contact',      id: 'contact',      page: null            },
 ]
 
 function scrollTo(id: string) {
