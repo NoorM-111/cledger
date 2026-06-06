@@ -88,6 +88,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    // Sector landing pages
+    {
+      url: 'https://www.cledger.co.uk/accountant-for-freelancers-uk',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.cledger.co.uk/accountant-for-limited-companies',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.cledger.co.uk/accountant-for-landlords-uk',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     {
       url: 'https://www.cledger.co.uk/privacy',
       lastModified: new Date(),
