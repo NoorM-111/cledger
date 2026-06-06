@@ -77,7 +77,7 @@ export default function SoftwareStrip() {
               />
               <span style={{
                 fontSize: '11px',
-                color: '#8a94a8',
+                color: '#F8F5EE',
                 whiteSpace: 'nowrap',
                 fontFamily: 'Sora, sans-serif',
               }}>
