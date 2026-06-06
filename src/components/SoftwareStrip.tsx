@@ -1,103 +1,68 @@
 'use client'
 
 export default function SoftwareStrip() {
+
   const items = [
     {
       name: 'Xero',
       logo: (
-        <svg height="32" viewBox="0 0 90 32" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="16" cy="16" r="16" fill="#13B5EA"/>
-          <path fill="white" d="M9 11l4.2 5L9 21h2.8l2.7-3.4L17.2 21H20l-4.2-5 4.2-5h-2.8l-2.7 3.4L11.8 11z"/>
-          <circle cx="22.5" cy="16" r="4" fill="none" stroke="white" strokeWidth="1.8"/>
-          <text x="38" y="22" fontSize="20" fontWeight="700" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#13B5EA">xero</text>
+        <svg height="36" viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#1FC0E7"/>
+          <path fill="white" d="M10 12.5l5.5 5.5-5.5 5.5h3.2l3.8-3.8 3.8 3.8H24l-5.5-5.5 5.5-5.5h-3.2l-3.8 3.8-3.8-3.8z"/>
+          <circle cx="22" cy="18" r="4.5" fill="none" stroke="white" strokeWidth="2"/>
+          <text x="44" y="24" fontSize="22" fontWeight="700" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#1FC0E7">xero</text>
         </svg>
       )
     },
     {
       name: 'QuickBooks',
       logo: (
-        <svg height="36" viewBox="0 0 180 36" xmlns="http://www.w3.org/2000/svg">
+        <svg height="36" viewBox="0 0 190 36" xmlns="http://www.w3.org/2000/svg">
           <circle cx="18" cy="18" r="18" fill="#2CA01C"/>
-          <text x="9" y="24" fontSize="16" fontWeight="900" fontFamily="Arial,sans-serif" fill="white">QB</text>
+          <circle cx="18" cy="18" r="11" fill="none" stroke="white" strokeWidth="2"/>
+          <circle cx="18" cy="18" r="4" fill="white"/>
+          <circle cx="25" cy="18" r="2.5" fill="white"/>
           <text x="44" y="13" fontSize="9" fontWeight="400" fontFamily="Arial,sans-serif" fill="#9CA3AF">intuit</text>
-          <text x="44" y="27" fontSize="16" fontWeight="800" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#F8F5EE">QuickBooks</text>
+          <text x="44" y="27" fontSize="17" fontWeight="800" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#F8F5EE">QuickBooks</text>
         </svg>
       )
     },
     {
       name: 'Sage',
       logo: (
-        <svg height="32" viewBox="0 0 90 32" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="26" fontSize="28" fontWeight="900" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#00D639">sage</text>
+        <svg height="36" viewBox="0 0 90 36" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="30" fontSize="32" fontWeight="900" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#00D639">sage</text>
         </svg>
       )
     },
     {
       name: 'FreeAgent',
       logo: (
-        <svg height="32" viewBox="0 0 150 32" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="25" fontSize="22" fontWeight="900" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#E8452C">free</text>
-          <text x="62" y="25" fontSize="22" fontWeight="900" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#F8F5EE">agent</text>
-        </svg>
-      )
-    },
-    {
-      name: 'FreshBooks',
-      logo: (
-        <svg height="32" viewBox="0 0 170 32" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="25" fontSize="22" fontWeight="900" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#22C55E">Fresh</text>
-          <text x="86" y="25" fontSize="22" fontWeight="900" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#F8F5EE">Books</text>
-        </svg>
-      )
-    },
-    {
-      name: 'IRIS',
-      logo: (
-        <svg height="32" viewBox="0 0 80 32" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="26" fontSize="28" fontWeight="900" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#4A90D9">IRIS</text>
-        </svg>
-      )
-    },
-    {
-      name: 'CCH',
-      logo: (
-        <svg height="32" viewBox="0 0 70 32" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="26" fontSize="28" fontWeight="900" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#E53E3E">CCH</text>
+        <svg height="36" viewBox="0 0 160 36" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="28" fontSize="24" fontWeight="900" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#E8452C">free</text>
+          <text x="68" y="28" fontSize="24" fontWeight="900" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#F8F5EE">agent</text>
         </svg>
       )
     },
     {
       name: 'Dext',
       logo: (
-        <svg height="32" viewBox="0 0 90 32" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0" y="2" width="28" height="28" rx="6" fill="#FF4F00"/>
-          <text x="6" y="22" fontSize="16" fontWeight="900" fontFamily="Arial,sans-serif" fill="white">D</text>
-          <text x="36" y="25" fontSize="22" fontWeight="800" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#F8F5EE">dext</text>
+        <svg height="36" viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="2" width="32" height="32" rx="7" fill="#FF4F00"/>
+          <text x="8" y="25" fontSize="18" fontWeight="900" fontFamily="Arial,sans-serif" fill="white">D</text>
+          <text x="42" y="28" fontSize="24" fontWeight="800" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#F8F5EE">dext</text>
         </svg>
       )
     },
     {
-      name: 'Slack',
+      name: 'HMRC MTD',
       logo: (
-        <svg height="32" viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg">
-          <g transform="translate(0,4) scale(0.85)">
-            <path fill="#E01E5A" d="M6 14.5a2.5 2.5 0 010-5h2.5v2.5a2.5 2.5 0 01-2.5 2.5zm0 2.5a2.5 2.5 0 012.5 2.5v6.25a2.5 2.5 0 01-5 0V19.5A2.5 2.5 0 016 17z"/>
-            <path fill="#36C5F0" d="M17.5 6a2.5 2.5 0 015 0v2.5h-2.5A2.5 2.5 0 0117.5 6zm-2.5 0a2.5 2.5 0 01-2.5 2.5H6.25a2.5 2.5 0 010-5H15A2.5 2.5 0 0115 6z"/>
-            <path fill="#2EB67D" d="M26 17.5a2.5 2.5 0 010 5h-2.5V20A2.5 2.5 0 0126 17.5zM23.5 15a2.5 2.5 0 012.5-2.5h6.25a2.5 2.5 0 010 5H26A2.5 2.5 0 0123.5 15z"/>
-            <path fill="#ECB22E" d="M14.5 26a2.5 2.5 0 01-5 0v-2.5h2.5a2.5 2.5 0 012.5 2.5zm2.5 0a2.5 2.5 0 012.5-2.5H25.75a2.5 2.5 0 010 5H19.5A2.5 2.5 0 0117 26z"/>
-          </g>
-          <text x="36" y="24" fontSize="22" fontWeight="700" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#F8F5EE">slack</text>
-        </svg>
-      )
-    },
-    {
-      name: 'Excel',
-      logo: (
-        <svg height="32" viewBox="0 0 110 32" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0" y="2" width="28" height="28" rx="4" fill="#217346"/>
-          <text x="5" y="22" fontSize="14" fontWeight="900" fontFamily="Arial,sans-serif" fill="white">XL</text>
-          <text x="36" y="15" fontSize="9" fontWeight="400" fontFamily="Arial,sans-serif" fill="#9CA3AF">Microsoft</text>
-          <text x="36" y="27" fontSize="13" fontWeight="700" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#217346">Excel</text>
+        <svg height="36" viewBox="0 0 130 36" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="2" width="32" height="32" rx="4" fill="#005EA5"/>
+          <text x="4" y="16" fontSize="8" fontWeight="700" fontFamily="Arial,sans-serif" fill="white">GOV</text>
+          <text x="4" y="27" fontSize="8" fontWeight="700" fontFamily="Arial,sans-serif" fill="white">.UK</text>
+          <text x="42" y="16" fontSize="11" fontWeight="700" fontFamily="Arial,sans-serif" fill="#9CA3AF">HMRC</text>
+          <text x="42" y="30" fontSize="14" fontWeight="800" fontFamily="'Helvetica Neue',Arial,sans-serif" fill="#F8F5EE">Making Tax Digital</text>
         </svg>
       )
     },
@@ -111,7 +76,6 @@ export default function SoftwareStrip() {
       borderTop: '1px solid rgba(201,168,76,0.15)',
       borderBottom: '1px solid rgba(201,168,76,0.15)',
       padding: '2.5rem 0',
-      overflow: 'hidden',
     }}>
       <p style={{
         textAlign: 'center',
@@ -137,7 +101,7 @@ export default function SoftwareStrip() {
             alignItems: 'center',
             flexWrap: 'nowrap',
             width: 'max-content',
-            animation: 'softwareScroll 40s linear infinite',
+            animation: 'softwareScroll 30s linear infinite',
           }}
           onMouseEnter={e => (e.currentTarget.style.animationPlayState = 'paused')}
           onMouseLeave={e => (e.currentTarget.style.animationPlayState = 'running')}
@@ -149,9 +113,9 @@ export default function SoftwareStrip() {
                 display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                padding: '0 48px',
+                padding: '0 56px',
                 flexShrink: 0,
-                height: '56px',
+                height: '60px',
                 opacity: 0.85,
                 transition: 'opacity 0.2s ease',
               }}
