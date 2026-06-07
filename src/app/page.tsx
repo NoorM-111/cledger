@@ -9,6 +9,7 @@ import Credentials from '@/components/Credentials'
 import SlackAccess from '@/components/SlackAccess'
 import CledgerStatus from '@/components/CledgerStatus'
 import Sectors     from '@/components/Sectors'
+import LatestPosts from '@/components/LatestPosts'
 import Team        from '@/components/Team'
 import ContactSection from '@/components/ContactSection'
 import CTA         from '@/components/CTA'
@@ -30,6 +31,7 @@ export default function Home() {
         <CledgerStatus live={true} maxItems={5} />
       </div>
       <Sectors />
+      <LatestPosts />
       <Team />
       <ContactSection />
       <CTA />

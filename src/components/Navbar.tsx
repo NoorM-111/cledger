@@ -11,6 +11,7 @@ const links = [
   { label: 'Our Team',     id: 'team',         page: null            },
   { label: 'Pricing',      id: 'pricing',      page: '/pricing'      },
   { label: 'Calculators',  id: 'calculators',  page: '/calculators'  },
+  { label: 'Blog',         id: 'blog',         page: '/blog'         },
   { label: 'Contact',      id: 'contact',      page: null            },
 ]
 
