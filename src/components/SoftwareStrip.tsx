@@ -20,6 +20,7 @@ export default function SoftwareStrip() {
       borderTop: '1px solid rgba(201,168,76,0.15)',
       borderBottom: '1px solid rgba(201,168,76,0.15)',
       padding: '2.5rem 0',
+      overflow: 'hidden',
     }}>
       <p style={{
         textAlign: 'center',
@@ -53,6 +54,7 @@ export default function SoftwareStrip() {
           {doubled.map((logo, i) => (
             <div
               key={i}
+              className="sw-item"
               style={{
                 display: 'inline-flex',
                 flexDirection: 'column',
@@ -69,6 +71,7 @@ export default function SoftwareStrip() {
                 alt={logo.name}
                 width={140}
                 height={50}
+                className="sw-img"
                 style={{
                   width: '140px',
                   height: '50px',
@@ -93,6 +96,10 @@ export default function SoftwareStrip() {
         @keyframes softwareScroll {
           from { transform: translateX(0); }
           to { transform: translateX(-50%); }
+        }
+        @media (max-width: 640px) {
+          .sw-item { padding: 0 24px !important; height: 64px !important; }
+          .sw-img  { width: 100px !important; height: 36px !important; }
         }
       `}</style>
     </section>

@@ -107,3 +107,6 @@
 @media (max-width: 1000px) {
   .twoCol { grid-template-columns: 1fr !important; gap: 56px !important; }
 }
+@media (max-width: 640px) {
+  .procCard { padding: 28px 20px !important; }
+}

@@ -128,11 +128,15 @@
   margin-top: 16px;
   align-self: flex-start;
 }
-@media (max-width: 680px) {
+@media (max-width: 1024px) {
   .menu { display: none !important; }
   .ham  { display: flex !important; }
   .nav .btn-navy { display: none !important; }
   .mob  { padding: 16px 20px 20px; }
+}
+@media (max-width: 1024px) {
+  .mob button,
+  .mob a { min-height: 48px; padding-top: 14px !important; padding-bottom: 14px !important; }
 }
 
 .navLink {

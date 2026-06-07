@@ -204,6 +204,11 @@ export default function SlackAccess() {
                 fontSize: "12px",
                 marginLeft: "8px",
                 fontWeight: 600,
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                whiteSpace: "nowrap",
+                minWidth: 0,
+                flex: 1,
               }}
             >
               # client-your-business, Cledger Workspace
