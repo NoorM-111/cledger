@@ -322,7 +322,11 @@ export default function PricingSection() {
           </div>
 
           <div style={s.founding}>
-            <div style={s.foundingIcon}>🏅</div>
+            <div style={s.foundingIcon}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
             <div>
               <div style={s.foundingTitle}>Founding client offer, first 3 clients only</div>
               <div style={s.foundingText}>Lock in <strong style={{ color: C.white }}>15% off your monthly fee for life</strong> during our launch phase. Same qualified accountants, same deliverables, this rate never increases. Strictly limited.</div>

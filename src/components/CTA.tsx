@@ -1,5 +1,8 @@
+import { Mail, Phone, MapPin } from 'lucide-react'
 import styles from './CTA.module.css'
 import CalendlyButton from './CalendlyButton'
+
+const ICON = { size: 18, strokeWidth: 1.5, color: '#C9A84C' }
 
 export default function CTA() {
   return (
@@ -18,21 +21,21 @@ export default function CTA() {
           </div>
           <div className={styles.contacts}>
             <div className={styles.contact}>
-              <div className={styles.cIcon}>✉️</div>
+              <div className={styles.cIcon}><Mail {...ICON} /></div>
               <div>
                 <div className={styles.cLabel}>Email us</div>
                 <div className={styles.cVal}>info@cledger.co.uk</div>
               </div>
             </div>
             <div className={styles.contact}>
-              <div className={styles.cIcon}>📞</div>
+              <div className={styles.cIcon}><Phone {...ICON} /></div>
               <div>
                 <div className={styles.cLabel}>Call us</div>
                 <div className={styles.cVal}>+44 7774 002712</div>
               </div>
             </div>
             <div className={styles.contact}>
-              <div className={styles.cIcon}>📍</div>
+              <div className={styles.cIcon}><MapPin {...ICON} /></div>
               <div>
                 <div className={styles.cLabel}>Registered</div>
                 <div className={styles.cVal}>United Kingdom</div>

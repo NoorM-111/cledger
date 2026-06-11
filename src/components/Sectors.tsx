@@ -1,14 +1,17 @@
+import { Stethoscope, ScanFace, HardHat, Home, Palette, Scale, ShoppingCart, Rocket } from 'lucide-react'
 import styles from './Sectors.module.css'
 
+const ICON_STYLE = { color: '#C9A84C', strokeWidth: 1.5 }
+
 const sectors = [
-  { e: '🏥', label: 'Healthcare Professionals' },
-  { e: '🦷', label: 'Dental Practices'         },
-  { e: '🏗️', label: 'Construction & Trades'    },
-  { e: '🏠', label: 'Property & Landlords'     },
-  { e: '🎨', label: 'Creative & Media'         },
-  { e: '⚖️', label: 'Legal Services'           },
-  { e: '🛒', label: 'Retail & eCommerce'       },
-  { e: '🚀', label: 'Startups & SMEs'          },
+  { icon: <Stethoscope size={28} {...ICON_STYLE} />, label: 'Healthcare Professionals' },
+  { icon: <ScanFace    size={28} {...ICON_STYLE} />, label: 'Dental Practices'         },
+  { icon: <HardHat     size={28} {...ICON_STYLE} />, label: 'Construction & Trades'    },
+  { icon: <Home        size={28} {...ICON_STYLE} />, label: 'Property & Landlords'     },
+  { icon: <Palette     size={28} {...ICON_STYLE} />, label: 'Creative & Media'         },
+  { icon: <Scale       size={28} {...ICON_STYLE} />, label: 'Legal Services'           },
+  { icon: <ShoppingCart size={28} {...ICON_STYLE} />, label: 'Retail & eCommerce'     },
+  { icon: <Rocket      size={28} {...ICON_STYLE} />, label: 'Startups & SMEs'          },
 ]
 
 export default function Sectors() {
@@ -26,7 +29,7 @@ export default function Sectors() {
         <div className={styles.grid}>
           {sectors.map(s => (
             <div key={s.label} className="sec">
-              <div className="sec-e">{s.e}</div>
+              <div className="sec-e">{s.icon}</div>
               <h4>{s.label}</h4>
             </div>
           ))}
