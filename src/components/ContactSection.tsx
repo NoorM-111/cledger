@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { fireContactConversion } from "@/lib/gtag";
 
 export default function ContactSection() {
   const [form, setForm] = useState({
@@ -35,6 +36,7 @@ export default function ContactSection() {
         body: JSON.stringify(form),
       });
       if (!res.ok) throw new Error("Failed");
+      fireContactConversion();
       setStatus("success");
     } catch {
       setStatus("error");

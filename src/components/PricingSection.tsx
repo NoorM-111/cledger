@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { fireContactConversion } from "@/lib/gtag";
 
 const C = {
   navy: "#0B1222", navy2: "#131d31", card: "#111827", card2: "#192033",
@@ -86,6 +87,7 @@ function QuoteModal({ services, getPrice, monthly, discounted, bandLabel, entiti
         }),
       });
       if (!res.ok) throw new Error("Failed");
+      fireContactConversion();
       setStatus("success");
     } catch {
       setStatus("error");
@@ -116,7 +118,6 @@ function QuoteModal({ services, getPrice, monthly, discounted, bandLabel, entiti
               <button style={m.xBtn} onClick={onClose}>✕</button>
             </div>
 
-            {/* Quote summary inside modal */}
             <div style={m.quoteSummary}>
               <div style={m.quoteRows}>
                 {services.map(s => (
