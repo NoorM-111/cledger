@@ -2,7 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: start;
+  align-items: center;
+}
+.illustration {
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .pts { margin-top: 40px; }

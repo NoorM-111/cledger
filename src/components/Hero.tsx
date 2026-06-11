@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import styles from './Hero.module.css'
 import CalendlyButton from './CalendlyButton'
 
@@ -21,6 +22,13 @@ const points = [
 export default function Hero() {
   return (
     <section className={styles.hero} id="hero">
+      <Image
+        src="/images/hero-background.svg"
+        alt=""
+        fill
+        priority
+        className={styles.bgImage}
+      />
       <div className={styles.glow1} aria-hidden />
       <div className={styles.glow2} aria-hidden />
       <div className="wrap">

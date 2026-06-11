@@ -1,0 +1,110 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract ledger grid with rising chart over a London skyline">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#0B1222"/>
+      <stop offset="0.55" stop-color="#0D1730"/>
+      <stop offset="1" stop-color="#0B1222"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.18" r="0.6">
+      <stop offset="0" stop-color="#C9A84C" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#C9A84C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9A84C" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#C9A84C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeBottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1222" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0B1222" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="ledgerGrid" width="240" height="64" patternUnits="userSpaceOnUse">
+      <path d="M0 63.5 H240" stroke="#FFFFFF" stroke-opacity="0.030" stroke-width="1"/>
+      <path d="M239.5 0 V64" stroke="#FFFFFF" stroke-opacity="0.020" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#ledgerGrid)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+
+  <!-- Ledger margin rule (signature) -->
+  <line x1="150" y1="0" x2="150" y2="1080" stroke="#C9A84C" stroke-opacity="0.10" stroke-width="1.5"/>
+  <line x1="166" y1="0" x2="166" y2="1080" stroke="#C9A84C" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Rising series -->
+  <path d="M240 860 L520 800 L800 740 L1080 620 L1360 520 L1640 360 L1640 1080 L240 1080 Z" fill="url(#area)"/>
+  <path d="M240 860 L520 800 L800 740 L1080 620 L1360 520 L1640 360" fill="none" stroke="#C9A84C" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#C9A84C" fill-opacity="0.65">
+    <circle cx="240" cy="860" r="5"/>
+    <circle cx="520" cy="800" r="5"/>
+    <circle cx="800" cy="740" r="5"/>
+    <circle cx="1080" cy="620" r="5"/>
+    <circle cx="1360" cy="520" r="5"/>
+    <circle cx="1640" cy="360" r="6"/>
+  </g>
+  <circle cx="1640" cy="360" r="14" fill="none" stroke="#C9A84C" stroke-opacity="0.35" stroke-width="1.5"/>
+
+  <!-- London skyline silhouette -->
+  <g fill="#0E1A36">
+    <rect x="0" y="930" width="120" height="150"/>
+    <rect x="120" y="960" width="90" height="120"/>
+    <!-- The Shard -->
+    <polygon points="250,1080 256,840 268,812 280,840 286,1080"/>
+    <polygon points="246,1080 268,830 290,1080" fill="#101D3C"/>
+    <rect x="300" y="950" width="110" height="130"/>
+    <rect x="410" y="900" width="70" height="180"/>
+    <!-- Tower block cluster -->
+    <rect x="500" y="940" width="100" height="140"/>
+    <!-- The Gherkin -->
+    <path d="M650 1080 C642 980 650 900 686 868 C722 900 730 980 722 1080 Z"/>
+    <rect x="750" y="920" width="95" height="160"/>
+    <rect x="845" y="970" width="70" height="110"/>
+    <!-- Big Ben -->
+    <rect x="952" y="830" width="40" height="250"/>
+    <polygon points="952,830 972,786 992,830"/>
+    <rect x="958" y="856" width="28" height="28" fill="#0B1222"/>
+    <rect x="1010" y="990" width="130" height="90"/>
+    <rect x="1140" y="950" width="80" height="130"/>
+    <!-- Canary cluster -->
+    <rect x="1240" y="880" width="60" height="200"/>
+    <polygon points="1240,880 1270,856 1300,880 1300,884 1240,884"/>
+    <rect x="1310" y="930" width="70" height="150"/>
+    <rect x="1680" y="940" width="110" height="140"/>
+    <rect x="1790" y="900" width="130" height="180"/>
+  </g>
+
+  <!-- London Eye -->
+  <g stroke="#16234A" stroke-width="6" fill="none">
+    <circle cx="1520" cy="950" r="105"/>
+  </g>
+  <g stroke="#16234A" stroke-width="3">
+    <line x1="1520" y1="845" x2="1520" y2="1055"/>
+    <line x1="1415" y1="950" x2="1625" y2="950"/>
+    <line x1="1446" y1="876" x2="1594" y2="1024"/>
+    <line x1="1594" y1="876" x2="1446" y2="1024"/>
+    <line x1="1480" y1="1080" x2="1520" y2="950"/>
+    <line x1="1560" y1="1080" x2="1520" y2="950"/>
+  </g>
+  <circle cx="1520" cy="950" r="8" fill="#16234A"/>
+
+  <!-- Window lights -->
+  <g fill="#C9A84C" fill-opacity="0.30">
+    <rect x="316" y="970" width="6" height="6"/>
+    <rect x="334" y="990" width="6" height="6"/>
+    <rect x="372" y="976" width="6" height="6"/>
+    <rect x="522" y="958" width="6" height="6"/>
+    <rect x="556" y="982" width="6" height="6"/>
+    <rect x="770" y="940" width="6" height="6"/>
+    <rect x="800" y="966" width="6" height="6"/>
+    <rect x="1258" y="906" width="6" height="6"/>
+    <rect x="1276" y="934" width="6" height="6"/>
+    <rect x="1334" y="950" width="6" height="6"/>
+    <rect x="1706" y="962" width="6" height="6"/>
+    <rect x="1822" y="926" width="6" height="6"/>
+    <rect x="1850" y="956" width="6" height="6"/>
+  </g>
+
+  <!-- Bottom fade into page background -->
+  <rect x="0" y="880" width="1920" height="200" fill="url(#fadeBottom)"/>
+</svg>

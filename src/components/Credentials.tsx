@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './Credentials.module.css'
 
 const creds = [
@@ -36,6 +37,8 @@ export default function Credentials() {
     <section className="bg-dark" style={{ padding: '88px 0' }}>
       <div className="wrap">
         <div className={styles.twoCol}>
+
+          {/* LEFT: existing copy + credential cards */}
           <div>
             <span className="s-label s-label-light">Our Credentials</span>
             <h2 className="s-h" style={{ color: '#fff' }}>Our Commitment to<br />Professional Excellence</h2>
@@ -47,16 +50,27 @@ export default function Credentials() {
               We believe that a firm&apos;s credentials are best demonstrated not through certificates on a wall, but through
               the quality of the work it delivers and the trust its clients place in it, year after year.
             </p>
+            <div className={styles.cards}>
+              {creds.map(c => (
+                <div key={c.title} className="cc">
+                  <div className="cc-icon">{c.icon}</div>
+                  <h4>{c.title}</h4>
+                  <p>{c.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className={styles.cards}>
-            {creds.map(c => (
-              <div key={c.title} className="cc">
-                <div className="cc-icon">{c.icon}</div>
-                <h4>{c.title}</h4>
-                <p>{c.desc}</p>
-              </div>
-            ))}
+
+          {/* RIGHT: illustration */}
+          <div className={styles.illustration}>
+            <Image
+              src="/images/credentials-illustration.svg"
+              alt="Reviewed ledger sheet with a gold approval seal and fountain pen"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
+
         </div>
       </div>
     </section>

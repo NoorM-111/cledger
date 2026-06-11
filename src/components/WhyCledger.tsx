@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './WhyCledger.module.css'
 
 const reasons = [
@@ -20,6 +21,18 @@ export default function WhyCledger() {
     <section id="why" style={{ padding: '96px 0', background: 'var(--surface)' }}>
       <div className="wrap">
         <div className={styles.twoCol}>
+
+          {/* LEFT: illustration */}
+          <div className={styles.illustration}>
+            <Image
+              src="/images/why-cledger-illustration.svg"
+              alt="Accountant's workspace with laptop, reports and charts"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+
+          {/* RIGHT: existing content */}
           <div>
             <span className="s-label">Why Cledger</span>
             <h2 className="s-h">A Financial Partner You Can Genuinely Rely On</h2>
@@ -38,23 +51,24 @@ export default function WhyCledger() {
                 </div>
               ))}
             </div>
+
+            <div className={styles.procCard} style={{ marginTop: '40px' }}>
+              <h3>How we work with a new client</h3>
+              {steps.map((s, i) => (
+                <div key={s.n}>
+                  <div className={styles.procStep}>
+                    <div className={styles.procDot}>{s.n}</div>
+                    <div>
+                      <h5>{s.title}</h5>
+                      <p>{s.desc}</p>
+                    </div>
+                  </div>
+                  {i < steps.length - 1 && <div className={styles.procLine} />}
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className={styles.procCard}>
-            <h3>How we work with a new client</h3>
-            {steps.map((s, i) => (
-              <div key={s.n}>
-                <div className={styles.procStep}>
-                  <div className={styles.procDot}>{s.n}</div>
-                  <div>
-                    <h5>{s.title}</h5>
-                    <p>{s.desc}</p>
-                  </div>
-                </div>
-                {i < steps.length - 1 && <div className={styles.procLine} />}
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
