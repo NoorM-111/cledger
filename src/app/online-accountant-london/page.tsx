@@ -261,7 +261,7 @@ export default function LondonPage() {
                 {
                   num: '01',
                   title: 'All the expertise, none of the London premium',
-                  body: 'You are not paying for a W1 postcode. Cledger operates fully remotely, which means our overheads are lower and we pass that saving directly to you. You get qualified accountants and a premium service at 40% below what a comparable London firm would charge.',
+                  body: 'You are not paying for a W1 postcode. Cledger operates fully remotely, which means our overheads are lower and we pass that saving directly to you. You get qualified accountants and a premium service typically 30 to 40% below what a comparable London firm would charge.',
                 },
                 {
                   num: '02',

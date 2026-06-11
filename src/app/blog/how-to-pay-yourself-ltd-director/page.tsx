@@ -4,7 +4,6 @@ import BlogLayout, { s, C } from '@/components/BlogLayout'
 export const metadata: Metadata = {
   title: 'How to Pay Yourself as a Limited Company Director UK (2026) | Cledger',
   description: 'Most Ltd directors overpay tax by taking the wrong salary/dividend split. Here is the optimal 2026/27 structure to maximise take-home pay legally.',
-  keywords: 'pay yourself limited company director UK, salary dividend split UK, director salary 2026, limited company take home pay, optimal director salary UK',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/how-to-pay-yourself-ltd-director',
@@ -124,7 +123,7 @@ export default function HowToPayYourselfLtdDirector() {
       <div style={s.highlight}>
         <p style={{...s.p,marginBottom:'0.3rem',color:C.white}}><strong style={s.strong}>Getting the salary/dividend split right is worth thousands per year.</strong></p>
         <p style={{...s.p,marginBottom:0}}>
-          Cledger sets up director payroll, processes dividend vouchers, and files your Self Assessment, all included in the full finance outsourcing package. ACCA-trained accountants, from £449/month.
+          Cledger sets up director payroll, processes dividend vouchers, and files your Self Assessment, all included in the full finance outsourcing package. Qualified accountants, from £449/month.
         </p>
       </div>
     </BlogLayout>

@@ -4,7 +4,6 @@ import BlogLayout, { s, C } from '@/components/BlogLayout'
 export const metadata: Metadata = {
   title: 'What Are Management Accounts, and Does Your Business Need Them? | Cledger',
   description: 'Management accounts give you monthly P&L, balance sheet and cash flow, before your year-end. Here is what they include, who needs them, and what they cost.',
-  keywords: 'what are management accounts UK, management accounts small business, monthly management accounts, management accounts vs annual accounts',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/what-are-management-accounts',
@@ -121,7 +120,7 @@ export default function WhatAreManagementAccounts() {
       <div style={s.highlight}>
         <p style={{...s.p,marginBottom:'0.3rem',color:C.white}}><strong style={s.strong}>Stop running your business in the dark.</strong></p>
         <p style={{...s.p,marginBottom:0}}>
-          Cledger delivers monthly management accounts within 5 working days of month-end, P&L, balance sheet, cash flow, and commentary. ACCA-trained. MTD compliant. From £449/month.
+          Cledger delivers monthly management accounts within 5 working days of month-end, P&L, balance sheet, cash flow, and commentary. Qualified accountants. MTD compliant. From £449/month.
         </p>
       </div>
     </BlogLayout>

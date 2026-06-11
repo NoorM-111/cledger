@@ -4,7 +4,6 @@ import BlogLayout, { s, C } from '@/components/BlogLayout'
 export const metadata: Metadata = {
   title: 'Xero vs QuickBooks UK: Which Is Better for Small Businesses in 2026? | Cledger',
   description: 'Xero vs QuickBooks for UK small businesses, pricing, MTD compliance, features and which to choose. Honest comparison from accountants who use both daily.',
-  keywords: 'Xero vs QuickBooks UK, Xero or QuickBooks small business UK, best accounting software UK 2026, Xero QuickBooks comparison',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/xero-vs-quickbooks-uk',

@@ -4,7 +4,6 @@ import BlogLayout, { s, C } from '@/components/BlogLayout'
 export const metadata: Metadata = {
   title: 'VAT Return Deadlines UK: The Complete 2026 Guide | Cledger',
   description: 'Miss a VAT deadline and HMRC charges a £200 surcharge minimum. Full UK VAT return deadlines, penalties, and how to stay compliant in 2026.',
-  keywords: 'VAT return deadlines UK, VAT filing deadline, HMRC VAT deadline, quarterly VAT return, VAT penalty UK',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/vat-return-deadlines-uk',
@@ -122,7 +121,7 @@ export default function VatReturnDeadlinesUK() {
       <div style={s.highlight}>
         <p style={{...s.p,marginBottom:'0.3rem',color:C.white}}><strong style={s.strong}>Rather hand VAT over entirely?</strong></p>
         <p style={{...s.p,marginBottom:0}}>
-          Cledger handles VAT returns for UK businesses from £99/month, MTD-compliant, filed on time, every quarter. ACCA-trained accountants, transparent pricing, no surprises.
+          Cledger handles VAT returns for UK businesses from £99/month, MTD-compliant, filed on time, every quarter. Qualified accountants, transparent pricing, no surprises.
         </p>
       </div>
     </BlogLayout>

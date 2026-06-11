@@ -1,12 +1,6 @@
 "use client";
 
-// src/components/SlackAccess.tsx
-// 
-// "Your accountant is one message away", the Idea 1 marketing section.
-// Drop this into your homepage between WhyCledger and Credentials,
-// or add it to the Services section.
-//
-// No external dependencies beyond what you already have.
+import { Zap, Lock, Paperclip, CalendarClock, Clock, MessageSquare } from 'lucide-react'
 
 export default function SlackAccess() {
   return (
@@ -83,34 +77,34 @@ export default function SlackAccess() {
         >
           {[
             {
-              emoji: "⚡",
+              icon: <Zap size={26} strokeWidth={1.5} color="#C9A84C" />,
               title: "Response within the hour",
               desc: "Message us during UK business hours and get a real answer, not an automated reply, within 60 minutes.",
             },
             {
-              emoji: "🔒",
+              icon: <Lock size={26} strokeWidth={1.5} color="#C9A84C" />,
               title: "Your own private channel",
               desc: "A dedicated #client-[your-business] Slack channel. Only you and your Cledger accountant. Completely private.",
             },
             {
-              emoji: "📎",
+              icon: <Paperclip size={26} strokeWidth={1.5} color="#C9A84C" />,
               title: "Share files instantly",
               desc: "Drop bank statements, invoices, or payroll files directly in Slack. No more emailing attachments back and forth.",
             },
             {
-              emoji: "📅",
+              icon: <CalendarClock size={26} strokeWidth={1.5} color="#C9A84C" />,
               title: "Deadline reminders built in",
               desc: "VAT deadlines, payroll dates, CT600 filings, we message you before anything is due. Never miss a deadline again.",
             },
             {
-              emoji: "🇬🇧",
+              icon: <Clock size={26} strokeWidth={1.5} color="#C9A84C" />,
               title: "UK hours. Always.",
               desc: "We work to UK business hours (9am–5pm GMT/BST). Your messages are read by a real person, not a chatbot.",
             },
             {
-              emoji: "🚫",
-              title: "No other UK accountant does this",
-              desc: "Crunch, Gorilla, Mazuma, they all use ticket systems. At Cledger, you message your accountant directly.",
+              icon: <MessageSquare size={26} strokeWidth={1.5} color="#C9A84C" />,
+              title: "Direct, not ticketed",
+              desc: "Most online accountants route every question through a ticket queue. At Cledger you message your accountant directly.",
             },
           ].map((feature) => (
             <div
@@ -135,8 +129,8 @@ export default function SlackAccess() {
                   "translateY(0)";
               }}
             >
-              <div style={{ fontSize: "28px", marginBottom: "12px" }}>
-                {feature.emoji}
+              <div style={{ marginBottom: "12px" }}>
+                {feature.icon}
               </div>
               <h3
                 style={{
@@ -224,7 +218,7 @@ export default function SlackAccess() {
                 avatarBg: "#3b82f6",
                 time: "9:14 AM",
                 message:
-                  "Hi Noor, quick question. My supplier is asking if we need to charge them VAT on this invoice. We're VAT registered but they're not. Do I charge it?",
+                  "Hi Noor, quick one. A new customer isn't VAT registered and is asking if we still add VAT to their invoice. Do we?",
               },
               {
                 sender: "Noor · Cledger",
@@ -232,7 +226,7 @@ export default function SlackAccess() {
                 avatarBg: "#C9A84C",
                 time: "9:31 AM",
                 message:
-                  "Yes, you charge VAT regardless of whether your customer is VAT registered. Your obligation is based on your registration, not theirs. So add 20% and issue a VAT invoice with your VAT number on it. I'll make sure it's coded correctly in Xero when I see it. 👍",
+                  "Yes. You charge VAT based on your registration, not theirs. Add 20% and issue a VAT invoice with your VAT number on it. I'll make sure it's coded correctly in Xero when it comes through. 👍",
               },
               {
                 sender: "You",

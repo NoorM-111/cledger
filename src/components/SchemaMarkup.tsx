@@ -8,7 +8,7 @@ export default function SchemaMarkup() {
         "name": "Cledger",
         "url": "https://www.cledger.co.uk",
         "logo": "https://www.cledger.co.uk/logo.png",
-        "description": "ACCA-trained UK accountants offering bookkeeping, VAT returns, payroll, management accounts and corporation tax from £175/month.",
+        "description": "Qualified UK accountants offering bookkeeping, VAT returns, payroll, management accounts and corporation tax from £175/month.",
         "telephone": "+447774002712",
         "email": "info@cledger.co.uk",
         "address": {

@@ -46,10 +46,6 @@ export default function Credentials() {
               We are proud to operate to the highest professional, technical and ethical standards in the UK accounting industry. Our commitment to excellence is not a marketing statement, it is the foundation on
               which every client relationship is built.
             </p>
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 16, color: 'rgba(255,255,255,0.58)', lineHeight: 1.82 }}>
-              We believe that a firm&apos;s credentials are best demonstrated not through certificates on a wall, but through
-              the quality of the work it delivers and the trust its clients place in it, year after year.
-            </p>
             <div className={styles.cards}>
               {creds.map(c => (
                 <div key={c.title} className="cc">

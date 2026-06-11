@@ -4,7 +4,6 @@ import BlogLayout, { s, C } from '@/components/BlogLayout'
 export const metadata: Metadata = {
   title: 'Corporation Tax UK: Small Business Guide 2026 | Cledger',
   description: 'UK Corporation Tax is 19%–25% depending on profits. Deadlines, reliefs, and how to reduce your bill legally, complete 2026 guide for Ltd companies.',
-  keywords: 'corporation tax UK small business, CT600 guide, corporation tax rate 2026, how to reduce corporation tax UK, CT600 deadline',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/corporation-tax-guide-small-business-uk',
@@ -133,7 +132,7 @@ export default function CorporationTaxGuideUK() {
       <div style={s.highlight}>
         <p style={{...s.p,marginBottom:'0.3rem',color:C.white}}><strong style={s.strong}>Never miss a CT deadline again.</strong></p>
         <p style={{...s.p,marginBottom:0}}>
-          Cledger prepares and files CT600 returns, calculates your Corporation Tax liability, and ensures you claim every allowable deduction. ACCA-trained, from £65/month.
+          Cledger prepares and files CT600 returns, calculates your Corporation Tax liability, and ensures you claim every allowable deduction. Qualified accountants, from £65/month.
         </p>
       </div>
     </BlogLayout>

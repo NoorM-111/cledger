@@ -17,8 +17,8 @@ export default function TermsPage() {
           <p style={{ fontSize: 13, color: '#8a94a8', marginBottom: '3rem' }}>Last updated: May 2026</p>
 
           {[
-            { title: '1. About Cledger', body: 'Cledger Ltd is a financial services company registered in England and Wales. By using our website or engaging our services, you agree to these Terms of Service.' },
-            { title: '2. Our services', body: 'Cledger provides bookkeeping, VAT compliance, payroll, management accounts, corporation tax, self assessment and related financial services to UK businesses. All services are subject to a separate engagement letter agreed between Cledger and the client.' },
+            { title: '1. About Cledger', body: 'Cledger Ltd is an accounting services company registered in England and Wales. By using our website or engaging our services, you agree to these Terms of Service.' },
+            { title: '2. Our services', body: 'Cledger provides bookkeeping, VAT compliance, payroll, management accounts, corporation tax, self assessment and related accounting services to UK businesses. All services are subject to a separate engagement letter agreed between Cledger and the client.' },
             { title: '3. Website use', body: 'You may use our website for lawful purposes only. You must not misuse our website by introducing viruses or other malicious content, or attempt to gain unauthorised access to our systems.' },
             { title: '4. Accuracy of information', body: 'The information on this website is provided for general guidance only and does not constitute professional financial or tax advice. Always obtain specific professional advice before taking any action based on information from this website.' },
             { title: '5. Intellectual property', body: 'All content on this website, including text, graphics, logos and design, is the property of Cledger Ltd and is protected by UK copyright law. You may not reproduce any content without our written permission.' },

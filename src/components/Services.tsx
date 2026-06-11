@@ -54,7 +54,7 @@ export default function Services() {
       <div className="wrap">
         <div className="center">
           <span className="s-label">What We Do</span>
-          <h2 className="s-h">A Complete Financial Service,<br />Built Around Your Business</h2>
+          <h2 className="s-h">A Complete Accounting Service,<br />Built Around Your Business</h2>
           <p className="s-p">
             From keeping your day-to-day accounts in order to long-term financial planning, we provide everything your
             business needs to stay compliant, informed and in full control of its finances.

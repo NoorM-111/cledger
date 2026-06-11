@@ -4,7 +4,6 @@ import BlogLayout, { s, C } from '@/components/BlogLayout'
 export const metadata: Metadata = {
   title: 'Self Assessment Tax Return: Complete UK Guide 2026 | Cledger',
   description: 'Who needs to file a Self Assessment, what to include, key deadlines, and the most common mistakes. Everything you need to know for 2025/26 tax year.',
-  keywords: 'self assessment tax return UK, self assessment guide 2026, who needs self assessment UK, self assessment deadline January 2027, SA100 UK',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/self-assessment-tax-return-guide-uk',
@@ -153,7 +152,7 @@ export default function SelfAssessmentGuideUK() {
       <div style={s.highlight}>
         <p style={{...s.p,marginBottom:'0.3rem',color:C.white}}><strong style={s.strong}>Leave your Self Assessment to us.</strong></p>
         <p style={{...s.p,marginBottom:0}}>
-          Cledger prepares and files Self Assessment returns for sole traders, landlords, and company directors. ACCA-trained, MTD compliant, from £65/month. No January panic.
+          Cledger prepares and files Self Assessment returns for sole traders, landlords, and company directors. Qualified accountants, MTD compliant, from £65/month. No January panic.
         </p>
       </div>
     </BlogLayout>

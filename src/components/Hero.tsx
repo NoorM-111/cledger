@@ -2,15 +2,15 @@
 import Image from 'next/image'
 import styles from './Hero.module.css'
 import CalendlyButton from './CalendlyButton'
+import DeadlineChecker from './DeadlineChecker'
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
 const stats = [
-  { n: '100+', label: 'Client Accounts' },
-  { n: '100%', label: 'HMRC Compliant' },
-  { n: '5★',   label: 'Client Rating'  },
+  { n: '100+', label: '100+ UK client accounts delivered' },
+  { n: '100%', label: 'HMRC Compliant'                    },
 ]
 
 const points = [
@@ -42,12 +42,13 @@ export default function Hero() {
               Clear Books.<br />Clear Numbers.<br /><em>Clear Future.</em>
             </h1>
             <p className={`${styles.sub} fade-in`} style={{ animationDelay: '160ms' }}>
-              Qualified UK accountants. Remote delivery from <strong>£175/month</strong>, bookkeeping, VAT, payroll and full finance outsourcing at 40% below traditional firm rates.
+              Bookkeeping, VAT, payroll and full finance outsourcing for UK small businesses. Delivered remotely by qualified accountants from <strong>£175/month</strong>.
             </p>
             <div className={`${styles.btns} fade-in`} style={{ animationDelay: '240ms' }}>
               <CalendlyButton className="btn btn-gold">Book a Free Consultation</CalendlyButton>
               <button className="btn btn-ghost" onClick={() => scrollTo('services')}>Our Services</button>
             </div>
+            <DeadlineChecker />
             <div className={`${styles.stats} fade-in`} style={{ animationDelay: '320ms' }}>
               {stats.map((s, i) => (
                 <div key={s.n} className={styles.statItem}>

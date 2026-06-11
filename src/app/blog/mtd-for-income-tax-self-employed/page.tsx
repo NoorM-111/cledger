@@ -4,7 +4,6 @@ import BlogLayout, { s, C } from '@/components/BlogLayout'
 export const metadata: Metadata = {
   title: 'Making Tax Digital for Income Tax: What Self-Employed Need to Know (2026) | Cledger',
   description: 'MTD for Income Tax starts April 2026 for self-employed with £50k+ turnover. Quarterly digital reporting to HMRC is now mandatory. Here is what changes.',
-  keywords: 'Making Tax Digital income tax self employed, MTD ITSA 2026, quarterly reporting HMRC self employed, MTD for income tax sole trader',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/mtd-for-income-tax-self-employed',

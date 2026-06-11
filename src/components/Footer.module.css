@@ -110,6 +110,15 @@
 }
 .botLinks a:hover { color: rgba(255,255,255,0.55); }
 
+.legal {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: rgba(255,255,255,0.18);
+  line-height: 1.6;
+  margin-top: 6px;
+  max-width: 560px;
+}
+
 @media (max-width: 1000px) { .grid { grid-template-columns: 1fr 1fr !important; gap: 40px; } }
 @media (max-width: 680px) {
   .grid { grid-template-columns: 1fr !important; }

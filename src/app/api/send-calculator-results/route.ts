@@ -64,7 +64,7 @@ function buildUserHTML(
 
     <div style="background:#131d31;border:1px solid rgba(201,168,76,0.15);border-radius:12px;padding:24px 28px;margin-bottom:20px;">
       <p style="color:#F8F5EE;font-size:15px;font-weight:600;margin:0 0 8px;font-family:sans-serif;">Want Cledger to handle this for you?</p>
-      <p style="color:#8a94a8;font-size:13px;line-height:1.6;margin:0 0 16px;font-family:sans-serif;">We provide bookkeeping, VAT, payroll, Self Assessment, and corporation tax filing for UK businesses. ACCA-trained. MTD compliant. Transparent monthly pricing.</p>
+      <p style="color:#8a94a8;font-size:13px;line-height:1.6;margin:0 0 16px;font-family:sans-serif;">We provide bookkeeping, VAT, payroll, Self Assessment, and corporation tax filing for UK businesses. Qualified accountants. MTD compliant. Transparent monthly pricing.</p>
       <a href="https://www.cledger.co.uk/#contact" style="display:inline-block;background:#C9A84C;color:#0B1222;font-weight:600;font-size:14px;padding:11px 22px;border-radius:8px;text-decoration:none;font-family:sans-serif;">Get in touch →</a>
     </div>
 
