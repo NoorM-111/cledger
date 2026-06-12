@@ -44,11 +44,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://assets.calendly.com/assets/external/widget.css"
           rel="stylesheet"
         />
+      </head>
+      <body>
+        {children}
+        <WhatsAppButton />
+        <LeadPopup />
+        {/* Google Ads tag — must be in body, not head, when using next/script afterInteractive */}
         <Script
+          id="gtag-js"
           src="https://www.googletagmanager.com/gtag/js?id=AW-18199125035"
           strategy="afterInteractive"
         />
-        <Script id="google-ads-tag" strategy="afterInteractive">
+        <Script id="gtag-config" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -56,11 +63,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'AW-18199125035');
           `}
         </Script>
-      </head>
-      <body>
-        {children}
-        <WhatsAppButton />
-        <LeadPopup />
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="lazyOnload"

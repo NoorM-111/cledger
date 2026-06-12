@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import { fireContactConversion } from '@/lib/gtag'
 
 const STORAGE_KEY = 'cledger_popup_seen'
 const BLOCKED_PATHS = ['/privacy', '/terms']
@@ -98,6 +99,7 @@ function PopupModal({ onClose }: { onClose: () => void }) {
         }),
       })
       if (!res.ok) throw new Error()
+      fireContactConversion()
       setStatus('success')
       setTimeout(onClose, 3000)
     } catch {
