@@ -9,7 +9,7 @@ function scrollTo(id: string) {
 }
 
 const stats = [
-  { n: '100+', label: '100+ UK client accounts delivered' },
+  { n: '100+', label: 'UK client accounts delivered' },
   { n: '100%', label: 'HMRC Compliant'                    },
 ]
 
@@ -39,7 +39,7 @@ export default function Hero() {
               Online Accountants for UK Small Businesses
             </div>
             <h1 className={`${styles.h1} fade-in`} style={{ animationDelay: '80ms' }}>
-              Clear Books.<br />Clear Numbers.<br /><em>Clear Future.</em>
+              Clear Books. <br />Clear Numbers. <br /><em>Clear Future.</em>
             </h1>
             <p className={`${styles.sub} fade-in`} style={{ animationDelay: '160ms' }}>
               Bookkeeping, VAT, payroll and full finance outsourcing for UK small businesses. Delivered remotely by qualified accountants from <strong>£175/month</strong>.
