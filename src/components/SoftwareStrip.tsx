@@ -3,12 +3,12 @@
 import Image from 'next/image'
 
 const logos = [
-  { name: 'Xero', src: '/logos/xero.svg' },
-  { name: 'QuickBooks', src: '/logos/quickbooks.svg' },
-  { name: 'Sage', src: '/logos/sage.svg' },
-  { name: 'FreeAgent', src: '/logos/freeagent.svg' },
-  { name: 'Dext', src: '/logos/dext.svg' },
-  { name: 'HMRC MTD', src: '/logos/hmrc-mtd.svg' },
+  { name: 'Xero', alt: 'Xero accounting software', src: '/logos/xero.svg' },
+  { name: 'QuickBooks', alt: 'QuickBooks accounting software', src: '/logos/quickbooks.svg' },
+  { name: 'Sage', alt: 'Sage accounting software', src: '/logos/sage.svg' },
+  { name: 'FreeAgent', alt: 'FreeAgent accounting software', src: '/logos/freeagent.svg' },
+  { name: 'Dext', alt: 'Dext receipt capture software', src: '/logos/dext.svg' },
+  { name: 'HMRC MTD', alt: 'HMRC Making Tax Digital', src: '/logos/hmrc-mtd.svg' },
 ]
 
 export default function SoftwareStrip() {
@@ -68,7 +68,7 @@ export default function SoftwareStrip() {
             >
               <Image
                 src={logo.src}
-                alt={logo.name}
+                alt={logo.alt}
                 width={140}
                 height={50}
                 className="sw-img"

@@ -4,11 +4,21 @@ import './globals.css'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import LeadPopup from '@/components/LeadPopup'
+import CookieBanner from '@/components/CookieBanner'
 
 export const metadata: Metadata = {
-  title: 'Cledger | Online Bookkeeping & Accounting Services UK',
+  metadataBase: new URL('https://www.cledger.co.uk'),
+  title: {
+    default: 'Cledger | Online Bookkeeping & Accounting Services UK',
+    template: '%s | Cledger',
+  },
   description:
-    'Qualified UK accountants from £175/month. Bookkeeping, VAT returns, payroll, management accounts & corporation tax. MTD compliant. Transparent pricing. Get an instant quote.',
+    'Qualified UK accountants from £175/month. Bookkeeping, VAT returns, payroll, management accounts and corporation tax for UK small businesses. MTD compliant. Transparent pricing.',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     title: 'Cledger | Online Bookkeeping & Accounting Services UK',
     description:
@@ -32,12 +42,18 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en-GB">
       <head>
         <SchemaMarkup />
         <link
@@ -49,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <WhatsAppButton />
         <LeadPopup />
+        <CookieBanner />
         {/* Google Ads tag — must be in body, not head, when using next/script afterInteractive */}
         <Script
           id="gtag-js"

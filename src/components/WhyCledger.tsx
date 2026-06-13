@@ -37,7 +37,7 @@ export default function WhyCledger() {
             <div className={styles.illustration}>
               <Image
                 src="/images/why-cledger-illustration.svg"
-                alt="Accountant's workspace with laptop, reports and charts"
+                alt="Accountant reviewing financial reports for a UK small business client"
                 fill
                 style={{ objectFit: 'contain' }}
               />

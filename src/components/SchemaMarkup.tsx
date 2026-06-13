@@ -3,24 +3,29 @@ export default function SchemaMarkup() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "AccountingService",
-        "@id": "https://www.cledger.co.uk/#organization",
+        "@type": ["AccountingService", "LocalBusiness", "ProfessionalService"],
+        "@id": "https://www.cledger.co.uk/#organisation",
         "name": "Cledger",
+        "legalName": "Cledger Ltd",
         "url": "https://www.cledger.co.uk",
         "logo": "https://www.cledger.co.uk/logo.png",
-        "description": "Qualified UK accountants offering bookkeeping, VAT returns, payroll, management accounts and corporation tax from £175/month.",
-        "telephone": "+447774002712",
+        "description": "Cledger is a UK-registered online bookkeeping and accounting firm offering VAT returns, management accounts, payroll, and CT600 filing for UK small businesses and limited companies.",
         "email": "info@cledger.co.uk",
+        "telephone": "+447774002712",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "71-75 Shelton Street, Covent Garden",
           "addressLocality": "London",
+          "addressRegion": "England",
+          "postalCode": "WC2H 9JQ",
           "addressCountry": "GB"
         },
-        "areaServed": ["GB", "EU"],
+        "areaServed": ["GB"],
         "priceRange": "££",
         "openingHours": "Mo-Fr 09:00-18:00",
         "sameAs": [
-          "https://www.linkedin.com/company/cledger-uk"
+          "https://www.linkedin.com/company/cledger-uk",
+          "https://twitter.com/CledgerUK"
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -39,9 +44,8 @@ export default function SchemaMarkup() {
         "@type": "WebSite",
         "@id": "https://www.cledger.co.uk/#website",
         "url": "https://www.cledger.co.uk",
-        "name": "Cledger",
-        "description": "Online bookkeeping and accounting services for UK businesses",
-        "publisher": { "@id": "https://www.cledger.co.uk/#organization" }
+        "name": "Cledger — Online Bookkeeping & Accounting for UK Businesses",
+        "publisher": { "@id": "https://www.cledger.co.uk/#organisation" }
       }
     ]
   }

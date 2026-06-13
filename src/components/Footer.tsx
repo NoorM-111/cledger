@@ -71,8 +71,8 @@ export default function Footer() {
           <div>
             <span>© 2026 Cledger Ltd. All rights reserved.</span>
             <p className={styles.legal}>
-              Cledger Ltd is registered in England &amp; Wales, company no. [COMPANY_NUMBER_HERE].
-              Registered office: [REGISTERED_OFFICE_HERE].
+              Cledger Ltd is registered in England &amp; Wales, company no. 16208645.
+              Registered office: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ.
               Supervised by HMRC for anti-money laundering purposes.
             </p>
           </div>
