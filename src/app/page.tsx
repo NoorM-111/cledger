@@ -7,7 +7,6 @@ import Services    from '@/components/Services'
 import WhyCledger  from '@/components/WhyCledger'
 import Credentials from '@/components/Credentials'
 import SlackAccess from '@/components/SlackAccess'
-import OpenFirm    from '@/components/OpenFirm'
 import Sectors     from '@/components/Sectors'
 import LatestPosts from '@/components/LatestPosts'
 import Team        from '@/components/Team'
@@ -27,7 +26,6 @@ export default function Home() {
       <WhyCledger />
       <Credentials />
       <SlackAccess />
-      <OpenFirm />
       <Sectors />
       <LatestPosts />
       <Team />
