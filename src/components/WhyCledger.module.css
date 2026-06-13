@@ -1,25 +1,45 @@
+/* ── Two-column grid with explicit area placement ───────────────────────────
+   Desktop:  [illus] [heading]    Mobile DOM order gives:
+             [illus] [pts]        heading → illustration → pts
+   ────────────────────────────────────────────────────────────────────────── */
 .twoCol {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
+  grid-template-areas:
+    "illus heading"
+    "illus pts";
+  column-gap: 80px;
+  row-gap: 40px;
+  align-items: start;
 }
+
+.headingBlock {
+  grid-area: heading;
+}
+
+/* Sticky illustration — stays in viewport while user scrolls through the 4 points */
 .illustration {
-  position: relative;
+  grid-area: illus;
+  position: sticky;
+  top: 96px;
+  align-self: start;
   aspect-ratio: 4/5;
   border-radius: 16px;
   overflow: hidden;
 }
 
-.pts { margin-top: 40px; }
+/* Numbered points column */
+.pts {
+  grid-area: pts;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .pt {
   display: flex;
   gap: 20px;
-  padding-bottom: 28px;
-  margin-bottom: 28px;
-  border-bottom: 1px solid var(--border);
 }
-.pt:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 
 .num {
   width: 42px; height: 42px;
@@ -45,7 +65,12 @@
 }
 .pt p { font-size: 14px; color: var(--text); line-height: 1.68; }
 
-/* Process card */
+/* ── How We Work section ─────────────────────────────────────────────────── */
+.procSection {
+  background: #0D1730;
+  padding: 96px 0;
+}
+
 .procCard {
   background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 100%);
   border-radius: var(--rxl);
@@ -110,9 +135,25 @@
   margin: 6px 0 6px 16px;
 }
 
+/* ── Responsive ──────────────────────────────────────────────────────────── */
 @media (max-width: 1000px) {
-  .twoCol { grid-template-columns: 1fr !important; gap: 56px !important; }
+  .twoCol {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "heading"
+      "illus"
+      "pts";
+    column-gap: 0;
+    row-gap: 40px;
+  }
+  /* Unstick illustration on mobile — scroll naturally */
+  .illustration {
+    position: static;
+    align-self: auto;
+  }
 }
+
 @media (max-width: 640px) {
-  .procCard { padding: 28px 20px !important; }
+  .procCard { padding: 28px 20px; }
+  .procSection { padding: 64px 0; }
 }

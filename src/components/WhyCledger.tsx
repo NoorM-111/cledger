@@ -18,28 +18,32 @@ const steps = [
 
 export default function WhyCledger() {
   return (
-    <section id="why" style={{ padding: '96px 0', background: 'var(--surface)' }}>
-      <div className="wrap">
-        <div className={styles.twoCol}>
+    <>
+      <section id="why" style={{ padding: '96px 0', background: 'var(--surface)' }}>
+        <div className="wrap">
+          <div className={styles.twoCol}>
 
-          {/* LEFT: illustration */}
-          <div className={styles.illustration}>
-            <Image
-              src="/images/why-cledger-illustration.svg"
-              alt="Accountant's workspace with laptop, reports and charts"
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          </div>
+            {/* Item 1 in DOM — heading block. Goes to right col row 1 on desktop; first on mobile. */}
+            <div className={styles.headingBlock}>
+              <span className="s-label">Why Cledger</span>
+              <h2 className="s-h">A Financial Partner You Can Genuinely Rely On</h2>
+              <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 15, color: 'var(--text)', lineHeight: 1.82, marginBottom: 0 }}>
+                We believe that great accounting goes far beyond compliance. It is about understanding your business,
+                anticipating your needs and giving you the financial clarity to make better decisions, every single month.
+              </p>
+            </div>
 
-          {/* RIGHT: existing content */}
-          <div>
-            <span className="s-label">Why Cledger</span>
-            <h2 className="s-h">A Financial Partner You Can Genuinely Rely On</h2>
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: 15, color: 'var(--text)', lineHeight: 1.82, marginBottom: 8 }}>
-              We believe that great accounting goes far beyond compliance. It is about understanding your business,
-              anticipating your needs and giving you the financial clarity to make better decisions, every single month.
-            </p>
+            {/* Item 2 in DOM — illustration. Goes to left col (sticky) on desktop; second on mobile. */}
+            <div className={styles.illustration}>
+              <Image
+                src="/images/why-cledger-illustration.svg"
+                alt="Accountant's workspace with laptop, reports and charts"
+                fill
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+
+            {/* Item 3 in DOM — numbered points. Goes to right col row 2 on desktop; third on mobile. */}
             <div className={styles.pts}>
               {reasons.map(r => (
                 <div key={r.n} className={styles.pt}>
@@ -52,25 +56,30 @@ export default function WhyCledger() {
               ))}
             </div>
 
-            <div className={styles.procCard} style={{ marginTop: '40px' }}>
-              <h3>How we work with a new client</h3>
-              {steps.map((s, i) => (
-                <div key={s.n}>
-                  <div className={styles.procStep}>
-                    <div className={styles.procDot}>{s.n}</div>
-                    <div>
-                      <h5>{s.title}</h5>
-                      <p>{s.desc}</p>
-                    </div>
-                  </div>
-                  {i < steps.length - 1 && <div className={styles.procLine} />}
-                </div>
-              ))}
-            </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* How We Work — extracted as its own full-width section */}
+      <section className={styles.procSection}>
+        <div className="wrap">
+          <div className={styles.procCard}>
+            <h3>How we work with a new client</h3>
+            {steps.map((s, i) => (
+              <div key={s.n}>
+                <div className={styles.procStep}>
+                  <div className={styles.procDot}>{s.n}</div>
+                  <div>
+                    <h5>{s.title}</h5>
+                    <p>{s.desc}</p>
+                  </div>
+                </div>
+                {i < steps.length - 1 && <div className={styles.procLine} />}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
