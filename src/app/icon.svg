@@ -1,4 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect width="32" height="32" rx="7" fill="#0B1222"/>
-  <text x="16" y="23" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#C9A84C" text-anchor="middle">C</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Cledger">
+  <style>
+    .bg     { fill: #1A1A17; }
+    .letter { fill: #F7F2E6; }
+    .dot    { fill: #C9A84C; }
+    @media (prefers-color-scheme: light) {
+      .bg     { fill: #F4ECD7; }
+      .letter { fill: #1A1A17; }
+      .dot    { fill: #9A7B39; }
+    }
+  </style>
+  <rect class="bg" width="128" height="128" rx="32" ry="32"/>
+  <text class="letter" x="63" y="64" font-family="Georgia, 'Times New Roman', serif" font-weight="500" font-size="82" text-anchor="middle" dominant-baseline="central">C</text>
+  <circle class="dot" cx="92" cy="90" r="7"/>
 </svg>

@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   description:
     'Qualified UK accountants from £175/month. Bookkeeping, VAT returns, payroll, management accounts and corporation tax for UK small businesses. MTD compliant. Transparent pricing.',
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
   },
   openGraph: {
     title: 'Cledger | Online Bookkeeping & Accounting Services UK',
