@@ -10,7 +10,7 @@ import AnalyticsConsent from '@/components/AnalyticsConsent'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.cledger.co.uk'),
   title: {
-    default: 'Cledger | Online Bookkeeping & Accounting Services UK',
+    default: 'Cledger — Online Accountants for UK Small Businesses',
     template: '%s | Cledger',
   },
   description:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     apple: '/icon.svg',
   },
   openGraph: {
-    title: 'Cledger | Online Bookkeeping & Accounting Services UK',
+    title: 'Cledger — Online Accountants for UK Small Businesses',
     description:
       'Qualified UK accountants from £175/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant. Transparent pricing.',
     url: 'https://www.cledger.co.uk',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cledger | Online Bookkeeping & Accounting Services UK',
+    title: 'Cledger — Online Accountants for UK Small Businesses',
     description:
       'Qualified UK accountants from £175/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant.',
     images: ['https://www.cledger.co.uk/og-image.png'],
