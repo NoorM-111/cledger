@@ -1,20 +1,13 @@
 import Link from 'next/link'
 import styles from './Team.module.css'
 
-const Ico = ({ d, extra }: { d: string; extra?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-    <path d={d} />
-    {extra && <path d={extra} />}
-  </svg>
-)
-
 const founders = [
   {
     initials: 'NM',
     name: 'Noor Muhammad',
     role: 'Founder & Principal',
     tags: ['Financial Reporting', 'Tax Planning', 'Management Accounting', 'HMRC Affairs'],
-    bio: 'Noor leads client delivery across the full range of Cledger\'s accounting services. He specialises in multi-client portfolio management, tax compliance and forward-looking financial planning, bringing a rigorous, hands-on approach to every engagement and translating complex financial data into clear, actionable insight.',
+    bio: 'Noor leads client delivery across the full range of Cledger\'s accounting services. He specialises in multi-client portfolio management, tax compliance and forward-looking financial planning, bringing a rigorous, hands-on approach to every engagement.',
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>,
@@ -53,7 +46,7 @@ const founders = [
     name: 'Ali Sajjad',
     role: 'Co-Founder',
     tags: ['ACMA', 'MAAT', 'MSc Business Analytics'],
-    bio: 'Ali co-leads Cledger\'s financial strategy, modelling and analytics practice. With international corporate exposure across telecommunications, startups and UK accounting environments, he brings deep expertise in large-scale revenue operations, financial modelling and data-driven business analytics.',
+    bio: 'Ali co-leads Cledger\'s financial strategy, modelling and analytics practice. With international corporate exposure across telecommunications, startups and UK accounting environments, he brings deep expertise in large-scale revenue operations and data-driven financial insight.',
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>,
@@ -91,7 +84,7 @@ const founders = [
 
 export default function Team() {
   return (
-    <section id="team" style={{ padding: '96px 0', background: 'var(--surface)' }}>
+    <section id="team" style={{ padding: '96px 0', background: '#FBF8F1', borderTop: '1px solid #E4DDCF' }}>
       <div className="wrap">
         <div className="center" style={{ marginBottom: '56px' }}>
           <span className="s-label">Leadership</span>
@@ -105,7 +98,6 @@ export default function Team() {
           {founders.map(f => (
             <div key={f.name} className={styles.card}>
               <div className={styles.cardTop}>
-                <div className={styles.glow} aria-hidden />
                 <div className={styles.avatar}>{f.initials}</div>
                 <div className={styles.name}>{f.name}</div>
                 <div className={styles.role}>{f.role}</div>
@@ -133,11 +125,7 @@ export default function Team() {
           ))}
         </div>
         <div className="center" style={{ marginTop: '48px' }}>
-          <Link
-            href="/team"
-            className="btn btn-navy"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', fontFamily: 'inherit' }}
-          >
+          <Link href="/team" className="btn btn-ghost">
             View Full Team
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </Link>

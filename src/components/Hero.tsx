@@ -1,55 +1,45 @@
 'use client'
-import Image from 'next/image'
 import styles from './Hero.module.css'
 import CalendlyButton from './CalendlyButton'
-import DeadlineChecker from './DeadlineChecker'
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
 const stats = [
-  { n: '100+', label: 'UK client accounts delivered' },
-  { n: '100%', label: 'HMRC Compliant'                    },
+  { n: '100+', label: 'UK client accounts' },
+  { n: '100%', label: 'Compliance rate'     },
+  { n: '£0',   label: 'Hidden fees'         },
+  { n: '1hr',  label: 'Response time'       },
 ]
 
 const points = [
   'A dedicated named contact who knows your business inside out and is always available when you need them.',
   'Full-spectrum coverage: bookkeeping, tax compliance, planning, and every obligation in between.',
-  'Every piece of work reviewed to the highest standard, submitted on time, without exception.',
+  'Every piece of work reviewed to the highest standard and submitted on time — helping you avoid penalties and compliance issues.',
 ]
 
 export default function Hero() {
   return (
     <section className={styles.hero} id="hero">
-      <Image
-        src="/images/hero-background.svg"
-        alt="Online accounting services for UK small businesses — Cledger"
-        fill
-        priority
-        className={styles.bgImage}
-      />
-      <div className={styles.glow1} aria-hidden />
-      <div className={styles.glow2} aria-hidden />
       <div className="wrap">
         <div className={styles.grid}>
           <div>
-            <div className={`${styles.badge} fade-in`} style={{ animationDelay: '0ms' }}>
-              <span className={styles.badgeDot} />
-              Online Accountants for UK Small Businesses
-            </div>
-            <h1 className={`${styles.h1} fade-in`} style={{ animationDelay: '80ms' }}>
-              Clear Books. <br />Clear Numbers. <br /><em>Clear Future.</em>
+            <span className={styles.eyebrow}>Online Accountants for UK Small Businesses</span>
+            <h1 className={styles.h1}>
+              Clear Books.<br />
+              Clear Numbers.<br />
+              <em>Clear future.</em>
             </h1>
-            <p className={`${styles.sub} fade-in`} style={{ animationDelay: '160ms' }}>
-              Bookkeeping, VAT, payroll, and full finance outsourcing for UK small businesses. Delivered remotely by qualified accountants from <strong>£175/month</strong>.
+            <p className={styles.sub}>
+              Bookkeeping, VAT, payroll, and full finance outsourcing for UK small businesses.
+              Delivered remotely by qualified accountants from <strong style={{ color: '#1A1A16', fontWeight: 600 }}>£175/month</strong>.
             </p>
-            <div className={`${styles.btns} fade-in`} style={{ animationDelay: '240ms' }}>
-              <CalendlyButton className="btn btn-gold">Book a Free Consultation</CalendlyButton>
+            <div className={styles.btns}>
+              <CalendlyButton className="btn btn-navy">Book a Free Consultation</CalendlyButton>
               <button className="btn btn-ghost" onClick={() => scrollTo('services')}>Our Services</button>
             </div>
-            <DeadlineChecker />
-            <div className={`${styles.stats} fade-in`} style={{ animationDelay: '320ms' }}>
+            <div className={styles.stats}>
               {stats.map((s, i) => (
                 <div key={s.n} className={styles.statItem}>
                   {i > 0 && <div className={styles.statDiv} />}
@@ -61,10 +51,8 @@ export default function Hero() {
               ))}
             </div>
           </div>
-          <div className={`${styles.card} fade-in`} style={{ animationDelay: '400ms' }}>
-            <div className={styles.cardHeader}>
-              <span className={styles.cardPill}>Our Commitment</span>
-            </div>
+          <div className={styles.card}>
+            <span className={styles.cardLabel}>Our Commitment</span>
             <div className={styles.pts}>
               {points.map((p, i) => (
                 <div key={i} className={styles.pt}>

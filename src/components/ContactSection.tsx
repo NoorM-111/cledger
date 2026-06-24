@@ -45,26 +45,24 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" style={styles.section}>
-      <div style={styles.container}>
+    <section id="contact" style={S.section}>
+      <div style={S.container}>
 
-        {/* Section header */}
-        <div style={styles.header}>
-          <span style={styles.eyebrow}>Get in touch</span>
-          <h2 style={styles.title}>
+        <div style={S.header}>
+          <span style={S.eyebrow}>Get in touch</span>
+          <h2 style={S.title}>
             Have a question?{" "}
-            <em style={styles.titleItalic}>We&rsquo;ll get back to you.</em>
+            <em style={S.titleItalic}>We&rsquo;ll get back to you.</em>
           </h2>
-          <p style={styles.subtitle}>
+          <p style={S.subtitle}>
             Not sure which service fits your business? Send us a message and we&rsquo;ll
-            recommend the right solution, no commitment needed.
+            recommend the right solution — no commitment needed.
           </p>
         </div>
 
-        <div style={styles.layout}>
+        <div style={S.layout}>
 
-          {/* Left: contact info */}
-          <div style={styles.infoCol}>
+          <div style={S.infoCol}>
             {[
               {
                 icon: (
@@ -103,82 +101,55 @@ export default function ContactSection() {
                   </svg>
                 ),
                 label: "Based in",
-                value: "London, UK · Serving clients nationwide",
+                value: "UK · Serving clients nationwide",
               },
             ].map((item) => (
-              <div key={item.label} style={styles.infoCard}>
-                <div style={styles.iconBox}>{item.icon}</div>
+              <div key={item.label} style={S.infoCard}>
+                <div style={S.iconBox}>{item.icon}</div>
                 <div>
-                  <div style={styles.infoLabel}>{item.label}</div>
-                  <div style={styles.infoValue}>{item.value}</div>
+                  <div style={S.infoLabel}>{item.label}</div>
+                  <div style={S.infoValue}>{item.value}</div>
                 </div>
               </div>
             ))}
 
-            <div style={styles.liveNote}>
-              <span style={styles.liveDot} />
-              <span style={styles.liveText}>Currently accepting new clients</span>
+            <div style={S.liveNote}>
+              <span style={S.liveDot} />
+              <span style={S.liveText}>Currently accepting new clients</span>
             </div>
           </div>
 
-          {/* Right: form */}
-          <div style={styles.formCard}>
+          <div style={S.formCard}>
             {status === "success" ? (
-              <div style={styles.successState}>
-                <div style={styles.successIcon}>
+              <div style={S.successState}>
+                <div style={S.successIcon}>
                   <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4ade80" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20,6 9,17 4,12" />
                   </svg>
                 </div>
-                <h3 style={styles.successTitle}>Enquiry sent</h3>
-                <p style={styles.successText}>
-                  Thank you, we&rsquo;ll review your message and respond within 24 hours
+                <h3 style={S.successTitle}>Enquiry sent</h3>
+                <p style={S.successText}>
+                  Thank you — we&rsquo;ll review your message and respond within 24 hours
                   on UK business days.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} noValidate>
-                <div style={styles.formRow}>
+                <div style={S.formRow}>
                   <FormField label="Full name" required>
-                    <input
-                      style={styles.input}
-                      type="text"
-                      name="name"
-                      placeholder="Jane Smith"
-                      value={form.name}
-                      onChange={handleChange}
-                    />
+                    <input style={S.input} type="text" name="name" placeholder="Jane Smith" value={form.name} onChange={handleChange} />
                   </FormField>
                   <FormField label="Email address" required>
-                    <input
-                      style={styles.input}
-                      type="email"
-                      name="email"
-                      placeholder="jane@company.co.uk"
-                      value={form.email}
-                      onChange={handleChange}
-                    />
+                    <input style={S.input} type="email" name="email" placeholder="jane@company.co.uk" value={form.email} onChange={handleChange} />
                   </FormField>
                 </div>
 
-                <div style={styles.formRow}>
+                <div style={S.formRow}>
                   <FormField label="Phone number">
-                    <input
-                      style={styles.input}
-                      type="tel"
-                      name="phone"
-                      placeholder="+44 7700 000000"
-                      value={form.phone}
-                      onChange={handleChange}
-                    />
+                    <input style={S.input} type="tel" name="phone" placeholder="+44 7700 000000" value={form.phone} onChange={handleChange} />
                   </FormField>
                   <FormField label="Business type">
-                    <select
-                      style={styles.select}
-                      name="businessType"
-                      value={form.businessType}
-                      onChange={handleChange}
-                    >
+                    <select style={S.select} name="businessType" value={form.businessType} onChange={handleChange}>
                       <option value="">Select one</option>
                       <option>Sole trader</option>
                       <option>Ltd company</option>
@@ -191,12 +162,7 @@ export default function ContactSection() {
                 </div>
 
                 <FormField label="Service interested in" required>
-                  <select
-                    style={styles.select}
-                    name="service"
-                    value={form.service}
-                    onChange={handleChange}
-                  >
+                  <select style={S.select} name="service" value={form.service} onChange={handleChange}>
                     <option value="">Select a service</option>
                     <option>Bookkeeping</option>
                     <option>VAT & Tax Compliance</option>
@@ -210,35 +176,26 @@ export default function ContactSection() {
                 </FormField>
 
                 <FormField label="Message" required>
-                  <textarea
-                    style={{ ...styles.input, ...styles.textarea }}
-                    name="message"
-                    placeholder="Tell us about your business and what you need help with..."
-                    value={form.message}
-                    onChange={handleChange}
-                  />
+                  <textarea style={{ ...S.input, ...S.textarea }} name="message" placeholder="Tell us about your business and what you need help with..." value={form.message} onChange={handleChange} />
                 </FormField>
 
-                {errorMsg && <p style={styles.errorMsg}>{errorMsg}</p>}
+                {errorMsg && <p style={S.errorMsg}>{errorMsg}</p>}
 
-                <div style={styles.submitRow}>
-                  <p style={styles.submitNote}>
-                    <strong style={styles.submitNoteStrong}>No spam, ever.</strong>
+                <div style={S.submitRow}>
+                  <p style={S.submitNote}>
+                    <strong style={S.submitNoteStrong}>No spam, ever.</strong>
                     <br />
                     We only use your details to respond to your enquiry.
                   </p>
                   <button
                     type="submit"
-                    style={{
-                      ...styles.submitBtn,
-                      opacity: status === "loading" ? 0.7 : 1,
-                      cursor: status === "loading" ? "not-allowed" : "pointer",
-                    }}
+                    className="btn btn-navy"
+                    style={{ opacity: status === "loading" ? 0.7 : 1, cursor: status === "loading" ? "not-allowed" : "pointer" }}
                     disabled={status === "loading"}
                   >
                     {status === "loading" ? "Sending…" : "Send enquiry"}
                     {status !== "loading" && (
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                         <line x1="22" y1="2" x2="11" y2="13" />
                         <polygon points="22,2 15,22 11,13 2,9" />
                       </svg>
@@ -254,52 +211,29 @@ export default function ContactSection() {
   );
 }
 
-function FormField({
-  label,
-  required,
-  children,
-}: {
-  label: string;
-  required?: boolean;
-  children: React.ReactNode;
-}) {
+function FormField({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
   return (
-    <div style={styles.formGroup}>
-      <label style={styles.label}>
+    <div style={S.formGroup}>
+      <label style={S.label}>
         {label}
-        {required && <span style={styles.required}> *</span>}
+        {required && <span style={{ color: '#9A7B39' }}> *</span>}
       </label>
       {children}
     </div>
   );
 }
 
-// ─── Styles ────────────────────────────────────────────────────────────────────
-const C = {
-  navy: "#0B1222",
-  navy2: "#131d31",
-  card: "#111827",
-  gold: "#C9A84C",
-  gold2: "#e8c96a",
-  gold3: "#f5e0a0",
-  white: "#F8F5EE",
-  muted: "#8a94a8",
-  border: "rgba(201,168,76,0.18)",
-  inputBg: "#0e1520",
-  inputBorder: "rgba(255,255,255,0.10)",
-  green: "#4ade80",
-};
-
-const styles: Record<string, React.CSSProperties> = {
+const S: Record<string, React.CSSProperties> = {
   section: {
-    background: C.navy,
-    padding: "6rem 1.5rem",
-    fontFamily: "'Sora', 'Inter', sans-serif",
-    WebkitFontSmoothing: "antialiased",
+    background: '#F7F4EC',
+    padding: '96px 0',
+    fontFamily: "'Hanken Grotesk', 'Inter', sans-serif",
+    borderTop: '1px solid #E4DDCF',
   },
   container: {
     maxWidth: 1100,
     margin: "0 auto",
+    padding: '0 40px',
   },
   header: {
     textAlign: "center",
@@ -307,36 +241,39 @@ const styles: Record<string, React.CSSProperties> = {
   },
   eyebrow: {
     display: "inline-block",
+    fontFamily: "'IBM Plex Mono', monospace",
     fontSize: 11,
-    fontWeight: 600,
-    letterSpacing: "0.14em",
+    fontWeight: 500,
+    letterSpacing: "2px",
     textTransform: "uppercase",
-    color: C.gold,
+    color: '#9A7B39',
     marginBottom: "1rem",
   },
   title: {
-    fontFamily: "'DM Serif Display', Georgia, serif",
-    fontSize: "clamp(2rem, 4vw, 2.8rem)",
+    fontFamily: "'Newsreader', Georgia, serif",
+    fontSize: "clamp(1.8rem, 4vw, 2.6rem)",
     fontWeight: 400,
-    lineHeight: 1.15,
-    color: C.white,
+    lineHeight: 1.1,
+    color: '#1A1A16',
     marginBottom: "1rem",
+    letterSpacing: '-1px',
   },
   titleItalic: {
     fontStyle: "italic",
-    color: C.gold2,
+    color: '#9A7B39',
   },
   subtitle: {
+    fontFamily: "'Hanken Grotesk', sans-serif",
     fontSize: 15,
-    color: C.muted,
+    color: '#5F5A50',
     maxWidth: 500,
     margin: "0 auto",
-    lineHeight: 1.7,
+    lineHeight: 1.75,
   },
   layout: {
     display: "grid",
     gridTemplateColumns: "1fr 1.7fr",
-    gap: "3rem",
+    gap: "2.5rem",
     alignItems: "start",
   },
   infoCol: {
@@ -348,35 +285,37 @@ const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     alignItems: "flex-start",
     gap: 14,
-    background: C.card,
-    border: "0.5px solid rgba(255,255,255,0.07)",
-    borderRadius: 12,
+    background: '#FFFFFF',
+    border: "1px solid #E9E2D4",
+    borderRadius: 10,
     padding: "1rem 1.2rem",
-    transition: "border-color 0.2s",
   },
   iconBox: {
     width: 38,
     height: 38,
-    borderRadius: 9,
-    background: "rgba(201,168,76,0.10)",
+    borderRadius: 8,
+    background: '#F4ECD7',
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     flexShrink: 0,
-    color: C.gold,
+    color: '#9A7B39',
   },
   infoLabel: {
+    fontFamily: "'IBM Plex Mono', monospace",
     fontSize: 10,
-    fontWeight: 600,
-    textTransform: "uppercase" as const,
-    letterSpacing: "0.08em",
-    color: C.muted,
+    fontWeight: 500,
+    textTransform: "uppercase",
+    letterSpacing: "1.5px",
+    color: '#B0A892',
     marginBottom: 2,
   },
   infoValue: {
+    fontFamily: "'Hanken Grotesk', sans-serif",
     fontSize: 13,
-    color: C.white,
+    color: '#1A1A16',
     lineHeight: 1.5,
+    fontWeight: 500,
   },
   liveNote: {
     display: "flex",
@@ -390,25 +329,24 @@ const styles: Record<string, React.CSSProperties> = {
     width: 8,
     height: 8,
     borderRadius: "50%",
-    background: C.green,
+    background: '#4ade80',
     flexShrink: 0,
-    animation: "pulse 2s infinite",
   },
   liveText: {
+    fontFamily: "'Hanken Grotesk', sans-serif",
     fontSize: 12,
-    color: C.muted,
+    color: '#9A958A',
   },
   formCard: {
-    background: C.card,
-    border: "0.5px solid rgba(255,255,255,0.07)",
-    borderRadius: 14,
+    background: '#FFFFFF',
+    border: "1px solid #E9E2D4",
+    borderRadius: 12,
     padding: "2rem 1.8rem",
   },
   formRow: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
     gap: 12,
-    marginBottom: 0,
   },
   formGroup: {
     display: "flex",
@@ -417,48 +355,47 @@ const styles: Record<string, React.CSSProperties> = {
     marginBottom: 14,
   },
   label: {
+    fontFamily: "'IBM Plex Mono', monospace",
     fontSize: 10,
-    fontWeight: 600,
-    textTransform: "uppercase" as const,
-    letterSpacing: "0.08em",
-    color: C.muted,
-  },
-  required: {
-    color: C.gold,
+    fontWeight: 500,
+    textTransform: "uppercase",
+    letterSpacing: "1.5px",
+    color: '#9A958A',
   },
   input: {
-    fontFamily: "'Sora', 'Inter', sans-serif",
-    fontSize: 13,
-    color: C.white,
-    background: C.inputBg,
-    border: `0.5px solid ${C.inputBorder}`,
-    borderRadius: 9,
+    fontFamily: "'Hanken Grotesk', sans-serif",
+    fontSize: 14,
+    color: '#1A1A16',
+    background: '#FAFAF7',
+    border: "1px solid #E9E2D4",
+    borderRadius: 8,
     padding: "11px 14px",
     width: "100%",
     outline: "none",
-    transition: "border-color 0.2s, box-shadow 0.2s",
+    transition: "border-color 0.18s ease",
   },
   select: {
-    fontFamily: "'Sora', 'Inter', sans-serif",
-    fontSize: 13,
-    color: C.white,
-    background: C.inputBg,
-    border: `0.5px solid ${C.inputBorder}`,
-    borderRadius: 9,
+    fontFamily: "'Hanken Grotesk', sans-serif",
+    fontSize: 14,
+    color: '#1A1A16',
+    background: '#FAFAF7',
+    border: "1px solid #E9E2D4",
+    borderRadius: 8,
     padding: "11px 14px",
     width: "100%",
     outline: "none",
-    appearance: "none" as const,
+    appearance: "none",
     cursor: "pointer",
   },
   textarea: {
-    resize: "none" as const,
+    resize: "none",
     height: 110,
     lineHeight: 1.6,
   },
   errorMsg: {
+    fontFamily: "'Hanken Grotesk', sans-serif",
     fontSize: 12,
-    color: "#f87171",
+    color: "#ef4444",
     marginBottom: 12,
     marginTop: -4,
   },
@@ -468,32 +405,17 @@ const styles: Record<string, React.CSSProperties> = {
     justifyContent: "space-between",
     gap: "1rem",
     marginTop: "1.2rem",
-    flexWrap: "wrap" as const,
+    flexWrap: "wrap",
   },
   submitNote: {
+    fontFamily: "'Hanken Grotesk', sans-serif",
     fontSize: 11,
-    color: C.muted,
+    color: '#9A958A',
     lineHeight: 1.6,
   },
   submitNoteStrong: {
-    color: C.gold3,
+    color: '#5F5A50',
     fontWeight: 600,
-  },
-  submitBtn: {
-    display: "inline-flex",
-    alignItems: "center",
-    gap: 8,
-    fontFamily: "'Sora', 'Inter', sans-serif",
-    fontSize: 13,
-    fontWeight: 600,
-    padding: "12px 26px",
-    borderRadius: 10,
-    border: "none",
-    background: C.gold,
-    color: C.navy,
-    cursor: "pointer",
-    transition: "background 0.2s, transform 0.15s",
-    whiteSpace: "nowrap" as const,
   },
   successState: {
     display: "flex",
@@ -508,20 +430,21 @@ const styles: Record<string, React.CSSProperties> = {
     width: 56,
     height: 56,
     borderRadius: "50%",
-    background: "rgba(74,222,128,0.10)",
+    background: "rgba(74,222,128,0.1)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
   },
   successTitle: {
-    fontFamily: "'DM Serif Display', Georgia, serif",
+    fontFamily: "'Newsreader', Georgia, serif",
     fontSize: "1.6rem",
     fontWeight: 400,
-    color: C.white,
+    color: '#1A1A16',
   },
   successText: {
+    fontFamily: "'Hanken Grotesk', sans-serif",
     fontSize: 13,
-    color: C.muted,
+    color: '#5F5A50',
     lineHeight: 1.7,
     maxWidth: 300,
   },

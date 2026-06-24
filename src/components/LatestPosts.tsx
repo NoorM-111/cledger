@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 
 const posts = [
@@ -23,123 +24,109 @@ const posts = [
 
 export default function LatestPosts() {
   return (
-    <section style={{ background: '#0B1222', padding: '96px 0' }}>
-      <style>{`
-        .latest-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 24px;
-          margin-top: 48px;
-        }
-        @media (max-width: 960px) {
-          .latest-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 580px) {
-          .latest-grid { grid-template-columns: 1fr; }
-        }
-        .latest-card {
-          background: #131d31;
-          border: 1px solid rgba(201,168,76,0.15);
-          border-radius: 12px;
-          padding: 24px;
-          text-decoration: none;
-          display: flex;
-          flex-direction: column;
-          transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .latest-card:hover {
-          border-color: rgba(201,168,76,0.4);
-          transform: translateY(-3px);
-          box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-        }
-        .latest-desc {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-      `}</style>
-
+    <section style={{ background: '#F7F4EC', padding: '96px 0', borderTop: '1px solid #E4DDCF' }}>
       <div className="wrap">
-        <div className="center">
-          <span style={{
-            fontSize: '11px', fontWeight: 600, letterSpacing: '0.14em',
-            textTransform: 'uppercase', color: '#C9A84C',
-            fontFamily: 'Sora, sans-serif', display: 'block', marginBottom: '14px',
-          }}>
-            Resources
-          </span>
-          <h2 style={{
-            fontFamily: "'DM Serif Display', serif",
-            fontSize: 'clamp(1.8rem, 3vw, 2.6rem)',
-            fontWeight: 400, color: '#F8F5EE',
-            marginBottom: '14px', lineHeight: 1.2,
-          }}>
-            Latest Accounting Insights
-          </h2>
-          <p style={{
-            fontFamily: 'Sora, sans-serif',
-            fontSize: '16px', color: '#8a94a8',
-            maxWidth: '480px', margin: '0 auto', lineHeight: 1.7,
-          }}>
+        <div className="center" style={{ marginBottom: '48px' }}>
+          <span className="s-label">Resources</span>
+          <h2 className="s-h">Latest Accounting Insights</h2>
+          <p className="s-p">
             Free guides and practical advice from our qualified accountants.
           </p>
         </div>
 
-        <div className="latest-grid">
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: '20px',
+          marginBottom: '48px',
+        }}>
           {posts.map(post => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="latest-card">
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              style={{
+                background: '#FFFFFF',
+                border: '1px solid #E9E2D4',
+                borderRadius: '10px',
+                padding: '28px',
+                textDecoration: 'none',
+                display: 'flex',
+                flexDirection: 'column',
+                transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
+              }}
+              onMouseEnter={e => {
+                (e.currentTarget as HTMLAnchorElement).style.borderColor = '#C9A84C'
+                ;(e.currentTarget as HTMLAnchorElement).style.boxShadow = '0 8px 32px rgba(26,26,22,0.07)'
+              }}
+              onMouseLeave={e => {
+                (e.currentTarget as HTMLAnchorElement).style.borderColor = '#E9E2D4'
+                ;(e.currentTarget as HTMLAnchorElement).style.boxShadow = 'none'
+              }}
+            >
               <span style={{
-                fontSize: '10px', fontWeight: 600,
-                padding: '3px 10px', borderRadius: '20px',
-                background: 'rgba(201,168,76,0.1)', color: '#C9A84C',
-                fontFamily: 'Sora, sans-serif',
-                display: 'inline-block', marginBottom: '14px', alignSelf: 'flex-start',
+                fontFamily: "'IBM Plex Mono', monospace",
+                fontSize: '10px',
+                fontWeight: 500,
+                letterSpacing: '1.5px',
+                textTransform: 'uppercase' as const,
+                color: '#9A7B39',
+                background: '#F4ECD7',
+                padding: '4px 10px',
+                borderRadius: '4px',
+                display: 'inline-block',
+                marginBottom: '18px',
+                alignSelf: 'flex-start',
               }}>
                 {post.category}
               </span>
               <h3 style={{
-                fontFamily: "'DM Serif Display', serif",
-                fontSize: '18px', fontWeight: 400,
-                color: '#F8F5EE', lineHeight: 1.35,
-                marginBottom: '10px', flex: 1,
+                fontFamily: "'Newsreader', Georgia, serif",
+                fontSize: '20px',
+                fontWeight: 500,
+                color: '#1A1A16',
+                lineHeight: 1.3,
+                marginBottom: '12px',
+                flex: 1,
+                letterSpacing: '-0.3px',
               }}>
                 {post.title}
               </h3>
-              <p className="latest-desc" style={{
-                fontFamily: 'Sora, sans-serif',
-                fontSize: '13px', color: '#8a94a8',
-                lineHeight: 1.6, marginBottom: '18px',
+              <p style={{
+                fontFamily: "'Hanken Grotesk', sans-serif",
+                fontSize: '14px',
+                color: '#5F5A50',
+                lineHeight: 1.65,
+                marginBottom: '20px',
+                display: '-webkit-box',
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: 'vertical' as const,
+                overflow: 'hidden',
               }}>
                 {post.description}
               </p>
               <span style={{
-                fontSize: '13px', color: '#C9A84C',
-                fontFamily: 'Sora, sans-serif', fontWeight: 500,
+                fontFamily: "'Hanken Grotesk', sans-serif",
+                fontSize: '13px',
+                color: '#9A7B39',
+                fontWeight: 500,
               }}>
-                Read more →
+                Read article →
               </span>
             </Link>
           ))}
         </div>
 
-        <div style={{ textAlign: 'center', marginTop: '48px' }}>
-          <Link href="/blog" style={{
-            display: 'inline-block',
-            fontFamily: 'Sora, sans-serif',
-            fontSize: '14px', fontWeight: 600,
-            color: '#C9A84C',
-            border: '1px solid rgba(201,168,76,0.5)',
-            borderRadius: '8px',
-            padding: '12px 32px',
-            textDecoration: 'none',
-            letterSpacing: '0.03em',
-            transition: 'background 0.2s ease, border-color 0.2s ease',
-          }}>
+        <div style={{ textAlign: 'center' }}>
+          <Link href="/blog" className="btn btn-ghost">
             View all articles →
           </Link>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 960px) { .posts-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+        @media (max-width: 580px) { .posts-grid { grid-template-columns: 1fr !important; } }
+      `}</style>
     </section>
   )
 }

@@ -47,7 +47,6 @@ export default function Navbar() {
       <div className="wrap">
         <div className={styles.inner}>
           <button className={styles.logo} onClick={() => scrollTo('hero')}>
-            <div className={styles.logoMark}><span>C</span></div>
             <span className={styles.logoText}>Cledger<em>.</em></span>
           </button>
           <ul className={styles.menu}>
@@ -78,7 +77,7 @@ export default function Navbar() {
               {l.label}
             </button>
           ))}
-          <CalendlyButton className={`${styles.mobCta} btn btn-gold`}>
+          <CalendlyButton className={`${styles.mobCta} btn btn-navy`}>
             Free Consultation
           </CalendlyButton>
         </div>

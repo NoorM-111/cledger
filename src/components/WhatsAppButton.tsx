@@ -18,8 +18,8 @@ export default function WhatsAppButton() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        boxShadow: '0 4px 20px rgba(37,211,102,0.4)',
-        zIndex: 9999,
+        boxShadow: '0 6px 22px rgba(37,211,102,0.42)',
+        zIndex: 9000,
         textDecoration: 'none',
       }}
     >

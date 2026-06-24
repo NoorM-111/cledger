@@ -5,6 +5,7 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import LeadPopup from '@/components/LeadPopup'
 import CookieBanner from '@/components/CookieBanner'
+import AnalyticsConsent from '@/components/AnalyticsConsent'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.cledger.co.uk'),
@@ -66,20 +67,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WhatsAppButton />
         <LeadPopup />
         <CookieBanner />
-        {/* Google Ads tag — must be in body, not head, when using next/script afterInteractive */}
-        <Script
-          id="gtag-js"
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18199125035"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-config" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-18199125035');
-          `}
-        </Script>
+        {/* Google Ads — only loaded after cookie consent (see AnalyticsConsent.tsx) */}
+        <AnalyticsConsent />
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="lazyOnload"

@@ -1,159 +1,254 @@
-/* ── Two-column grid with explicit area placement ───────────────────────────
-   Desktop:  [illus] [heading]    Mobile DOM order gives:
-             [illus] [pts]        heading → illustration → pts
-   ────────────────────────────────────────────────────────────────────────── */
-.twoCol {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "illus heading"
-    "illus pts";
-  column-gap: 80px;
-  row-gap: 40px;
-  align-items: start;
-}
-
-.headingBlock {
-  grid-area: heading;
-}
-
-/* Sticky illustration — stays in viewport while user scrolls through the 4 points */
-.illustration {
-  grid-area: illus;
-  position: sticky;
-  top: 96px;
-  align-self: start;
-  aspect-ratio: 4/5;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-/* Numbered points column */
-.pts {
-  grid-area: pts;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.pt {
-  display: flex;
-  gap: 20px;
-}
-
-.num {
-  width: 42px; height: 42px;
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--gold-light);
-  box-shadow: 0 4px 12px rgba(11,25,48,0.16);
-}
-
-.pt h4 {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--heading);
-  margin-bottom: 6px;
-}
-.pt p { font-size: 14px; color: var(--text); line-height: 1.68; }
-
-/* ── How We Work section ─────────────────────────────────────────────────── */
-.procSection {
-  background: #0D1730;
+/* ── Why Cledger — dark band ───────────────────────────────────────────── */
+.darkSection {
+  background: #1A1A17;
   padding: 96px 0;
 }
 
-.procCard {
-  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 100%);
-  border-radius: var(--rxl);
-  padding: 48px 40px;
-  position: relative;
-  overflow: hidden;
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
 }
-.procCard::before {
-  content: '';
-  position: absolute;
-  top: -100px; right: -100px;
-  width: 300px; height: 300px;
+
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.heading {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 400;
+  color: #F7F2E6;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+.heading em {
+  font-style: italic;
+  color: #C9A84C;
+}
+
+.intro {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 15px;
+  color: #9E988A;
+  line-height: 1.78;
+  margin-bottom: 40px;
+}
+
+.pts {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.pt { display: flex; gap: 16px; }
+
+.num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: #C9A84C;
+  flex-shrink: 0;
+  padding-top: 3px;
+  letter-spacing: 1px;
+}
+
+.pt h4 {
+  font-family: 'Newsreader', serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #F7F2E6;
+  margin-bottom: 6px;
+  letter-spacing: -0.2px;
+}
+.pt p {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 14px;
+  color: #9E988A;
+  line-height: 1.68;
+}
+
+/* Dashboard mockup card */
+.mockup {
+  background: #22221D;
+  border: 1px solid #2D2D28;
+  border-radius: 12px;
+  padding: 28px;
+  position: sticky;
+  top: 96px;
+}
+
+.mockupHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #2D2D28;
+}
+
+.mockupTitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C9A84C;
+}
+
+.mockupDot {
+  width: 8px; height: 8px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(200,164,74,0.07) 0%, transparent 70%);
-  pointer-events: none;
+  background: #4CAF50;
 }
-.procCard h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  color: #fff;
-  margin-bottom: 36px;
-  position: relative;
+
+.mockupRows {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.mockupRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #2D2D28;
+}
+.mockupRow:last-child { border-bottom: none; }
+
+.mockupLabel {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 13px;
+  color: #9E988A;
+}
+
+.mockupVal {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: #F7F2E6;
+  font-weight: 500;
+}
+.mockupVal.positive { color: #7EC986; }
+
+.mockupStatusRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.mockupStatus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.statusDot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.mockupStatusLabel {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 12px;
+  color: #9E988A;
+}
+
+/* ── How We Work — light section ─────────────────────────────────────── */
+.procSection {
+  background: #FBF8F1;
+  padding: 88px 0;
+  border-top: 1px solid #E4DDCF;
+}
+
+.procInner {
+  max-width: 760px;
+}
+
+.procEyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9A7B39;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.procHeading {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 400;
+  color: #1A1A16;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+  margin-bottom: 48px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .procStep {
   display: flex;
-  gap: 18px;
+  gap: 24px;
   align-items: flex-start;
-  position: relative;
+  padding: 24px 0;
+  border-bottom: 1px solid #E4DDCF;
 }
+.procStep:first-child { border-top: 1px solid #E4DDCF; }
+
 .procDot {
-  width: 34px; height: 34px;
-  background: rgba(200,164,74,0.13);
-  border: 1.5px solid rgba(200,164,74,0.36);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: #B0A892;
   flex-shrink: 0;
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--gold-light);
+  padding-top: 3px;
+  width: 28px;
+  letter-spacing: 1px;
 }
+
 .procStep h5 {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 4px;
+  font-family: 'Newsreader', serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #1A1A16;
+  margin-bottom: 5px;
+  letter-spacing: -0.2px;
 }
 .procStep p {
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  color: rgba(255,255,255,0.5);
-  line-height: 1.58;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 14px;
+  color: #5F5A50;
+  line-height: 1.65;
+  margin: 0;
 }
 
-.procLine {
-  width: 1.5px; height: 22px;
-  background: rgba(200,164,74,0.15);
-  margin: 6px 0 6px 16px;
-}
-
-/* ── Responsive ──────────────────────────────────────────────────────────── */
+/* ── Responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 1000px) {
   .twoCol {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "heading"
-      "illus"
-      "pts";
-    column-gap: 0;
-    row-gap: 40px;
+    gap: 48px;
   }
-  /* Unstick illustration on mobile — scroll naturally */
-  .illustration {
-    position: static;
-    align-self: auto;
-  }
+  .mockup { position: static; }
 }
-
 @media (max-width: 640px) {
-  .procCard { padding: 28px 20px; }
-  .procSection { padding: 64px 0; }
+  .darkSection { padding: 64px 0; }
+  .procSection  { padding: 56px 0; }
 }

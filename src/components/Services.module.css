@@ -1,7 +1,78 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 20px;
 }
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid #E9E2D4;
+  border-radius: 8px;
+  padding: 32px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover { border-color: #C9A84C; box-shadow: 0 8px 32px rgba(26,26,22,0.07); }
+
+.num {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #9A7B39;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.divider {
+  height: 1px;
+  background: #EFE8DA;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: #1A1A16;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+  line-height: 1.25;
+}
+
+.desc {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 14px;
+  color: #5F5A50;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bullet {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dash {
+  display: inline-block;
+  width: 14px;
+  height: 1px;
+  background: #C9A84C;
+  flex-shrink: 0;
+}
+
+.bullet span:last-child {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 13px;
+  color: #9A958A;
+  line-height: 1.5;
+}
+
 @media (max-width: 1000px) { .grid { grid-template-columns: 1fr 1fr !important; } }
 @media (max-width: 640px)  { .grid { grid-template-columns: 1fr !important; } }

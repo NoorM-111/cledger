@@ -3,12 +3,12 @@
 import Image from 'next/image'
 
 const logos = [
-  { name: 'Xero', alt: 'Xero accounting software', src: '/logos/xero.svg' },
-  { name: 'QuickBooks', alt: 'QuickBooks accounting software', src: '/logos/quickbooks.svg' },
-  { name: 'Sage', alt: 'Sage accounting software', src: '/logos/sage.svg' },
-  { name: 'FreeAgent', alt: 'FreeAgent accounting software', src: '/logos/freeagent.svg' },
-  { name: 'Dext', alt: 'Dext receipt capture software', src: '/logos/dext.svg' },
-  { name: 'HMRC MTD', alt: 'HMRC Making Tax Digital', src: '/logos/hmrc-mtd.svg' },
+  { name: 'Xero',       alt: 'Xero accounting software',        src: '/logos/xero.svg'       },
+  { name: 'QuickBooks', alt: 'QuickBooks accounting software',   src: '/logos/quickbooks.svg' },
+  { name: 'Sage',       alt: 'Sage accounting software',        src: '/logos/sage.svg'       },
+  { name: 'FreeAgent',  alt: 'FreeAgent accounting software',   src: '/logos/freeagent.svg'  },
+  { name: 'Dext',       alt: 'Dext receipt capture software',   src: '/logos/dext.svg'       },
+  { name: 'HMRC MTD',   alt: 'HMRC Making Tax Digital',         src: '/logos/hmrc-mtd.svg'   },
 ]
 
 export default function SoftwareStrip() {
@@ -16,20 +16,21 @@ export default function SoftwareStrip() {
 
   return (
     <section style={{
-      background: '#0B1222',
-      borderTop: '1px solid rgba(201,168,76,0.15)',
-      borderBottom: '1px solid rgba(201,168,76,0.15)',
+      background: '#FBF8F1',
+      borderTop: '1px solid #E4DDCF',
+      borderBottom: '1px solid #E4DDCF',
       padding: '2.5rem 0',
       overflow: 'hidden',
     }}>
       <p style={{
         textAlign: 'center',
-        fontSize: '11px',
-        letterSpacing: '0.15em',
-        color: '#8a94a8',
+        fontFamily: "'IBM Plex Mono', monospace",
+        fontSize: '10px',
+        letterSpacing: '2px',
+        color: '#B0A892',
         textTransform: 'uppercase',
         marginBottom: '2rem',
-        fontFamily: 'Sora, sans-serif',
+        fontWeight: 500,
       }}>
         Tools &amp; Platforms We Work With
       </p>
@@ -54,39 +55,29 @@ export default function SoftwareStrip() {
           {doubled.map((logo, i) => (
             <div
               key={i}
-              className="sw-item"
               style={{
                 display: 'inline-flex',
-                flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '8px',
                 padding: '0 56px',
                 flexShrink: 0,
-                height: '80px',
+                height: '72px',
+                opacity: 0.7,
               }}
             >
               <Image
                 src={logo.src}
                 alt={logo.alt}
-                width={140}
-                height={50}
-                className="sw-img"
+                width={120}
+                height={42}
                 style={{
-                  width: '140px',
-                  height: '50px',
+                  width: '120px',
+                  height: '42px',
                   objectFit: 'contain',
+                  filter: 'brightness(0) saturate(100%)',
+                  opacity: 0.55,
                 }}
               />
-              <span style={{
-                fontSize: '12px',
-                color: '#F8F5EE',
-                fontWeight: '500',
-                whiteSpace: 'nowrap',
-                fontFamily: 'Sora, sans-serif',
-              }}>
-                {logo.name}
-              </span>
             </div>
           ))}
         </div>
@@ -98,8 +89,7 @@ export default function SoftwareStrip() {
           to { transform: translateX(-50%); }
         }
         @media (max-width: 640px) {
-          .sw-item { padding: 0 24px !important; height: 64px !important; }
-          .sw-img  { width: 100px !important; height: 36px !important; }
+          .sw-item { padding: 0 24px !important; }
         }
       `}</style>
     </section>
