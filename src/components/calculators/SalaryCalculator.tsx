@@ -4,14 +4,14 @@ import { TAX_RATES } from '@/lib/tax-rates'
 import EmailResultsForm from './EmailResultsForm'
 
 const C = {
-  card: '#111827',
-  card2: '#131d31',
-  gold: '#C9A84C',
-  white: '#F8F5EE',
-  muted: '#8a94a8',
-  blue: '#378ADD',
-  amber: '#EF9F27',
-  purple: '#7F77DD',
+  card: '#FFFFFF',
+  card2: '#F4ECD7',
+  gold: '#9A7B39',
+  white: '#1A1A16',
+  muted: '#5F5A50',
+  blue: '#2563EB',
+  amber: '#B45309',
+  purple: '#6D28D9',
 }
 
 function fmt(n: number): string {
@@ -161,17 +161,17 @@ export default function SalaryCalculator() {
   const inputStyle: React.CSSProperties = {
     width: '100%',
     background: C.card,
-    border: '1px solid rgba(201,168,76,0.2)',
+    border: '1px solid #E9E2D4',
     color: C.white,
     borderRadius: '8px',
     padding: '0.625rem 1rem',
     fontSize: '14px',
-    fontFamily: 'Sora, sans-serif',
+    fontFamily: "'Hanken Grotesk', sans-serif",
     outline: 'none',
   }
 
   const labelStyle: React.CSSProperties = {
-    fontFamily: 'Sora, sans-serif',
+    fontFamily: "'Hanken Grotesk', sans-serif",
     fontSize: '13px',
     color: C.muted,
     display: 'block',
@@ -180,7 +180,7 @@ export default function SalaryCalculator() {
 
   const cardStyle: React.CSSProperties = {
     background: C.card2,
-    border: '1px solid rgba(201,168,76,0.15)',
+    border: '1px solid #E9E2D4',
     borderRadius: '12px',
     padding: '1.25rem',
   }
@@ -238,13 +238,13 @@ export default function SalaryCalculator() {
                 onClick={() => setRegion(r)}
                 style={{
                   flex: 1,
-                  fontFamily: 'Sora, sans-serif',
+                  fontFamily: "'Hanken Grotesk', sans-serif",
                   fontSize: '12px',
                   fontWeight: region === r ? 600 : 500,
                   padding: '0.5rem 0.5rem',
                   borderRadius: '6px',
-                  border: region === r ? '1px solid #C9A84C' : '1px solid rgba(201,168,76,0.2)',
-                  background: region === r ? 'rgba(201,168,76,0.15)' : C.card,
+                  border: region === r ? '1px solid #9A7B39' : '1px solid #E9E2D4',
+                  background: region === r ? '#E9E2D4' : C.card,
                   color: region === r ? C.gold : C.muted,
                   cursor: 'pointer',
                 }}
@@ -263,31 +263,31 @@ export default function SalaryCalculator() {
         gap: '1rem',
         marginBottom: '2rem',
       }}>
-        <div style={{ ...cardStyle, border: '1px solid rgba(201,168,76,0.3)' }}>
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Take-home (annual)</p>
-          <p style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.75rem', color: C.gold, lineHeight: 1.1 }}>{fmt(res.takeHome)}</p>
+        <div style={{ ...cardStyle, border: '1px solid #D7C79A' }}>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Take-home (annual)</p>
+          <p style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.75rem', color: C.gold, lineHeight: 1.1 }}>{fmt(res.takeHome)}</p>
         </div>
         <div style={cardStyle}>
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Take-home (monthly)</p>
-          <p style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmt(res.takeHomeMonthly)}</p>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Take-home (monthly)</p>
+          <p style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmt(res.takeHomeMonthly)}</p>
         </div>
         <div style={cardStyle}>
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Income tax</p>
-          <p style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmt(res.incomeTax)}</p>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Income tax</p>
+          <p style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmt(res.incomeTax)}</p>
         </div>
         <div style={cardStyle}>
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Employee NI</p>
-          <p style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmt(res.employeeNI)}</p>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Employee NI</p>
+          <p style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmt(res.employeeNI)}</p>
         </div>
         {pensionPct > 0 && (
           <div style={cardStyle}>
-            <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Pension</p>
-            <p style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmt(res.pensionAmount)}</p>
+            <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Pension</p>
+            <p style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmt(res.pensionAmount)}</p>
           </div>
         )}
         <div style={cardStyle}>
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Effective tax rate</p>
-          <p style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmtPct(res.effectiveRate)}</p>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Effective tax rate</p>
+          <p style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmtPct(res.effectiveRate)}</p>
         </div>
       </div>
 
@@ -315,7 +315,7 @@ export default function SalaryCalculator() {
           ].map(item => (
             <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
               <div style={{ width: '10px', height: '10px', borderRadius: '2px', background: item.color, flexShrink: 0 }} />
-              <span style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted }}>
+              <span style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted }}>
                 {item.label} ({Math.round(Math.max(0, item.pct))}%)
               </span>
             </div>
@@ -325,13 +325,13 @@ export default function SalaryCalculator() {
 
       {/* Income tax band breakdown */}
       <div style={{ marginBottom: '2rem' }}>
-        <h3 style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.1rem', color: C.white, marginBottom: '0.75rem' }}>
+        <h3 style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.1rem', color: C.white, marginBottom: '0.75rem' }}>
           Income tax breakdown
         </h3>
         <div style={{ overflowX: 'auto' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: 'Sora, sans-serif', fontSize: '13px' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '13px' }}>
             <thead>
-              <tr style={{ background: 'rgba(201,168,76,0.1)' }}>
+              <tr style={{ background: '#E9E2D4' }}>
                 <th style={thStyle}>Band</th>
                 <th style={{ ...thStyle, textAlign: 'right' }}>Taxable in band</th>
                 <th style={{ ...thStyle, textAlign: 'right' }}>Tax</th>
@@ -339,13 +339,13 @@ export default function SalaryCalculator() {
             </thead>
             <tbody>
               {res.taxBands.map((band, i) => (
-                <tr key={i} style={{ borderTop: '1px solid rgba(201,168,76,0.1)' }}>
+                <tr key={i} style={{ borderTop: '1px solid #E9E2D4' }}>
                   <td style={tdStyle}>{band.name}</td>
                   <td style={{ ...tdStyle, textAlign: 'right', color: C.muted }}>{fmt(band.taxableInBand)}</td>
                   <td style={{ ...tdStyle, textAlign: 'right' }}>{fmt(band.tax)}</td>
                 </tr>
               ))}
-              <tr style={{ borderTop: '1px solid rgba(201,168,76,0.2)', background: 'rgba(201,168,76,0.05)' }}>
+              <tr style={{ borderTop: '1px solid #E9E2D4', background: '#FAF6EE' }}>
                 <td colSpan={2} style={{ ...tdStyle, color: C.muted, fontWeight: 600 }}>Total income tax</td>
                 <td style={{ ...tdStyle, textAlign: 'right', color: C.gold, fontWeight: 700 }}>{fmt(res.incomeTax)}</td>
               </tr>
@@ -357,13 +357,13 @@ export default function SalaryCalculator() {
       {/* NI breakdown */}
       {res.niBands.length > 0 && (
         <div style={{ marginBottom: '2rem' }}>
-          <h3 style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.1rem', color: C.white, marginBottom: '0.75rem' }}>
+          <h3 style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.1rem', color: C.white, marginBottom: '0.75rem' }}>
             National Insurance breakdown
           </h3>
           <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: 'Sora, sans-serif', fontSize: '13px' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '13px' }}>
               <thead>
-                <tr style={{ background: 'rgba(201,168,76,0.1)' }}>
+                <tr style={{ background: '#E9E2D4' }}>
                   <th style={thStyle}>Band</th>
                   <th style={{ ...thStyle, textAlign: 'right' }}>Earnings in band</th>
                   <th style={{ ...thStyle, textAlign: 'right' }}>NI due</th>
@@ -371,13 +371,13 @@ export default function SalaryCalculator() {
               </thead>
               <tbody>
                 {res.niBands.map((band, i) => (
-                  <tr key={i} style={{ borderTop: '1px solid rgba(201,168,76,0.1)' }}>
+                  <tr key={i} style={{ borderTop: '1px solid #E9E2D4' }}>
                     <td style={tdStyle}>{band.name}</td>
                     <td style={{ ...tdStyle, textAlign: 'right', color: C.muted }}>{fmt(band.earningsInBand)}</td>
                     <td style={{ ...tdStyle, textAlign: 'right' }}>{fmt(band.ni)}</td>
                   </tr>
                 ))}
-                <tr style={{ borderTop: '1px solid rgba(201,168,76,0.2)', background: 'rgba(201,168,76,0.05)' }}>
+                <tr style={{ borderTop: '1px solid #E9E2D4', background: '#FAF6EE' }}>
                   <td colSpan={2} style={{ ...tdStyle, color: C.muted, fontWeight: 600 }}>Total employee NI</td>
                   <td style={{ ...tdStyle, textAlign: 'right', color: C.gold, fontWeight: 700 }}>{fmt(res.employeeNI)}</td>
                 </tr>

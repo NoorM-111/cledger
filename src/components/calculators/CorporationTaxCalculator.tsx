@@ -4,13 +4,13 @@ import { TAX_RATES } from '@/lib/tax-rates'
 import EmailResultsForm from './EmailResultsForm'
 
 const C = {
-  card: '#111827',
-  card2: '#131d31',
-  gold: '#C9A84C',
-  white: '#F8F5EE',
-  muted: '#8a94a8',
-  green: '#4ade80',
-  red: '#f87171',
+  card: '#FFFFFF',
+  card2: '#F4ECD7',
+  gold: '#9A7B39',
+  white: '#1A1A16',
+  muted: '#5F5A50',
+  green: '#16A34A',
+  red: '#DC2626',
 }
 
 function fmt(n: number): string {
@@ -84,17 +84,17 @@ export default function CorporationTaxCalculator() {
   const inputStyle: React.CSSProperties = {
     width: '100%',
     background: C.card,
-    border: '1px solid rgba(201,168,76,0.2)',
+    border: '1px solid #E9E2D4',
     color: C.white,
     borderRadius: '8px',
     padding: '0.625rem 1rem',
     fontSize: '14px',
-    fontFamily: 'Sora, sans-serif',
+    fontFamily: "'Hanken Grotesk', sans-serif",
     outline: 'none',
   }
 
   const labelStyle: React.CSSProperties = {
-    fontFamily: 'Sora, sans-serif',
+    fontFamily: "'Hanken Grotesk', sans-serif",
     fontSize: '13px',
     color: C.muted,
     display: 'block',
@@ -103,7 +103,7 @@ export default function CorporationTaxCalculator() {
 
   const cardStyle: React.CSSProperties = {
     background: C.card2,
-    border: '1px solid rgba(201,168,76,0.15)',
+    border: '1px solid #E9E2D4',
     borderRadius: '12px',
     padding: '1.25rem',
   }
@@ -160,65 +160,65 @@ export default function CorporationTaxCalculator() {
         gap: '1rem',
         marginBottom: '2rem',
       }}>
-        <div style={{ ...cardStyle, border: '1px solid rgba(201,168,76,0.3)' }}>
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Profit after tax</p>
-          <p style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.75rem', color: C.gold, lineHeight: 1.1 }}>{fmt(res.profitAfterTax)}</p>
+        <div style={{ ...cardStyle, border: '1px solid #D7C79A' }}>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Profit after tax</p>
+          <p style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.75rem', color: C.gold, lineHeight: 1.1 }}>{fmt(res.profitAfterTax)}</p>
         </div>
         <div style={cardStyle}>
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Corporation tax due</p>
-          <p style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmt(res.ctDue)}</p>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Corporation tax due</p>
+          <p style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmt(res.ctDue)}</p>
         </div>
         <div style={cardStyle}>
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Effective rate</p>
-          <p style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmtPct(res.effectiveRate)}</p>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Effective rate</p>
+          <p style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.5rem', color: C.white, lineHeight: 1.1 }}>{fmtPct(res.effectiveRate)}</p>
         </div>
         <div style={cardStyle}>
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Rate applied</p>
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '0.85rem', fontWeight: 600, color: C.white, lineHeight: 1.4 }}>{res.rateLabel}</p>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Rate applied</p>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '0.85rem', fontWeight: 600, color: C.white, lineHeight: 1.4 }}>{res.rateLabel}</p>
         </div>
         {res.marginalRelief !== null && (
           <div style={cardStyle}>
-            <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Marginal relief</p>
-            <p style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.5rem', color: C.green, lineHeight: 1.1 }}>{fmt(res.marginalRelief)}</p>
+            <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '12px', color: C.muted, marginBottom: '0.25rem' }}>Marginal relief</p>
+            <p style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.5rem', color: C.green, lineHeight: 1.1 }}>{fmt(res.marginalRelief)}</p>
           </div>
         )}
       </div>
 
       {/* Threshold table */}
       <div style={{ marginBottom: '2rem' }}>
-        <h3 style={{ fontFamily: '"DM Serif Display", Georgia, serif', fontSize: '1.1rem', color: C.white, marginBottom: '0.5rem' }}>
+        <h3 style={{ fontFamily: '"Newsreader", Georgia, serif', fontSize: '1.1rem', color: C.white, marginBottom: '0.5rem' }}>
           CT threshold breakdown
         </h3>
         {res.divisor > 1 && (
-          <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '13px', color: C.muted, marginBottom: '0.75rem' }}>
+          <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '13px', color: C.muted, marginBottom: '0.75rem' }}>
             Thresholds divided by {res.divisor} ({associatedCompanies} associated {associatedCompanies === 1 ? 'company' : 'companies'})
           </p>
         )}
         <div style={{ overflowX: 'auto' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: 'Sora, sans-serif', fontSize: '13px' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '13px' }}>
             <thead>
-              <tr style={{ background: 'rgba(201,168,76,0.1)' }}>
+              <tr style={{ background: '#E9E2D4' }}>
                 <th style={thStyle}>Threshold</th>
                 <th style={{ ...thStyle, textAlign: 'right' }}>Amount</th>
                 <th style={{ ...thStyle, textAlign: 'right' }}>Status</th>
               </tr>
             </thead>
             <tbody>
-              <tr style={{ borderTop: '1px solid rgba(201,168,76,0.1)' }}>
+              <tr style={{ borderTop: '1px solid #E9E2D4' }}>
                 <td style={tdStyle}>Small profits limit (lower)</td>
                 <td style={{ ...tdStyle, textAlign: 'right', color: C.muted }}>{fmt(res.adjustedLower)}</td>
                 <td style={{ ...tdStyle, textAlign: 'right', color: res.profit <= res.adjustedLower ? C.green : C.muted }}>
                   {res.profit <= res.adjustedLower ? 'Applies' : 'Above limit'}
                 </td>
               </tr>
-              <tr style={{ borderTop: '1px solid rgba(201,168,76,0.1)' }}>
+              <tr style={{ borderTop: '1px solid #E9E2D4' }}>
                 <td style={tdStyle}>Main rate limit (upper)</td>
                 <td style={{ ...tdStyle, textAlign: 'right', color: C.muted }}>{fmt(res.adjustedUpper)}</td>
                 <td style={{ ...tdStyle, textAlign: 'right', color: res.profit >= res.adjustedUpper ? C.red : C.muted }}>
                   {res.profit >= res.adjustedUpper ? 'Above limit' : 'Below limit'}
                 </td>
               </tr>
-              <tr style={{ borderTop: '1px solid rgba(201,168,76,0.2)', background: 'rgba(201,168,76,0.05)' }}>
+              <tr style={{ borderTop: '1px solid #E9E2D4', background: '#FAF6EE' }}>
                 <td style={tdStyle}>Your taxable profit</td>
                 <td style={{ ...tdStyle, textAlign: 'right', fontWeight: 600 }}>{fmt(res.profit)}</td>
                 <td style={{ ...tdStyle, textAlign: 'right', color: C.gold, fontWeight: 600 }}>{res.rateLabel}</td>

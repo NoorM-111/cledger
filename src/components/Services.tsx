@@ -4,56 +4,38 @@ const services = [
   {
     n: '01',
     title: 'Bookkeeping',
-    desc: 'We keep your financial records accurate, organised and always up to date, so you have a clear picture of your business at any point in time, without the administrative burden.',
-    bullets: ['Monthly bank reconciliation', 'Real-time P&L reporting', 'Cloud accounting setup (Xero, QuickBooks)'],
+    desc: 'Monthly reconciliation and clean records on Xero or QuickBooks, ready for tax time or investor review.',
+    bullets: ['Bank reconciliation', 'Transaction categorisation', 'Monthly management reports', 'Xero & QuickBooks setup'],
   },
   {
     n: '02',
     title: 'VAT & Tax Compliance',
-    desc: 'We handle your tax obligations from start to finish, preparing, reviewing and submitting on time — helping you avoid unexpected penalties and compliance issues.',
-    bullets: ['MTD-compliant VAT return preparation', 'Quarterly filing and HMRC submission', 'VAT registration and scheme advice'],
+    desc: 'We prepare, review and submit on time — helping you avoid unexpected penalties.',
+    bullets: ['Quarterly VAT returns', 'MTD-compliant filing', 'VAT registration & advice', 'Partial exemption support'],
   },
   {
     n: '03',
-    title: 'Management Accounts',
-    desc: 'Monthly financial reports that give you a genuine understanding of how your business is performing, with clear commentary, actionable insight and not just numbers on a page.',
-    bullets: ['Monthly P&L and balance sheet', 'KPI tracking with commentary', 'Variance analysis and trend reporting'],
+    title: 'Payroll',
+    desc: 'RTI-compliant payroll run each month. Your team gets paid correctly; HMRC gets filed on time.',
+    bullets: ['Monthly payroll processing', 'RTI submissions to HMRC', 'Payslips & P60s', 'Pension auto-enrolment'],
   },
   {
     n: '04',
-    title: 'Annual Accounts & Corporation Tax',
-    desc: 'We prepare and submit your statutory accounts and corporation tax returns with care and precision, handling every detail so nothing falls through the cracks.',
-    bullets: ['Statutory accounts preparation', 'CT600 filing with HMRC', 'Corporation tax planning and scheduling'],
+    title: 'Management Accounts',
+    desc: 'Monthly P&L, balance sheet, and cash flow — the numbers your bank and investors actually want to see.',
+    bullets: ['Monthly P&L statements', 'Cash flow forecasting', 'KPI dashboards', 'Board-ready reporting packs'],
   },
   {
     n: '05',
-    title: 'Personal Tax Returns',
-    desc: 'Whether you are a company director, self-employed professional or landlord, we file your personal tax return accurately, and identify every legitimate saving along the way.',
-    bullets: ['Self-assessment filing (SA100)', 'Director loan account management', 'Rental income and capital gains'],
+    title: 'Year-End & Corporation Tax',
+    desc: 'Statutory accounts and CT600 prepared with care and filed to Companies House standard. No surprises.',
+    bullets: ['Statutory accounts preparation', 'Corporation Tax (CT600)', 'Companies House filing', 'Director self-assessment'],
   },
   {
     n: '06',
-    title: 'Cashflow & Financial Planning',
-    desc: 'We build detailed projections and financial plans that help you anticipate challenges, seize opportunities and make strategic decisions with genuine confidence.',
-    bullets: ['12-month rolling cash forecasts', 'Scenario modelling and stress testing', 'Growth planning and advisory support'],
-  },
-  {
-    n: '07',
-    title: 'Budgeting & Forecasting',
-    desc: 'From annual budgets to rolling forecasts, we give you the financial visibility to plan ahead, and the agility to adapt when your business needs change.',
-    bullets: ['Annual budget setting', 'Departmental cost analysis', 'Board-ready financial reporting'],
-  },
-  {
-    n: '08',
-    title: 'Compliance & Company Secretarial',
-    desc: 'We manage your statutory obligations, government filings, annual returns and all regulatory requirements, keeping your business fully compliant at all times.',
-    bullets: ['Confirmation statements (Companies House)', 'Registered office and statutory registers', 'Director appointment and resignation filings'],
-  },
-  {
-    n: '09',
-    title: 'HMRC & Government Liaison',
-    desc: 'We handle all correspondence and dealings with HMRC on your behalf, responding to enquiries, managing issues and ensuring your affairs are always in good standing.',
-    bullets: ['HMRC enquiry responses', 'VAT and PAYE correspondence', 'Penalty appeal and mitigation support'],
+    title: 'Cashflow & Advisory',
+    desc: 'Detailed projections and financial plans that help you anticipate challenges and make confident decisions.',
+    bullets: ['Business financial review', 'Budgeting & forecasting', 'Xero migration support', 'HMRC & Companies House liaison'],
   },
 ]
 
@@ -63,10 +45,9 @@ export default function Services() {
       <div className="wrap">
         <div className="center" style={{ marginBottom: '56px' }}>
           <span className="s-label">What We Do</span>
-          <h2 className="s-h">A Complete Accounting Service,<br />Built Around Your Business</h2>
+          <h2 className="s-h">Everything Your Business Needs to<br />Stay Compliant</h2>
           <p className="s-p">
-            From keeping your day-to-day accounts in order to long-term financial planning, we provide everything your
-            business needs to stay compliant, informed and in full control of its finances.
+            We handle the numbers — accurately, on time, and with the context of a firm that knows UK compliance inside out.
           </p>
         </div>
         <div className={styles.grid}>

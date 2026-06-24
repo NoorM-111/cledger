@@ -2,10 +2,10 @@
 import { useState } from 'react'
 
 const C = {
-  card: '#111827',
-  gold: '#C9A84C',
-  white: '#F8F5EE',
-  muted: '#8a94a8',
+  card: '#FFFFFF',
+  gold: '#9A7B39',
+  white: '#1A1A16',
+  muted: '#5F5A50',
 }
 
 interface Props {
@@ -44,34 +44,35 @@ export default function EmailResultsForm({ calculatorType, results, inputs }: Pr
 
   const inputStyle: React.CSSProperties = {
     width: '100%',
-    background: C.card,
-    border: '1px solid rgba(201,168,76,0.2)',
+    background: '#FAFAF7',
+    border: '1px solid #E9E2D4',
     color: C.white,
     borderRadius: '8px',
     padding: '0.625rem 1rem',
     fontSize: '14px',
-    fontFamily: 'Sora, sans-serif',
+    fontFamily: "'Hanken Grotesk', sans-serif",
     outline: 'none',
   }
 
   return (
-    <div style={{ borderTop: '1px solid rgba(201,168,76,0.15)', paddingTop: '2rem', marginTop: '1.5rem' }}>
+    <div style={{ borderTop: '1px solid #E9E2D4', paddingTop: '2rem', marginTop: '1.5rem' }}>
       {status === 'success' ? (
-        <p style={{ fontFamily: 'Sora, sans-serif', fontSize: '0.95rem', color: C.white }}>
+        <p style={{ fontFamily: "'Hanken Grotesk', sans-serif", fontSize: '0.95rem', color: C.white }}>
           Sent. Check your inbox — we&apos;ll be in touch shortly.
         </p>
       ) : (
         <form onSubmit={handleSubmit}>
           <h3 style={{
-            fontFamily: '"DM Serif Display", Georgia, serif',
+            fontFamily: "'Newsreader', Georgia, serif",
             fontSize: '1.35rem',
+            fontWeight: 400,
             color: C.white,
             marginBottom: '0.4rem',
           }}>
             Get these results in your inbox
           </h3>
           <p style={{
-            fontFamily: 'Sora, sans-serif',
+            fontFamily: "'Hanken Grotesk', sans-serif",
             fontSize: '0.875rem',
             color: C.muted,
             marginBottom: '1.25rem',
@@ -87,7 +88,7 @@ export default function EmailResultsForm({ calculatorType, results, inputs }: Pr
           }}>
             <div>
               <label style={{
-                fontFamily: 'Sora, sans-serif',
+                fontFamily: "'Hanken Grotesk', sans-serif",
                 fontSize: '13px',
                 color: C.muted,
                 display: 'block',
@@ -106,7 +107,7 @@ export default function EmailResultsForm({ calculatorType, results, inputs }: Pr
             </div>
             <div>
               <label style={{
-                fontFamily: 'Sora, sans-serif',
+                fontFamily: "'Hanken Grotesk', sans-serif",
                 fontSize: '13px',
                 color: C.muted,
                 display: 'block',
@@ -126,9 +127,9 @@ export default function EmailResultsForm({ calculatorType, results, inputs }: Pr
           </div>
           {errorMsg && (
             <p style={{
-              fontFamily: 'Sora, sans-serif',
+              fontFamily: "'Hanken Grotesk', sans-serif",
               fontSize: '13px',
-              color: '#f87171',
+              color: '#DC2626',
               marginBottom: '0.75rem',
             }}>
               {errorMsg}
@@ -138,15 +139,16 @@ export default function EmailResultsForm({ calculatorType, results, inputs }: Pr
             type="submit"
             disabled={status === 'loading'}
             style={{
-              background: status === 'loading' ? 'rgba(201,168,76,0.5)' : '#C9A84C',
-              color: '#0B1222',
-              fontFamily: 'Sora, sans-serif',
+              background: status === 'loading' ? '#9A7B39' : '#1A1A16',
+              color: '#F7F4EC',
+              fontFamily: "'Hanken Grotesk', sans-serif",
               fontWeight: 600,
               fontSize: '0.9rem',
               padding: '0.75rem 1.5rem',
               borderRadius: '8px',
               border: 'none',
               cursor: status === 'loading' ? 'not-allowed' : 'pointer',
+              opacity: status === 'loading' ? 0.7 : 1,
             }}
           >
             {status === 'loading' ? 'Sending...' : 'Send me my results →'}

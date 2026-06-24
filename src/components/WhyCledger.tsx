@@ -8,23 +8,22 @@ const reasons = [
 ]
 
 const steps = [
-  { n: '01', title: 'Initial Consultation',   desc: 'We take the time to understand your business, your goals and what you need from an accountant.' },
-  { n: '02', title: 'A Clear Proposal',       desc: 'You receive a straightforward, fixed-fee proposal with no hidden costs or unexpected extras.' },
-  { n: '03', title: 'Seamless Transition',    desc: 'We handle the handover from your previous accountant, managing every detail so the process is effortless for you.' },
-  { n: '04', title: 'Ongoing Partnership',    desc: 'Monthly reporting, proactive communication and a named contact, always available when you need them.' },
-  { n: '05', title: 'Regular Reviews',        desc: 'We meet regularly to review performance, plan ahead and ensure your financial position is always optimised.' },
+  { n: '01', title: 'Initial consultation',  desc: 'We take the time to understand your business, your goals and what you need from an accountant.' },
+  { n: '02', title: 'A clear proposal',      desc: 'A straightforward, fixed-fee proposal with no hidden costs or unexpected extras.' },
+  { n: '03', title: 'Seamless transition',   desc: 'We handle the handover from your previous accountant, managing every detail for you.' },
+  { n: '04', title: 'Ongoing partnership',   desc: 'Monthly reporting, proactive communication and a named contact, always available when you need them.' },
 ]
 
 const mockupRows = [
-  { label: 'Revenue (YTD)',  val: '£124,800', positive: true  },
-  { label: 'Expenses (YTD)', val: '£87,340',  positive: false },
-  { label: 'Net Position',   val: '£37,460',  positive: true  },
+  { label: 'Revenue (Oct)',  val: '£24,310', positive: true  },
+  { label: 'Gross margin',   val: '62.4%',   positive: true  },
+  { label: 'CT600 deadline', val: 'On track', positive: true },
 ]
 
 const statusItems = [
-  { color: '#7EC986', label: 'VAT Return Q1 2026 — Filed on time' },
-  { color: '#7EC986', label: 'Corporation Tax — Provision set'    },
-  { color: '#C9A84C', label: 'Next review due 28 June 2026'       },
+  { color: '#7EC986', label: 'CL-0142 · Payroll — October · Complete' },
+  { color: '#7EC986', label: 'VAT return Q3 · Filed'                  },
+  { color: '#C9A84C', label: 'CT600 deadline · On track · 14 wks'     },
 ]
 
 export default function WhyCledger() {
@@ -57,7 +56,7 @@ export default function WhyCledger() {
 
             <div className={styles.mockup}>
               <div className={styles.mockupHeader}>
-                <span className={styles.mockupTitle}>Cledger Workspace</span>
+                <span className={styles.mockupTitle}>Monthly Overview · Oct 2025</span>
                 <span className={styles.mockupDot} />
               </div>
               <div className={styles.mockupRows}>
@@ -84,8 +83,8 @@ export default function WhyCledger() {
       <section className={styles.procSection}>
         <div className="wrap">
           <div className={styles.procInner}>
-            <span className={styles.procEyebrow}>Our Process</span>
-            <h2 className={styles.procHeading}>How we work with a new client</h2>
+            <span className={styles.procEyebrow}>The Process</span>
+            <h2 className={styles.procHeading}>Up and running in days, not weeks</h2>
             <div className={styles.steps}>
               {steps.map(s => (
                 <div key={s.n} className={styles.procStep}>

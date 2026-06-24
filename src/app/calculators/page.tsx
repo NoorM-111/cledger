@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 import CalculatorsClient from './CalculatorsClient'
 
 export const metadata: Metadata = {
-  title: 'Free UK Tax Calculators 2026/27 — VAT, Corporation Tax & Salary | Cledger',
-  description: "Calculate your VAT return, corporation tax liability, and PAYE take-home pay for 2026/27. Free tools from Cledger's qualified UK accountants.",
+  title: 'Free UK Tax Calculators 2025/26 — VAT, Corporation Tax & Take-Home Pay | Cledger',
+  description: "Calculate your VAT return, corporation tax liability, and PAYE take-home pay for 2025/26. Free tools from Cledger's qualified UK accountants.",
   alternates: {
     canonical: 'https://www.cledger.co.uk/calculators',
   },
@@ -15,44 +15,44 @@ export default function CalculatorsPage() {
   return (
     <>
       <Navbar />
-      <main style={{ background: '#0B1222', minHeight: '100vh' }}>
+      <main style={{ background: '#F7F4EC', minHeight: '100vh' }}>
         {/* Hero */}
         <section style={{
-          background: 'linear-gradient(180deg, #0B1222 0%, #111827 100%)',
-          borderBottom: '1px solid rgba(201,168,76,0.15)',
+          borderBottom: '1px solid #E9E2D4',
           padding: '7rem 0 3.5rem',
           textAlign: 'center',
         }}>
           <div className="wrap">
             <p style={{
-              fontFamily: 'Sora, sans-serif',
-              fontSize: '0.7rem',
-              fontWeight: 600,
-              letterSpacing: '0.12em',
+              fontFamily: "'IBM Plex Mono', monospace",
+              fontSize: '11px',
+              fontWeight: 500,
+              letterSpacing: '0.14em',
               textTransform: 'uppercase',
-              color: '#C9A84C',
-              marginBottom: '1rem',
+              color: '#9A7B39',
+              marginBottom: '16px',
             }}>
-              Free tools · Updated for 2026/27
+              Free tools
             </p>
             <h1 style={{
-              fontFamily: '"DM Serif Display", Georgia, serif',
+              fontFamily: "'Newsreader', Georgia, serif",
               fontSize: 'clamp(2rem, 5vw, 3.25rem)',
-              color: '#F8F5EE',
+              fontWeight: 400,
+              color: '#1A1A16',
               lineHeight: 1.15,
               marginBottom: '1rem',
             }}>
-              Free UK Tax Calculators
+              UK tax calculators
             </h1>
             <p style={{
-              fontFamily: 'Sora, sans-serif',
+              fontFamily: "'Hanken Grotesk', sans-serif",
               fontSize: '1rem',
-              color: '#8a94a8',
+              color: '#5F5A50',
               maxWidth: '560px',
               margin: '0 auto',
               lineHeight: 1.7,
             }}>
-              2026/27 — updated for the current tax year. All calculations are estimates — confirm with a qualified accountant before filing.
+              Quick estimates using current 2025/26 UK rates. For an exact figure tailored to your situation, book a free call.
             </p>
           </div>
         </section>

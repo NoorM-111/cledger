@@ -75,7 +75,7 @@ export default function BlogIndex() {
   return (
     <>
       <Navbar />
-      <main style={{ background: '#0B1222', minHeight: '100vh' }}>
+      <main style={{ background: '#F7F4EC', minHeight: '100vh' }}>
         <style>{`
           .blog-grid {
             display: grid;
@@ -89,8 +89,8 @@ export default function BlogIndex() {
             .blog-grid { grid-template-columns: 1fr; }
           }
           .blog-card {
-            background: #131d31;
-            border: 1px solid rgba(201,168,76,0.15);
+            background: #fff;
+            border: 1px solid #E9E2D4;
             border-radius: 12px;
             padding: 24px;
             text-decoration: none;
@@ -99,9 +99,9 @@ export default function BlogIndex() {
             transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
           }
           .blog-card:hover {
-            border-color: rgba(201,168,76,0.4);
+            border-color: #D7C79A;
             transform: translateY(-3px);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            box-shadow: 0 22px 40px -28px rgba(26,26,22,0.35);
           }
           .blog-desc {
             display: -webkit-box;
@@ -112,32 +112,36 @@ export default function BlogIndex() {
         `}</style>
 
         {/* Hero */}
-        <section style={{ padding: '100px 0 56px', borderBottom: '1px solid rgba(201,168,76,0.1)' }}>
+        <section style={{
+          padding: '100px 0 56px',
+          borderBottom: '1px solid #E9E2D4',
+        }}>
           <div className="wrap">
             <span style={{
-              fontSize: '11px', fontWeight: 600, letterSpacing: '0.14em',
-              textTransform: 'uppercase', color: '#C9A84C', fontFamily: 'Sora, sans-serif',
-              display: 'block', marginBottom: '14px',
+              fontFamily: "'IBM Plex Mono', monospace",
+              fontSize: '11px', fontWeight: 500, letterSpacing: '0.14em',
+              textTransform: 'uppercase', color: '#9A7B39',
+              display: 'block', marginBottom: '16px',
             }}>Resources</span>
             <h1 style={{
-              fontFamily: "'DM Serif Display', serif",
+              fontFamily: "'Newsreader', Georgia, serif",
               fontSize: 'clamp(2rem, 4vw, 3rem)',
               fontWeight: 400,
-              color: '#F8F5EE',
+              color: '#1A1A16',
               marginBottom: '16px',
               lineHeight: 1.15,
             }}>
               Accounting Insights &amp; Resources
             </h1>
             <p style={{
-              fontFamily: 'Sora, sans-serif',
+              fontFamily: "'Hanken Grotesk', sans-serif",
               fontSize: '17px',
-              color: '#8a94a8',
+              color: '#5F5A50',
               maxWidth: '520px',
               lineHeight: 1.7,
               margin: 0,
             }}>
-              Free guides, tax tips and practical accounting advice for UK small businesses.
+              Free guides, tax tips and practical accounting advice for UK small businesses, from our qualified accountants.
             </p>
           </div>
         </section>
@@ -149,32 +153,35 @@ export default function BlogIndex() {
               {posts.map(post => (
                 <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card">
                   <span style={{
-                    fontSize: '10px', fontWeight: 600,
+                    fontFamily: "'IBM Plex Mono', monospace",
+                    fontSize: '10px', fontWeight: 500,
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
                     padding: '3px 10px', borderRadius: '20px',
-                    background: 'rgba(201,168,76,0.1)', color: '#C9A84C',
-                    fontFamily: 'Sora, sans-serif',
+                    background: '#F4ECD7', color: '#9A7B39',
                     display: 'inline-block', marginBottom: '14px', alignSelf: 'flex-start',
                   }}>
                     {post.category}
                   </span>
                   <h2 style={{
-                    fontFamily: "'DM Serif Display', serif",
+                    fontFamily: "'Newsreader', Georgia, serif",
                     fontSize: '18px', fontWeight: 400,
-                    color: '#F8F5EE', lineHeight: 1.35,
+                    color: '#1A1A16', lineHeight: 1.35,
                     marginBottom: '10px', flex: 1,
                   }}>
                     {post.title}
                   </h2>
                   <p className="blog-desc" style={{
-                    fontFamily: 'Sora, sans-serif',
-                    fontSize: '13px', color: '#8a94a8',
+                    fontFamily: "'Hanken Grotesk', sans-serif",
+                    fontSize: '13px', color: '#5F5A50',
                     lineHeight: 1.6, marginBottom: '18px',
                   }}>
                     {post.description}
                   </p>
                   <span style={{
-                    fontSize: '13px', color: '#C9A84C',
-                    fontFamily: 'Sora, sans-serif', fontWeight: 500,
+                    fontFamily: "'Hanken Grotesk', sans-serif",
+                    fontSize: '13px', color: '#9A7B39',
+                    fontWeight: 500,
                   }}>
                     Read more →
                   </span>

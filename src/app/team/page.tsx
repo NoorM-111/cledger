@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
@@ -23,7 +25,7 @@ const members = [
     name: 'Noor Muhammad',
     role: 'Founder & Principal',
     tags: ['Financial Reporting', 'Tax Planning', 'Management Accounting', 'HMRC Affairs'],
-    bio: 'Noor leads client delivery across the full range of Cledger\'s accounting services. He specialises in multi-client portfolio management, tax compliance and forward-looking financial planning, bringing a rigorous, hands-on approach to every engagement and translating complex financial data into clear, actionable insight.',
+    bio: "Noor's job is to take the financial weight off your plate. He keeps your books accurate and your tax handled year-round, then turns the numbers into plain-English advice you can actually act on — what's working, what to watch, and where you could keep more of what you earn. You get a single, qualified point of contact who knows your business and is genuinely invested in helping it grow.",
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>,
@@ -101,9 +103,9 @@ const members = [
     photo: '/images/muhammad_ammar.jpg',
     initials: 'MA',
     name: 'Muhammad Ammar',
-    role: 'Senior Advisor, Financial Strategy & Analytics',
-    tags: ['Financial Advisory', 'Analytics', 'Automation', 'Governance'],
-    bio: 'Muhammad leads Cledger\'s financial advisory and analytics division, combining deep expertise in FP&A, business intelligence and AI-driven automation. With a strong foundation in governance, audit and executive reporting, he helps clients transform raw financial data into strategic insight, empowering leadership teams to make faster, more confident decisions.',
+    role: 'Financial Strategy & Analytics',
+    tags: ['FP&A', 'AI & Automation', 'Governance'],
+    bio: "Ammar turns your numbers into a plan. He builds the forecasts, dashboards and analysis that show where your business is heading — and uses smart automation to cut the manual work, so you get sharper insight faster, with strong financial controls behind it.",
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>,
@@ -141,9 +143,9 @@ const members = [
     photo: '/images/dawood.jpg',
     initials: 'MD',
     name: 'Muhammad Dawood',
-    role: 'UK Statutory Accounts & Corporation Tax Specialist',
-    tags: ['Statutory Accounts', 'CT600 / Corp Tax', 'Companies House', 'Self Assessment', 'VAT Returns', 'CIS Compliance'],
-    bio: 'Muhammad specialises in statutory accounts under FRS 102 & FRS 105, Corporation Tax (CT600) filings to HMRC, and Companies House submissions. He handles year-end compliance for sole traders, partnerships and limited companies, ensuring every filing is accurate, on time and fully HMRC-compliant.',
+    role: 'Statutory Accounts & Corp Tax',
+    tags: ['CT600', 'Companies House', 'VAT & CIS'],
+    bio: "Dawood makes sure everything that has to be filed, is filed — correctly and on time. From your year-end statutory accounts and corporation tax return to Companies House, VAT and CIS, he handles the compliance that keeps your company in good standing and penalty-free.",
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>,
@@ -181,9 +183,9 @@ const members = [
     photo: '/images/ameer.png',
     initials: 'AH',
     name: 'Ameer Hamza',
-    role: 'Senior Financial Consultant, Audit & Compliance',
-    tags: ['CA Finalist (ICAP)', 'ADPA', 'M.Com', 'Audit & Compliance'],
-    bio: 'Ameer leads Cledger\'s audit, compliance and financial reporting practice. He brings over a decade of hands-on experience across external audit, accounts management and financial advisory, working across property, manufacturing and trading sectors in both Pakistan and the UAE. He specialises in statutory accounts preparation, audit engagements, financial statement review and IFRS compliance, and has delivered MIS and management reporting directly to CFO and director level.',
+    role: 'Audit & Compliance',
+    tags: ['CA Finalist (ICAP)', 'Audit & Assurance', 'Compliance'],
+    bio: "Ameer brings the discipline of audit to your accounts. With public-practice assurance experience across multiple sectors, he makes sure your reporting is accurate, compliant and stands up to scrutiny — exactly what you want when investors, lenders or HMRC come looking.",
     skills: [
       {
         icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>,
@@ -221,65 +223,77 @@ const members = [
 
 export default function TeamPage() {
   return (
-    <main className={styles.page}>
-      <div className={styles.heroBar}>
-        <div className="wrap">
-          <Link href="/" className={styles.back}>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-            Back to Home
-          </Link>
-          <div className={styles.heroContent}>
-            <span className="s-label">Leadership</span>
-            <h1 className={styles.h1}>The People Behind Cledger</h1>
-            <p className={styles.sub}>
-              A team of qualified finance professionals committed to delivering the highest standards
-              of financial expertise, precision and strategic insight for every client.
-            </p>
+    <>
+      <Navbar />
+      <main className={styles.page}>
+        <div className={styles.heroBar}>
+          <div className="wrap">
+            <div className={styles.heroContent}>
+              <span className="s-label">Leadership</span>
+              <h1 className={styles.h1}>The people behind Cledger</h1>
+              <p className={styles.sub}>
+                A team of qualified accountants committed to delivering the highest standards
+                of financial expertise, precision and strategic insight for every client.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className={styles.body}>
-        <div className="wrap">
-          <div className={styles.grid}>
-            {members.map(m => (
-              <div key={m.name} className={styles.card}>
-                <div className={styles.cardTop}>
-                  <div className={styles.glow} aria-hidden />
-                  {m.photo ? (
-                    <div className={styles.avatarPhoto}>
-                      <Image src={m.photo} alt={m.name} fill sizes="76px" style={{ objectFit: 'cover' }} />
-                    </div>
-                  ) : (
-                    <div className={styles.avatar}>{m.initials}</div>
-                  )}
-                  <div className={styles.name}>{m.name}</div>
-                  <div className={styles.role}>{m.role}</div>
-                  <div className={styles.tags}>
-                    {m.tags.map(t => (
-                      <span key={t} className={styles.tag}>{t}</span>
-                    ))}
-                  </div>
-                </div>
-                <div className={styles.cardBody}>
-                  <p className={styles.bio}>{m.bio}</p>
-                  <div className={styles.skGrid}>
-                    {m.skills.map(s => (
-                      <div key={s.title} className={styles.sk}>
-                        <span className={styles.skIcon}>{s.icon}</span>
-                        <div>
-                          <h5>{s.title}</h5>
-                          <p>{s.desc}</p>
-                        </div>
+        <div className={styles.body}>
+          <div className="wrap">
+            <div className={styles.grid}>
+              {members.map(m => (
+                <div key={m.name} className={styles.card}>
+                  <div className={styles.cardTop}>
+                    {m.photo ? (
+                      <div className={styles.avatarPhoto}>
+                        <Image src={m.photo} alt={m.name} fill sizes="76px" style={{ objectFit: 'cover' }} />
                       </div>
-                    ))}
+                    ) : (
+                      <div className={styles.avatar}>{m.initials}</div>
+                    )}
+                    <div className={styles.name}>{m.name}</div>
+                    <div className={styles.role}>{m.role}</div>
+                    <div className={styles.tags}>
+                      {m.tags.map(t => (
+                        <span key={t} className={styles.tag}>{t}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className={styles.cardBody}>
+                    <p className={styles.bio}>{m.bio}</p>
+                    <div className={styles.skGrid}>
+                      {m.skills.map(s => (
+                        <div key={s.title} className={styles.sk}>
+                          <span className={styles.skIcon}>{s.icon}</span>
+                          <div>
+                            <h5>{s.title}</h5>
+                            <p>{s.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            <div className={styles.cta}>
+              <p className={styles.ctaText}>Work directly with the people who do the work</p>
+              <p className={styles.ctaSub}>No call centres, no handoffs. A named, qualified accountant who knows your business.</p>
+              <a
+                href="https://calendly.com/cledger-info/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.ctaBtn}
+              >
+                Book a free consultation →
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </>
   )
 }
