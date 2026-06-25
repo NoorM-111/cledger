@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Cledger">
+  <rect width="128" height="128" rx="32" ry="32" fill="#1A1A17"></rect>
+  <text x="63" y="64" font-family="Georgia, 'Times New Roman', 'Newsreader', serif" font-weight="500" font-size="82" fill="#F7F2E6" text-anchor="middle" dominant-baseline="central">C</text>
+  <circle cx="92" cy="90" r="7" fill="#C9A84C"></circle>
+</svg>
