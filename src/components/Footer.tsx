@@ -1,101 +1,70 @@
-import Link from 'next/link'
-import styles from './Footer.module.css'
-
-const serviceLinks = [
-  { label: 'Bookkeeping',             href: '/#services' },
-  { label: 'VAT & Tax',               href: '/#services' },
-  { label: 'Management Accounts',     href: '/#services' },
-  { label: 'Annual Accounts',         href: '/#services' },
-  { label: 'Personal Tax',            href: '/#services' },
-  { label: 'Cashflow Planning',       href: '/#services' },
-]
-const moreLinks = [
-  { label: 'Budgeting',               href: '/#services' },
-  { label: 'Forecasting',             href: '/#services' },
-  { label: 'Compliance',              href: '/#services' },
-  { label: 'HMRC Liaison',            href: '/#services' },
-  { label: 'Company Registration',    href: '/#services' },
-  { label: 'Financial Statements',    href: '/#services' },
-]
-const companyLinks = [
-  { label: 'About Cledger', href: '/#why'     },
-  { label: 'Meet the Team', href: '/team'     },
-  { label: 'Sectors',       href: '/#sectors' },
-  { label: 'Why Cledger',   href: '/#why'     },
-  { label: 'Pricing',       href: '/pricing'  },
-  { label: 'Contact Us',    href: '/#contact' },
-]
-const legalLinks = [
-  { label: 'Privacy Policy',   href: '/privacy' },
-  { label: 'Terms of Service', href: '/terms'   },
-]
+import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className="wrap">
-        <div className={styles.grid}>
-          <div>
-            <div className={styles.logoRow}>
-              <span className={styles.logoText}>Cledger<em>.</em></span>
+    <footer style={{ borderTop: '1px solid #E7E0D2', background: '#FBF8F1', fontFamily: "'Hanken Grotesk',system-ui,sans-serif" }}>
+      <div style={{ maxWidth: 1180, margin: '0 auto', padding: 'clamp(48px,6vw,64px) clamp(22px,5vw,56px) clamp(28px,3vw,36px)' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 'clamp(32px,4vw,48px)', marginBottom: 'clamp(36px,4vw,44px)' }}>
+
+          {/* Brand */}
+          <div style={{ gridColumn: '1 / -1', maxWidth: 340 }}>
+            <div style={{ font: "600 21px/1 'Newsreader',serif", color: '#1A1A16', marginBottom: 12 }}>
+              Cledger<span style={{ color: '#9A7B39' }}>.</span>
             </div>
-            <p className={styles.tag}>Accounting services built on expertise, integrity and genuine client partnership.</p>
-            <div className={styles.soc}>
-              <a href="https://www.linkedin.com/company/cledger-uk" target="_blank" rel="noopener noreferrer" className={styles.s} aria-label="LinkedIn">in</a>
-              <a href="mailto:info@cledger.co.uk" className={styles.s} aria-label="Email">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-              </a>
-            </div>
+            <p style={{ fontFamily: "'Hanken Grotesk'", fontSize: 13.5, lineHeight: 1.65, color: '#6B675C', margin: '0 0 16px' }}>
+              Clear books. Clear numbers. Clear future. Accounting built on expertise, integrity and genuine client partnership.
+            </p>
+            <p style={{ font: "400 11.5px/1.8 'IBM Plex Mono',monospace", color: '#8A8478', margin: '0 0 14px' }}>
+              info@cledger.co.uk · +44 7774 002712
+            </p>
+            <p style={{ font: "400 11px/1.7 'IBM Plex Mono',monospace", color: '#9A958A', margin: 0 }}>
+              Cledger Ltd · Registered in England &amp; Wales<br />
+              Office: 27 Jeremy Lane, Heckmondwike, WF16 9LT<br />
+              Companies House No: 16208645<br />
+              HMRC AML Supervised
+            </p>
           </div>
 
+          {/* Services */}
           <div>
-            <h5 className={styles.colTitle}>Services</h5>
-            <ul className={styles.links}>
-              {serviceLinks.map(l => <li key={l.label}><Link href={l.href}>{l.label}</Link></li>)}
+            <h4 style={{ font: "600 12.5px 'Hanken Grotesk'", letterSpacing: '0.4px', color: '#1A1A16', margin: '0 0 16px', textTransform: 'uppercase' }}>Services</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 11 }}>
+              {['Bookkeeping', 'VAT & Tax', 'Management Accounts', 'Annual Accounts', 'Calculators'].map(item => (
+                <li key={item}>
+                  <a href={item === 'Calculators' ? '/calculators' : '/#services'} style={{ fontFamily: "'Hanken Grotesk'", fontSize: 13.5, color: '#6B675C', textDecoration: 'none' }}>{item}</a>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Company */}
           <div>
-            <h5 className={styles.colTitle}>More Services</h5>
-            <ul className={styles.links}>
-              {moreLinks.map(l => <li key={l.label}><Link href={l.href}>{l.label}</Link></li>)}
+            <h4 style={{ font: "600 12.5px 'Hanken Grotesk'", letterSpacing: '0.4px', color: '#1A1A16', margin: '0 0 16px', textTransform: 'uppercase' }}>Company</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 11 }}>
+              {[{ label: 'Our Team', href: '/team' }, { label: 'Pricing', href: '/pricing' }, { label: 'Blog', href: '/blog' }, { label: 'Contact', href: '/#contact' }].map(({ label, href }) => (
+                <li key={label}>
+                  <a href={href} style={{ fontFamily: "'Hanken Grotesk'", fontSize: 13.5, color: '#6B675C', textDecoration: 'none' }}>{label}</a>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Legal */}
           <div>
-            <h5 className={styles.colTitle}>Company</h5>
-            <ul className={styles.links}>
-              {companyLinks.map(l => <li key={l.label}><Link href={l.href}>{l.label}</Link></li>)}
-            </ul>
-          </div>
-
-          <div>
-            <h5 className={styles.colTitle}>Legal</h5>
-            <ul className={styles.links}>
-              {legalLinks.map(l => <li key={l.label}><Link href={l.href}>{l.label}</Link></li>)}
+            <h4 style={{ font: "600 12.5px 'Hanken Grotesk'", letterSpacing: '0.4px', color: '#1A1A16', margin: '0 0 16px', textTransform: 'uppercase' }}>Legal</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 11 }}>
+              {[{ label: 'Privacy Policy', href: '/privacy' }, { label: 'Terms of Service', href: '/terms' }].map(({ label, href }) => (
+                <li key={label}>
+                  <a href={href} style={{ fontFamily: "'Hanken Grotesk'", fontSize: 13.5, color: '#6B675C', textDecoration: 'none' }}>{label}</a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        <div className={styles.bot}>
-          <div>
-            <span>© 2026 Cledger Ltd. All rights reserved.</span>
-            <p className={styles.legal}>
-              Cledger Ltd · Registered in England &amp; Wales, Companies House No. 16208645.
-              Registered office: 27 Jeremy Lane, Heckmondwike, WF16 9LT.
-              HMRC AML Supervised.
-            </p>
-          </div>
-          <div>
-            <span style={{
-              fontFamily: "'IBM Plex Mono', monospace",
-              fontSize: '11px',
-              color: '#B0A892',
-              letterSpacing: '0.5px',
-            }}>
-              Accounting · Tax · Advisory services
-            </span>
-          </div>
+        <div style={{ borderTop: '1px solid #E7E0D2', paddingTop: 22, display: 'flex', flexWrap: 'wrap', gap: '8px 20px', justifyContent: 'space-between', alignItems: 'center' }}>
+          <span style={{ fontFamily: "'Hanken Grotesk'", fontSize: 12, color: '#8A8478' }}>© 2026 Cledger Ltd · Registered in England &amp; Wales</span>
+          <span style={{ fontFamily: "'Hanken Grotesk'", fontSize: 12, color: '#8A8478' }}>Accounting · Tax · Advisory services</span>
         </div>
       </div>
     </footer>
