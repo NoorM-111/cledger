@@ -1,39 +1,23 @@
-import styles from './CTA.module.css'
-import CalendlyButton from './CalendlyButton'
+import React from 'react'
 
-export default function CTA() {
+export default function CTASection() {
   return (
-    <section className={styles.section} id="cta">
-      <div className="wrap">
-        <div className={styles.card}>
-          <span className={styles.eyebrow}>Get Started</span>
-          <h2 className={styles.heading}>
-            Ready to Get Your<br />Finances in <em>Clear Order?</em>
-          </h2>
-          <p className={styles.sub}>
-            Book a free, no-obligation consultation. We will take the time to understand your business and show you
-            exactly how Cledger can bring clarity, confidence and real value to your finances.
-          </p>
-          <div className={styles.btns}>
-            <CalendlyButton className="btn btn-navy">Book a Free Consultation</CalendlyButton>
-            <a href="tel:+447774002712" className="btn btn-ghost">Call Us Today</a>
-          </div>
-          <div className={styles.contacts}>
-            <div className={styles.contact}>
-              <span className={styles.contactLabel}>Email</span>
-              <a href="mailto:info@cledger.co.uk" className={styles.contactVal}>info@cledger.co.uk</a>
-            </div>
-            <div className={styles.sep} aria-hidden />
-            <div className={styles.contact}>
-              <span className={styles.contactLabel}>Phone</span>
-              <a href="tel:+447774002712" className={styles.contactVal}>+44 7774 002712</a>
-            </div>
-            <div className={styles.sep} aria-hidden />
-            <div className={styles.contact}>
-              <span className={styles.contactLabel}>Response</span>
-              <span className={styles.contactVal}>Within 24 hours</span>
-            </div>
-          </div>
+    <section id="contact" style={{ maxWidth: 1180, margin: '0 auto', padding: '0 clamp(22px,5vw,56px) clamp(76px,10vw,128px)' }}>
+      <div style={{ maxWidth: 860, margin: '0 auto', border: '1px solid #E4DDCF', borderRadius: 14, background: '#FBF8F1', padding: 'clamp(44px,7vw,84px) clamp(26px,6vw,72px)', textAlign: 'center' }}>
+        <div style={{ font: "500 11px 'IBM Plex Mono',monospace", letterSpacing: 2, textTransform: 'uppercase', color: '#9A7B39', marginBottom: 18 }}>Ready to start?</div>
+        <h2 style={{ font: "400 clamp(30px,4.6vw,50px)/1.08 'Newsreader',serif", letterSpacing: -1, color: '#1A1A16', margin: '0 0 16px', textWrap: 'balance' as any }}>
+          Book a free, no-obligation consultation
+        </h2>
+        <p style={{ fontFamily: "'Hanken Grotesk'", fontSize: 'clamp(15px,1.7vw,18px)', lineHeight: 1.62, color: '#5F5A50', maxWidth: 520, margin: '0 auto 34px' }}>
+          Tell us about your business. We&apos;ll show you exactly how Cledger can bring clarity and real value to your finances.
+        </p>
+        <div style={{ display: 'flex', gap: 13, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <a href="https://calendly.com/cledger-info/30min" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, font: "600 15px 'Hanken Grotesk'", color: '#F7F4EC', textDecoration: 'none', background: '#1A1A16', padding: '15px 30px', borderRadius: 8 }}>
+            Book a call →
+          </a>
+          <a href="mailto:info@cledger.co.uk" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, font: "600 15px 'Hanken Grotesk'", color: '#1A1A16', textDecoration: 'none', background: 'transparent', border: '1px solid #D8CFBC', padding: '15px 30px', borderRadius: 8 }}>
+            info@cledger.co.uk
+          </a>
         </div>
       </div>
     </section>
