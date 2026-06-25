@@ -5,14 +5,12 @@ import styles from './Navbar.module.css'
 import CalendlyButton from './CalendlyButton'
 
 const links = [
-  { label: 'Services',     id: 'services',     page: null            },
-  { label: 'Why Cledger',  id: 'why',          page: null            },
-  { label: 'Sectors',      id: 'sectors',      page: null            },
-  { label: 'Our Team',     id: 'team',         page: null            },
-  { label: 'Pricing',      id: 'pricing',      page: '/pricing'      },
-  { label: 'Calculators',  id: 'calculators',  page: '/calculators'  },
-  { label: 'Blog',         id: 'blog',         page: '/blog'         },
-  { label: 'Contact',      id: 'contact',      page: null            },
+  { label: 'Services',    id: 'services',    page: null            },
+  { label: 'Pricing',     id: 'pricing',     page: '/pricing'      },
+  { label: 'Calculators', id: 'calculators', page: '/calculators'  },
+  { label: 'Sectors',     id: 'sectors',     page: null            },
+  { label: 'Team',        id: 'team',        page: '/team'         },
+  { label: 'Blog',        id: 'blog',        page: '/blog'         },
 ]
 
 function scrollTo(id: string) {
@@ -57,7 +55,7 @@ export default function Navbar() {
             ))}
           </ul>
           <CalendlyButton className="btn btn-navy" style={{ fontFamily: 'inherit' }}>
-            Free Consultation
+            Free consultation
           </CalendlyButton>
           <button
             className={styles.ham}
@@ -78,7 +76,7 @@ export default function Navbar() {
             </button>
           ))}
           <CalendlyButton className={`${styles.mobCta} btn btn-navy`}>
-            Free Consultation
+            Free consultation
           </CalendlyButton>
         </div>
       )}
