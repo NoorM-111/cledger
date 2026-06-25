@@ -200,7 +200,7 @@ export default function PricingSection() {
         <div style={s.container}>
 
           <div style={s.header}>
-            <span style={s.eyebrow}>Build your package</span>
+            <span style={s.eyebrow}>Pricing · Build your package</span>
             <h2 style={s.title}>Pay only for what <em style={s.titleEm}>your business actually needs</em></h2>
             <p style={s.subtitle}>Select your turnover, number of entities, and the services you need. Your monthly fee is calculated instantly, transparent, no surprises, no lock-in.</p>
             <div style={s.trustRow}>
