@@ -1,31 +1,31 @@
-import Navbar      from '@/components/Navbar'
-import Hero        from '@/components/Hero'
-import TrustBar    from '@/components/TrustBar'
+import Navbar        from '@/components/Navbar'
+import Hero          from '@/components/Hero'
+import RemoteFirst   from '@/components/RemoteFirst'
+import TrustBar      from '@/components/TrustBar'
 import SoftwareStrip from '@/components/SoftwareStrip'
-import Services    from '@/components/Services'
-import WhyCledger  from '@/components/WhyCledger'
-import SlackAccess from '@/components/SlackAccess'
-import Sectors     from '@/components/Sectors'
-import LatestPosts from '@/components/LatestPosts'
-import Team        from '@/components/Team'
-import ContactSection from '@/components/ContactSection'
-import CTA         from '@/components/CTA'
-import Footer      from '@/components/Footer'
+import Services      from '@/components/Services'
+import WhyCledger    from '@/components/WhyCledger'
+import SlackAccess   from '@/components/SlackAccess'
+import Sectors       from '@/components/Sectors'
+import LatestPosts   from '@/components/LatestPosts'
+import Team          from '@/components/Team'
+import CTA           from '@/components/CTA'
+import Footer        from '@/components/Footer'
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
+      <RemoteFirst />
       <TrustBar />
       <SoftwareStrip />
       <Services />
       <WhyCledger />
       <SlackAccess />
       <Sectors />
-      <LatestPosts />
       <Team />
-      <ContactSection />
+      <LatestPosts />
       <CTA />
       <section aria-label="About Cledger bookkeeping services" style={{
         maxWidth: '860px',
