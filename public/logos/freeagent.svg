@@ -1,5 +1,5 @@
-<svg viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
   <text x="0" y="40" font-size="42" font-weight="900" font-family="'Helvetica Neue',Arial,sans-serif">
-    <tspan fill="#E8452C">free</tspan><tspan fill="#F8F5EE">agent</tspan>
+    <tspan fill="#E8452C">free</tspan><tspan fill="#2D2D2A">agent</tspan>
   </text>
 </svg>
