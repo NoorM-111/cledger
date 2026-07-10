@@ -33,6 +33,15 @@ export default function WhatAreManagementAccounts() {
       intro={<>Most small business owners only see their financial position once a year, when the accountant files the annual accounts. By then, problems that could have been spotted in March are discovered in December. Management accounts solve this by giving you <strong style={s.strong}>a live financial picture every month</strong>. This guide explains exactly what they are, what they include, and whether your business needs them.</>}
       ctaText="Get monthly management accounts →"
       ctaHref="/pricing"
+      slug="what-are-management-accounts"
+      description="Management accounts are monthly or quarterly financial reports — P&L, balance sheet, cash flow and KPIs — that help business owners make decisions between year-ends."
+      dateModified="2026-07-10"
+      faqs={[
+        { q: 'What are management accounts in simple terms?', a: 'Management accounts are financial reports — typically a profit and loss statement, balance sheet, cash flow summary and KPIs — prepared monthly or quarterly so business owners can see performance and make decisions without waiting for year-end statutory accounts.' },
+        { q: 'Are management accounts a legal requirement?', a: 'No. Unlike statutory year-end accounts, management accounts are optional. But lenders, investors and acquirers routinely ask for them, and businesses that review monthly numbers spot cash flow problems and margin erosion far earlier.' },
+        { q: 'What is the difference between management accounts and statutory accounts?', a: 'Statutory accounts are a legal filing prepared once a year to FRS 102/105 for Companies House and HMRC. Management accounts are internal, more frequent, more detailed, and formatted around what the owner needs to run the business.' },
+        { q: 'How much do management accounts cost?', a: 'Outsourced monthly management accounts typically cost £150–£500 per month depending on business complexity and turnaround. Cledger prepares monthly or quarterly packs from £149/month, delivered within 10 working days of month-end.' },
+      ]}
     >
       <h2 style={s.h2}>What are management accounts?</h2>
       <p style={s.p}>

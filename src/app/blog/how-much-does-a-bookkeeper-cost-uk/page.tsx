@@ -9,6 +9,9 @@ export const metadata = {
     url: 'https://www.cledger.co.uk/blog/how-much-does-a-bookkeeper-cost-uk',
     type: 'article',
   },
+  alternates: {
+    canonical: 'https://www.cledger.co.uk/blog/how-much-does-a-bookkeeper-cost-uk',
+  },
 }
 
 export default function Article1() {
@@ -21,6 +24,16 @@ export default function Article1() {
       intro={<>UK bookkeeping costs range from <strong style={s.strong}>£150 to £800 per month</strong> for most small businesses, but the right price depends entirely on your transaction volume, the services you need, and whether you hire locally or remotely. This guide breaks it all down.</>}
       ctaText="See Cledger pricing, build your package →"
       ctaHref="/pricing"
+      slug="how-much-does-a-bookkeeper-cost-uk"
+      description="UK bookkeeping costs range from £150–£800/month depending on transaction volume and services. Full 2026 breakdown of hourly rates, monthly packages and how to get the best value."
+      dateModified="2026-07-10"
+      faqs={[
+        { q: 'How much does a bookkeeper cost in the UK?', a: 'A bookkeeper in the UK costs £20–£50 per hour, or £150–£800 per month on a fixed monthly package. Most small businesses pay £200–£400/month for bookkeeping with VAT returns. Online firms such as Cledger start at £175/month, typically 30–40% below traditional firm fees.' },
+        { q: 'Is it cheaper to use an online bookkeeper than a local firm?', a: 'Yes. Online bookkeepers typically cost 30–50% less than traditional high-street firms because they have lower overheads. Cloud accounting software such as Xero and QuickBooks means the quality of service is equivalent, with faster communication.' },
+        { q: 'What affects bookkeeping prices the most?', a: 'Transaction volume is the biggest driver — more bank transactions, invoices and receipts mean more work. VAT registration typically adds £80–£200/month at traditional firms, and running multiple companies multiplies the cost.' },
+        { q: 'Should I pay a bookkeeper hourly or monthly?', a: 'Fixed monthly packages are better for most small businesses: you know exactly what you pay and what is included. Hourly billing (£20–£50/hour for freelance bookkeepers) varies month to month and makes budgeting difficult.' },
+        { q: 'How much should a small limited company budget for bookkeeping?', a: 'A small VAT-registered limited company with 1–5 employees should budget £200–£400 per month for bookkeeping, VAT returns and payroll. Anything above £800/month for a small business is almost certainly overpaying.' },
+      ]}
     >
       <h2 style={s.h2}>Why bookkeeping costs vary so much</h2>
       <p style={s.p}>No two businesses are the same. A sole trader with 30 bank transactions per month has very different needs to a VAT-registered Ltd company with 300 transactions, multiple employees, and quarterly returns to file. The price reflects the complexity, not just the time.</p>
@@ -103,7 +116,7 @@ export default function Article1() {
 
       <h2 style={s.h2}>What Cledger charges, and why</h2>
       <p style={s.p}>Cledger is a UK-registered accountancy firm with qualified accountants delivering bookkeeping, VAT, payroll and management accounts remotely. Our pricing is turnover-based, which means a £5M business pays more than a £100k business for the same service, because the work is genuinely more complex. Our prices are typically 30 to 40% below traditional UK firm fees because we operate remotely with lower overhead, and we pass that saving directly to you.</p>
-      <p style={s.p}>Unlike firms that hide prices and force you to book a call before you know what anything costs, our full pricing calculator is live on our website. You select your services, see your exact monthly price, and can request a quote instantly.</p>
+      <p style={s.p}>Unlike firms that hide prices and force you to book a call before you know what anything costs, our full pricing calculator is live on our website. You select your services, see your exact monthly price, and can request a quote instantly. For a full breakdown of our fixed packages and what each includes, see our <a href="/bookkeeping-prices-uk" style={{color:C.gold}}>bookkeeping prices and packages page</a>.</p>
     </BlogLayout>
   )
 }

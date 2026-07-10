@@ -33,6 +33,15 @@ export default function MtdForIncomeTaxSelfEmployed() {
       intro={<>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) is now live for the first wave of self-employed individuals and landlords. If your qualifying income exceeds £50,000, <strong style={s.strong}>you are already required to comply from April 2026</strong>. This guide explains exactly what has changed, what you must do, and what happens if you do not.</>}
       ctaText="Get MTD compliant with Cledger →"
       ctaHref="/pricing"
+      slug="mtd-for-income-tax-self-employed"
+      description="MTD for Income Tax applies to sole traders and landlords earning over £50,000 from April 2026. Quarterly digital submissions, software and deadlines explained."
+      dateModified="2026-07-10"
+      faqs={[
+        { q: 'Who has to follow MTD for Income Tax?', a: 'From April 2026, self-employed people and landlords with combined gross income over £50,000 must keep digital records and file quarterly updates. The £30,000–£50,000 group joins in April 2027, and remaining sole traders and landlords by April 2028.' },
+        { q: 'What do I have to submit under MTD for Income Tax?', a: 'Four quarterly updates of income and expenses per tax year, submitted from MTD-compatible software, plus a final declaration replacing the annual Self Assessment return. Deadlines for quarterly updates are 7 August, 7 November, 7 February and 7 May.' },
+        { q: 'Does MTD for Income Tax change how much tax I pay?', a: 'No. It changes how and when you report, not the tax rates. However, quarterly reporting means you see your estimated tax position through the year, which makes budgeting for payments on account easier.' },
+        { q: 'Can my accountant handle MTD for Income Tax for me?', a: 'Yes. An accountant or bookkeeper can maintain your digital records and file the quarterly updates and final declaration on your behalf. Cledger includes MTD for Income Tax compliance in its bookkeeping packages.' },
+      ]}
     >
       <h2 style={s.h2}>What is MTD for Income Tax?</h2>
       <p style={s.p}>

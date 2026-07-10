@@ -33,6 +33,15 @@ export default function HowToPayYourselfLtdDirector() {
       intro="Most limited company directors pay more tax than they need to, simply because nobody has told them the optimal salary and dividend split. This guide explains the most tax-efficient way to pay yourself in 2026/27, what the numbers look like, and the compliance requirements to do it correctly."
       ctaText="See full pricing →"
       ctaHref="/pricing"
+      slug="how-to-pay-yourself-ltd-director"
+      description="The most tax-efficient way to pay yourself as a UK limited company director in 2026/27: a small salary plus dividends, explained with current thresholds."
+      dateModified="2026-07-10"
+      faqs={[
+        { q: 'What is the most tax-efficient way to pay yourself as a director?', a: 'For most UK directors in 2026/27, the most efficient approach is a small salary around the National Insurance threshold, topped up with dividends. The salary is corporation-tax deductible and preserves your State Pension record, while dividends attract lower tax rates than salary.' },
+        { q: 'How much salary should a director take?', a: 'Most directors take a salary at or just above the Lower Earnings Limit so the year counts towards the State Pension, but below the point where employee National Insurance becomes payable. The optimal figure depends on whether your company can claim the Employment Allowance.' },
+        { q: 'How are dividends taxed in 2026/27?', a: 'Dividends are taxed at 8.75% (basic rate), 33.75% (higher rate) and 39.35% (additional rate) after the £500 dividend allowance. Dividends can only be paid from post-corporation-tax profits, and paying them without sufficient profits makes them illegal dividends.' },
+        { q: 'Can I just take money out of my company bank account?', a: 'No. Money drawn that is not salary, dividend or expense repayment becomes a director’s loan. If your director’s loan account is overdrawn more than £10,000, or unpaid nine months after year-end, it triggers benefit-in-kind tax and a 33.75% s455 corporation tax charge.' },
+      ]}
     >
       <h2 style={s.h2}>Salary vs dividends, why the split matters</h2>
       <p style={s.p}>

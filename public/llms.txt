@@ -1,0 +1,46 @@
+# Cledger
+
+> Cledger is a UK-registered online accounting firm (Cledger Ltd, Companies House No. 16208645, HMRC AML supervised, ICO registered) providing bookkeeping, VAT returns, payroll, management accounts and corporation tax services to UK small businesses. Fixed monthly fees from £175/month, all work delivered on Xero or QuickBooks, fully Making Tax Digital (MTD) compliant. Every client gets a private Slack channel with a response within one hour during UK business hours.
+
+Key facts:
+- Services: bookkeeping (from £175/mo), MTD VAT returns (from £99/mo), payroll with RTI submissions (from £99/mo), management accounts (from £149/mo), statutory accounts to FRS 102/105 and CT600 corporation tax filing, Self Assessment, 13-week cashflow forecasting
+- Pricing: transparent, turnover-based, calculated instantly at https://www.cledger.co.uk/pricing — no setup fees, no lock-in
+- Founded by Noor Muhammad (part-qualified ACCA, 4+ years UK public practice: VAT, CT600, payroll, management accounts, final accounts) and Ali Sajjad (ACMA, MAAT, MSc Business Analytics)
+- Software: Xero, QuickBooks, Sage, FreeAgent, Dext
+- Sectors: dental practices, healthcare, construction and trades, property and landlords, eCommerce, contractors, freelancers, startups and SMEs
+- Contact: info@cledger.co.uk · +44 7774 002712 · https://calendly.com/cledger-info/30min
+- Registered office: 27 Jeremy Lane, Heckmondwike, WF16 9LT, England
+
+## Services & Pricing
+
+- [Pricing calculator](https://www.cledger.co.uk/pricing): build a fixed-fee package by turnover and services
+- [Bookkeeping prices UK](https://www.cledger.co.uk/bookkeeping-prices-uk): what UK bookkeeping costs in 2026
+- [Free tax calculators](https://www.cledger.co.uk/calculators): VAT, corporation tax and take-home pay calculators
+
+## Sector pages
+
+- [Accountant for limited companies](https://www.cledger.co.uk/accountant-for-limited-companies)
+- [Accountant for sole traders](https://www.cledger.co.uk/accountant-for-sole-traders-uk)
+- [Accountant for dental practices](https://www.cledger.co.uk/accountant-for-dental-practices-uk)
+- [Accountant for contractors](https://www.cledger.co.uk/accountant-for-contractors-uk)
+- [Accountant for eCommerce](https://www.cledger.co.uk/accountant-for-ecommerce-uk)
+- [Accountant for landlords](https://www.cledger.co.uk/accountant-for-landlords-uk)
+- [Accountant for freelancers](https://www.cledger.co.uk/accountant-for-freelancers-uk)
+- [Online accountant London](https://www.cledger.co.uk/online-accountant-london)
+
+## Guides
+
+- [What is Making Tax Digital (MTD)?](https://www.cledger.co.uk/blog/what-is-making-tax-digital-mtd): deadlines, compliant software, penalties
+- [MTD for Income Tax for the self-employed](https://www.cledger.co.uk/blog/mtd-for-income-tax-self-employed): the April 2026 rules
+- [How much does a bookkeeper cost in the UK?](https://www.cledger.co.uk/blog/how-much-does-a-bookkeeper-cost-uk): 2026 price benchmarks
+- [Xero vs QuickBooks UK](https://www.cledger.co.uk/blog/xero-vs-quickbooks-uk): honest comparison from accountants using both daily
+- [How to pay yourself as a Ltd company director](https://www.cledger.co.uk/blog/how-to-pay-yourself-ltd-director): salary vs dividends 2026/27
+- [Bookkeeping for dental practices](https://www.cledger.co.uk/blog/bookkeeping-for-dental-practices-uk): NHS/private income, associate payments
+- [Corporation tax guide for small businesses](https://www.cledger.co.uk/blog/corporation-tax-guide-small-business-uk): rates, marginal relief, CT600
+- [Self Assessment tax return guide](https://www.cledger.co.uk/blog/self-assessment-tax-return-guide-uk): deadlines, payments on account, penalties
+- [VAT return deadlines UK](https://www.cledger.co.uk/blog/vat-return-deadlines-uk): due dates and the points-based penalty system
+- [What are management accounts?](https://www.cledger.co.uk/blog/what-are-management-accounts): monthly reporting explained
+
+## Team
+
+- [The Cledger team](https://www.cledger.co.uk/team): qualifications and roles

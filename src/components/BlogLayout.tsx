@@ -32,6 +32,11 @@ export const s: Record<string,React.CSSProperties> = {
   cta:{display:'block',background:'#1A1A16',color:'#F7F4EC',fontSize:14,fontWeight:600,padding:'14px 28px',borderRadius:10,textDecoration:'none',textAlign:'center' as const,marginTop:'2.5rem'},
 }
 
+export interface Faq {
+  q: string
+  a: string
+}
+
 interface BlogLayoutProps {
   eyebrow: string
   title: string
@@ -41,23 +46,112 @@ interface BlogLayoutProps {
   children: React.ReactNode
   ctaText: string
   ctaHref: string
+  /** URL slug, e.g. "how-much-does-a-bookkeeper-cost-uk". Enables Article + Breadcrumb schema. */
+  slug?: string
+  /** Plain-text summary used in Article schema. */
+  description?: string
+  /** ISO date of last update, e.g. "2026-07-10". */
+  dateModified?: string
+  /** FAQs rendered on-page and emitted as FAQPage schema. */
+  faqs?: Faq[]
 }
 
-export default function BlogLayout({eyebrow,title,date,readTime,intro,children,ctaText,ctaHref}:BlogLayoutProps){
+const SITE = 'https://www.cledger.co.uk'
+
+function toIso(dateStr: string): string {
+  const d = new Date(dateStr)
+  return isNaN(d.getTime()) ? '2026-06-01' : d.toISOString().split('T')[0]
+}
+
+function buildSchema({title, date, dateModified, slug, description, faqs}: Pick<BlogLayoutProps,'title'|'date'|'dateModified'|'slug'|'description'|'faqs'>) {
+  const url = `${SITE}/blog/${slug}`
+  const graph: object[] = [
+    {
+      '@type': 'Article',
+      '@id': `${url}#article`,
+      headline: title,
+      description: description,
+      datePublished: toIso(date),
+      dateModified: dateModified || toIso(date),
+      inLanguage: 'en-GB',
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      author: { '@id': `${SITE}/#noor-muhammad` },
+      publisher: { '@id': `${SITE}/#organisation` },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${url}#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE}/blog` },
+        { '@type': 'ListItem', position: 3, name: title, item: url },
+      ],
+    },
+  ]
+  if (faqs && faqs.length > 0) {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${url}#faq`,
+      mainEntity: faqs.map(f => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    })
+  }
+  return { '@context': 'https://schema.org', '@graph': graph }
+}
+
+function AuthorBox(){
+  return (
+    <div style={{display:'flex',gap:14,alignItems:'flex-start',background:'#FBF8F1',border:`1px solid ${C.border}`,borderRadius:12,padding:'1.2rem 1.5rem',marginTop:'2.5rem'}}>
+      <div style={{width:44,height:44,minWidth:44,borderRadius:'50%',background:'#1A1A16',color:'#F7F4EC',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'IBM Plex Mono',monospace",fontSize:13,fontWeight:600}}>NM</div>
+      <div>
+        <p style={{...s.p,marginBottom:4,color:C.white,fontWeight:600,fontSize:14}}>Noor Muhammad</p>
+        <p style={{...s.p,marginBottom:0,fontSize:13}}>
+          Founder &amp; Principal at Cledger. Part-qualified ACCA with 4+ years of UK public practice
+          experience across VAT, corporation tax (CT600), payroll, management accounts and final
+          accounts, working with Xero, QuickBooks, IRIS and CCH. <Link href="/team" style={{color:C.gold}}>About the team →</Link>
+        </p>
+      </div>
+    </div>
+  )
+}
+
+export default function BlogLayout({eyebrow,title,date,readTime,intro,children,ctaText,ctaHref,slug,description,dateModified,faqs}:BlogLayoutProps){
   return (
     <>
       <Navbar />
+      {slug && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildSchema({title,date,dateModified,slug,description,faqs})) }}
+        />
+      )}
       <main style={s.main}>
         <div style={s.wrap}>
           <span style={s.eyebrow}>{eyebrow}</span>
           <h1 style={s.h1}>{title}</h1>
           <div style={s.meta}>
             <span>{date}</span>
+            {dateModified && <span>· Updated {new Date(dateModified).toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}</span>}
             <span>· {readTime}</span>
             <span>· By Noor Muhammad</span>
           </div>
           <div style={s.intro}>{intro}</div>
           {children}
+          {faqs && faqs.length > 0 && (
+            <section>
+              <h2 style={s.h2}>Frequently asked questions</h2>
+              {faqs.map(f => (
+                <div key={f.q}>
+                  <h3 style={s.h3}>{f.q}</h3>
+                  <p style={s.p}>{f.a}</p>
+                </div>
+              ))}
+            </section>
+          )}
+          <AuthorBox />
           <Link href={ctaHref} style={s.cta}>{ctaText}</Link>
         </div>
       </main>

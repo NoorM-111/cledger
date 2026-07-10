@@ -33,6 +33,15 @@ export default function XeroVsQuickbooksUK() {
       intro="Xero and QuickBooks are the two dominant cloud accounting platforms for UK small businesses. At Cledger, our accountants use both every day across a portfolio of UK clients. This is an honest comparison, not a paid promotion, covering pricing, features, MTD compliance, and which one actually suits different types of business."
       ctaText="Book a free consultation →"
       ctaHref="/pricing"
+      slug="xero-vs-quickbooks-uk"
+      description="Xero vs QuickBooks for UK small businesses — pricing, MTD compliance, features and which to choose. Honest comparison from accountants who use both daily."
+      dateModified="2026-07-10"
+      faqs={[
+        { q: 'Is Xero or QuickBooks better for a UK business?', a: 'Xero is generally better for UK limited companies that work with an accountant — stronger bank feeds, unlimited users and the largest UK accountant network. QuickBooks is often better for sole traders and very small businesses wanting lower entry pricing and built-in Self Assessment tools. Both are fully MTD-compliant.' },
+        { q: 'Which is cheaper, Xero or QuickBooks?', a: 'QuickBooks entry plans are usually cheaper than Xero equivalents, and both run frequent 50–90% first-6-months discounts. Xero charges per organisation with unlimited users, while QuickBooks limits users per tier — so for teams, Xero often works out cheaper overall.' },
+        { q: 'Are Xero and QuickBooks both MTD compliant?', a: 'Yes. Both are HMRC-recognised for Making Tax Digital for VAT, and both support MTD for Income Tax (quarterly digital submissions for sole traders and landlords earning over £50,000 from April 2026).' },
+        { q: 'Can I switch from QuickBooks to Xero (or vice versa)?', a: 'Yes. Data migration tools can move your chart of accounts, contacts, invoices and up to 24 months of transactions. The cleanest time to switch is your financial year-end. Cledger handles the migration for clients as part of onboarding, at no extra cost.' },
+      ]}
     >
       <h2 style={s.h2}>Pricing comparison (2026)</h2>
       <table style={s.table}>

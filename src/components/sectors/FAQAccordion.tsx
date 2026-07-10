@@ -9,8 +9,22 @@ export interface FAQItem {
 export default function FAQAccordion({ items }: { items: FAQItem[] }) {
   const [open, setOpen] = useState<number | null>(null)
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map(item => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  }
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {items.map((item, i) => {
         const isOpen = open === i
         return (

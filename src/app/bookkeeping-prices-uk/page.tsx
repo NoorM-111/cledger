@@ -5,8 +5,8 @@ import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Bookkeeping Prices UK 2026 | How Much Does a Bookkeeper Cost? | Cledger',
-  description: 'Honest guide to UK bookkeeping prices in 2026. How much does a bookkeeper cost? Hourly rates vs fixed fees explained. See Cledger\'s transparent pricing from £175/month.',
+  title: 'Bookkeeping Prices & Packages UK 2026 — Fixed Fees from £175/month | Cledger',
+  description: 'Transparent UK bookkeeping packages with fixed monthly fees from £175/month, including VAT returns, bank reconciliation and monthly reporting. Compare providers and build your exact price instantly.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/bookkeeping-prices-uk',
   },

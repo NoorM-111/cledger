@@ -9,6 +9,9 @@ export const metadata = {
     url: 'https://www.cledger.co.uk/blog/bookkeeping-for-dental-practices-uk',
     type: 'article',
   },
+  alternates: {
+    canonical: 'https://www.cledger.co.uk/blog/bookkeeping-for-dental-practices-uk',
+  },
 }
 
 export default function Article3() {
@@ -21,6 +24,15 @@ export default function Article3() {
       intro={<>Dental practices have accounting needs that most generalist bookkeepers get wrong. Mixed NHS and private income, associate dentist payments, CQC compliance, and equipment financing all require specific knowledge. This guide covers everything, written by accountants who have managed <strong style={s.strong}>100+ dental and locum client accounts.</strong></>}
       ctaText="Get dental practice bookkeeping from £175/month →"
       ctaHref="/pricing"
+      slug="bookkeeping-for-dental-practices-uk"
+      description="Dental practices have unique accounting needs — mixed NHS/private income, associate payments, CQC compliance. The complete guide to dental bookkeeping in the UK."
+      dateModified="2026-07-10"
+      faqs={[
+        { q: 'Do dental practices need a specialist bookkeeper?', a: 'Yes, in most cases. Dental practices have mixed NHS and private income, VAT-exempt and VAT-standard treatments, associate payment calculations and plan income (Denplan, DPAS) — areas where generalist bookkeepers commonly make errors that cost tax or trigger HMRC enquiries.' },
+        { q: 'Is dental treatment VAT-exempt in the UK?', a: 'NHS and most private dental treatment is VAT-exempt under the healthcare exemption. However, purely cosmetic treatments can be standard-rated at 20%. Practices offering both must categorise income correctly, and may need partial exemption calculations.' },
+        { q: 'How much does bookkeeping cost for a dental practice?', a: 'Specialist dental bookkeeping typically costs £250–£600 per month depending on practice size and whether payroll and management accounts are included. Cledger provides dental practice bookkeeping from £175/month with dental-specific income categorisation.' },
+        { q: 'How should associate dentist payments be recorded?', a: 'Associate dentists are usually self-employed, paid a percentage of the fees they generate less lab costs. Payments should be recorded as a cost of sale, not salaries, and each associate needs a clear monthly reconciliation of gross fees, lab deductions and licence fees.' },
+      ]}
     >
       <h2 style={s.h2}>Why dental bookkeeping is different</h2>
       <p style={s.p}>Most bookkeepers can handle a simple Ltd company with a single income stream. Dental practices are different because income comes from multiple sources, NHS contract payments from NHS England, private patient fees, plan membership income (e.g. Denplan, DPAS), and potentially income from associates renting a chair. Each of these needs to be categorised correctly and treated differently for VAT and tax purposes.</p>

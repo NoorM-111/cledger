@@ -33,6 +33,15 @@ export default function VatReturnDeadlinesUK() {
       intro={<>Miss a VAT deadline and HMRC will issue a <strong style={s.strong}>£200 surcharge on the first default alone</strong>, rising with each subsequent late filing. This guide covers every VAT return deadline you need to know in 2026, how the penalty system works, and what to do if you have already missed one.</>}
       ctaText="See VAT return pricing →"
       ctaHref="/pricing"
+      slug="vat-return-deadlines-uk"
+      description="UK VAT return deadlines explained: quarterly due dates, payment deadlines one month and seven days after period end, and HMRC's points-based penalty system."
+      dateModified="2026-07-10"
+      faqs={[
+        { q: 'When is my VAT return due?', a: 'Your VAT return and payment are due one calendar month and seven days after the end of your VAT quarter. For example, a quarter ending 31 March must be filed and paid by 7 May.' },
+        { q: 'What happens if I miss a VAT deadline?', a: 'HMRC operates a points-based penalty system: each late return earns a point, and at 4 points (quarterly filers) you receive a £200 fine, with further £200 fines for each later default. Late payments attract interest and separate late-payment penalties from day 15.' },
+        { q: 'Can I get more time to pay my VAT?', a: 'If you cannot pay on time, contact HMRC before the deadline to arrange a Time to Pay agreement. Interest still accrues, but arranging it early can prevent late-payment penalties escalating.' },
+        { q: 'Do I still file a VAT return if I owe nothing?', a: 'Yes. Nil returns and repayment returns must be filed by the same deadline. Missing a nil return still earns a penalty point under HMRC’s system.' },
+      ]}
     >
       <h2 style={s.h2}>When is my VAT return due?</h2>
       <p style={s.p}>

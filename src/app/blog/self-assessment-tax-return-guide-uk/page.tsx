@@ -33,6 +33,15 @@ export default function SelfAssessmentGuideUK() {
       intro="Over 12 million people in the UK file a Self Assessment tax return each year, and HMRC issues over £300 million in late filing penalties annually. This guide covers who needs to file, what to include, the 2026 deadlines, and the mistakes that cost people the most money."
       ctaText="Get your Self Assessment sorted →"
       ctaHref="/pricing"
+      slug="self-assessment-tax-return-guide-uk"
+      description="Who needs to file a UK Self Assessment tax return, key deadlines (31 January online), payments on account and penalties — the complete 2026 guide."
+      dateModified="2026-07-10"
+      faqs={[
+        { q: 'Who needs to file a Self Assessment tax return?', a: 'You must file if you were self-employed with income over £1,000, a partner in a partnership, had rental income, earned over £150,000, owe the High Income Child Benefit Charge, or have untaxed income such as dividends or capital gains above the reporting thresholds.' },
+        { q: 'When is the Self Assessment deadline?', a: 'Online returns and any tax owed are due by 31 January following the end of the tax year. Paper returns are due 31 October. You must also register for Self Assessment by 5 October if it is your first year.' },
+        { q: 'What are payments on account?', a: 'If your tax bill exceeds £1,000 and less than 80% is collected at source, HMRC requires two advance payments towards next year’s bill — 50% each on 31 January and 31 July — based on the current year’s liability.' },
+        { q: 'What is the penalty for filing late?', a: 'An automatic £100 penalty applies immediately after 31 January, even if you owe no tax. After 3 months, £10 daily penalties (up to £900) apply, then 5% of tax due (minimum £300) at 6 and 12 months, plus interest on late payments.' },
+      ]}
     >
       <h2 style={s.h2}>Who needs to file a Self Assessment?</h2>
       <p style={s.p}>You must file a Self Assessment tax return if, in the 2025/26 tax year, any of the following apply:</p>

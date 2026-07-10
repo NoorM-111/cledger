@@ -33,6 +33,15 @@ export default function CorporationTaxGuideUK() {
       intro="If your limited company makes a profit, it pays Corporation Tax. The rate depends on how much profit you make, and missing the deadline costs you interest and penalties from day one. This guide covers the current rates, deadlines, allowable deductions, and the most effective ways to reduce your CT bill legally in 2026."
       ctaText="See CT600 pricing →"
       ctaHref="/pricing"
+      slug="corporation-tax-guide-small-business-uk"
+      description="UK corporation tax for small businesses: 19% small profits rate, 25% main rate, marginal relief, CT600 filing deadlines and allowable deductions explained."
+      dateModified="2026-07-10"
+      faqs={[
+        { q: 'What is the corporation tax rate for small businesses?', a: 'Companies with profits up to £50,000 pay the 19% small profits rate. Profits over £250,000 are taxed at the 25% main rate, and profits between £50,000 and £250,000 pay 25% reduced by marginal relief — an effective rate that tapers between 19% and 25%.' },
+        { q: 'When is corporation tax due?', a: 'Corporation tax must be paid 9 months and 1 day after the end of your accounting period, and the CT600 return must be filed within 12 months. Note the payment deadline falls before the filing deadline.' },
+        { q: 'What expenses can a limited company deduct?', a: 'Legitimate business costs reduce taxable profits: salaries and employer NI, pension contributions, rent, software, professional fees, business travel and capital allowances on equipment (including 100% full expensing on qualifying plant and machinery). Client entertainment is not deductible.' },
+        { q: 'Do I need an accountant to file a CT600?', a: 'It is not legally required, but the CT600 must be filed in iXBRL format with computations and statutory accounts attached, which is difficult without professional software. Errors trigger HMRC enquiries — most small companies use an accountant. Cledger prepares and files CT600s from £65/month.' },
+      ]}
     >
       <h2 style={s.h2}>What is Corporation Tax and who pays it?</h2>
       <p style={s.p}>
