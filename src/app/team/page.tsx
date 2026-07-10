@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'Our Team | Cledger',
+  title: 'Our Team',
   description:
     'Meet the qualified finance professionals behind Cledger, delivering expert accounting, tax compliance and financial advisory for UK businesses.',
 }

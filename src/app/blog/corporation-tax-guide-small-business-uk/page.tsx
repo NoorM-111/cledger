@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'Corporation Tax UK: Small Business Guide 2026 | Cledger',
+  title: 'Corporation Tax UK: Small Business Guide 2026',
   description: 'UK Corporation Tax is 19%–25% depending on profits. Deadlines, reliefs, and how to reduce your bill legally, complete 2026 guide for Ltd companies.',
   robots: 'index, follow',
   alternates: {

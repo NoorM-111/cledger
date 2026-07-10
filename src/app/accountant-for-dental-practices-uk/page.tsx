@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Dental Practices UK | Specialist Dental Bookkeeping | Cledger',
+  title: 'Accountant for Dental Practices UK | Specialist Dental Bookkeeping',
   description: 'Specialist accounting and bookkeeping for UK dental practices from £175/month. NHS and private income, associate payroll, VAT exemptions and Making Tax Digital from qualified accountants.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-dental-practices-uk',

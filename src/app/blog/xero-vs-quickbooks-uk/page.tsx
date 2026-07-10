@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'Xero vs QuickBooks UK: Which Is Better for Small Businesses in 2026? | Cledger',
+  title: 'Xero vs QuickBooks UK: Which Is Better for Small Businesses in 2026?',
   description: 'Xero vs QuickBooks for UK small businesses, pricing, MTD compliance, features and which to choose. Honest comparison from accountants who use both daily.',
   robots: 'index, follow',
   alternates: {

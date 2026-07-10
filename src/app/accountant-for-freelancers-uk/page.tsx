@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Freelancers UK | Fixed-Fee Online Accounting | Cledger',
+  title: 'Accountant for Freelancers UK | Fixed-Fee Online Accounting',
   description: 'Specialist accounting for UK freelancers from £175/month. Self Assessment, bookkeeping, VAT returns and IR35 guidance from qualified accountants. Fixed fees, no surprises.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-freelancers-uk',

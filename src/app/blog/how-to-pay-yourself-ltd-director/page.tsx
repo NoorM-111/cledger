@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'How to Pay Yourself as a Limited Company Director UK (2026) | Cledger',
+  title: 'How to Pay Yourself as a Limited Company Director UK (2026)',
   description: 'Most Ltd directors overpay tax by taking the wrong salary/dividend split. Here is the optimal 2026/27 structure to maximise take-home pay legally.',
   robots: 'index, follow',
   alternates: {

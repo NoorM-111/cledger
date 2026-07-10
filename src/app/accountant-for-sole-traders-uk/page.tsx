@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Sole Traders UK | Self Assessment & Bookkeeping | Cledger',
+  title: 'Accountant for Sole Traders UK | Self Assessment & Bookkeeping',
   description: 'Specialist accounting for UK sole traders from £175/month. Self Assessment tax returns, bookkeeping, VAT and Making Tax Digital from qualified accountants. Fixed fees, no surprises.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-sole-traders-uk',

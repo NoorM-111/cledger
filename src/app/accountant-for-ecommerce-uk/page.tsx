@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Ecommerce UK | Amazon, Shopify & eBay Accounting | Cledger',
+  title: 'Accountant for Ecommerce UK | Amazon, Shopify & eBay Accounting',
   description: 'Specialist accounting for UK ecommerce businesses from £175/month. Amazon FBA, Shopify, eBay, multi-channel bookkeeping, VAT, OSS and corporation tax from qualified accountants.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-ecommerce-uk',

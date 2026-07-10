@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Bookkeeping Prices & Packages UK 2026 — Fixed Fees from £175/month | Cledger',
+  title: 'Bookkeeping Prices & Packages UK 2026 — Fixed Fees from £175/month',
   description: 'Transparent UK bookkeeping packages with fixed monthly fees from £175/month, including VAT returns, bank reconciliation and monthly reporting. Compare providers and build your exact price instantly.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/bookkeeping-prices-uk',

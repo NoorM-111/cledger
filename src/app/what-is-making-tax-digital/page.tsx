@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'What Is Making Tax Digital (MTD)? Complete UK Guide 2026 | Cledger',
+  title: 'What Is Making Tax Digital (MTD)? Complete UK Guide 2026',
   description: 'Everything UK businesses and sole traders need to know about Making Tax Digital in 2026. MTD for VAT, MTD for Income Tax deadlines, who is affected, and how to comply.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/what-is-making-tax-digital',

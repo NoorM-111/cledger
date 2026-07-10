@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'Making Tax Digital for Income Tax: What Self-Employed Need to Know (2026) | Cledger',
+  title: 'Making Tax Digital for Income Tax: What Self-Employed Need to Know (2026)',
   description: 'MTD for Income Tax starts April 2026 for self-employed with £50k+ turnover. Quarterly digital reporting to HMRC is now mandatory. Here is what changes.',
   robots: 'index, follow',
   alternates: {

@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Pricing | Cledger',
+  title: 'Pricing',
   description: 'Transparent, turnover-based pricing for bookkeeping, VAT, payroll and full finance outsourcing. Build your custom package instantly.',
   alternates: { canonical: 'https://www.cledger.co.uk/pricing' },
   openGraph: {

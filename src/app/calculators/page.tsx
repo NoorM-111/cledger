@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import CalculatorsClient from './CalculatorsClient'
 
 export const metadata: Metadata = {
-  title: 'Free UK Tax Calculators 2025/26 — VAT, Corporation Tax & Take-Home Pay | Cledger',
+  title: 'Free UK Tax Calculators 2025/26 — VAT, Corporation Tax & Take-Home Pay',
   description: "Calculate your VAT return, corporation tax liability, and PAYE take-home pay for 2025/26. Free tools from Cledger's qualified UK accountants.",
   alternates: {
     canonical: 'https://www.cledger.co.uk/calculators',

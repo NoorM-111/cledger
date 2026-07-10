@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Cledger',
+  title: 'Terms of Service',
   description: 'The terms governing your use of the Cledger website and the engagement of our accounting services.',
   alternates: { canonical: 'https://www.cledger.co.uk/terms' },
   openGraph: {

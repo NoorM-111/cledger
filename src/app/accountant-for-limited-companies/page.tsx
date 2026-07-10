@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Limited Companies UK | Online Accounting from £175/mo | Cledger',
+  title: 'Accountant for Limited Companies UK | Online Accounting from £175/mo',
   description: 'Online accounting for UK limited companies from £175/month. Corporation tax, annual accounts, payroll, VAT and director Self Assessment from qualified accountants. Fixed fees.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-limited-companies',

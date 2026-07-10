@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Contractors UK | IR35 Specialists | Fixed-Fee | Cledger',
+  title: 'Accountant for Contractors UK | IR35 Specialists | Fixed-Fee',
   description: 'Specialist accounting for UK contractors from £175/month. IR35 assessment, limited company accounts, corporation tax, VAT and director Self Assessment from qualified accountants.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-contractors-uk',

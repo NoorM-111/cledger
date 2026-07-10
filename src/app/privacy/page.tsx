@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Cledger',
+  title: 'Privacy Policy',
   description: 'Read the Cledger privacy policy. We explain what personal data we collect, how we use it, and your rights under UK GDPR and the Data Protection Act 2018.',
   alternates: { canonical: 'https://www.cledger.co.uk/privacy' },
   openGraph: {

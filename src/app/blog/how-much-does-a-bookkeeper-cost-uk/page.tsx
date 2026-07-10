@@ -1,7 +1,7 @@
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata = {
-  title: 'How Much Does a Bookkeeper Cost in the UK? (2026 Guide) | Cledger',
+  title: 'How Much Does a Bookkeeper Cost in the UK? (2026 Guide)',
   description: 'UK bookkeeping costs range from £150–£800/month depending on transaction volume and services. See the full 2026 pricing breakdown and compare options.',
   openGraph: {
     title: 'How Much Does a Bookkeeper Cost in the UK? (2026 Guide)',

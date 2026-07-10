@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'What Are Management Accounts, and Does Your Business Need Them? | Cledger',
+  title: 'What Are Management Accounts, and Does Your Business Need Them?',
   description: 'Management accounts give you monthly P&L, balance sheet and cash flow, before your year-end. Here is what they include, who needs them, and what they cost.',
   robots: 'index, follow',
   alternates: {

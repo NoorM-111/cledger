@@ -1,7 +1,7 @@
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata = {
-  title: 'Bookkeeping for Dental Practices UK, What You Need to Know | Cledger',
+  title: 'Bookkeeping for Dental Practices UK, What You Need to Know',
   description: 'Dental practices have unique accounting needs, mixed NHS/private income, associate payments, CQC compliance. Here is the complete guide to dental bookkeeping in the UK.',
   openGraph: {
     title: 'Bookkeeping for Dental Practices UK, What You Need to Know',

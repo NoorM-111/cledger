@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'Self Assessment Tax Return: Complete UK Guide 2026 | Cledger',
+  title: 'Self Assessment Tax Return: Complete UK Guide 2026',
   description: 'Who needs to file a Self Assessment, what to include, key deadlines, and the most common mistakes. Everything you need to know for 2025/26 tax year.',
   robots: 'index, follow',
   alternates: {

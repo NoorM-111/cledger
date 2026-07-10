@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'VAT Return Deadlines UK: The Complete 2026 Guide | Cledger',
+  title: 'VAT Return Deadlines UK: The Complete 2026 Guide',
   description: 'Miss a VAT deadline and HMRC charges a £200 surcharge minimum. Full UK VAT return deadlines, penalties, and how to stay compliant in 2026.',
   robots: 'index, follow',
   alternates: {
