@@ -22,8 +22,8 @@ export default function Article3() {
       date="June 15, 2026"
       readTime="7 min read"
       intro={<>Dental practices have accounting needs that most generalist bookkeepers get wrong. Mixed NHS and private income, associate dentist payments, CQC compliance, and equipment financing all require specific knowledge. This guide covers everything, written by accountants who have managed <strong style={s.strong}>100+ dental and locum client accounts.</strong></>}
-      ctaText="Get dental practice bookkeeping from £175/month →"
-      ctaHref="/pricing"
+      ctaText="See our dental accounting service, from £175/month →"
+      ctaHref="/accountant-for-dental-practices-uk"
       slug="bookkeeping-for-dental-practices-uk"
       description="Dental practices have unique accounting needs — mixed NHS/private income, associate payments, CQC compliance. The complete guide to dental bookkeeping in the UK."
       dateModified="2026-07-10"
@@ -32,6 +32,9 @@ export default function Article3() {
         { q: 'Is dental treatment VAT-exempt in the UK?', a: 'NHS and most private dental treatment is VAT-exempt under the healthcare exemption. However, purely cosmetic treatments can be standard-rated at 20%. Practices offering both must categorise income correctly, and may need partial exemption calculations.' },
         { q: 'How much does bookkeeping cost for a dental practice?', a: 'Specialist dental bookkeeping typically costs £250–£600 per month depending on practice size and whether payroll and management accounts are included. Cledger provides dental practice bookkeeping from £175/month with dental-specific income categorisation.' },
         { q: 'How should associate dentist payments be recorded?', a: 'Associate dentists are usually self-employed, paid a percentage of the fees they generate less lab costs. Payments should be recorded as a cost of sale, not salaries, and each associate needs a clear monthly reconciliation of gross fees, lab deductions and licence fees.' },
+        { q: 'Why is my NHS payment less than my contract value?', a: 'NHS contract payments arrive net of superannuation, levies and any clawback for underperformance against your UDA target. The gross contract value is your turnover; the deductions belong in their own accounts. Recording only the net bank receipt as income understates your turnover and hides your pension contributions.' },
+        { q: 'Do dental nurses and hygienists go on payroll?', a: 'Employed nurses, receptionists and practice managers go through PAYE payroll with auto-enrolment pension assessment each pay period. Hygienists may be employed or self-employed depending on the actual working arrangement rather than the contract title. Associate dentists are self-employed and paid outside payroll as a cost of sale.' },
+        { q: 'What expenses can a locum dentist claim?', a: 'Typically GDC registration, indemnity cover, professional subscriptions, CPD, loupes and clinical equipment, travel between workplaces, and a proportion of home office costs where admin genuinely happens there. Travel to a single regular place of work is not allowable.' },
       ]}
     >
       <h2 style={s.h2}>Why dental bookkeeping is different</h2>
@@ -85,8 +88,67 @@ export default function Article3() {
       <p style={s.p}>Most dental income is VAT-exempt under the healthcare exemption in Schedule 9 of the VAT Act. However, VAT registration may still be relevant for your practice if you provide taxable supplies alongside exempt ones, for example, selling dental products, providing cosmetic treatments, or renting out surgeries to associates.</p>
       <p style={s.p}>If your taxable turnover exceeds the VAT registration threshold (currently £90,000), you must register for VAT even if most of your income is exempt. A specialist dental accountant can advise on whether partial exemption applies to your practice and how to calculate your recoverable input VAT.</p>
 
+      <h2 style={s.h2}>How is NHS superannuation recorded in dental practice accounts?</h2>
+      <p style={s.p}><strong style={s.strong}>NHS superannuation is deducted at source by the NHSBSA before your contract payment reaches the bank, so the amount you receive is never your gross income.</strong> The gross contract value must be recorded as turnover, with superannuation shown separately as a deduction. Recording only the net bank receipt understates both your income and your pension contributions, and it is the single most common error we see in dental accounts prepared by generalist bookkeepers.</p>
+      <p style={s.p}>The consequences run in both directions. Understated turnover distorts every ratio in your accounts and can misstate your tax position. Hidden superannuation means the contributions you are entitled to claim never appear as an expense, and your annual pension record will not reconcile against your own figures.</p>
+
+      <div style={s.warning}>
+        <p style={{...s.p,marginBottom:0}}><strong style={s.strong}>The bank-feed trap:</strong> a monthly NHS payment landing in your account has already had superannuation, and often the levy and any contract clawback, taken off it. If your bookkeeping simply codes that deposit as sales, your turnover is wrong from the first month and stays wrong all year. Every NHS payment needs reconciling back to the schedule, not just categorising in the bank feed.</p>
+      </div>
+
+      <h3 style={s.h3}>A worked example</h3>
+      <p style={s.p}>A practice with a gross monthly NHS contract value of £20,000 might see this:</p>
+      <table style={s.table}>
+        <thead>
+          <tr>
+            <th style={s.th}>Line</th>
+            <th style={s.th}>Amount</th>
+            <th style={s.th}>How it should be recorded</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={s.td}>Gross NHS contract value</td>
+            <td style={s.td}>£20,000</td>
+            <td style={s.td}>Turnover — this is the figure that belongs in your P&amp;L</td>
+          </tr>
+          <tr>
+            <td style={s.td}>Less superannuation</td>
+            <td style={s.td}>(£1,900)</td>
+            <td style={s.td}>Pension contribution — an expense or drawings, depending on structure</td>
+          </tr>
+          <tr>
+            <td style={s.td}>Less levies and adjustments</td>
+            <td style={s.td}>(£400)</td>
+            <td style={s.td}>Coded to their own expense accounts, not netted off sales</td>
+          </tr>
+          <tr>
+            <td style={s.td}><strong style={s.strong}>Net received in bank</strong></td>
+            <td style={s.td}><strong style={s.strong}>£17,700</strong></td>
+            <td style={s.td}>The only figure a bank feed can see — and the wrong one to call turnover</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style={s.p}>For associates, England and Wales use a convention that treats net pensionable earnings as 43.9% of gross NHS fee income, rather than requiring the actual expense ratio to be calculated. Your annual pension figures should reconcile to that basis, and if they do not, something in the bookkeeping has gone astray during the year.</p>
+
+      <h2 style={s.h2}>How does payroll work in a dental practice?</h2>
+      <p style={s.p}><strong style={s.strong}>A dental practice usually runs payroll for employed staff — nurses, receptionists, hygienists and practice managers — while associate dentists are self-employed and paid outside payroll against invoices or self-billing statements.</strong> Mixing the two is the error that causes trouble, because paying an associate through PAYE or treating an employed hygienist as self-employed both create liabilities that surface years later.</p>
+      <p style={s.p}>Practical points that catch practices out:</p>
+      <ul style={s.ul}>
+        <li style={s.li}>Employed staff need auto-enrolment pension assessment every pay period, and dental practices often have variable-hours staff whose eligibility changes month to month.</li>
+        <li style={s.li}>Associates are a cost of sale, not a payroll cost. Putting them in wages distorts your staff-cost percentage and makes benchmarking against other practices meaningless.</li>
+        <li style={s.li}>Hygienists can be either employed or self-employed depending on the actual working arrangement, not on what the contract is titled. The distinction needs to be defensible on the facts.</li>
+        <li style={s.li}>NHS staff in the NHS Pension Scheme need their contributions handled separately from auto-enrolment arrangements.</li>
+      </ul>
+
+      <h2 style={s.h2}>How do locum dentists handle their bookkeeping?</h2>
+      <p style={s.p}><strong style={s.strong}>Locum dentists are self-employed and invoice each practice they work at, so their bookkeeping is simpler than a practice's but has two specific requirements: tracking income across multiple payers, and claiming the right expenses against it.</strong> Where a locum also does NHS sessions, superannuation may be deducted by the practice or the health board, which brings the same gross-versus-net question as above.</p>
+      <p style={s.p}>Allowable costs for a locum typically include GDC registration, indemnity cover, professional subscriptions, CPD, loupes and clinical equipment, travel between workplaces (though not to a single regular place of work), and a proportion of home office costs where record-keeping and admin genuinely happen there. From April 2026, locums earning over £50,000 fall within Making Tax Digital for Income Tax and will need to keep digital records and file quarterly.</p>
+
       <h2 style={s.h2}>Why choose a specialist dental bookkeeper</h2>
       <p style={s.p}>A generalist bookkeeper will record your income and expenses, but they will not understand the NHS contract structure, the associate payment model, or the VAT treatment of mixed dental income. This means your accounts may be technically complete but fundamentally wrong in ways that only show up during an HMRC enquiry or when you try to sell the practice.</p>
+
+      <p style={s.p}>If you would rather hand this over than manage it in-house, our <a href="/accountant-for-dental-practices-uk" style={{color:C.gold,fontWeight:600}}>dental accountants for UK practices</a> handle NHS contract reconciliation, associate statements, superannuation and payroll as a single monthly service.</p>
 
       <div style={s.callout}>
         <p style={{...s.p,marginBottom:'0.5rem',color:C.white}}><strong style={s.strong}>Cledger&apos;s dental specialism:</strong></p>
