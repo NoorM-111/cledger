@@ -40,6 +40,8 @@ export default function XeroVsQuickbooksUK() {
         { q: 'Is Xero or QuickBooks better for a UK business?', a: 'Xero is generally better for UK limited companies that work with an accountant — stronger bank feeds, unlimited users and the largest UK accountant network. QuickBooks is often better for sole traders and very small businesses wanting lower entry pricing and built-in Self Assessment tools. Both are fully MTD-compliant.' },
         { q: 'Which is cheaper, Xero or QuickBooks?', a: 'QuickBooks entry plans are usually cheaper than Xero equivalents, and both run frequent 50–90% first-6-months discounts. Xero charges per organisation with unlimited users, while QuickBooks limits users per tier — so for teams, Xero often works out cheaper overall.' },
         { q: 'Are Xero and QuickBooks both MTD compliant?', a: 'Yes. Both are HMRC-recognised for Making Tax Digital for VAT, and both support MTD for Income Tax (quarterly digital submissions for sole traders and landlords earning over £50,000 from April 2026).' },
+        { q: 'How long does it take to convert from QuickBooks to Xero?', a: 'The conversion itself typically runs in well under an hour using a tool such as Movemybooks, which carries across up to 24 months of data and is covered by Xero for the most common option. The longer part is preparation: reconciling every bank account in the old system first, and timing the switch to a VAT quarter end.' },
+        { q: 'What is the best free accounting software in the UK?', a: 'FreeAgent is free with a NatWest, RBS or Mettle business account, which makes it the cheapest genuinely capable option for many UK sole traders and contractors. QuickFile is free for smaller accounts. Both are MTD-compatible for VAT.' },
         { q: 'Can I switch from QuickBooks to Xero (or vice versa)?', a: 'Yes. Data migration tools can move your chart of accounts, contacts, invoices and up to 24 months of transactions. The cleanest time to switch is your financial year-end. Cledger handles the migration for clients as part of onboarding, at no extra cost.' },
       ]}
     >
@@ -129,6 +131,56 @@ export default function XeroVsQuickbooksUK() {
       <p style={s.p}>
         QuickBooks has significant market share among US-origin businesses operating in the UK, and among businesses that switched from desktop QuickBooks. It is fully capable, it is simply less embedded in UK practice culture.
       </p>
+
+      <h2 style={s.h2}>Is Xero or QuickBooks better for a UK business?</h2>
+      <p style={s.p}><strong style={s.strong}>For most UK small businesses the honest answer is that both are MTD-compliant, both handle VAT and payroll, and the better choice depends on who does your books rather than on the software itself.</strong> Xero has the wider adoption among UK accountants and bookkeepers, which matters if you ever want someone else to take the work over. QuickBooks is usually cheaper at the entry tiers and its mobile app is stronger for on-the-go invoicing.</p>
+      <p style={s.p}>The practical test is this: pick the one your accountant already works in. Software you both know beats software that scores marginally better on a feature grid, because the real cost of accounting software is not the subscription — it is the hours spent fixing records that were kept in a tool nobody around you understands.</p>
+
+      <h2 style={s.h2}>Should you choose Xero or QuickBooks if you need inventory and payroll?</h2>
+      <p style={s.p}><strong style={s.strong}>If you need both inventory and payroll in one place, Xero handles the combination more comfortably at the mid tiers, while QuickBooks requires you to be more careful about which plan you buy.</strong> Both bolt payroll on as a paid add-on rather than including it, so compare the total of subscription plus payroll rather than the headline price.</p>
+      <ul style={s.ul}>
+        <li style={s.li}><strong style={s.strong}>Inventory:</strong> both offer tracked stock on higher tiers. If you carry meaningful stock, neither is a substitute for dedicated inventory software once you pass a few hundred SKUs.</li>
+        <li style={s.li}><strong style={s.strong}>Payroll:</strong> both submit RTI to HMRC and handle auto-enrolment. Price usually scales per employee, so a five-person payroll changes the comparison more than the base plan does.</li>
+        <li style={s.li}><strong style={s.strong}>The trap:</strong> buying an entry plan and discovering inventory sits two tiers up. Check the tier that actually includes what you need before comparing prices at all.</li>
+      </ul>
+
+      <h2 style={s.h2}>How do you switch from QuickBooks to Xero?</h2>
+      <p style={s.p}><strong style={s.strong}>Switching from QuickBooks Online to Xero is done with a conversion tool rather than by hand, and Xero covers the cost of the most common option.</strong> Movemybooks, listed on the Xero App Store, converts up to 24 months of data, and the conversion itself typically runs in well under an hour.</p>
+      <p style={s.p}>There are two levels to choose between:</p>
+      <table style={s.table}>
+        <thead>
+          <tr>
+            <th style={s.th}>Option</th>
+            <th style={s.th}>What comes across</th>
+            <th style={s.th}>Best for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={s.td}>Full conversion</td>
+            <td style={s.td}>Contacts, invoices, bills and bank transactions, with up to 24 months of history</td>
+            <td style={s.td}>Businesses that need prior-year comparatives and transaction detail in the new system</td>
+          </tr>
+          <tr>
+            <td style={s.td}>Quickstart</td>
+            <td style={s.td}>Chart of accounts, customers, suppliers and correct opening balances — no transaction detail</td>
+            <td style={s.td}>A clean start at a year end, where history stays accessible in the old system</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style={s.warning}>
+        <p style={{...s.p,marginBottom:0}}><strong style={s.strong}>Switch at a VAT quarter end, not mid-quarter.</strong> Moving part-way through a VAT period means one return has to be assembled from two systems, and the MTD digital link requirements make that considerably more awkward than it sounds. Reconcile every bank account in the old system first — a conversion carries over what is there, including anything unreconciled.</p>
+      </div>
+
+      <h2 style={s.h2}>What are the alternatives to Xero and QuickBooks in the UK?</h2>
+      <p style={s.p}><strong style={s.strong}>The main UK alternatives are FreeAgent, Sage Business Cloud, Zoho Books and QuickFile, and the one that most often makes financial sense is FreeAgent, because it is included at no extra cost with NatWest, RBS and Mettle business bank accounts.</strong> All are MTD-compatible for VAT.</p>
+      <ul style={s.ul}>
+        <li style={s.li}><strong style={s.strong}>FreeAgent</strong> — free with a NatWest, RBS or Mettle business account. Strong for freelancers, contractors and sole traders; lighter on inventory and multi-entity work.</li>
+        <li style={s.li}><strong style={s.strong}>Sage Business Cloud</strong> — long-established in the UK and familiar to many accountants, particularly firms that have used desktop Sage for years.</li>
+        <li style={s.li}><strong style={s.strong}>Zoho Books</strong> — competitively priced and strong if you already use other Zoho tools; a smaller UK accountant community, so support from your adviser may be thinner.</li>
+        <li style={s.li}><strong style={s.strong}>QuickFile</strong> — free for smaller accounts and popular with UK micro-businesses, though the interface shows its age next to Xero and QuickBooks.</li>
+      </ul>
+      <p style={s.p}>Before switching on price alone, check the same thing that decides the Xero-versus-QuickBooks question: whether the person who prepares your accounts works in it. Saving £20 a month on software that your accountant charges an extra hour to work in is not a saving.</p>
 
       <h2 style={s.h2}>Which should you choose?</h2>
       <table style={s.table}>
