@@ -13,6 +13,8 @@
   align-items: center;
   gap: 16px;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
 }
 .item:hover { border-color: #C9A84C; box-shadow: 0 4px 16px rgba(26,26,22,0.06); }
 
