@@ -6,8 +6,46 @@ export interface FAQItem {
   a: string
 }
 
-export default function FAQAccordion({ items }: { items: FAQItem[] }) {
+/**
+ * Sector pages sit on the dark navy ground; /pricing sits on the cream one. The
+ * palette is a prop rather than a second component so both keep the same markup,
+ * the same open/close behaviour and the same FAQPage schema. Defaults to 'dark',
+ * so every existing caller renders exactly as before.
+ */
+type Theme = 'dark' | 'light'
+
+const THEMES: Record<Theme, {
+  card: string
+  border: string
+  question: string
+  answer: string
+  chevron: string
+}> = {
+  dark: {
+    card: '#131d31',
+    border: '1px solid rgba(201,168,76,0.15)',
+    question: '#F8F5EE',
+    answer: '#8a94a8',
+    chevron: '#C9A84C',
+  },
+  light: {
+    card: '#FFFFFF',
+    border: '1px solid #E9E2D4',
+    question: '#1A1A16',
+    answer: '#5F5A50',
+    chevron: '#9A7B39',
+  },
+}
+
+export default function FAQAccordion({
+  items,
+  theme = 'dark',
+}: {
+  items: FAQItem[]
+  theme?: Theme
+}) {
   const [open, setOpen] = useState<number | null>(null)
+  const t = THEMES[theme]
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -31,14 +69,15 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
           <div
             key={i}
             style={{
-              background: '#131d31',
-              border: '1px solid rgba(201,168,76,0.15)',
+              background: t.card,
+              border: t.border,
               borderRadius: '10px',
               overflow: 'hidden',
             }}
           >
             <button
               onClick={() => setOpen(isOpen ? null : i)}
+              aria-expanded={isOpen}
               style={{
                 width: '100%',
                 display: 'flex',
@@ -56,7 +95,7 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
                 fontFamily: 'Sora, sans-serif',
                 fontSize: '0.95rem',
                 fontWeight: 600,
-                color: '#F8F5EE',
+                color: t.question,
                 lineHeight: 1.5,
               }}>
                 {item.q}
@@ -66,10 +105,11 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
                 height="18"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#C9A84C"
+                stroke={t.chevron}
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                aria-hidden="true"
                 style={{
                   flexShrink: 0,
                   marginTop: '2px',
@@ -85,7 +125,7 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
                 <p style={{
                   fontFamily: 'Sora, sans-serif',
                   fontSize: '0.875rem',
-                  color: '#8a94a8',
+                  color: t.answer,
                   lineHeight: 1.8,
                   margin: 0,
                 }}>

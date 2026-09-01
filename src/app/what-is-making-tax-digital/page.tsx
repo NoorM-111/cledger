@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import SeoSchema from '@/components/SeoSchema'
 
 export const metadata: Metadata = {
   title: 'What Is Making Tax Digital (MTD)? Complete UK Guide 2026',
@@ -45,6 +46,12 @@ const PHASES = [
 export default function MakingTaxDigitalPage() {
   return (
     <>
+      <SeoSchema
+        path="/what-is-making-tax-digital"
+        serviceName="Making Tax Digital (MTD) Compliance"
+        serviceDescription="Making Tax Digital setup and compliance for UK businesses, sole traders and landlords — MTD for VAT and MTD for Income Tax, on HMRC-recognised software."
+        breadcrumbs={[{ name: 'What Is Making Tax Digital', path: '/what-is-making-tax-digital' }]}
+      />
       <Navbar />
 
       <style>{`

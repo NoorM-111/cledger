@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
+import SeoSchema from '@/components/SeoSchema'
+import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
   title: 'Accountant for Limited Companies UK | Online Accounting from £175/mo',
@@ -89,6 +91,12 @@ function Check() {
 export default function LimitedCompaniesPage() {
   return (
     <>
+      <SeoSchema
+        path="/accountant-for-limited-companies"
+        serviceName="Accountant for Limited Companies UK"
+        serviceDescription="Fixed-fee accountants for UK limited companies — bookkeeping, VAT, payroll, dividends, CT600 and statutory accounts, MTD compliant, from £175/month."
+        breadcrumbs={[{ name: 'Limited Company Accountants', path: '/accountant-for-limited-companies' }]}
+      />
       <Navbar />
       <main style={{ background: '#0B1222' }}>
 
@@ -344,6 +352,14 @@ export default function LimitedCompaniesPage() {
           </div>
         </section>
 
+        <RelatedGuides
+          links={[
+            { href: '/blog/how-to-pay-yourself-ltd-director', label: 'How to pay yourself as a limited company director' },
+            { href: '/blog/corporation-tax-guide-small-business-uk', label: 'Corporation tax: a small business guide' },
+            { href: '/accountant-for-contractors-uk', label: 'Accountant for contractors in the UK' },
+            { href: '/bookkeeping-prices-uk', label: 'How much does bookkeeping cost in the UK?' },
+          ]}
+        />
       </main>
       <Footer />
     </>

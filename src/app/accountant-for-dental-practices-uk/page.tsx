@@ -3,10 +3,12 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
+import SeoSchema from '@/components/SeoSchema'
+import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Dental Practices UK | Specialist Dental Bookkeeping',
-  description: 'Specialist accounting and bookkeeping for UK dental practices from £175/month. NHS and private income, associate payroll, VAT exemptions and Making Tax Digital from qualified accountants.',
+  title: 'Dental Accountants UK | NHS & Private Practice Bookkeeping from £175/mo',
+  description: 'Specialist dental practice accountants. NHS & private income, associate payroll, VAT exemptions and MTD, handled correctly by qualified UK accountants. Fixed fees from £175/month — free quote.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-dental-practices-uk',
   },
@@ -89,6 +91,12 @@ function Check() {
 export default function DentalPracticesPage() {
   return (
     <>
+      <SeoSchema
+        path="/accountant-for-dental-practices-uk"
+        serviceName="Accountant for Dental Practices UK"
+        serviceDescription="Specialist accounting and bookkeeping for UK dental practices — NHS and private income, associate payroll, VAT exemptions and Making Tax Digital, from £175/month."
+        breadcrumbs={[{ name: 'Dental Practice Accountants', path: '/accountant-for-dental-practices-uk' }]}
+      />
       <Navbar />
       <main style={{ background: '#0B1222' }}>
 
@@ -321,6 +329,16 @@ export default function DentalPracticesPage() {
             </div>
           </div>
         </section>
+
+        {/* ── RELATED GUIDES ── */}
+        <RelatedGuides
+          links={[
+            { href: '/blog/bookkeeping-for-dental-practices-uk', label: 'Bookkeeping for dental practices: the complete UK guide' },
+            { href: '/blog/what-is-making-tax-digital-mtd', label: 'What is Making Tax Digital? MTD explained for UK businesses' },
+            { href: '/bookkeeping-prices-uk', label: 'How much does bookkeeping cost in the UK?' },
+            { href: '/blog/vat-return-deadlines-uk', label: 'UK VAT return deadlines and how to avoid penalties' },
+          ]}
+        />
 
         {/* ── CTA ── */}
         <section style={{ background: '#0B1222', borderTop: '1px solid rgba(201,168,76,0.15)', padding: '5rem 0' }}>

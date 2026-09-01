@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
+import SeoSchema from '@/components/SeoSchema'
+import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
   title: 'Bookkeeping Prices & Packages UK 2026 — Fixed Fees from £175/month',
@@ -120,6 +122,12 @@ function Check() {
 export default function BookkeepingPricesPage() {
   return (
     <>
+      <SeoSchema
+        path="/bookkeeping-prices-uk"
+        serviceName="Bookkeeping Prices UK"
+        serviceDescription="Transparent UK bookkeeping prices and packages — what bookkeeping costs per month by business size, with fixed fees from £175/month and no hidden charges."
+        breadcrumbs={[{ name: 'Bookkeeping Prices UK', path: '/bookkeeping-prices-uk' }]}
+      />
       <Navbar />
       <main style={{ background: '#0B1222' }}>
 
@@ -460,6 +468,14 @@ export default function BookkeepingPricesPage() {
           </div>
         </section>
 
+        <RelatedGuides
+          links={[
+            { href: '/blog/how-much-does-a-bookkeeper-cost-uk', label: 'How much does a bookkeeper cost in the UK?' },
+            { href: '/pricing', label: 'See Cledger pricing and get an instant quote' },
+            { href: '/blog/what-are-management-accounts', label: 'What are management accounts and do you need them?' },
+            { href: '/blog/xero-vs-quickbooks-uk', label: 'Xero vs QuickBooks UK: which is better in 2026?' },
+          ]}
+        />
       </main>
       <Footer />
     </>

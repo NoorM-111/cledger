@@ -1,10 +1,10 @@
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata = {
-  title: 'Bookkeeping for Dental Practices UK, What You Need to Know',
-  description: 'Dental practices have unique accounting needs, mixed NHS/private income, associate payments, CQC compliance. Here is the complete guide to dental bookkeeping in the UK.',
+  title: 'Bookkeeping for Dental Practices UK (2026): NHS, Private & VAT Explained',
+  description: 'The complete 2026 guide to dental practice bookkeeping in the UK — mixed NHS and private income, associate payments, VAT exemptions and CQC compliance, from accountants who manage 100+ dental accounts.',
   openGraph: {
-    title: 'Bookkeeping for Dental Practices UK, What You Need to Know',
+    title: 'Bookkeeping for Dental Practices UK (2026): NHS, Private & VAT Explained',
     description: 'Mixed NHS/private income, associate payments and CQC compliance, dental bookkeeping explained by accountants who specialise in it.',
     url: 'https://www.cledger.co.uk/blog/bookkeeping-for-dental-practices-uk',
     type: 'article',

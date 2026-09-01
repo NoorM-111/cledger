@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
+import SeoSchema from '@/components/SeoSchema'
+import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
   title: 'Accountant for Contractors UK | IR35 Specialists | Fixed-Fee',
@@ -89,6 +91,12 @@ function Check() {
 export default function ContractorsPage() {
   return (
     <>
+      <SeoSchema
+        path="/accountant-for-contractors-uk"
+        serviceName="Accountant for Contractors UK"
+        serviceDescription="Limited company accountants for UK contractors — payroll, dividends, VAT, IR35 support and year-end accounts, MTD compliant, from £175/month."
+        breadcrumbs={[{ name: 'Contractor Accountants', path: '/accountant-for-contractors-uk' }]}
+      />
       <Navbar />
       <main style={{ background: '#0B1222' }}>
 
@@ -344,6 +352,14 @@ export default function ContractorsPage() {
           </div>
         </section>
 
+        <RelatedGuides
+          links={[
+            { href: '/accountant-for-limited-companies', label: 'Accountant for limited companies in the UK' },
+            { href: '/blog/how-to-pay-yourself-ltd-director', label: 'How to pay yourself as a limited company director' },
+            { href: '/blog/corporation-tax-guide-small-business-uk', label: 'Corporation tax: a small business guide' },
+            { href: '/bookkeeping-prices-uk', label: 'How much does bookkeeping cost in the UK?' },
+          ]}
+        />
       </main>
       <Footer />
     </>

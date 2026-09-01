@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
+import SeoSchema from '@/components/SeoSchema'
+import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
   title: 'Accountant for Ecommerce UK | Amazon, Shopify & eBay Accounting',
@@ -89,6 +91,12 @@ function Check() {
 export default function EcommercePage() {
   return (
     <>
+      <SeoSchema
+        path="/accountant-for-ecommerce-uk"
+        serviceName="Accountant for E-commerce Businesses UK"
+        serviceDescription="Accounting and bookkeeping for UK e-commerce sellers — multi-channel sales, VAT, marketplace fees and inventory, on Xero or QuickBooks, from £175/month."
+        breadcrumbs={[{ name: 'E-commerce Accountants', path: '/accountant-for-ecommerce-uk' }]}
+      />
       <Navbar />
       <main style={{ background: '#0B1222' }}>
 
@@ -344,6 +352,14 @@ export default function EcommercePage() {
           </div>
         </section>
 
+        <RelatedGuides
+          links={[
+            { href: '/blog/xero-vs-quickbooks-uk', label: 'Xero vs QuickBooks UK: which is better in 2026?' },
+            { href: '/blog/vat-return-deadlines-uk', label: 'UK VAT return deadlines and how to avoid penalties' },
+            { href: '/accountant-for-limited-companies', label: 'Accountant for limited companies in the UK' },
+            { href: '/bookkeeping-prices-uk', label: 'How much does bookkeeping cost in the UK?' },
+          ]}
+        />
       </main>
       <Footer />
     </>

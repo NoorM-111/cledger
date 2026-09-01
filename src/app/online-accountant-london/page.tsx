@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
+import SeoSchema from '@/components/SeoSchema'
+import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
   title: 'Online Accountant London | Fixed-Fee Accounting for London Businesses',
@@ -89,6 +91,12 @@ function Check() {
 export default function LondonPage() {
   return (
     <>
+      <SeoSchema
+        path="/online-accountant-london"
+        serviceName="Online Accountant in London"
+        serviceDescription="Online accountants for London small businesses and limited companies — bookkeeping, VAT, payroll, management accounts and corporation tax, MTD compliant, from £175/month."
+        breadcrumbs={[{ name: 'Online Accountant London', path: '/online-accountant-london' }]}
+      />
       <Navbar />
       <main style={{ background: '#0B1222' }}>
 
@@ -344,6 +352,14 @@ export default function LondonPage() {
           </div>
         </section>
 
+        <RelatedGuides
+          links={[
+            { href: '/accountant-for-limited-companies', label: 'Accountant for limited companies in the UK' },
+            { href: '/bookkeeping-prices-uk', label: 'How much does bookkeeping cost in the UK?' },
+            { href: '/blog/what-is-making-tax-digital-mtd', label: 'What is Making Tax Digital? MTD explained' },
+            { href: '/blog/self-assessment-tax-return-guide-uk', label: 'The complete UK Self Assessment tax return guide' },
+          ]}
+        />
       </main>
       <Footer />
     </>

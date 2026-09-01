@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
+import SeoSchema from '@/components/SeoSchema'
+import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
   title: 'Accountant for Freelancers UK | Fixed-Fee Online Accounting',
@@ -81,6 +83,12 @@ function Check() {
 export default function FreelancersPage() {
   return (
     <>
+      <SeoSchema
+        path="/accountant-for-freelancers-uk"
+        serviceName="Accountant for Freelancers UK"
+        serviceDescription="Accounting and Self Assessment for UK freelancers — bookkeeping, expenses, tax returns and MTD for Income Tax, from qualified accountants, from £175/month."
+        breadcrumbs={[{ name: 'Freelancer Accountants', path: '/accountant-for-freelancers-uk' }]}
+      />
       <Navbar />
       <main style={{ background: '#0B1222' }}>
 
@@ -337,6 +345,14 @@ export default function FreelancersPage() {
           </div>
         </section>
 
+        <RelatedGuides
+          links={[
+            { href: '/accountant-for-sole-traders-uk', label: 'Accountant for sole traders in the UK' },
+            { href: '/blog/self-assessment-tax-return-guide-uk', label: 'The complete UK Self Assessment tax return guide' },
+            { href: '/blog/mtd-for-income-tax-self-employed', label: 'MTD for Income Tax: what the self-employed need to know' },
+            { href: '/bookkeeping-prices-uk', label: 'How much does bookkeeping cost in the UK?' },
+          ]}
+        />
       </main>
       <Footer />
     </>
