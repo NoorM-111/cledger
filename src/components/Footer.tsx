@@ -60,6 +60,41 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* For Your Business */}
+          <div>
+            <h4 style={{ font: "600 12.5px 'Hanken Grotesk'", letterSpacing: '0.4px', color: '#1A1A16', margin: '0 0 16px', textTransform: 'uppercase' }}>For Your Business</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 11 }}>
+              {[
+                { label: 'Online Accountant London', href: '/online-accountant-london' },
+                { label: 'Accountant for Limited Companies', href: '/accountant-for-limited-companies' },
+                { label: 'Accountant for Sole Traders', href: '/accountant-for-sole-traders-uk' },
+                { label: 'Accountant for Freelancers', href: '/accountant-for-freelancers-uk' },
+                { label: 'Accountant for Contractors', href: '/accountant-for-contractors-uk' },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a href={href} style={{ fontFamily: "'Hanken Grotesk'", fontSize: 13.5, color: '#6B675C', textDecoration: 'none' }}>{label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* More Guides */}
+          <div>
+            <h4 style={{ font: "600 12.5px 'Hanken Grotesk'", letterSpacing: '0.4px', color: '#1A1A16', margin: '0 0 16px', textTransform: 'uppercase' }}>More Guides</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 11 }}>
+              {[
+                { label: 'Accountant for eCommerce', href: '/accountant-for-ecommerce-uk' },
+                { label: 'Accountant for Dental Practices', href: '/accountant-for-dental-practices-uk' },
+                { label: 'Accountant for Landlords', href: '/accountant-for-landlords-uk' },
+                { label: 'Bookkeeping Prices UK', href: '/bookkeeping-prices-uk' },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a href={href} style={{ fontFamily: "'Hanken Grotesk'", fontSize: 13.5, color: '#6B675C', textDecoration: 'none' }}>{label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div style={{ borderTop: '1px solid #E7E0D2', paddingTop: 22, display: 'flex', flexWrap: 'wrap', gap: '8px 20px', justifyContent: 'space-between', alignItems: 'center' }}>
