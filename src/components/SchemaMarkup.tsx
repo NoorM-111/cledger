@@ -42,7 +42,8 @@ export default function SchemaMarkup() {
         "sameAs": [
           "https://www.linkedin.com/company/cledger-uk",
           "https://twitter.com/CledgerUK",
-          "https://find-and-update.company-information.service.gov.uk/company/16208645"
+          "https://find-and-update.company-information.service.gov.uk/company/16208645",
+          "https://www.trustpilot.com/review/cledger.co.uk"
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
