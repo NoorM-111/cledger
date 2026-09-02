@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import PricingSection from '@/components/PricingSection'
 import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
+import SeoSchema from '@/components/SeoSchema'
 
 import type { Metadata } from 'next'
 
@@ -57,6 +58,12 @@ const FAQS = [
 export default function PricingPage() {
   return (
     <>
+      <SeoSchema
+        path="/pricing"
+        serviceName="Accountant & Bookkeeping Pricing UK"
+        serviceDescription="Transparent, turnover-based fixed-fee pricing for UK bookkeeping, VAT, payroll and full finance outsourcing, from £99/month with no setup fees or lock-in contracts."
+        breadcrumbs={[{ name: 'Pricing', path: '/pricing' }]}
+      />
       <Navbar />
       <PricingSection />
 
