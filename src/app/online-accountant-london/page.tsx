@@ -358,6 +358,7 @@ export default function LondonPage() {
             { href: '/bookkeeping-prices-uk', label: 'How much does bookkeeping cost in the UK?' },
             { href: '/blog/what-is-making-tax-digital-mtd', label: 'What is Making Tax Digital? MTD explained' },
             { href: '/blog/self-assessment-tax-return-guide-uk', label: 'The complete UK Self Assessment tax return guide' },
+            { href: '/blog/xero-vs-quickbooks-uk', label: 'Xero vs QuickBooks UK: which is better in 2026?' },
           ]}
         />
       </main>
