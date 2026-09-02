@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Accounting Insights & Resources | Cledger Blog',
   description: "Free guides, tax tips and accounting resources for UK small businesses from Cledger's qualified accountants.",
+  alternates: { canonical: 'https://www.cledger.co.uk/blog' },
 }
 
 const posts = [
