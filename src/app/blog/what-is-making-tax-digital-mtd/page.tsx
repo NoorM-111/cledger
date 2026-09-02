@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata = {
@@ -75,6 +76,7 @@ export default function Article2() {
       <h2 style={s.h2}>What does MTD compliance actually mean in practice?</h2>
       <p style={s.p}>MTD compliance means three things. First, you must keep your financial records digitally, not in spreadsheets alone, but in MTD-compatible software. Second, there must be a digital link between your records and your VAT return, meaning you cannot retype figures from one system to another. Third, your VAT return must be submitted directly from MTD-compatible software to HMRC.</p>
       <p style={s.p}>The most practical way to comply is to use cloud accounting software like Xero or QuickBooks, which are both fully MTD-compatible and submit directly to HMRC at the click of a button.</p>
+      <p style={s.p}>For a full breakdown of the two, read our <Link href="/blog/xero-vs-quickbooks-uk" style={{color: C.gold}}>Xero vs QuickBooks UK comparison</Link>.</p>
 
       <h2 style={s.h2}>Which software is MTD compatible?</h2>
       <table style={s.table}>
