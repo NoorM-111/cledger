@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: '%s | Cledger',
   },
   description:
-    'Qualified UK accountants from £175/month. Bookkeeping, VAT returns, payroll, management accounts and corporation tax for UK small businesses. MTD compliant. Transparent pricing.',
+    'Qualified UK accountants from £99/month. Bookkeeping, VAT returns, payroll, management accounts and corporation tax for UK small businesses. MTD compliant. Transparent pricing.',
   icons: {
     icon: '/icon.svg',
     shortcut: '/icon.svg',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cledger — Online Accountants for UK Small Businesses',
     description:
-      'Qualified UK accountants from £175/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant. Transparent pricing.',
+      'Qualified UK accountants from £99/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant. Transparent pricing.',
     url: 'https://www.cledger.co.uk',
     siteName: 'Cledger',
     locale: 'en_GB',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Cledger — Online Accountants for UK Small Businesses',
     description:
-      'Qualified UK accountants from £175/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant.',
+      'Qualified UK accountants from £99/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant.',
     images: ['https://www.cledger.co.uk/og-image.png'],
   },
   alternates: {
