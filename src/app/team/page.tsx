@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Our Team',
   description:
     'Meet the qualified finance professionals behind Cledger, delivering expert accounting, tax compliance and financial advisory for UK businesses.',
+  alternates: { canonical: 'https://www.cledger.co.uk/team' },
 }
 
 const Ico = ({ d, extra }: { d: string; extra?: string }) => (
