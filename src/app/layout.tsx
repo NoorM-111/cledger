@@ -37,9 +37,6 @@ export const metadata: Metadata = {
       'Qualified UK accountants from £99/month. Bookkeeping, VAT, payroll & management accounts. MTD compliant.',
     images: ['https://www.cledger.co.uk/og-image.png'],
   },
-  alternates: {
-    canonical: 'https://www.cledger.co.uk',
-  },
   robots: {
     index: true,
     follow: true,
