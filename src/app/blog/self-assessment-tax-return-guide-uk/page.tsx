@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
@@ -58,6 +59,9 @@ export default function SelfAssessmentGuideUK() {
       </ul>
       <p style={s.p}>
         If you are unsure, HMRC has a check tool on gov.uk that confirms whether you need to register.
+      </p>
+      <p style={s.p}>
+        If you are self-employed or a sole trader, see our dedicated guide to <Link href="/accountant-for-sole-traders-uk" style={{color: C.gold}}>accountants for sole traders</Link> — and if you freelance across multiple clients, our <Link href="/accountant-for-freelancers-uk" style={{color: C.gold}}>freelancer accounting guide</Link> covers day-rate invoicing and IR35 specifics.
       </p>
 
       <h2 style={s.h2}>Key Self Assessment deadlines for 2025/26</h2>
