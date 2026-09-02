@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 }
 
 const sections = [
-  { n: '01', title: 'Who we are', body: 'Cledger Ltd is an accounting services company registered in England and Wales. Our registered office is at 27 Jeremy Lane, Heckmondwike, WF16 9LT. We can be contacted at info@cledger.co.uk or by phone on +44 7774 002712.' },
+  { n: '01', title: 'Who we are', body: 'Cledger is an accounting services business based in England. Our business address is 27 Jeremy Lane, Heckmondwike, West Yorkshire, WF16 9LT. We can be contacted at info@cledger.co.uk or by phone on +44 7774 002712.' },
   { n: '02', title: 'What data we collect', body: 'We collect information you provide directly, including your name, email address, phone number, company name and details about your business when you use our contact form or request a quote. We also collect basic analytics data about how visitors use our website.' },
   { n: '03', title: 'How we use your data', body: 'We use your personal data to respond to your enquiries, provide accounting services, send you quotes and proposals, comply with our legal obligations, and improve our website and services. We never sell your data to third parties.' },
   { n: '04', title: 'Legal basis for processing', body: 'We process your data on the basis of your consent (when you submit a form), our legitimate interests (in providing and improving our services), and our legal obligations as a UK-regulated accounting firm.' },
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
           <h1 style={{ fontFamily: "'Newsreader', serif", fontWeight: 400, fontSize: 'clamp(34px,5.4vw,56px)', lineHeight: 1.05, letterSpacing: '-1.2px', color: '#1A1A16', margin: '0 0 14px' }}>Privacy Policy</h1>
           <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontWeight: 500, fontSize: 12, color: '#9A958A', margin: 0 }}>Last updated · May 2026</p>
           <p style={{ fontFamily: "'Hanken Grotesk', 'Inter', sans-serif", fontSize: 16, lineHeight: 1.7, color: '#5F5A50', margin: '22px 0 0', maxWidth: '60ch' }}>
-            How Cledger Ltd collects, uses and protects your personal data under UK GDPR and the Data Protection Act 2018.
+            How Cledger collects, uses and protects your personal data under UK GDPR and the Data Protection Act 2018.
           </p>
         </section>
 

@@ -18,10 +18,7 @@ export default function Footer() {
               info@cledger.co.uk · +44 7774 002712
             </p>
             <p style={{ font: "400 11px/1.7 'IBM Plex Mono',monospace", color: '#9A958A', margin: 0 }}>
-              Cledger Ltd · Registered in England &amp; Wales<br />
-              Office: 27 Jeremy Lane, Heckmondwike, WF16 9LT<br />
-              Companies House No: 16208645<br />
-              HMRC AML Supervised
+              Office: 27 Jeremy Lane, Heckmondwike, West Yorkshire, WF16 9LT
             </p>
           </div>
 
@@ -63,7 +60,7 @@ export default function Footer() {
         </div>
 
         <div style={{ borderTop: '1px solid #E7E0D2', paddingTop: 22, display: 'flex', flexWrap: 'wrap', gap: '8px 20px', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span style={{ fontFamily: "'Hanken Grotesk'", fontSize: 12, color: '#8A8478' }}>© 2026 Cledger Ltd · Registered in England &amp; Wales</span>
+          <span style={{ fontFamily: "'Hanken Grotesk'", fontSize: 12, color: '#8A8478' }}>© 2026 Cledger</span>
           <span style={{ fontFamily: "'Hanken Grotesk'", fontSize: 12, color: '#8A8478' }}>Accounting · Tax · Advisory services</span>
         </div>
       </div>

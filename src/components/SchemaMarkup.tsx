@@ -6,11 +6,10 @@ export default function SchemaMarkup() {
         "@type": ["AccountingService", "LocalBusiness", "ProfessionalService"],
         "@id": "https://www.cledger.co.uk/#organisation",
         "name": "Cledger",
-        "legalName": "Cledger Ltd",
         "url": "https://www.cledger.co.uk",
         "logo": "https://www.cledger.co.uk/logo.png",
         "image": "https://www.cledger.co.uk/og-image.png",
-        "description": "Cledger is a UK-registered online bookkeeping and accounting firm offering VAT returns, management accounts, payroll, and CT600 filing for UK small businesses and limited companies. Fixed monthly fees from £175/month, MTD compliant, HMRC AML supervised.",
+        "description": "Cledger is a UK online bookkeeping and accounting firm offering VAT returns, management accounts, payroll, and CT600 filing for UK small businesses and limited companies. Fixed monthly fees from £99/month, MTD compliant.",
         "email": "info@cledger.co.uk",
         "telephone": "+447774002712",
         "address": {
@@ -20,11 +19,6 @@ export default function SchemaMarkup() {
           "addressRegion": "West Yorkshire",
           "postalCode": "WF16 9LT",
           "addressCountry": "GB"
-        },
-        "identifier": {
-          "@type": "PropertyValue",
-          "name": "Companies House Number",
-          "value": "16208645"
         },
         "areaServed": { "@type": "Country", "name": "United Kingdom" },
         "priceRange": "£99–£449 per month",
@@ -41,8 +35,7 @@ export default function SchemaMarkup() {
         ],
         "sameAs": [
           "https://www.linkedin.com/company/cledger-uk",
-          "https://twitter.com/CledgerUK",
-          "https://find-and-update.company-information.service.gov.uk/company/16208645"
+          "https://twitter.com/CledgerUK"
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",

@@ -191,7 +191,7 @@ export async function POST(req: Request) {
             </div>
           </div>
           <div style="background:#111827;border-top:1px solid rgba(255,255,255,0.06);padding:18px 32px;">
-            <div style="font-size:11px;color:#8a94a8;">Cledger Ltd · London, United Kingdom · <a href="https://cledger.co.uk" style="color:#C9A84C;">cledger.co.uk</a></div>
+            <div style="font-size:11px;color:#8a94a8;">Cledger · Heckmondwike, West Yorkshire, United Kingdom · <a href="https://cledger.co.uk" style="color:#C9A84C;">cledger.co.uk</a></div>
           </div>
         </div>
       `,
