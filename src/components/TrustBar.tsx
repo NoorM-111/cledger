@@ -1,5 +1,4 @@
 const items = [
-  'Companies House Registered',
   'HMRC AML Supervised',
   'ICO Registered · GDPR',
   'Fixed Monthly Fees',

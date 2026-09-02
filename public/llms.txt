@@ -1,6 +1,6 @@
 # Cledger
 
-> Cledger is a UK-registered online accounting firm (Cledger Ltd, Companies House No. 16208645, HMRC AML supervised, ICO registered) providing bookkeeping, VAT returns, payroll, management accounts and corporation tax services to UK small businesses. Fixed monthly fees from £175/month, all work delivered on Xero or QuickBooks, fully Making Tax Digital (MTD) compliant. Every client gets a private Slack channel with a response within one hour during UK business hours.
+> Cledger is a UK-registered online accounting firm (HMRC AML supervised, ICO registered) providing bookkeeping, VAT returns, payroll, management accounts and corporation tax services to UK small businesses. Fixed monthly fees from £175/month, all work delivered on Xero or QuickBooks, fully Making Tax Digital (MTD) compliant. Every client gets a private Slack channel with a response within one hour during UK business hours.
 
 Key facts:
 - Services: bookkeeping (from £175/mo), MTD VAT returns (from £99/mo), payroll with RTI submissions (from £99/mo), management accounts (from £149/mo), statutory accounts to FRS 102/105 and CT600 corporation tax filing, Self Assessment, 13-week cashflow forecasting

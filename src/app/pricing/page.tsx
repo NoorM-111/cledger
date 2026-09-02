@@ -38,7 +38,7 @@ const FAQS = [
   },
   {
     q: 'Are your VAT returns Making Tax Digital compliant?',
-    a: 'Yes. VAT returns are £99 a month and cover a quarterly MTD-compliant return: prepared, reviewed and submitted to HMRC on your behalf. Cledger is HMRC AML supervised and Cledger Ltd is registered in England and Wales, Companies House number 16208645.',
+    a: 'Yes. VAT returns are £99 a month and cover a quarterly MTD-compliant return: prepared, reviewed and submitted to HMRC on your behalf. Cledger is HMRC AML supervised.',
   },
   {
     q: 'Do you handle payroll, and what does it cover?',
