@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
@@ -79,6 +80,9 @@ export default function MtdForIncomeTaxSelfEmployed() {
       </p>
       <p style={s.p}>
         Partnerships, limited companies, and trusts are <strong style={s.strong}>not in scope</strong> for MTD for ITSA, this applies to individuals only.
+      </p>
+      <p style={s.p}>
+        This applies whether you are a sole trader or a freelancer working across several clients — see our <Link href="/accountant-for-sole-traders-uk" style={{color: C.gold}}>sole trader accounting guide</Link> and <Link href="/accountant-for-freelancers-uk" style={{color: C.gold}}>freelancer accounting guide</Link> for how MTD fits into your specific setup.
       </p>
 
       <h2 style={s.h2}>What the quarterly reporting involves</h2>
