@@ -3,6 +3,7 @@ import PricingSection from '@/components/PricingSection'
 import Footer from '@/components/Footer'
 import FAQAccordion from '@/components/sectors/FAQAccordion'
 import SeoSchema from '@/components/SeoSchema'
+import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 import type { Metadata } from 'next'
 
@@ -88,6 +89,16 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
+
+      <RelatedGuides
+        variant="light"
+        links={[
+          { href: '/blog/how-much-does-a-bookkeeper-cost-uk', label: 'How much does a bookkeeper cost in the UK?' },
+          { href: '/bookkeeping-prices-uk', label: 'Bookkeeping prices and packages UK' },
+          { href: '/accountant-for-limited-companies', label: 'Accountant for limited companies in the UK' },
+          { href: '/accountant-for-sole-traders-uk', label: 'Accountant for sole traders in the UK' },
+        ]}
+      />
 
       <Footer />
     </>
