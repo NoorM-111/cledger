@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 }
 
 const sections = [
-  { n: '01', title: 'About Cledger', body: 'Cledger Ltd is an accounting services company registered in England and Wales. By using our website or engaging our services, you agree to these Terms of Service.' },
+  { n: '01', title: 'About Cledger', body: 'Cledger is an accounting services business based in England. By using our website or engaging our services, you agree to these Terms of Service.' },
   { n: '02', title: 'Our services', body: 'Cledger provides bookkeeping, VAT compliance, payroll, management accounts, corporation tax, self assessment and related accounting services to UK businesses. All services are subject to a separate engagement letter agreed between Cledger and the client.' },
   { n: '03', title: 'Website use', body: 'You may use our website for lawful purposes only. You must not misuse our website by introducing viruses or other malicious content, or attempt to gain unauthorised access to our systems.' },
   { n: '04', title: 'Accuracy of information', body: 'The information on this website is provided for general guidance only and does not constitute professional financial or tax advice. Always obtain specific professional advice before taking any action based on information from this website.' },
-  { n: '05', title: 'Intellectual property', body: 'All content on this website, including text, graphics, logos and design, is the property of Cledger Ltd and is protected by UK copyright law. You may not reproduce any content without our written permission.' },
-  { n: '06', title: 'Limitation of liability', body: 'To the fullest extent permitted by law, Cledger Ltd shall not be liable for any indirect, incidental or consequential losses arising from your use of this website or our services, except where such liability cannot be excluded under UK law.' },
+  { n: '05', title: 'Intellectual property', body: 'All content on this website, including text, graphics, logos and design, is the property of Cledger and is protected by UK copyright law. You may not reproduce any content without our written permission.' },
+  { n: '06', title: 'Limitation of liability', body: 'To the fullest extent permitted by law, Cledger shall not be liable for any indirect, incidental or consequential losses arising from your use of this website or our services, except where such liability cannot be excluded under UK law.' },
   { n: '07', title: 'Governing law', body: 'These Terms are governed by the laws of England and Wales. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales.' },
   { n: '08', title: 'Changes to these terms', body: 'We may update these Terms from time to time. The most current version will always be available on this page. Continued use of our website after changes constitutes acceptance of the updated terms.' },
   { n: '09', title: 'Contact', body: 'For any questions regarding these Terms, please contact us at info@cledger.co.uk.' },

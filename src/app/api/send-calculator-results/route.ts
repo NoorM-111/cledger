@@ -75,7 +75,7 @@ function buildUserHTML(
       <a href="https://www.cledger.co.uk" style="color:#C9A84C;font-size:13px;text-decoration:none;">www.cledger.co.uk</a>
     </p>
     <div style="border-top:1px solid rgba(201,168,76,0.1);padding-top:16px;">
-      <p style="color:#4a5568;font-size:11px;margin:0;font-family:sans-serif;">Cledger Ltd — UK Accounting Specialists | cledger.co.uk</p>
+      <p style="color:#4a5568;font-size:11px;margin:0;font-family:sans-serif;">Cledger — UK Accounting Specialists | cledger.co.uk</p>
     </div>
   </div>
 </body>

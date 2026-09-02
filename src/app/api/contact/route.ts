@@ -70,7 +70,7 @@ export async function POST(req: Request) {
           <div style="background: #111827; border-top: 1px solid rgba(255,255,255,0.06); padding: 20px 32px;">
             <div style="font-size: 11px; color: #8a94a8; line-height: 1.6;">
               This enquiry was submitted via the contact form at <a href="https://cledger.co.uk" style="color: #C9A84C;">cledger.co.uk</a>
-              &nbsp;·&nbsp; Cledger Ltd, London, United Kingdom
+              &nbsp;·&nbsp; Cledger, Heckmondwike, West Yorkshire, United Kingdom
             </div>
           </div>
 

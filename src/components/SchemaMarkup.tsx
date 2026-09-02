@@ -9,7 +9,7 @@ export default function SchemaMarkup() {
         "url": "https://www.cledger.co.uk",
         "logo": "https://www.cledger.co.uk/logo.png",
         "image": "https://www.cledger.co.uk/og-image.png",
-        "description": "Cledger is a UK-registered online bookkeeping and accounting firm offering VAT returns, management accounts, payroll, and CT600 filing for UK small businesses and limited companies. Fixed monthly fees from £175/month, MTD compliant, HMRC AML supervised.",
+        "description": "Cledger is a UK online bookkeeping and accounting firm offering VAT returns, management accounts, payroll, and CT600 filing for UK small businesses and limited companies. Fixed monthly fees from £99/month, MTD compliant.",
         "email": "info@cledger.co.uk",
         "telephone": "+447774002712",
         "address": {

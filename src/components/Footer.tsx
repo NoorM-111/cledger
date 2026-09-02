@@ -18,8 +18,7 @@ export default function Footer() {
               info@cledger.co.uk · +44 7774 002712
             </p>
             <p style={{ font: "400 11px/1.7 'IBM Plex Mono',monospace", color: '#9A958A', margin: 0 }}>
-              Office: 27 Jeremy Lane, Heckmondwike, WF16 9LT<br />
-              HMRC AML Supervised
+              Office: 27 Jeremy Lane, Heckmondwike, West Yorkshire, WF16 9LT
             </p>
           </div>
 
