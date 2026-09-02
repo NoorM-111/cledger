@@ -11,7 +11,7 @@ const team = [
     initials: 'AS',
     name: 'Ali Sajjad',
     role: 'Co-Founder',
-    desc: 'Co-leads financial strategy, modelling and analytics, with ACMA, MAAT and an MSc in Business Analytics.',
+    desc: 'Co-leads financial strategy, modelling and analytics, with ACMA (ICMA Pakistan), MAAT and an MSc in Business Analytics.',
   },
 ]
 
