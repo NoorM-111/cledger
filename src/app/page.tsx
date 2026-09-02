@@ -14,6 +14,12 @@ import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
+export const metadata = {
+  alternates: {
+    canonical: 'https://www.cledger.co.uk',
+  },
+}
+
 export default function Home() {
   return (
     <>
