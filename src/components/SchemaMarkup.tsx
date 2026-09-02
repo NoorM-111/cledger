@@ -68,7 +68,7 @@ export default function SchemaMarkup() {
         "name": "Ali Sajjad",
         "jobTitle": "Co-Founder",
         "worksFor": { "@id": "https://www.cledger.co.uk/#organisation" },
-        "description": "Co-leads financial strategy, modelling and analytics. ACMA, MAAT, MSc Business Analytics.",
+        "description": "Co-leads financial strategy, modelling and analytics. ACMA (Institute of Cost and Management Accountants of Pakistan), MAAT, MSc Business Analytics.",
         "url": "https://www.cledger.co.uk/team"
       },
       {

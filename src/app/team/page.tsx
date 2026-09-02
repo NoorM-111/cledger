@@ -64,7 +64,7 @@ const members = [
     initials: 'AS',
     name: 'Ali Sajjad',
     role: 'Co-Founder',
-    tags: ['ACMA', 'MAAT', 'MSc Business Analytics'],
+    tags: ['ACMA (ICMA Pakistan)', 'MAAT', 'MSc Business Analytics'],
     bio: 'Ali co-leads Cledger\'s financial strategy, modelling and analytics practice. With international corporate exposure across telecommunications, startups and UK accounting environments, he brings deep expertise in large-scale revenue operations, financial modelling and data-driven business analytics.',
     skills: [
       {
