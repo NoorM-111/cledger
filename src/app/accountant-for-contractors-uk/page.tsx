@@ -358,6 +358,7 @@ export default function ContractorsPage() {
             { href: '/blog/how-to-pay-yourself-ltd-director', label: 'How to pay yourself as a limited company director' },
             { href: '/blog/corporation-tax-guide-small-business-uk', label: 'Corporation tax: a small business guide' },
             { href: '/bookkeeping-prices-uk', label: 'How much does bookkeeping cost in the UK?' },
+            { href: '/blog/xero-vs-quickbooks-uk', label: 'Xero vs QuickBooks UK: which is better in 2026?' },
           ]}
         />
       </main>
