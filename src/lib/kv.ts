@@ -103,10 +103,10 @@ export async function getStats() {
 }
 
 export async function getRecentOpens(limit = 50): Promise<OpenEvent[]> {
-  const all = await kv.hgetall<Record<string, string>>(KEY_OPENS)
+  const all = await kv.hgetall<Record<string, string | OpenEvent>>(KEY_OPENS)
   if (!all) return []
   return Object.values(all)
-    .map(v => JSON.parse(v) as OpenEvent)
+    .map(v => (typeof v === 'string' ? JSON.parse(v) : v) as OpenEvent)
     .sort((a, b) => new Date(b.openedAt).getTime() - new Date(a.openedAt).getTime())
     .slice(0, limit)
 }
