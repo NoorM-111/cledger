@@ -4,7 +4,13 @@
  * Falls back to in-memory if KV not configured (local dev)
  */
 
-import { kv } from '@vercel/kv'
+import { createClient } from '@vercel/kv'
+
+// Support custom UPSTASH_ prefix (set when KV_URL was already taken on the project)
+const kv = createClient({
+  url:   process.env.UPSTASH_REST_API_URL ?? process.env.KV_REST_API_URL ?? '',
+  token: process.env.UPSTASH_REST_API_TOKEN ?? process.env.KV_REST_API_TOKEN ?? '',
+})
 
 export interface TrackEvent {
   id: string          // unique email ID
