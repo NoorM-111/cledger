@@ -96,7 +96,10 @@ export default function Footer() {
 
         <div style={{ borderTop: '1px solid #E7E0D2', paddingTop: 22, display: 'flex', flexWrap: 'wrap', gap: '8px 20px', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontFamily: "'Hanken Grotesk'", fontSize: 12, color: '#8A8478' }}>© 2026 Cledger</span>
-          <span style={{ fontFamily: "'Hanken Grotesk'", fontSize: 12, color: '#8A8478' }}>Accounting · Tax · Advisory services</span>
+          <span style={{ fontFamily: "'Hanken Grotesk'", fontSize: 12, color: '#8A8478' }}>
+            Accounting · Tax · Advisory services · Our software:{' '}
+            <a href="https://www.cledgerbooks.com" style={{ color: '#6B675C', textDecoration: 'underline' }}>Cledgerbooks</a>
+          </span>
         </div>
       </div>
     </footer>
