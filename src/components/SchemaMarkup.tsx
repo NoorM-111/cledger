@@ -33,6 +33,12 @@ export default function SchemaMarkup() {
           "Management accounts", "Corporation tax", "CT600", "Self Assessment",
           "Xero", "QuickBooks", "FRS 102", "FRS 105"
         ],
+        "subOrganization": {
+          "@type": "Organization",
+          "@id": "https://www.cledgerbooks.com/#organisation",
+          "name": "Cledgerbooks",
+          "url": "https://www.cledgerbooks.com"
+        },
         "sameAs": [
           "https://www.linkedin.com/company/cledger-uk",
           "https://twitter.com/CledgerUK",
