@@ -3,7 +3,7 @@ import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata = {
   title: 'Bookkeeping Hourly Rates UK 2026: What You Pay',
-  description: 'UK bookkeepers charge £20–£50 per hour in 2026, depending on qualification and complexity. Full breakdown by bookkeeper type, plus when hourly billing costs more than a fixed fee.',
+  description: 'UK bookkeepers charge £20–£50 per hour in 2026. Rates by bookkeeper type, and when hourly billing costs more than a fixed monthly fee.',
   openGraph: {
     title: 'Bookkeeping Hourly Rates UK 2026: What You Pay',
     description: 'UK bookkeepers charge £20–£50 per hour in 2026. Rates by bookkeeper type, and when hourly billing quietly costs more than a fixed monthly fee.',
