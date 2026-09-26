@@ -11,6 +11,12 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'bookkeeping-hourly-rates-uk',
+    title: 'Bookkeeping Hourly Rates UK 2026',
+    description: 'What UK bookkeepers charge per hour, broken down by qualification and complexity — and when hourly billing costs more than a fixed monthly fee.',
+    category: 'Pricing Guide',
+  },
+  {
     slug: 'bookkeeping-for-dental-practices-uk',
     title: 'Bookkeeping for Dental Practices UK',
     description: 'A complete guide to bookkeeping for UK dental practices — NHS income, associate payments, VAT exemptions and Making Tax Digital.',
