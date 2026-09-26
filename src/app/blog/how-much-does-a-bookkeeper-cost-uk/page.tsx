@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata = {
@@ -74,6 +75,8 @@ export default function Article1() {
       <div style={s.highlight}>
         <p style={{...s.p,marginBottom:0,color:C.white}}><strong style={s.strong}>The real cost of doing it yourself:</strong> Many business owners try to handle their own bookkeeping. At an average hourly rate of £25 for a business owner&apos;s time, spending just 4 hours per month on bookkeeping costs you £100/month in lost productivity, before accounting for errors, missed deductions, and HMRC penalties.</p>
       </div>
+
+      <p style={s.p}>For the hourly side of this in detail — rates by bookkeeper type, and the months where hourly billing spikes — see <Link href="/blog/bookkeeping-hourly-rates-uk" style={{ color: C.gold }}>bookkeeping hourly rates UK</Link>.</p>
 
       <h2 style={s.h2}>What affects the price most?</h2>
       <p style={s.p}><strong style={s.strong}>Transaction volume</strong> is the single biggest driver. Bookkeepers price based on how many bank transactions, invoices, receipts, and payments flow through your accounts each month. A business with 50 transactions/month is significantly cheaper to service than one with 500.</p>
