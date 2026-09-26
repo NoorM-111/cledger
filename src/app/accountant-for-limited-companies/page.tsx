@@ -7,8 +7,8 @@ import SeoSchema from '@/components/SeoSchema'
 import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Limited Companies UK | Online Accounting from £175/mo',
-  description: 'Online accounting for UK limited companies from £175/month. Corporation tax, annual accounts, payroll, VAT and director Self Assessment from qualified accountants. Fixed fees.',
+  title: 'Accountant for Limited Companies UK | Fixed Fees',
+  description: 'Online accounting for UK limited companies from £175/month. Corporation tax, annual accounts, payroll and VAT. Fixed fees.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-limited-companies',
   },

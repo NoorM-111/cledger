@@ -2,10 +2,10 @@ import Link from 'next/link'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata = {
-  title: 'What is Making Tax Digital (MTD)? Complete Guide for UK Businesses',
+  title: 'What Is Making Tax Digital (MTD)? UK Guide',
   description: 'MTD is mandatory for all VAT-registered UK businesses. Learn what Making Tax Digital means, the deadlines, compatible software, and how to stay compliant.',
   openGraph: {
-    title: 'What is Making Tax Digital (MTD)? Complete Guide for UK Businesses',
+    title: 'What Is Making Tax Digital (MTD)? UK Guide',
     description: 'MTD is mandatory for VAT-registered UK businesses. Deadlines, software requirements and how to stay compliant, explained clearly.',
     url: 'https://www.cledger.co.uk/blog/what-is-making-tax-digital-mtd',
     type: 'article',

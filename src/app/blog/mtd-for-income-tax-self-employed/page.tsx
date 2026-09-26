@@ -3,14 +3,14 @@ import Link from 'next/link'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'Making Tax Digital for Income Tax: What Self-Employed Need to Know (2026)',
+  title: 'MTD for Income Tax: Self-Employed Guide 2026',
   description: 'MTD for Income Tax starts April 2026 for self-employed with £50k+ turnover. Quarterly digital reporting to HMRC is now mandatory. Here is what changes.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/mtd-for-income-tax-self-employed',
   },
   openGraph: {
-    title: 'Making Tax Digital for Income Tax: What Self-Employed Need to Know (2026)',
+    title: 'MTD for Income Tax: Self-Employed Guide 2026',
     description: 'MTD for Income Tax starts April 2026 for self-employed with £50k+ turnover. What changes and how to prepare.',
     url: 'https://www.cledger.co.uk/blog/mtd-for-income-tax-self-employed',
     siteName: 'Cledger',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Making Tax Digital for Income Tax: What Self-Employed Need to Know (2026) | Cledger',
+    title: 'MTD for Income Tax: Self-Employed Guide 2026 | Cledger',
     description: 'MTD for Income Tax starts April 2026 for self-employed with £50k+ turnover. What changes and how to prepare.',
   },
 }

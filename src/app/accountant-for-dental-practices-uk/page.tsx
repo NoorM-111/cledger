@@ -7,8 +7,8 @@ import SeoSchema from '@/components/SeoSchema'
 import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
-  title: 'Dental Accountants UK | NHS & Private Practice Bookkeeping from £175/mo',
-  description: 'Specialist dental practice accountants. NHS & private income, associate payroll, VAT exemptions and MTD, handled correctly by qualified UK accountants. Fixed fees from £175/month — free quote.',
+  title: 'Dental Accountants UK | NHS & Private Practice',
+  description: 'Specialist dental practice accountants. NHS and private income, associate payroll, VAT exemptions and MTD. Fixed fees from £175/month.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-dental-practices-uk',
   },

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: '%s | Cledger',
   },
   description:
-    'Qualified UK accountants from £99/month. Bookkeeping, VAT returns, payroll, management accounts and corporation tax for UK small businesses. MTD compliant. Transparent pricing.',
+    'Qualified UK accountants from £99/month. Bookkeeping, VAT returns, payroll, management accounts and corporation tax. MTD compliant, fixed fees.',
   icons: {
     icon: '/icon.svg',
     shortcut: '/icon.svg',

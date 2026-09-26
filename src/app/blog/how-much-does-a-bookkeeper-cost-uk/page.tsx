@@ -1,10 +1,10 @@
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata = {
-  title: 'How Much Does a Bookkeeper Cost in the UK? (2026 Guide)',
+  title: 'How Much Does a Bookkeeper Cost in the UK? 2026',
   description: 'UK bookkeeping costs range from £150–£800/month depending on transaction volume and services. See the full 2026 pricing breakdown and compare options.',
   openGraph: {
-    title: 'How Much Does a Bookkeeper Cost in the UK? (2026 Guide)',
+    title: 'How Much Does a Bookkeeper Cost in the UK? 2026',
     description: 'UK bookkeeping costs range from £150–£800/month. Full breakdown of hourly rates, monthly packages and how to get the best value.',
     url: 'https://www.cledger.co.uk/blog/how-much-does-a-bookkeeper-cost-uk',
     type: 'article',

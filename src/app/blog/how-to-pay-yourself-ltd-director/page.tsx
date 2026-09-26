@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'How to Pay Yourself as a Limited Company Director UK (2026)',
+  title: 'How to Pay Yourself as a Ltd Director UK 2026',
   description: 'Most Ltd directors overpay tax by taking the wrong salary/dividend split. Here is the optimal 2026/27 structure to maximise take-home pay legally.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/how-to-pay-yourself-ltd-director',
   },
   openGraph: {
-    title: 'How to Pay Yourself as a Limited Company Director UK (2026)',
+    title: 'How to Pay Yourself as a Ltd Director UK 2026',
     description: 'Most Ltd directors overpay tax by taking the wrong salary/dividend split. The optimal 2026/27 structure explained.',
     url: 'https://www.cledger.co.uk/blog/how-to-pay-yourself-ltd-director',
     siteName: 'Cledger',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Pay Yourself as a Limited Company Director UK (2026) | Cledger',
+    title: 'How to Pay Yourself as a Ltd Director UK 2026 | Cledger',
     description: 'Most Ltd directors overpay tax by taking the wrong salary/dividend split. The optimal 2026/27 structure explained.',
   },
 }

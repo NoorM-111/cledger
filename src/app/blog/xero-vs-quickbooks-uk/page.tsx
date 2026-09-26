@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'Xero vs QuickBooks UK: Which Is Better for Small Businesses in 2026?',
+  title: 'Xero vs QuickBooks UK: Which Is Better in 2026?',
   description: 'Xero vs QuickBooks for UK small businesses, pricing, MTD compliance, features and which to choose. Honest comparison from accountants who use both daily.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/xero-vs-quickbooks-uk',
   },
   openGraph: {
-    title: 'Xero vs QuickBooks UK: Which Is Better for Small Businesses in 2026?',
+    title: 'Xero vs QuickBooks UK: Which Is Better in 2026?',
     description: 'Honest comparison from accountants who use both daily, pricing, MTD compliance, and which to choose.',
     url: 'https://www.cledger.co.uk/blog/xero-vs-quickbooks-uk',
     siteName: 'Cledger',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Xero vs QuickBooks UK: Which Is Better for Small Businesses in 2026? | Cledger',
+    title: 'Xero vs QuickBooks UK: Which Is Better in 2026? | Cledger',
     description: 'Honest comparison from accountants who use both daily, pricing, MTD compliance, and which to choose.',
   },
 }
