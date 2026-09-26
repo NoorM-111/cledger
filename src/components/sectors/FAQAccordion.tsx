@@ -75,9 +75,12 @@ export default function FAQAccordion({
               overflow: 'hidden',
             }}
           >
+            <h3 style={{ margin: 0 }}>
             <button
               onClick={() => setOpen(isOpen ? null : i)}
               aria-expanded={isOpen}
+              aria-controls={`faq-answer-${i}`}
+              id={`faq-question-${i}`}
               style={{
                 width: '100%',
                 display: 'flex',
@@ -120,19 +123,31 @@ export default function FAQAccordion({
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
-            {isOpen && (
-              <div style={{ padding: '0 1.25rem 1.25rem' }}>
-                <p style={{
-                  fontFamily: 'Sora, sans-serif',
-                  fontSize: '0.875rem',
-                  color: t.answer,
-                  lineHeight: 1.8,
-                  margin: 0,
-                }}>
-                  {item.a}
-                </p>
-              </div>
-            )}
+            </h3>
+            {/* Always in the DOM, hidden with the `hidden` attribute rather than
+                conditionally rendered. Until 26 Sep this was `{isOpen && ...}`,
+                so a crawler fetching the page saw the questions and none of the
+                answers — the answer text existed only inside the FAQPage JSON-LD.
+                Google requires structured-data content to be present on the page
+                it describes, and answer engines read the prose, not just the
+                schema. Collapsed-but-present is an accepted pattern; absent is not. */}
+            <div
+              id={`faq-answer-${i}`}
+              role="region"
+              aria-labelledby={`faq-question-${i}`}
+              hidden={!isOpen}
+              style={{ padding: '0 1.25rem 1.25rem' }}
+            >
+              <p style={{
+                fontFamily: 'Sora, sans-serif',
+                fontSize: '0.875rem',
+                color: t.answer,
+                lineHeight: 1.8,
+                margin: 0,
+              }}>
+                {item.a}
+              </p>
+            </div>
           </div>
         )
       })}

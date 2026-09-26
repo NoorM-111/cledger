@@ -253,7 +253,7 @@ export default function TeamPage() {
                     ) : (
                       <div className={styles.avatar}>{m.initials}</div>
                     )}
-                    <div className={styles.name}>{m.name}</div>
+                    <h2 className={styles.name}>{m.name}</h2>
                     <div className={styles.role}>{m.role}</div>
                     <div className={styles.tags}>
                       {m.tags.map(t => (
@@ -268,7 +268,7 @@ export default function TeamPage() {
                         <div key={s.title} className={styles.sk}>
                           <span className={styles.skIcon}>{s.icon}</span>
                           <div>
-                            <h5>{s.title}</h5>
+                            <h3>{s.title}</h3>
                             <p>{s.desc}</p>
                           </div>
                         </div>
