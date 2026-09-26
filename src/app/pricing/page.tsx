@@ -8,11 +8,11 @@ import RelatedGuides from '@/components/sectors/RelatedGuides'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Accountant & Bookkeeping Prices UK | Fixed Fees from £99/month',
-  description: 'Transparent, turnover-based pricing for UK bookkeeping, VAT, payroll and full finance outsourcing. Fixed monthly fees from £99/month — build your custom package and get an instant quote.',
+  title: 'Accountant & Bookkeeping Prices UK | From £99/mo',
+  description: 'Turnover-based pricing for UK bookkeeping, VAT, payroll and finance outsourcing. Fixed fees from £99/month. Build your package instantly.',
   alternates: { canonical: 'https://www.cledger.co.uk/pricing' },
   openGraph: {
-    title: 'Accountant & Bookkeeping Prices UK | Fixed Fees from £99/month',
+    title: 'Accountant & Bookkeeping Prices UK | From £99/mo',
     description: 'Transparent, turnover-based pricing for UK bookkeeping, VAT, payroll and full finance outsourcing. Fixed monthly fees from £99/month.',
     url: 'https://www.cledger.co.uk/pricing',
     siteName: 'Cledger', locale: 'en_GB', type: 'website',

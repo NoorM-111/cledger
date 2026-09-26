@@ -7,8 +7,8 @@ import SeoSchema from '@/components/SeoSchema'
 import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Ecommerce UK | Amazon, Shopify & eBay Accounting',
-  description: 'Specialist accounting for UK ecommerce businesses from £175/month. Amazon FBA, Shopify, eBay, multi-channel bookkeeping, VAT, OSS and corporation tax from qualified accountants.',
+  title: 'Accountant for Ecommerce UK | Amazon, Shopify, eBay',
+  description: 'Specialist accounting for UK ecommerce from £175/month. Amazon FBA, Shopify and eBay bookkeeping, VAT, OSS and corporation tax.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-ecommerce-uk',
   },

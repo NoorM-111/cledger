@@ -7,8 +7,8 @@ import SeoSchema from '@/components/SeoSchema'
 import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
-  title: 'Bookkeeping Prices & Packages UK 2026 — Fixed Fees from £175/month',
-  description: 'Transparent UK bookkeeping packages with fixed monthly fees from £175/month, including VAT returns, bank reconciliation and monthly reporting. Compare providers and build your exact price instantly.',
+  title: 'Bookkeeping Prices & Packages UK 2026',
+  description: 'UK bookkeeping packages from £175/month, including VAT returns, bank reconciliation and monthly reporting. Build your exact price instantly.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/bookkeeping-prices-uk',
   },

@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import BlogLayout, { s, C } from '@/components/BlogLayout'
 
 export const metadata: Metadata = {
-  title: 'What Are Management Accounts, and Does Your Business Need Them?',
+  title: 'What Are Management Accounts? UK Guide 2026',
   description: 'Management accounts give you monthly P&L, balance sheet and cash flow, before your year-end. Here is what they include, who needs them, and what they cost.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.cledger.co.uk/blog/what-are-management-accounts',
   },
   openGraph: {
-    title: 'What Are Management Accounts, and Does Your Business Need Them?',
+    title: 'What Are Management Accounts? UK Guide 2026',
     description: 'Management accounts give you monthly P&L, balance sheet and cash flow before your year-end. What they include and who needs them.',
     url: 'https://www.cledger.co.uk/blog/what-are-management-accounts',
     siteName: 'Cledger',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What Are Management Accounts, and Does Your Business Need Them? | Cledger',
+    title: 'What Are Management Accounts? UK Guide 2026 | Cledger',
     description: 'Management accounts give you monthly P&L, balance sheet and cash flow before your year-end. What they include and who needs them.',
   },
 }

@@ -7,8 +7,8 @@ import SeoSchema from '@/components/SeoSchema'
 import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Contractors UK | IR35 Specialists | Fixed-Fee',
-  description: 'Specialist accounting for UK contractors from £175/month. IR35 assessment, limited company accounts, corporation tax, VAT and director Self Assessment from qualified accountants.',
+  title: 'Accountant for Contractors UK | IR35 Specialists',
+  description: 'Specialist accounting for UK contractors from £175/month. IR35 assessment, limited company accounts, corporation tax and VAT. Fixed fees.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-contractors-uk',
   },

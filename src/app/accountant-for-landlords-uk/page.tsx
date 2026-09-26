@@ -7,8 +7,8 @@ import SeoSchema from '@/components/SeoSchema'
 import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
-  title: 'Accountant for Landlords UK | Property Tax & Bookkeeping',
-  description: 'Specialist accounting for UK landlords from £175/month. Self Assessment, rental income bookkeeping, Section 24 planning, capital gains tax and Making Tax Digital for property.',
+  title: 'Accountant for Landlords UK | Property Tax',
+  description: 'Specialist accounting for UK landlords from £175/month. Self Assessment, rental income bookkeeping, Section 24 planning and MTD.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/accountant-for-landlords-uk',
   },

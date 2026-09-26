@@ -201,7 +201,7 @@ export default function PricingSection() {
 
           <div style={s.header}>
             <span style={s.eyebrow}>Pricing · Build your package</span>
-            <h2 style={s.title}>Pay only for what <em style={s.titleEm}>your business actually needs</em></h2>
+            <h1 style={s.title}>Accountant &amp; bookkeeping prices UK &mdash; pay only for what <em style={s.titleEm}>your business actually needs</em></h1>
             <p style={s.subtitle}>Select your turnover, number of entities, and the services you need. Your monthly fee is calculated instantly, transparent, no surprises, no lock-in.</p>
             <div style={s.trustRow}>
               {["Qualified accountants", "MTD compliant", "No lock-in contracts", "No hidden add-ons"].map(b => (

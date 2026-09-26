@@ -7,8 +7,8 @@ import SeoSchema from '@/components/SeoSchema'
 import RelatedGuides from '@/components/sectors/RelatedGuides'
 
 export const metadata: Metadata = {
-  title: 'Online Accountant London | Fixed-Fee Accounting for London Businesses',
-  description: 'Online accountant for London small businesses and freelancers from £175/month. Bookkeeping, VAT, corporation tax and payroll from qualified accountants. Fully remote, fixed fees.',
+  title: 'Online Accountant London | Fixed-Fee Accounting',
+  description: 'Online accountant for London small businesses from £175/month. Bookkeeping, VAT, corporation tax and payroll. Fully remote, fixed fees.',
   alternates: {
     canonical: 'https://www.cledger.co.uk/online-accountant-london',
   },
